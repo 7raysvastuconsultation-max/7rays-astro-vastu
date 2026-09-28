@@ -32,3 +32,6 @@ dist-ssr
 data/*.db
 data/*.db-wal
 data/*.db-shm
+
+# Cloudflare Wrangler
+.wrangler
