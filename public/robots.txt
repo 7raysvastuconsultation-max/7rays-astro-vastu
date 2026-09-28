@@ -1,0 +1,25 @@
+# ==========================================
+# 7Rays Astro Vastu - Production robots.txt
+# ==========================================
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /*?*sort=
+Disallow: /*?*filter=
+
+# Crawl delay optimization
+Crawl-delay: 1
+
+# Explicit bot directives
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+# Canonical Sitemap Location
+Sitemap: https://7raysastrovastu.com/sitemap.xml

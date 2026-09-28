@@ -1,0 +1,7 @@
+# ============================================================
+# 7Rays Astro Vastu — Cloudflare Pages SPA Routing Fallback
+# ============================================================
+# Direct deep links, subpaths, and browser refreshes must resolve
+# to index.html with a 200 OK status code for React Router v7.
+
+/*    /index.html   200

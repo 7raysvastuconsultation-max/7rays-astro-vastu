@@ -1,0 +1,89 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans:
+    'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-display: 'Cinzel', Georgia, serif;
+
+  --color-midnight: #080d1a;
+  --color-midnight-light: #0d1527;
+  --color-royal-blue: #0d1936;
+  --color-warm-ivory: #faf8f5;
+  --color-warm-cream: #f4efe6;
+  --color-charcoal-dark: #121620;
+
+  --color-gold-200: #fde68a;
+  --color-gold-300: #fcd34d;
+  --color-gold-400: #f3c669;
+  --color-gold-500: #d4af37;
+  --color-gold-600: #c59b27;
+  --color-gold-700: #997316;
+}
+
+:root {
+  color-scheme: dark light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font-sans);
+  background-color: #080d1a;
+  color: #f8fafc;
+  overflow-x: hidden;
+}
+
+/* Luxury Editorial Styling Utilities */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #fcd34d 0%, #d4af37 50%, #f3c669 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-shimmer {
+  background: linear-gradient(90deg, #d4af37 0%, #fff 50%, #d4af37 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #f3c669 0%, #d4af37 50%, #c59b27 100%);
+}
+
+.bg-gold-glow {
+  box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.35);
+}
+
+.bg-midnight-gradient {
+  background: radial-gradient(circle at 50% 20%, #152243 0%, #080d1a 70%);
+}
+
+.border-gold-subtle {
+  border-color: rgba(212, 175, 55, 0.25);
+}
+
+.border-gold-hover:hover {
+  border-color: rgba(212, 175, 55, 0.6);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080d1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
