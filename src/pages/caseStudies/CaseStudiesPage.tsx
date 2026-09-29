@@ -83,6 +83,58 @@ export const CaseStudiesPage: React.FC = () => {
             </div>
           ))}
         </div>
+
+        {/* Evaluation Protocol & AEO Direct Answer */}
+        <div className="mt-16 rounded-2xl border border-slate-800 bg-slate-900/50 p-8">
+          <span className="text-xs font-bold tracking-widest text-amber-400 uppercase">
+            AUDIT STANDARDS &amp; DELIVERABLES
+          </span>
+          <h2 className="mt-2 font-serif text-2xl font-bold text-slate-100 sm:text-3xl">
+            How Are Spatial Consultation Scenarios Formulated?
+          </h2>
+          <div className="mt-4 rounded-xl border border-amber-500/20 bg-amber-500/5 p-4 text-xs leading-relaxed text-amber-200 sm:text-sm">
+            <strong>Direct Summary:</strong> Every 7Rays Astro Vastu consultation begins with an
+            unbiased CAD blueprint audit, degree-calibrated magnetic North verification, and 16-zone
+            Pancha Tattva energy vector mapping. Rather than prescribing structural demolition, our
+            remedial blueprints prioritize non-invasive elemental metallic strips (brass, copper,
+            zinc, aluminium), directional crystal placements, and spatial activity realignment.
+          </div>
+          <p className="mt-4 text-xs leading-relaxed text-slate-400 sm:text-sm">
+            Each scenario documented above reflects real-world architectural challenges encountered
+            across urban high-rises, commercial offices, and standalone villas. All technical
+            deliverables provided to clients include scaled 16-zone energy overlays, marked entrance
+            padas, and clear step-by-step remediation plans.
+          </p>
+        </div>
+
+        {/* Bottom Conversion Banner */}
+        <div className="mt-12 rounded-2xl border border-amber-500/30 bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 p-8 text-center sm:text-left">
+          <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+            <div>
+              <h3 className="font-serif text-xl font-bold text-slate-100 sm:text-2xl">
+                Ready to assess the energy flow of your space?
+              </h3>
+              <p className="mt-1 text-xs text-slate-300 sm:text-sm">
+                Connect with Certified Consultant Rishwa Sinha for an on-site or digital CAD audit.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/20 transition hover:from-amber-300 hover:to-amber-500"
+              >
+                <span>Book a Consultation</span>
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+              <Link
+                to="/vastu/non-demolition"
+                className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-800/80 px-5 py-3.5 text-xs font-semibold text-slate-200 transition hover:border-amber-400 hover:text-white"
+              >
+                <span>Explore Remedies</span>
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

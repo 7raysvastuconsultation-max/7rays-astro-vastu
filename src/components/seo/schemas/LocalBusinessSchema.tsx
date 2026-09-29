@@ -7,7 +7,7 @@ import type { LocalBusinessSchemaProps } from '@/types/seo'
 /**
  * LocalBusiness Schema — Phase 09 Entity Graph
  * @type: ProfessionalService (subtype of LocalBusiness)
- * @id: https://7raysastrovastu.com/#localbusiness
+ * @id: https://7raysastrovastu.in/#localbusiness
  *
  * Entity relationships:
  *   LocalBusiness (#localbusiness)

@@ -292,9 +292,11 @@ export const CommercialVastuPage: React.FC = () => {
 
             {/* Main Headline */}
             <h1 className="font-serif text-4xl leading-[1.12] font-bold text-white sm:text-5xl lg:text-6xl">
-              Aligned Spaces.
+              Commercial Vastu Consultation
               <br />
-              Stronger Businesses.
+              <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">
+                Aligned Spaces for Business Growth
+              </span>
             </h1>
 
             {/* Subtitle */}

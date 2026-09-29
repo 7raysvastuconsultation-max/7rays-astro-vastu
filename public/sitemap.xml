@@ -70,10 +70,22 @@
     <priority>0.90</priority>
   </url>
   <url>
+    <loc>https://7raysastrovastu.in/vastu/non-demolition</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+  <url>
     <loc>https://7raysastrovastu.in/vastu-services/vastu-audit</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
+  </url>
+  <url>
+    <loc>https://7raysastrovastu.in/international</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://7raysastrovastu.in/astrology</loc>
@@ -160,6 +172,18 @@
     <priority>0.80</priority>
   </url>
   <url>
+    <loc>https://7raysastrovastu.in/consultant/rishwa-sinha</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://7raysastrovastu.in/faq</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
     <loc>https://7raysastrovastu.in/sitemap</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>monthly</changefreq>
@@ -173,6 +197,12 @@
   </url>
   <url>
     <loc>https://7raysastrovastu.in/terms</loc>
+    <lastmod>2026-09-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.30</priority>
+  </url>
+  <url>
+    <loc>https://7raysastrovastu.in/disclaimer</loc>
     <lastmod>2026-09-29</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.30</priority>

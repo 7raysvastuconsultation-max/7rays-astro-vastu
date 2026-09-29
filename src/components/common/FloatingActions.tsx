@@ -57,10 +57,8 @@ export const FloatingActions: React.FC = () => {
       {/* ========================================================================= */}
       <aside
         aria-label="Quick Contact Actions"
-        className={`fixed inset-x-0 bottom-4 z-50 flex justify-center px-4 pointer-events-none md:hidden transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
-          isVisible
-            ? 'translate-y-0 opacity-100 scale-100'
-            : 'translate-y-24 opacity-0 scale-95'
+        className={`pointer-events-none fixed inset-x-0 bottom-4 z-50 flex justify-center px-4 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] md:hidden ${
+          isVisible ? 'translate-y-0 scale-100 opacity-100' : 'translate-y-24 scale-95 opacity-0'
         }`}
       >
         <div className="pointer-events-auto flex w-full max-w-sm items-center justify-between rounded-full border border-amber-500/25 bg-slate-950/85 p-1.5 shadow-[0_12px_40px_rgba(0,0,0,0.65),0_0_20px_rgba(212,175,55,0.12)] backdrop-blur-xl">
@@ -108,21 +106,21 @@ export const FloatingActions: React.FC = () => {
       {/* ========================================================================= */}
       <aside
         aria-label="Desktop Quick Contact"
-        className={`fixed bottom-6 right-6 z-40 hidden md:flex flex-col items-end gap-2.5 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] ${
+        className={`fixed right-6 bottom-6 z-40 hidden flex-col items-end gap-2.5 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] md:flex ${
           isVisible
-            ? 'translate-y-0 opacity-100 pointer-events-auto'
-            : 'translate-y-12 opacity-40 hover:opacity-100 pointer-events-auto'
+            ? 'pointer-events-auto translate-y-0 opacity-100'
+            : 'pointer-events-auto translate-y-12 opacity-40 hover:opacity-100'
         }`}
       >
         {/* Tiny Call Button */}
         <div className="group relative flex items-center">
-          <span className="pointer-events-none absolute right-12 whitespace-nowrap rounded-md border border-slate-800 bg-slate-900/95 px-2.5 py-1 text-[11px] font-medium tracking-wide text-amber-200 shadow-xl opacity-0 backdrop-blur-md transition-all duration-200 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0">
+          <span className="pointer-events-none absolute right-12 -translate-x-1 rounded-md border border-slate-800 bg-slate-900/95 px-2.5 py-1 text-[11px] font-medium tracking-wide whitespace-nowrap text-amber-200 opacity-0 shadow-xl backdrop-blur-md transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100">
             Call: {siteConfig.contact.displayPhone || phoneRaw}
           </span>
           <a
             href={telHref}
             onClick={handleCallClick}
-            className="flex h-11 w-11 items-center justify-center rounded-full border border-amber-500/30 bg-slate-900/85 text-amber-300 shadow-lg shadow-black/50 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-amber-400 hover:bg-slate-800 hover:text-amber-200 hover:shadow-amber-500/20 active:scale-95 focus:outline-none focus:ring-2 focus:ring-amber-400/40"
+            className="flex h-11 w-11 items-center justify-center rounded-full border border-amber-500/30 bg-slate-900/85 text-amber-300 shadow-lg shadow-black/50 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-amber-400 hover:bg-slate-800 hover:text-amber-200 hover:shadow-amber-500/20 focus:ring-2 focus:ring-amber-400/40 focus:outline-none active:scale-95"
             aria-label={`Call Consultant at ${siteConfig.contact.displayPhone || phoneRaw}`}
           >
             <Phone className="h-4 w-4" />
@@ -131,7 +129,7 @@ export const FloatingActions: React.FC = () => {
 
         {/* Tiny WhatsApp Button */}
         <div className="group relative flex items-center">
-          <span className="pointer-events-none absolute right-12 whitespace-nowrap rounded-md border border-slate-800 bg-slate-900/95 px-2.5 py-1 text-[11px] font-medium tracking-wide text-emerald-200 shadow-xl opacity-0 backdrop-blur-md transition-all duration-200 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0">
+          <span className="pointer-events-none absolute right-12 -translate-x-1 rounded-md border border-slate-800 bg-slate-900/95 px-2.5 py-1 text-[11px] font-medium tracking-wide whitespace-nowrap text-emerald-200 opacity-0 shadow-xl backdrop-blur-md transition-all duration-200 group-hover:translate-x-0 group-hover:opacity-100">
             Chat on WhatsApp
           </span>
           <a
@@ -139,7 +137,7 @@ export const FloatingActions: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleWhatsAppClick}
-            className="relative flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-lg shadow-emerald-950/60 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:from-emerald-400 hover:to-emerald-500 hover:shadow-emerald-500/30 active:scale-95 focus:outline-none focus:ring-2 focus:ring-emerald-400/40"
+            className="relative flex h-11 w-11 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-emerald-600 text-white shadow-lg shadow-emerald-950/60 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:from-emerald-400 hover:to-emerald-500 hover:shadow-emerald-500/30 focus:ring-2 focus:ring-emerald-400/40 focus:outline-none active:scale-95"
             aria-label="Direct WhatsApp Consultation"
           >
             <MessageCircle className="h-5 w-5 text-white" />

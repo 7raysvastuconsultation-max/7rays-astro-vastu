@@ -23,9 +23,23 @@ const PrivacyPolicyPage = lazy(() =>
 const TermsPage = lazy(() =>
   import('@/pages/static/TermsPage').then((m) => ({ default: m.TermsPage }))
 )
+const DisclaimerPage = lazy(() =>
+  import('@/pages/static/DisclaimerPage').then((m) => ({ default: m.DisclaimerPage }))
+)
 const HtmlSitemapPage = lazy(() =>
   import('@/pages/static/HtmlSitemapPage').then((m) => ({ default: m.HtmlSitemapPage }))
 )
+const InternationalConsultationPage = lazy(() =>
+  import('@/pages/static/InternationalConsultationPage').then((m) => ({
+    default: m.InternationalConsultationPage,
+  }))
+)
+const ConsultantProfilePage = lazy(() =>
+  import('@/pages/static/ConsultantProfilePage').then((m) => ({
+    default: m.ConsultantProfilePage,
+  }))
+)
+const FaqPage = lazy(() => import('@/pages/static/FaqPage').then((m) => ({ default: m.FaqPage })))
 
 const ServicesPage = lazy(() =>
   import('@/pages/services/ServicesPage').then((m) => ({ default: m.ServicesPage }))
@@ -47,6 +61,11 @@ const IndustrialVastuPage = lazy(() =>
 )
 const CorporateVastuPage = lazy(() =>
   import('@/pages/services/CorporateVastuPage').then((m) => ({ default: m.CorporateVastuPage }))
+)
+const NonDemolitionVastuPage = lazy(() =>
+  import('@/pages/services/NonDemolitionVastuPage').then((m) => ({
+    default: m.NonDemolitionVastuPage,
+  }))
 )
 const VastuAuditPage = lazy(() =>
   import('@/pages/services/VastuAuditPage').then((m) => ({ default: m.VastuAuditPage }))
@@ -153,12 +172,16 @@ export const AppRoutes: React.FC = () => {
           {/* Core & Brand Philosophy */}
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/consultant/rishwa-sinha" element={<ConsultantProfilePage />} />
           <Route path="/the-7-rays" element={<The7RaysPage />} />
           <Route path="/process" element={<ProcessPage />} />
+          <Route path="/faq" element={<FaqPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms" element={<TermsPage />} />
+          <Route path="/disclaimer" element={<DisclaimerPage />} />
           <Route path="/sitemap" element={<HtmlSitemapPage />} />
+          <Route path="/international" element={<InternationalConsultationPage />} />
 
           {/* Vastu Services Hierarchy */}
           <Route path="/vastu/residential" element={<ResidentialVastuPage />} />
@@ -167,6 +190,7 @@ export const AppRoutes: React.FC = () => {
           <Route path="/vastu/office-vastu" element={<OfficeVastuPage />} />
           <Route path="/vastu/corporate" element={<CorporateVastuPage />} />
           <Route path="/vastu/industrial" element={<IndustrialVastuPage />} />
+          <Route path="/vastu/non-demolition" element={<NonDemolitionVastuPage />} />
           <Route path="/vastu-services" element={<ServicesPage />} />
           <Route path="/vastu-services/residential-vastu" element={<ResidentialVastuPage />} />
           <Route path="/vastu-services/apartment-vastu" element={<ApartmentVastuPage />} />
@@ -174,10 +198,18 @@ export const AppRoutes: React.FC = () => {
           <Route path="/vastu-services/office-vastu" element={<OfficeVastuPage />} />
           <Route path="/vastu-services/industrial-vastu" element={<IndustrialVastuPage />} />
           <Route path="/vastu-services/corporate-vastu" element={<CorporateVastuPage />} />
+          <Route path="/vastu-services/non-demolition-vastu" element={<NonDemolitionVastuPage />} />
           <Route path="/vastu-services/vastu-audit" element={<VastuAuditPage />} />
           <Route path="/vastu-services/:slug" element={<ServiceDetailPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/:slug" element={<ServiceDetailPage />} />
+          {/* Direct Service Aliases */}
+          <Route path="/vastu/office" element={<OfficeVastuPage />} />
+          <Route path="/vastu/home" element={<ResidentialVastuPage />} />
+          <Route path="/vastu/flat" element={<ApartmentVastuPage />} />
+          <Route path="/vastu/plot" element={<VastuAuditPage />} />
+          <Route path="/vastu/interior" element={<NonDemolitionVastuPage />} />
+          <Route path="/vastu/consultation" element={<ServicesPage />} />
 
           {/* Astrology Services Hierarchy */}
           <Route path="/astrology" element={<AstrologyPage />} />

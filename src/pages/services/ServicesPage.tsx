@@ -238,7 +238,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/vastu-services/residential-vastu"
+                  to="/vastu/residential"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -272,7 +272,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/vastu-services/commercial-vastu"
+                  to="/vastu/commercial"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -281,7 +281,40 @@ export const ServicesPage: React.FC = () => {
               </div>
             </div>
 
-            {/* 3. Industrial Vastu */}
+            {/* 3. Non-Demolition Vastu */}
+            <div className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-all duration-300 hover:border-amber-400 hover:shadow-xl">
+              <div>
+                <div className="h-52 w-full overflow-hidden bg-slate-100">
+                  <img
+                    src="/images/services/residential-vastu.jpg"
+                    alt="Non-Demolition Vastu metallic inlays and elemental balancing"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="p-6">
+                  <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-700">
+                    <ShieldCheck className="h-5 w-5" />
+                  </div>
+                  <h3 className="font-serif text-xl font-bold text-slate-900 transition group-hover:text-amber-800">
+                    Non-Demolition Vastu
+                  </h3>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                    Harmonize rented flats, apartments, and corporate offices using elemental metallic inlays with zero structural damage.
+                  </p>
+                </div>
+              </div>
+              <div className="p-6 pt-0">
+                <Link
+                  to="/vastu/non-demolition"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
+                >
+                  <span>Explore Service</span>
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            {/* 4. Industrial Vastu */}
             <div className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-all duration-300 hover:border-amber-400 hover:shadow-xl">
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
@@ -306,7 +339,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/vastu-services/industrial-vastu"
+                  to="/vastu/industrial"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -315,7 +348,7 @@ export const ServicesPage: React.FC = () => {
               </div>
             </div>
 
-            {/* 4. Corporate Vastu */}
+            {/* 5. Corporate Vastu */}
             <div className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-all duration-300 hover:border-amber-400 hover:shadow-xl">
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
@@ -339,7 +372,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/vastu-services/corporate-vastu"
+                  to="/vastu/corporate"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -348,7 +381,7 @@ export const ServicesPage: React.FC = () => {
               </div>
             </div>
 
-            {/* 5. Astrology Consultation */}
+            {/* 6. Astrology Consultation */}
             <div className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-all duration-300 hover:border-amber-400 hover:shadow-xl">
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
@@ -381,7 +414,7 @@ export const ServicesPage: React.FC = () => {
               </div>
             </div>
 
-            {/* 6. Vastu Audit */}
+            {/* 7. Vastu Audit */}
             <div className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-all duration-300 hover:border-amber-400 hover:shadow-xl">
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">

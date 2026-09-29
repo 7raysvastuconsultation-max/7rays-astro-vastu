@@ -103,15 +103,74 @@ export const CaseStudyDetailPage: React.FC = () => {
           </div>
         </div>
 
+        {/* Related Services Recommendation */}
+        <div className="mt-12 rounded-xl border border-slate-800 bg-slate-900/30 p-6">
+          <h3 className="font-serif text-base font-bold text-slate-100">Related Spatial Services</h3>
+          <p className="mt-1 text-xs text-slate-400">
+            Learn more about the specific consultation frameworks referenced in this scenario:
+          </p>
+          <div className="mt-4 flex flex-wrap gap-3">
+            {cs.clientType === 'Commercial' ? (
+              <>
+                <Link
+                  to="/vastu/commercial"
+                  className="rounded-lg border border-amber-500/30 bg-amber-500/10 px-3.5 py-2 text-xs font-semibold text-amber-300 transition hover:bg-amber-500/20"
+                >
+                  Commercial Vastu Consultation →
+                </Link>
+                <Link
+                  to="/vastu/office-vastu"
+                  className="rounded-lg border border-slate-700 bg-slate-800 px-3.5 py-2 text-xs font-semibold text-slate-200 transition hover:border-amber-400"
+                >
+                  Office Layout Planning →
+                </Link>
+              </>
+            ) : (
+              <>
+                <Link
+                  to="/vastu/residential"
+                  className="rounded-lg border border-amber-500/30 bg-amber-500/10 px-3.5 py-2 text-xs font-semibold text-amber-300 transition hover:bg-amber-500/20"
+                >
+                  Residential Vastu Consultation →
+                </Link>
+                <Link
+                  to="/vastu/apartment-vastu"
+                  className="rounded-lg border border-slate-700 bg-slate-800 px-3.5 py-2 text-xs font-semibold text-slate-200 transition hover:border-amber-400"
+                >
+                  Apartment &amp; Flat Vastu →
+                </Link>
+              </>
+            )}
+            <Link
+              to="/vastu/non-demolition"
+              className="rounded-lg border border-slate-700 bg-slate-800 px-3.5 py-2 text-xs font-semibold text-slate-200 transition hover:border-amber-400"
+            >
+              Non-Demolition Remedies →
+            </Link>
+          </div>
+        </div>
+
         {/* CTA */}
-        <div className="mt-16 border-t border-slate-800 pt-8 text-center">
-          <Link
-            to="/contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-amber-500 px-6 py-3 text-xs font-bold text-slate-950 transition hover:bg-amber-400 sm:text-sm"
-          >
-            <span>Discuss Your Space With an Expert</span>
-            <ArrowRight className="h-4 w-4" />
-          </Link>
+        <div className="mt-12 border-t border-slate-800 pt-8 text-center sm:text-left">
+          <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
+            <div>
+              <h3 className="font-serif text-lg font-bold text-slate-100">
+                Facing a similar layout challenge?
+              </h3>
+              <p className="text-xs text-slate-400">
+                Book a confidential property audit with certified consultant Rishwa Sinha.
+              </p>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                to="/contact"
+                className="inline-flex items-center gap-2 rounded-lg bg-amber-500 px-5 py-3 text-xs font-bold text-slate-950 transition hover:bg-amber-400"
+              >
+                <span>Request Assessment</span>
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </div>
         </div>
       </article>
     </>

@@ -6,7 +6,7 @@ import type { PersonSchemaProps } from '@/types/seo'
 
 /**
  * Person Schema — Phase 09 Entity Graph
- * Canonical @id: https://7raysastrovastu.com/#rishwa-sinha
+ * Canonical @id: https://7raysastrovastu.in/#rishwa-sinha
  *
  * Entity relationships:
  *   Person (#rishwa-sinha)

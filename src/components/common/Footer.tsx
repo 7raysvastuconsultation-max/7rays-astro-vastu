@@ -134,6 +134,11 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/consultant/rishwa-sinha" className="transition hover:text-amber-400">
+                  Lead Consultant
+                </Link>
+              </li>
+              <li>
                 <Link to="/vastu-services" className="transition hover:text-amber-400">
                   Services
                 </Link>
@@ -149,8 +154,23 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/vastu/non-demolition" className="transition hover:text-amber-400">
+                  Non-Demolition Vastu
+                </Link>
+              </li>
+              <li>
                 <Link to="/astrology" className="transition hover:text-amber-400">
                   Astrology
+                </Link>
+              </li>
+              <li>
+                <Link to="/international" className="transition hover:text-amber-400">
+                  International / NRI
+                </Link>
+              </li>
+              <li>
+                <Link to="/faq" className="transition hover:text-amber-400">
+                  FAQ
                 </Link>
               </li>
               <li>
@@ -262,6 +282,9 @@ export const Footer: React.FC = () => {
             </Link>
             <Link to="/terms" className="transition hover:text-amber-400">
               Terms &amp; Conditions
+            </Link>
+            <Link to="/disclaimer" className="transition hover:text-amber-400">
+              Disclaimer
             </Link>
             <Link to="/sitemap" className="transition hover:text-amber-400">
               Sitemap

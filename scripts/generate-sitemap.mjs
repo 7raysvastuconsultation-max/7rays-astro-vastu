@@ -34,7 +34,9 @@ const staticRoutes = [
   { path: 'vastu/office-vastu', changefreq: 'weekly', priority: 0.9 },
   { path: 'vastu/corporate', changefreq: 'weekly', priority: 0.9 },
   { path: 'vastu/industrial', changefreq: 'weekly', priority: 0.9 },
+  { path: 'vastu/non-demolition', changefreq: 'weekly', priority: 0.9 },
   { path: 'vastu-services/vastu-audit', changefreq: 'weekly', priority: 0.9 },
+  { path: 'international', changefreq: 'weekly', priority: 0.85 },
   { path: 'astrology', changefreq: 'weekly', priority: 0.9 },
   { path: 'astrology/birth-chart', changefreq: 'weekly', priority: 0.85 },
   { path: 'astrology/career', changefreq: 'weekly', priority: 0.85 },
@@ -49,9 +51,12 @@ const staticRoutes = [
   { path: 'case-studies', changefreq: 'monthly', priority: 0.75 },
   { path: 'insights', changefreq: 'daily', priority: 0.85 },
   { path: 'contact', changefreq: 'monthly', priority: 0.8 },
+  { path: 'consultant/rishwa-sinha', changefreq: 'monthly', priority: 0.85 },
+  { path: 'faq', changefreq: 'weekly', priority: 0.85 },
   { path: 'sitemap', changefreq: 'monthly', priority: 0.5 },
   { path: 'privacy-policy', changefreq: 'yearly', priority: 0.3 },
   { path: 'terms', changefreq: 'yearly', priority: 0.3 },
+  { path: 'disclaimer', changefreq: 'yearly', priority: 0.3 },
 ]
 
 const locationSlugs = ['indiranagar', 'hsr-layout', 'koramangala', 'whitefield']

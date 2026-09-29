@@ -5,7 +5,7 @@ import { businessConfig } from '@/config/business'
 
 /**
  * Organization Schema — Phase 09 Entity Graph
- * @id: https://7raysastrovastu.com/#organization
+ * @id: https://7raysastrovastu.in/#organization
  *
  * Entity relationships:
  *   Organization (#organization)

@@ -97,7 +97,7 @@ export const ResidentialVastuPage: React.FC = () => {
       description:
         'Practical, non-demolition remedies using elemental metallic strips and spatial alignment for existing homes.',
       cta: 'Non-Demolition Remedies',
-      link: '/insights/bathroom-toilet-vastu-remedies',
+      link: '/vastu/non-demolition',
     },
   ]
 
@@ -274,9 +274,11 @@ export const ResidentialVastuPage: React.FC = () => {
 
             {/* Main Headline */}
             <h1 className="font-serif text-4xl leading-[1.12] font-bold text-white sm:text-5xl lg:text-6xl">
-              Harmonious Homes.
+              Residential Vastu Consultation
               <br />
-              Happier Lives.
+              <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">
+                Harmonious Homes &amp; Brighter Lives
+              </span>
             </h1>
 
             {/* Subtitle */}

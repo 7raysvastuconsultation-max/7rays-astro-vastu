@@ -4,7 +4,7 @@ import { siteConfig } from '@/config/site'
 
 /**
  * WebSite Schema — Phase 09 Entity Graph
- * @id: https://7raysastrovastu.com/#website
+ * @id: https://7raysastrovastu.in/#website
  *
  * Entity relationships:
  *   WebSite (#website)

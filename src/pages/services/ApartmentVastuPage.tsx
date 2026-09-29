@@ -131,10 +131,10 @@ export const ApartmentVastuPage: React.FC = () => {
             </div>
 
             <h1 className="font-serif text-3xl leading-tight font-bold text-white sm:text-5xl lg:text-6xl">
-              High-Rise Living.
+              Apartment Vastu Consultation
               <br />
               <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">
-                Complete Harmony.
+                High-Rise Living &amp; Spatial Harmony
               </span>
             </h1>
 

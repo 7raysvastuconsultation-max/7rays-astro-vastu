@@ -60,21 +60,23 @@ export const NotFoundPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-xs text-amber-400">
             <li>
-              <Link to="/services/commercial-vastu-consultation" className="hover:underline">
-                &rarr; Commercial Office Vastu Consultations
+              <Link to="/vastu/commercial" className="hover:underline">
+                &rarr; Commercial &amp; Office Vastu Consultations
               </Link>
             </li>
             <li>
-              <Link to="/services/residential-apartment-vastu" className="hover:underline">
-                &rarr; Apartment &amp; Flat Vastu (Non-Demolition)
+              <Link to="/vastu/residential" className="hover:underline">
+                &rarr; Residential &amp; Apartment Vastu
               </Link>
             </li>
             <li>
-              <Link
-                to="/locations/vastu-consultant-hsr-layout-bangalore"
-                className="hover:underline"
-              >
-                &rarr; HSR Layout Bangalore Vastu Consultant
+              <Link to="/vastu/non-demolition" className="hover:underline">
+                &rarr; Non-Demolition Vastu Remedies
+              </Link>
+            </li>
+            <li>
+              <Link to="/locations/hsr-layout" className="hover:underline">
+                &rarr; HSR Layout Bangalore Vastu Consultation
               </Link>
             </li>
             <li>
