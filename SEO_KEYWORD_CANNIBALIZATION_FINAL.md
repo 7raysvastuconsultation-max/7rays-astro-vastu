@@ -12,6 +12,7 @@
 Keyword cannibalization occurs when two or more URLs on the same domain compete for identical or substantially overlapping search queries, splitting organic click-through rates and confusing search engine ranking models.
 
 In spatial consultancy websites, cannibalization frequently arises between:
+
 1. General service hubs vs. specialized property sub-pages (e.g. Residential vs. Apartment).
 2. General commercial hubs vs. office/workplace pages.
 3. Universal service pages vs. city-specific service pages (e.g. `/vastu/residential` vs. `/locations/bangalore/residential-vastu`).
@@ -38,7 +39,7 @@ The following audit dissects the 7 primary potential conflict pairs identified a
   - Page A emphasizes macro-level property orientation, garden/compound slopes, and ground-up architectural layouts.
   - Page B emphasizes micro-level internal spatial reallocation, non-demolition metallic inlays, and balancing fixed builder layouts.
 - **INTERNAL LINKING SOLUTION:**
-  - On Page A: Include a prominent card: *"Living in a high-rise condominium? Explore our specialized [Apartment & Flat Vastu Consultation](/vastu/apartment-vastu) designed for fixed structural layouts."*
+  - On Page A: Include a prominent card: _"Living in a high-rise condominium? Explore our specialized [Apartment & Flat Vastu Consultation](/vastu/apartment-vastu) designed for fixed structural layouts."_
   - On Page B: Include a breadcrumb and contextual link back to `/vastu/residential` for clients considering independent villas.
 - **TITLE / H1 STATUS:**
   - Page A Title: `Residential Vastu Consultant in Bangalore | 7Rays` | H1: `Residential Vastu Consultation`
@@ -101,7 +102,7 @@ The following audit dissects the 7 primary potential conflict pairs identified a
   - Page A provides universal architectural principles, classical 16-zone theory, and remote CAD floor plan analysis applicable anywhere in India.
   - Page B focuses explicitly on on-site home inspection visits across Bangalore, dealing with local Bangalore builder typologies (e.g. Prestige, Sobha, Brigade, Godrej floor plans), local soil/borewell depth dynamics, and city-wide travel coverage.
 - **INTERNAL LINKING SOLUTION:**
-  - Page A includes a local banner: *"Located in Bengaluru? Book an on-site property inspection with our [Bangalore Residential Vastu Team](/locations/bangalore/residential-vastu)."*
+  - Page A includes a local banner: _"Located in Bengaluru? Book an on-site property inspection with our [Bangalore Residential Vastu Team](/locations/bangalore/residential-vastu)."_
   - Page B links back to the global Residential Vastu theory hub on Page A.
 - **TITLE / H1 STATUS:**
   - Page A Title: `Residential Vastu Consultant | Home Space Alignment | 7Rays` | H1: `Residential Vastu Consultation`
@@ -122,7 +123,7 @@ The following audit dissects the 7 primary potential conflict pairs identified a
   - Page A presents the commercial service package, consultation methodology, custom metal specifications, and booking CTA.
   - Page B provides a 2,200+ word technical guide explaining the scientific mechanisms of earth conductivity, color refraction, and historical Vedic precedents.
 - **INTERNAL LINKING SOLUTION:**
-  - Page B embeds a high-converting CTA card linking directly to Page A: *"Need a custom non-demolition blueprint for your space? Book our [Non-Demolition Vastu Consultation](/vastu/non-demolition)."*
+  - Page B embeds a high-converting CTA card linking directly to Page A: _"Need a custom non-demolition blueprint for your space? Book our [Non-Demolition Vastu Consultation](/vastu/non-demolition)."_
   - Page A links to Page B as supporting educational reading.
 - **TITLE / H1 STATUS:**
   - Page A Title: `Non-Demolition Vastu Remedies & Consultation | 7Rays` | H1: `Non-Demolition Vastu & Elemental Remedies`

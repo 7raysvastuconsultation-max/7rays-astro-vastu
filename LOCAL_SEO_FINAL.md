@@ -12,6 +12,7 @@
 A major vulnerability in local SEO is programmatic locality page generation—creating dozens of identical pages with only the neighborhood name altered (e.g. "Vastu Consultant in [Locality]"). Such tactics violate Google's Doorway Page Guidelines and erode organic search performance.
 
 **7Rays Astro Vastu** adheres to a disciplined, single-origin local SEO framework:
+
 1. **Single Headquarters NAP:** Explicit physical headquarters in **Dasarahalli, Bengaluru** (`3J64+827, Balaji Layout, Dasarahalli, Bengaluru 560024`), matching the verified Google Business Profile.
 2. **Curated Locality Coverage:** Restricts Bangalore micro-localities to **4 authentic hubs** (Indiranagar, HSR Layout, Koramangala, Whitefield) where legitimate on-site residential and commercial consultation demand exists.
 3. **True Local Differentiation:** Every locality page features genuine local architectural context (e.g. tech co-working spaces in HSR, high-end retail on 100ft Road Indiranagar, ITPL tech parks and villas in Whitefield).
@@ -22,6 +23,7 @@ A major vulnerability in local SEO is programmatic locality page generation—cr
 ## 2. Local SEO Content Map & Page Specifications
 
 ### Master Hub: `/locations/bangalore`
+
 - **Canonical URL:** `https://7raysastrovastu.in/locations/bangalore`
 - **Search Intent:** Macro-local discovery (`Vastu consultant in Bangalore`, `best Vastu expert Bengaluru`).
 - **Entity Anchor:** Connects directly to the Dasarahalli Google Maps profile (`https://maps.app.goo.gl/wcoHwGSBggq6n3Fe9`).
@@ -31,6 +33,7 @@ A major vulnerability in local SEO is programmatic locality page generation—cr
 ---
 
 ### Locality 1: Indiranagar (`/locations/indiranagar`)
+
 - **Primary Search Intent:** `Vastu consultant Indiranagar Bangalore`, `retail showroom Vastu Indiranagar`.
 - **Authentic Local Context:**
   - High-street commercial retail along 100ft Road and 12th Main.
@@ -41,6 +44,7 @@ A major vulnerability in local SEO is programmatic locality page generation—cr
 ---
 
 ### Locality 2: HSR Layout (`/locations/hsr-layout`)
+
 - **Primary Search Intent:** `Vastu consultant HSR Layout Bangalore`, `startup office Vastu HSR Layout`.
 - **Authentic Local Context:**
   - High concentration of early-stage tech startups, venture-backed companies, and co-working facilities across Sectors 1 through 7.
@@ -51,6 +55,7 @@ A major vulnerability in local SEO is programmatic locality page generation—cr
 ---
 
 ### Locality 3: Koramangala (`/locations/koramangala`)
+
 - **Primary Search Intent:** `Vastu consultant Koramangala Bangalore`, `restaurant Vastu Koramangala`.
 - **Authentic Local Context:**
   - High-density dining, cafes, retail flagships, and upscale penthouses across Blocks 1 through 8.
@@ -60,6 +65,7 @@ A major vulnerability in local SEO is programmatic locality page generation—cr
 ---
 
 ### Locality 4: Whitefield (`/locations/whitefield`)
+
 - **Primary Search Intent:** `Vastu consultant Whitefield Bangalore`, `villa Vastu Whitefield`.
 - **Authentic Local Context:**
   - Major enterprise IT campuses (ITPL, EPIP zone) and sprawling gated villa communities (Prestige, Sobha, Chaithanya).
@@ -72,24 +78,24 @@ A major vulnerability in local SEO is programmatic locality page generation—cr
 
 To capture high-intent local commercial searches without diluting the master hub, 5 dedicated local service sub-pages operate beneath `/locations/bangalore/`:
 
-| URL | Target Query | Specialized Bangalore Nuance |
-| :--- | :--- | :--- |
-| `/locations/bangalore/residential-vastu` | `residential Vastu consultant Bangalore` | Focuses on Bangalore apartment developer floor plans and on-site villa inspections. |
-| `/locations/bangalore/commercial-vastu` | `commercial Vastu consultant Bangalore` | Focuses on Outer Ring Road, Whitefield, and Electronic City corporate workspaces. |
-| `/locations/bangalore/industrial-vastu` | `industrial factory Vastu Bangalore` | Focuses on Peenya, Bommasandra, Bidadi, and KIADB manufacturing zones. |
-| `/locations/bangalore/vastu-audit` | `property Vastu audit Bangalore` | Focuses on pre-purchase checks for Bangalore home buyers (A-Khata, B-Khata flats). |
-| `/locations/bangalore/astrology` | `Vedic astrologer in Bangalore` | Focuses on tech professional career pivots, startup founder charts, and Kundli Milan. |
+| URL                                      | Target Query                             | Specialized Bangalore Nuance                                                          |
+| :--------------------------------------- | :--------------------------------------- | :------------------------------------------------------------------------------------ |
+| `/locations/bangalore/residential-vastu` | `residential Vastu consultant Bangalore` | Focuses on Bangalore apartment developer floor plans and on-site villa inspections.   |
+| `/locations/bangalore/commercial-vastu`  | `commercial Vastu consultant Bangalore`  | Focuses on Outer Ring Road, Whitefield, and Electronic City corporate workspaces.     |
+| `/locations/bangalore/industrial-vastu`  | `industrial factory Vastu Bangalore`     | Focuses on Peenya, Bommasandra, Bidadi, and KIADB manufacturing zones.                |
+| `/locations/bangalore/vastu-audit`       | `property Vastu audit Bangalore`         | Focuses on pre-purchase checks for Bangalore home buyers (A-Khata, B-Khata flats).    |
+| `/locations/bangalore/astrology`         | `Vedic astrologer in Bangalore`          | Focuses on tech professional career pivots, startup founder charts, and Kundli Milan. |
 
 ---
 
 ## 4. Local SEO Risk & Governance Scorecard
 
-| Risk Category | Evaluated Risk | Mitigation Implemented | Verdict |
-| :--- | :--- | :--- | :--- |
-| **Doorway Page Spam** | High if pages exceed 10+ with repetitive copy | Kept strictly to 4 authentic localities with 100% unique copy. | **PASS** |
-| **Fake Address Penalties** | Severe if non-existent virtual offices are claimed | Single physical address registered in Dasarahalli. Neighborhood pages explicitly identified as on-site visit coverage areas. | **PASS** |
-| **NAP Inconsistency** | High if citations list varying phone/address data | Standardized on `3J64+827, Balaji Layout, Dasarahalli, Bengaluru 560024` across all footers, contact pages, and schemas. | **PASS** |
-| **Google Maps Integration** | Low | Embedded Google Maps iframe links directly to verified Google Business Profile. | **PASS** |
+| Risk Category               | Evaluated Risk                                     | Mitigation Implemented                                                                                                       | Verdict  |
+| :-------------------------- | :------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------- | :------- |
+| **Doorway Page Spam**       | High if pages exceed 10+ with repetitive copy      | Kept strictly to 4 authentic localities with 100% unique copy.                                                               | **PASS** |
+| **Fake Address Penalties**  | Severe if non-existent virtual offices are claimed | Single physical address registered in Dasarahalli. Neighborhood pages explicitly identified as on-site visit coverage areas. | **PASS** |
+| **NAP Inconsistency**       | High if citations list varying phone/address data  | Standardized on `3J64+827, Balaji Layout, Dasarahalli, Bengaluru 560024` across all footers, contact pages, and schemas.     | **PASS** |
+| **Google Maps Integration** | Low                                                | Embedded Google Maps iframe links directly to verified Google Business Profile.                                              | **PASS** |
 
 ---
 

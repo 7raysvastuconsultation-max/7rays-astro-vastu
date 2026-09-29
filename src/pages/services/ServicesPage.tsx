@@ -299,7 +299,8 @@ export const ServicesPage: React.FC = () => {
                     Non-Demolition Vastu
                   </h3>
                   <p className="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm">
-                    Harmonize rented flats, apartments, and corporate offices using elemental metallic inlays with zero structural damage.
+                    Harmonize rented flats, apartments, and corporate offices using elemental
+                    metallic inlays with zero structural damage.
                   </p>
                 </div>
               </div>

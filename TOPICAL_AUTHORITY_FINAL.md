@@ -145,14 +145,14 @@ LOCAL MASTER HUB: /locations/bangalore
 
 ## 3. Topical Health & Gap Assessment
 
-| Topical Area | Current Strength | Gaps Identified | Status | Post-Launch Strategic Action |
-| :--- | :--- | :--- | :--- | :--- |
-| **Residential Vastu** | **Very High** | Strong coverage across apartments, villas, and 16 zones. | Fully Covered | Publish seasonal guides on Griha Pravesh dates. |
-| **Commercial Vastu** | **Very High** | Comprehensive retail, executive, and tech campus coverage. | Fully Covered | Monitor search queries for co-working space layouts. |
-| **Non-Demolition** | **Exceptional** | Distinctive pillar with Panchatattva metal strips. | Fully Covered | Establish as flagship knowledge asset. |
-| **Vedic Astrology** | **High** | Strong birth chart, career, business, and compatibility depth. | Fully Covered | Add illustrative planetary transit case scenarios. |
-| **Bengaluru Local** | **High** | Verified headquarters + 4 distinct micro-localities. | Fully Covered | Avoid expanding into fake city branches. |
-| **International NRI** | **High** | Centralized hub preventing thin country doorway pages. | Fully Covered | Monitor US/UAE NRI query acquisition in GSC. |
+| Topical Area          | Current Strength | Gaps Identified                                                | Status        | Post-Launch Strategic Action                         |
+| :-------------------- | :--------------- | :------------------------------------------------------------- | :------------ | :--------------------------------------------------- |
+| **Residential Vastu** | **Very High**    | Strong coverage across apartments, villas, and 16 zones.       | Fully Covered | Publish seasonal guides on Griha Pravesh dates.      |
+| **Commercial Vastu**  | **Very High**    | Comprehensive retail, executive, and tech campus coverage.     | Fully Covered | Monitor search queries for co-working space layouts. |
+| **Non-Demolition**    | **Exceptional**  | Distinctive pillar with Panchatattva metal strips.             | Fully Covered | Establish as flagship knowledge asset.               |
+| **Vedic Astrology**   | **High**         | Strong birth chart, career, business, and compatibility depth. | Fully Covered | Add illustrative planetary transit case scenarios.   |
+| **Bengaluru Local**   | **High**         | Verified headquarters + 4 distinct micro-localities.           | Fully Covered | Avoid expanding into fake city branches.             |
+| **International NRI** | **High**         | Centralized hub preventing thin country doorway pages.         | Fully Covered | Monitor US/UAE NRI query acquisition in GSC.         |
 
 ---
 

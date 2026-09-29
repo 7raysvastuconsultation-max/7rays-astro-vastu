@@ -62,8 +62,10 @@ const staticRoutes = [
 const locationSlugs = ['indiranagar', 'hsr-layout', 'koramangala', 'whitefield']
 
 const blogSlugs = [
+  'vastu-for-modern-apartments-in-bangalore',
   'vastu-remedies-without-demolition-modern-apartments',
-  'how-geopathic-stress-causes-insomnia-and-fatigue',
+  'vastu-principles-every-homeowner-should-know',
+  'best-directions-for-home-office',
   'master-bedroom-vastu-guidelines',
   'kitchen-vastu-direction-guide',
   'bathroom-toilet-vastu-remedies',
@@ -73,6 +75,7 @@ const blogSlugs = [
   'retail-store-and-showroom-vastu',
   'restaurant-and-hospitality-vastu',
   'factory-machinery-and-raw-material-vastu',
+  'how-geopathic-stress-causes-insomnia-and-fatigue',
   'what-is-vedic-astrology-birth-chart-guide',
   'career-astrology-professional-path-guidelines',
   'astrology-vs-vastu-difference-and-synthesis',

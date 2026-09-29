@@ -48,6 +48,7 @@ DNS cutover and live Google telemetry tracking remain **PENDING** until initiate
 Once the website owner initiates DNS cutover following [`DOMAIN_CONNECTION_CHECKLIST.md`](file:///Users/shekharyadav/Desktop/Projects%20/7rays%20Astro%20Vastu/DOMAIN_CONNECTION_CHECKLIST.md), the following 3-phase execution roadmap must be followed:
 
 ### Phase A: Immediate Launch Verification (Days 1 to 7) — `[PENDING]`
+
 1. **DNS Propagation Smoke Test:**
    - Verify `curl -I https://7raysastrovastu.in` returns HTTP 200 OK with valid SSL certificate.
    - Verify `http://` redirects 301 to `https://`.
@@ -70,6 +71,7 @@ Once the website owner initiates DNS cutover following [`DOMAIN_CONNECTION_CHECK
 ---
 
 ### Phase B: Indexation & Telemetry Tracking (Days 8 to 30) — `[PENDING]`
+
 1. **Search Console Coverage Monitoring:**
    - Check **Page Indexing** report. Confirm steady progression toward 59 indexed canonical URLs.
    - Investigate any URLs reported as "Discovered - currently not indexed" or "Crawled - currently not indexed".
@@ -84,6 +86,7 @@ Once the website owner initiates DNS cutover following [`DOMAIN_CONNECTION_CHECK
 ---
 
 ### Phase C: Topical Growth & Optimization (Days 31 to 90) — `[PENDING]`
+
 1. **Query Opportunity Mining:**
    - Identify queries ranking on page 2 (positions 11–20) with high impressions.
    - Add targeted FAQ answers or supporting paragraphs to the owning page to elevate rankings into the top 5.

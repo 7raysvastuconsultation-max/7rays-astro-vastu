@@ -8,15 +8,15 @@
 
 ## 1. Automated Quality Gate Scorecard
 
-| Check / Gate | Command / Test | Result | Details |
-| :--- | :--- | :--- | :--- |
+| Check / Gate                    | Command / Test              | Result   | Details                                                                                                                          |
+| :------------------------------ | :-------------------------- | :------- | :------------------------------------------------------------------------------------------------------------------------------- |
 | **Business Truth Verification** | `npm run validate:business` | **PASS** | Validates Consultant: Rishwa Sinha (5+ years exp), Location: Dasarahalli, Bengaluru 560024. 0 fake awards, reviews, or branches. |
-| **TypeScript Typecheck** | `npm run typecheck` | **PASS** | `tsc -b` completed with 0 errors across all routes, pages, and components. |
-| **ESLint Quality** | `npm run lint` | **PASS** | 0 errors, 0 warnings. Strict code quality enforced. |
-| **Prettier Format Check** | `npm run format:check` | **PASS** | All source files conform to standard workspace formatting rules. |
-| **Production Build** | `npm run build` | **PASS** | Vite production bundle generated cleanly in ~680ms. |
-| **Sitemap Generation** | Automated post-build script | **PASS** | Exactly 59 canonical indexable routes generated into `dist/` and `public/`. |
-| **Robots.txt Output** | Automated post-build script | **PASS** | Points exclusively to `https://7raysastrovastu.in/sitemap.xml`. |
+| **TypeScript Typecheck**        | `npm run typecheck`         | **PASS** | `tsc -b` completed with 0 errors across all routes, pages, and components.                                                       |
+| **ESLint Quality**              | `npm run lint`              | **PASS** | 0 errors, 0 warnings. Strict code quality enforced.                                                                              |
+| **Prettier Format Check**       | `npm run format:check`      | **PASS** | All source files conform to standard workspace formatting rules.                                                                 |
+| **Production Build**            | `npm run build`             | **PASS** | Vite production bundle generated cleanly in ~680ms.                                                                              |
+| **Sitemap Generation**          | Automated post-build script | **PASS** | Exactly 59 canonical indexable routes generated into `dist/` and `public/`.                                                      |
+| **Robots.txt Output**           | Automated post-build script | **PASS** | Points exclusively to `https://7raysastrovastu.in/sitemap.xml`.                                                                  |
 
 ---
 
@@ -53,14 +53,14 @@
 
 The code is 100% complete. The following physical and account assets are ready for owner integration during/after domain connection:
 
-| Asset / Action | Current Code State | Owner Action Required | Priority |
-| :--- | :--- | :--- | :--- |
-| **High-Res Consultant Photo** | High-quality branded placeholder at `/images/rishwa-sinha.jpg` | Replace with high-resolution professional studio portrait of Rishwa Sinha if desired. | Medium |
-| **Office & Consultation Photos** | Crisp architectural photos in place | Capture photos of the Dasarahalli office interior and consultation table for Google Business Profile. | Medium |
-| **Resend / SendGrid API Key** | `/api/contact` handles submission safely and logs to edge runtime | Provide `RESEND_API_KEY` in Cloudflare Pages dashboard under **Settings > Environment Variables** to enable automated email delivery to `7raysvastuconsultation@gmail.com`. | High |
-| **Google Search Console** | Prepared with sitemap ready | Add domain property `7raysastrovastu.in` in Google Search Console once nameservers/DNS propagate. | High |
-| **Google Analytics 4** | Configured in `src/config/env.ts` | Set `VITE_GA_ID` in Cloudflare Pages environment variables with your production GA4 Measurement ID (`G-XXXXXXXXXX`). | Medium |
-| **Google Business Profile** | Verified address: Dasarahalli, Bengaluru 560024 | Ensure website link in Google Business Profile points to canonical `https://7raysastrovastu.in`. | High |
+| Asset / Action                   | Current Code State                                                | Owner Action Required                                                                                                                                                       | Priority |
+| :------------------------------- | :---------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :------- |
+| **High-Res Consultant Photo**    | High-quality branded placeholder at `/images/rishwa-sinha.jpg`    | Replace with high-resolution professional studio portrait of Rishwa Sinha if desired.                                                                                       | Medium   |
+| **Office & Consultation Photos** | Crisp architectural photos in place                               | Capture photos of the Dasarahalli office interior and consultation table for Google Business Profile.                                                                       | Medium   |
+| **Resend / SendGrid API Key**    | `/api/contact` handles submission safely and logs to edge runtime | Provide `RESEND_API_KEY` in Cloudflare Pages dashboard under **Settings > Environment Variables** to enable automated email delivery to `7raysvastuconsultation@gmail.com`. | High     |
+| **Google Search Console**        | Prepared with sitemap ready                                       | Add domain property `7raysastrovastu.in` in Google Search Console once nameservers/DNS propagate.                                                                           | High     |
+| **Google Analytics 4**           | Configured in `src/config/env.ts`                                 | Set `VITE_GA_ID` in Cloudflare Pages environment variables with your production GA4 Measurement ID (`G-XXXXXXXXXX`).                                                        | Medium   |
+| **Google Business Profile**      | Verified address: Dasarahalli, Bengaluru 560024                   | Ensure website link in Google Business Profile points to canonical `https://7raysastrovastu.in`.                                                                            | High     |
 
 ---
 
@@ -69,6 +69,7 @@ The code is 100% complete. The following physical and account assets are ready f
 The 7Rays Astro Vastu codebase is **technically sound, visually polished, SEO hardened, and fully ready for domain cutover**.
 
 Whenever ready:
+
 1. Follow [`DOMAIN_CONNECTION_CHECKLIST.md`](file:///Users/shekharyadav/Desktop/Projects%20/7rays%20Astro%20Vastu/DOMAIN_CONNECTION_CHECKLIST.md) to point `7raysastrovastu.in` from Hostinger to Cloudflare Pages.
 2. Complete Google Search Console verification.
 3. Submit `https://7raysastrovastu.in/sitemap.xml`.

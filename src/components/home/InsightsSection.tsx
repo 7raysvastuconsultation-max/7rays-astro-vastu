@@ -5,33 +5,33 @@ import { ArrowRight } from 'lucide-react'
 export const InsightsSection: React.FC = () => {
   const articles = [
     {
-      title: '7 Vastu Principles Every Homeowner Should Know',
-      slug: '7-vastu-principles-every-homeowner-should-know',
+      title: 'Vastu Principles Every Homeowner Should Know',
+      slug: 'vastu-principles-every-homeowner-should-know',
       category: 'Home Vastu',
       image: '/images/insights/insight-principles.jpg',
     },
     {
-      title: 'Vastu for Modern Apartments',
+      title: 'Vastu for Modern Apartments Without Demolition',
       slug: 'vastu-remedies-without-demolition-modern-apartments',
       category: 'Apartments',
       image: '/images/insights/insight-apartments.jpg',
     },
     {
       title: 'Best Directions for Your Home Office',
-      slug: 'best-directions-for-home-office-vastu',
+      slug: 'best-directions-for-home-office',
       category: 'Workspace',
       image: '/images/insights/insight-home-office.jpg',
     },
     {
-      title: 'Vastu & Commercial Spaces',
-      slug: 'vastu-for-commercial-and-retail-spaces',
+      title: 'Vastu for Commercial & Retail Spaces',
+      slug: 'retail-store-and-showroom-vastu',
       category: 'Commercial',
       image: '/images/insights/insight-commercial.jpg',
     },
     {
-      title: 'Understanding the Five Elements',
-      slug: 'understanding-the-five-elements-pancha-tattva',
-      category: 'Philosophy',
+      title: 'Astrology vs Vastu: Differences & Synergy',
+      slug: 'astrology-vs-vastu-difference-and-synthesis',
+      category: 'Vedic Wisdom',
       image: '/images/insights/insight-five-elements.jpg',
     },
   ]
@@ -79,14 +79,14 @@ export const InsightsSection: React.FC = () => {
                     {article.category}
                   </span>
                   <h3 className="mt-1 line-clamp-2 font-serif text-sm font-bold text-slate-900 transition group-hover:text-amber-800">
-                    <Link to={`/insights/${article.slug}`}>{article.title}</Link>
+                    <Link to={`/blog/${article.slug}`}>{article.title}</Link>
                   </h3>
                 </div>
               </div>
 
               <div className="p-4 pt-0 sm:px-5 sm:pb-5">
                 <Link
-                  to={`/insights/${article.slug}`}
+                  to={`/blog/${article.slug}`}
                   className="inline-flex items-center gap-1 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read More</span>

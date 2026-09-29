@@ -21,6 +21,7 @@
 ## 2. Pre-Cutover Verification Gate
 
 Before initiating DNS changes in Hostinger, verify that the following local checks pass:
+
 - [x] All 59 canonical URLs in sitemap resolve to `https://7raysastrovastu.in`
 - [x] Zero references to `.com` in production assets, schemas, or metadata
 - [x] Zero references to `localhost`, `127.0.0.1`, or temporary preview URLs
@@ -34,6 +35,7 @@ Before initiating DNS changes in Hostinger, verify that the following local chec
 ## 3. Step-by-Step Domain Connection Procedure
 
 ### Step A: Configure Custom Domain in Cloudflare Pages
+
 1. Log in to the Cloudflare Dashboard (`https://dash.cloudflare.com`).
 2. Navigate to **Workers & Pages** > Select the **7rays-astro-vastu** project.
 3. Click on the **Custom domains** tab.
@@ -65,11 +67,12 @@ Before initiating DNS changes in Hostinger, verify that the following local chec
      - Target: `7rays-astro-vastu.pages.dev`
      - TTL: `Auto` or `300` seconds
 
-*(Note: If Hostinger does not permit CNAME flattening on the apex `@` record, switch nameservers to Cloudflare: copy existing MX and TXT records into Cloudflare DNS first before changing nameservers).*
+_(Note: If Hostinger does not permit CNAME flattening on the apex `@` record, switch nameservers to Cloudflare: copy existing MX and TXT records into Cloudflare DNS first before changing nameservers)._
 
 ---
 
 ### Step C: Cloudflare SSL/TLS Configuration
+
 1. In the Cloudflare Dashboard, go to **SSL/TLS** > **Overview**.
 2. Set encryption mode to **Full (strict)**.
 3. In **SSL/TLS** > **Edge Certificates**:
@@ -81,7 +84,9 @@ Before initiating DNS changes in Hostinger, verify that the following local chec
 ---
 
 ### Step D: Apex to WWW Redirect Rule
+
 To ensure all visitors and crawlers resolve to the canonical `https://7raysastrovastu.in`:
+
 1. In Cloudflare Dashboard, go to **Rules** > **Page Rules** (or **Redirect Rules**).
 2. Create a rule:
    - **Field:** Incoming request URL
@@ -96,6 +101,7 @@ To ensure all visitors and crawlers resolve to the canonical `https://7raysastro
 Once DNS records have propagated (typically 5 to 30 minutes):
 
 ### 1. HTTP & HTTPS Status Code Verification
+
 Run the following curl commands in your terminal to verify proper redirects:
 
 ```bash
@@ -110,6 +116,7 @@ curl -I https://7raysastrovastu.in
 ```
 
 ### 2. Sitemap & Robots.txt Verification
+
 - Browse to `https://7raysastrovastu.in/robots.txt`
   - Verify that `Sitemap: https://7raysastrovastu.in/sitemap.xml` is present.
   - Verify that no indexable paths are blocked.
@@ -117,6 +124,7 @@ curl -I https://7raysastrovastu.in
   - Verify that all 59 canonical URLs return HTTP 200 with matching `<loc>`.
 
 ### 3. Google Search Console & Analytics Setup
+
 1. Open [Google Search Console](https://search.google.com/search-console).
 2. Add a **Domain Property** for `7raysastrovastu.in`.
 3. Verify ownership via DNS TXT record in Hostinger/Cloudflare.
@@ -127,6 +135,7 @@ curl -I https://7raysastrovastu.in
    - Test real-time event streaming.
 
 ### 4. Interactive Form & Lead Generation Test
+
 - Navigate to `https://7raysastrovastu.in/contact`.
 - Submit a test inquiry through the contact form.
 - Verify that the submission triggers a success state in the UI.

@@ -105,7 +105,9 @@ export const CaseStudyDetailPage: React.FC = () => {
 
         {/* Related Services Recommendation */}
         <div className="mt-12 rounded-xl border border-slate-800 bg-slate-900/30 p-6">
-          <h3 className="font-serif text-base font-bold text-slate-100">Related Spatial Services</h3>
+          <h3 className="font-serif text-base font-bold text-slate-100">
+            Related Spatial Services
+          </h3>
           <p className="mt-1 text-xs text-slate-400">
             Learn more about the specific consultation frameworks referenced in this scenario:
           </p>

@@ -17,19 +17,20 @@ Production builds complete in **~840ms** using Vite and Rollup, generating light
 
 ## 2. Core Web Vitals (CWV) Architectural Baselines
 
-| Core Web Vital | Metric Target | Technical Implementation | Status |
-| :--- | :--- | :--- | :--- |
-| **LCP (Largest Contentful Paint)** | < 2.5s | Homepage and service hero images preloaded with `fetchpriority="high"`, `loading="eager"`, and `decoding="sync"`. | **PASS** |
-| **INP (Interaction to Next Paint)** | < 200ms | Lightweight React 19 state machine; no heavy external animation libraries; pure CSS transitions for hover and modal states. | **PASS** |
-| **CLS (Cumulative Layout Shift)** | < 0.1 | Explicit `width` and `height` dimensions hardcoded on all `<img>` elements; font display swap enabled. | **PASS** |
-| **FCP (First Contentful Paint)** | < 1.8s | Critical CSS inlined/bundled in single lightweight stylesheet (~15 kB gzipped); HTML response streamable. | **PASS** |
-| **TTFB (Time to First Byte)** | < 800ms | Cloudflare Pages edge hosting ensures global TTFB < 50ms once DNS is connected. | **PASS** |
+| Core Web Vital                      | Metric Target | Technical Implementation                                                                                                    | Status   |
+| :---------------------------------- | :------------ | :-------------------------------------------------------------------------------------------------------------------------- | :------- |
+| **LCP (Largest Contentful Paint)**  | < 2.5s        | Homepage and service hero images preloaded with `fetchpriority="high"`, `loading="eager"`, and `decoding="sync"`.           | **PASS** |
+| **INP (Interaction to Next Paint)** | < 200ms       | Lightweight React 19 state machine; no heavy external animation libraries; pure CSS transitions for hover and modal states. | **PASS** |
+| **CLS (Cumulative Layout Shift)**   | < 0.1         | Explicit `width` and `height` dimensions hardcoded on all `<img>` elements; font display swap enabled.                      | **PASS** |
+| **FCP (First Contentful Paint)**    | < 1.8s        | Critical CSS inlined/bundled in single lightweight stylesheet (~15 kB gzipped); HTML response streamable.                   | **PASS** |
+| **TTFB (Time to First Byte)**       | < 800ms       | Cloudflare Pages edge hosting ensures global TTFB < 50ms once DNS is connected.                                             | **PASS** |
 
 ---
 
 ## 3. Production Bundle & Asset Distribution Analysis
 
 ### JavaScript Chunking Strategy
+
 - **Shared Vendor Chunk (`vendor-*.js`):** ~65.8 kB gzipped (Contains React 19 runtime and React Router).
 - **Core App Shell (`index-*.js`):** ~42.1 kB gzipped (Header, Footer, Floating Actions, Modal System).
 - **Icon Utility Chunk (`icons-*.js`):** ~11.4 kB gzipped (Isolated Lucide icons).
@@ -37,11 +38,13 @@ Production builds complete in **~840ms** using Vite and Rollup, generating light
 - **Initial Download Payload:** **~119 kB gzipped**, far below the 350 kB mobile performance ceiling recommended for mobile networks.
 
 ### CSS & Styling Engine
+
 - **Engine:** Tailwind CSS v4 via `@tailwindcss/vite`.
 - **Bundle Size:** Single stylesheet `index-*.css` at **15.1 kB gzipped**.
 - **Dead Code Elimination:** Zero unused classes included in production output.
 
 ### Image Optimization
+
 - All visual assets converted to WebP / compressed JPG.
 - Below-the-fold media uses `loading="lazy"` and `decoding="async"`.
 - SVGs optimized and sanitized.

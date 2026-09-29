@@ -39,6 +39,7 @@ Production Build Status              : PASSED (Built cleanly in ~680ms)
 ## 2. Granular Route Breakdown by Pillar
 
 ### A. Core Brand, Process & Trust Pages (12 Routes)
+
 1. `/` — Flagship Homepage (Hero, Trust bar, Services, Process, 7 Rays, Social proof, Pre-footer)
 2. `/about` — Brand Story, Philosophy, and Verified Background of Rishwa Sinha
 3. `/consultant/rishwa-sinha` — Verified Lead Consultant Profile & Ethics
@@ -55,6 +56,7 @@ Production Build Status              : PASSED (Built cleanly in ~680ms)
 ---
 
 ### B. Vastu Services Architecture (11 Routes)
+
 13. `/vastu-services` — Master Vastu Consultation Gateway
 14. `/vastu/residential` — Residential Vastu Consultation (Homes, Villas, Duplexes)
 15. `/vastu/apartment-vastu` — High-Rise Apartment & Leased Flat Spatial Balancing
@@ -64,11 +66,12 @@ Production Build Status              : PASSED (Built cleanly in ~680ms)
 19. `/vastu/industrial` — Factory Floor Plans, Machinery & Heavy Industry Vastu
 20. `/vastu/non-demolition` — Panchatattva Metallic Inlays & Zero-Civil Destruction Remedies
 21. `/vastu-services/vastu-audit` — Comprehensive Property Diagnostic Audits & CAD Verification
-*(Direct route aliases seamlessly handled: `/vastu/office`, `/vastu/home`, `/vastu/flat`, `/vastu/plot`, `/vastu/interior`, `/vastu/consultation`)*
+    _(Direct route aliases seamlessly handled: `/vastu/office`, `/vastu/home`, `/vastu/flat`, `/vastu/plot`, `/vastu/interior`, `/vastu/consultation`)_
 
 ---
 
 ### C. Astrology Services Architecture (5 Routes)
+
 22. `/astrology` — Vedic Astrology Services Gateway & Parashari Principles
 23. `/astrology/birth-chart` — Janam Kundli Analysis & 12 Bhavas Interpretation
 24. `/astrology/career` — Career Astrology, 10th House Karmas & Promotion Timing
@@ -78,6 +81,7 @@ Production Build Status              : PASSED (Built cleanly in ~680ms)
 ---
 
 ### D. Bengaluru Local SEO Architecture (7 Routes)
+
 27. `/locations/bangalore` — Bengaluru Master Hub & Dasarahalli Headquarters Anchor
 28. `/locations/bangalore/residential-vastu` — Bangalore Residential & Apartment Vastu
 29. `/locations/bangalore/commercial-vastu` — Bangalore Tech Parks & Commercial Showroom Vastu
@@ -93,11 +97,13 @@ Production Build Status              : PASSED (Built cleanly in ~680ms)
 ---
 
 ### E. Global & International NRI Consultation Architecture (1 Route)
+
 38. `/international` — Global NRI Remote Vastu Hub (CAD Floor Plans, Satellite Geocoding, Timezone Alignment)
 
 ---
 
 ### F. Illustrative Consultation Scenarios (6 Routes)
+
 39. `/case-studies/luxury-residence-mumbai` — High-Rise Sea-Facing Penthouse Non-Demolition Scenario
 40. `/case-studies/corporate-office-bangalore` — 250-Seat Outer Ring Road Tech Workspace Scenario
 41. `/case-studies/villa-goa` — Coastal Vacation Villa Energy Stabilization Scenario
@@ -108,6 +114,7 @@ Production Build Status              : PASSED (Built cleanly in ~680ms)
 ---
 
 ### G. Informational Insights & Educational Guides (16 Routes)
+
 45. `/insights` — Central Blog & Insights Publication Hub
 46. `/blog/vastu-remedies-without-demolition-modern-apartments` — Non-Demolition Remedies Guide
 47. `/blog/how-geopathic-stress-causes-insomnia-and-fatigue` — Geopathic Earth Radiation Guide

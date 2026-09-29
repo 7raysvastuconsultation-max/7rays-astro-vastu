@@ -14,6 +14,7 @@ The final phase of development, content completion, technical SEO hardening, and
 The web application is now a production-grade, authoritative digital presence representing the verified practice of Lead Consultant **Rishwa Sinha** in Bengaluru, India.
 
 ### Key Milestones Achieved:
+
 1. **Domain Sanitation:** 100% canonical domain purity. The authoritative production domain `https://7raysastrovastu.in` is strictly enforced across all 59 indexable routes, sitemaps, robots.txt, canonical `<link>` tags, OpenGraph cards, Twitter cards, and JSON-LD schema graphs.
 2. **Comprehensive Content & Service Depth:** No placeholder text, empty sections, or unfinished pages remain. Major service hubs (`/vastu/residential`, `/vastu/commercial`, `/vastu/non-demolition`, `/vastu-services/vastu-audit`, `/international`, `/astrology`) feature exhaustive copy, practical problem-solution breakdowns, and client guidance.
 3. **AEO & GEO Extractability:** Every major commercial and informational page features a dedicated 40–60 word direct-answer block immediately below natural-language question headings (`<h2>`/`<h3>`), supported by comparative tables and structured step-by-step processes designed for ingestion by Google AI Overviews, Perplexity AI, and search generative engines.
@@ -31,15 +32,15 @@ The web application is now a production-grade, authoritative digital presence re
 
 All automated build and quality suites passed cleanly with exit code 0:
 
-| Automated Quality Suite | Execution Command | Result | Details |
-| :--- | :--- | :--- | :--- |
-| **Business Truth Validation** | `npm run validate:business` | **PASS** | Validates Consultant: Rishwa Sinha, Headquarters: Dasarahalli, Bengaluru 560024. 0 fake numbers, emails, reviews, or branches. |
-| **TypeScript Compilation** | `npm run typecheck` | **PASS** | `tsc -b --noEmit` completed with 0 errors across all routes, pages, and components. |
-| **ESLint Static Analysis** | `npm run lint` | **PASS** | 0 warnings, 0 errors. Strict code style and safety rules verified. |
-| **Prettier Formatting** | `npm run format:check` | **PASS** | All source files conform to standard workspace formatting rules. |
-| **Production Bundle Build** | `npm run build` | **PASS** | Vite production bundle generated cleanly in ~680ms. |
-| **Sitemap XML Output** | Automated post-build pipeline | **PASS** | Exactly 59 canonical indexable routes generated into `dist/sitemap.xml` and `public/sitemap.xml`. |
-| **Robots.txt Output** | Automated post-build pipeline | **PASS** | Points cleanly to `https://7raysastrovastu.in/sitemap.xml`. |
+| Automated Quality Suite       | Execution Command             | Result   | Details                                                                                                                        |
+| :---------------------------- | :---------------------------- | :------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| **Business Truth Validation** | `npm run validate:business`   | **PASS** | Validates Consultant: Rishwa Sinha, Headquarters: Dasarahalli, Bengaluru 560024. 0 fake numbers, emails, reviews, or branches. |
+| **TypeScript Compilation**    | `npm run typecheck`           | **PASS** | `tsc -b --noEmit` completed with 0 errors across all routes, pages, and components.                                            |
+| **ESLint Static Analysis**    | `npm run lint`                | **PASS** | 0 warnings, 0 errors. Strict code style and safety rules verified.                                                             |
+| **Prettier Formatting**       | `npm run format:check`        | **PASS** | All source files conform to standard workspace formatting rules.                                                               |
+| **Production Bundle Build**   | `npm run build`               | **PASS** | Vite production bundle generated cleanly in ~680ms.                                                                            |
+| **Sitemap XML Output**        | Automated post-build pipeline | **PASS** | Exactly 59 canonical indexable routes generated into `dist/sitemap.xml` and `public/sitemap.xml`.                              |
+| **Robots.txt Output**         | Automated post-build pipeline | **PASS** | Points cleanly to `https://7raysastrovastu.in/sitemap.xml`.                                                                    |
 
 ---
 
@@ -70,12 +71,15 @@ Cloudflare Edge Runtime      : 100% Complete (Zero Node.js built-ins in function
 The codebase is **100% ready for deployment**. The final steps to connect the domain and launch are:
 
 ### Real-World Owner Assets (To update when ready):
+
 1. **High-Resolution Portrait:** Upload a studio portrait of Lead Consultant Rishwa Sinha to replace `/images/rishwa-sinha.jpg`.
 2. **Office Photographs:** Add photos of the Dasarahalli consultation office to the Google Business Profile listing.
 3. **Resend Email API Key:** Add `RESEND_API_KEY` to the Cloudflare Pages environment variables dashboard to enable email delivery from `/api/contact` to `7raysvastuconsultation@gmail.com`.
 
 ### Domain Connection Instructions:
+
 Follow [`DOMAIN_CONNECTION_CHECKLIST.md`](file:///Users/shekharyadav/Desktop/Projects%20/7rays%20Astro%20Vastu/DOMAIN_CONNECTION_CHECKLIST.md):
+
 1. Log in to **Hostinger hPanel** > **Domains** > `7raysastrovastu.in` > **DNS / Nameservers**.
 2. **Preserve Email Records:** Leave all `MX` and mail-related `TXT` records untouched.
 3. **Add Web CNAME Records:** Point `@` and `www` to `7rays-astro-vastu.pages.dev`.

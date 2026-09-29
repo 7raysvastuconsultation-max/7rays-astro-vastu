@@ -11,14 +11,14 @@
 
 ## 1. Quality Gates & Validation Summary
 
-| Gate / Audit Command | Scope | Result | Status |
-| :--- | :--- | :--- | :--- |
-| `npm run validate:business` | Verified business truth assertions (name, NAP, credentials, 0 fake claims) | 0 violations found | **PASS** |
-| `npm run typecheck` | TypeScript compilation (`tsc -b`) across 59 routes and components | 0 errors | **PASS** |
-| `npm run lint` | ESLint static code analysis across entire codebase | 0 errors, 0 warnings | **PASS** |
-| `npm run build` | Vite production bundle generation | Built in ~840ms | **PASS** |
-| `sitemap.xml` | Canonical sitemap output (`dist/sitemap.xml` & `public/sitemap.xml`) | 59/59 canonical URLs | **PASS** |
-| `robots.txt` | Crawler directives & sitemap reference | Points to canonical XML | **PASS** |
+| Gate / Audit Command        | Scope                                                                      | Result                  | Status   |
+| :-------------------------- | :------------------------------------------------------------------------- | :---------------------- | :------- |
+| `npm run validate:business` | Verified business truth assertions (name, NAP, credentials, 0 fake claims) | 0 violations found      | **PASS** |
+| `npm run typecheck`         | TypeScript compilation (`tsc -b`) across 59 routes and components          | 0 errors                | **PASS** |
+| `npm run lint`              | ESLint static code analysis across entire codebase                         | 0 errors, 0 warnings    | **PASS** |
+| `npm run build`             | Vite production bundle generation                                          | Built in ~840ms         | **PASS** |
+| `sitemap.xml`               | Canonical sitemap output (`dist/sitemap.xml` & `public/sitemap.xml`)       | 59/59 canonical URLs    | **PASS** |
+| `robots.txt`                | Crawler directives & sitemap reference                                     | Points to canonical XML | **PASS** |
 
 ---
 

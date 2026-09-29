@@ -2,12 +2,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   FileText,
-  Users2,
   Home,
   Building2,
   Factory,
   Sparkles,
-  MapPin,
   Lightbulb,
   Search,
   ArrowRight,
@@ -19,6 +17,7 @@ import { SEOHead } from '@/components/seo/SEOHead'
 import { BreadcrumbSchema } from '@/components/seo/schemas/BreadcrumbSchema'
 import { siteConfig } from '@/config/site'
 import { ConsultationModal } from '@/components/common/ConsultationModal'
+import { blogPostsData } from '@/data/blog'
 
 export const BlogPage: React.FC = () => {
   const canonicalUrl = `${siteConfig.url}/insights`
@@ -50,180 +49,82 @@ export const BlogPage: React.FC = () => {
     }
   }
 
-  // 8 Category Filter Tabs matching Screenshot
+  // Category Filter Tabs
   const categoryTabs = [
     { label: 'All Articles', icon: FileText },
-    { label: 'Vastu Basics', icon: Users2 },
     { label: 'Residential Vastu', icon: Home },
     { label: 'Commercial Vastu', icon: Building2 },
     { label: 'Industrial Vastu', icon: Factory },
-    { label: 'Astrology', icon: Sparkles },
-    { label: 'Bangalore Insights', icon: MapPin },
-    { label: 'Tips & Guides', icon: Lightbulb },
+    { label: 'Vedic Astrology', icon: Sparkles },
+    { label: 'Geopathic Stress', icon: Lightbulb },
   ]
 
-  // 9 Exact Articles from Mockup Screenshot
-  const articles = [
+  // Map real articles from blogPostsData
+  const articles = blogPostsData.map((post) => ({
+    id: post.slug,
+    title: post.title,
+    category: post.category.toUpperCase(),
+    filterCat: post.category,
+    date: post.publishedAt,
+    readTime: `${post.readingTimeMinutes} min read`,
+    excerpt: post.excerpt,
+    image: post.coverImage,
+    slug: post.slug,
+  }))
+
+  // 5 Popular Articles from Canonical Blog Posts
+  const popularArticles = [
     {
-      id: '7-vastu-principles',
-      title: '7 Vastu Principles Every Homeowner Should Know',
-      category: 'VASTU BASICS',
-      filterCat: 'Vastu Basics',
-      date: 'Sep 20, 2026',
-      readTime: '8 min read',
-      excerpt:
-        'Discover the essential Vastu principles that can help create a harmonious, positive and prosperous home.',
+      title: 'Vastu Principles Every Homeowner Should Know',
+      readTime: '9 min read',
       image: '/images/insights/insight-principles.jpg',
       slug: 'vastu-principles-every-homeowner-should-know',
     },
     {
-      id: 'vastu-modern-apartments-bangalore',
-      title: 'Vastu for Modern Apartments in Bangalore',
-      category: 'RESIDENTIAL VASTU',
-      filterCat: 'Residential Vastu',
-      date: 'Sep 18, 2026',
-      readTime: '6 min read',
-      excerpt: 'Practical Vastu solutions for apartments, flats and high-rise living in Bangalore.',
+      title: 'Vastu Remedies Without Demolition for Apartments',
+      readTime: '9 min read',
       image: '/images/insights/insight-apartments.jpg',
-      slug: 'vastu-for-modern-apartments-in-bangalore',
+      slug: 'vastu-remedies-without-demolition-modern-apartments',
     },
     {
-      id: 'best-directions-home-office',
-      title: 'Best Directions for Your Home Office',
-      category: 'VASTU TIPS',
-      filterCat: 'Tips & Guides',
-      date: 'Sep 15, 2026',
-      readTime: '5 min read',
-      excerpt:
-        'Design a productive and positive workspace with the right Vastu directions and layout tips.',
+      title: 'Best Directions for Your Home Office Workspace',
+      readTime: '8 min read',
       image: '/images/insights/insight-home-office.jpg',
       slug: 'best-directions-for-home-office',
     },
     {
-      id: 'vastu-for-commercial-spaces',
-      title: 'Vastu for Commercial Spaces',
-      category: 'COMMERCIAL VASTU',
-      filterCat: 'Commercial Vastu',
-      date: 'Sep 12, 2026',
-      readTime: '7 min read',
-      excerpt:
-        'How Vastu can enhance business growth, customer flow and financial stability in commercial properties.',
-      image: '/images/insights/insight-commercial.jpg',
-      slug: 'vastu-for-commercial-spaces',
-    },
-    {
-      id: 'understanding-five-elements-vastu',
-      title: 'Understanding the Five Elements in Vastu',
-      category: 'VASTU KNOWLEDGE',
-      filterCat: 'Vastu Basics',
-      date: 'Sep 10, 2026',
-      readTime: '6 min read',
-      excerpt:
-        'Learn how Earth, Water, Fire, Air and Space elements influence your health, wealth and relationships.',
-      image: '/images/insights/insight-five-elements.jpg',
-      slug: 'understanding-five-elements-vastu',
-    },
-    {
-      id: 'bedroom-vastu-peace-energy',
-      title: 'Bedroom Vastu: Create Peace and Positive Energy',
-      category: 'RESIDENTIAL VASTU',
-      filterCat: 'Residential Vastu',
-      date: 'Sep 10, 2026',
-      readTime: '5 min read',
-      excerpt:
-        'Simple yet effective Vastu tips for a restful sleep, better health and stronger relationships.',
-      image: '/images/services/residential-bedroom.jpg',
-      slug: 'bedroom-vastu-create-peace-positive-energy',
-    },
-    {
-      id: 'vastu-audit-what-to-expect',
-      title: 'Vastu Audit: What to Expect and How It Works',
-      category: 'VASTU AUDIT',
-      filterCat: 'Tips & Guides',
-      date: 'Sep 20, 2026',
-      readTime: '8 min read',
-      excerpt:
-        'A complete guide to Vastu property audits, what is analysed and how it can benefit your space.',
-      image: '/images/services/vastu-audit.jpg',
-      slug: 'vastu-audit-what-to-expect-how-it-works',
-    },
-    {
-      id: 'luxury-villa-transformation-goa',
-      title: 'Case Study: Luxury Villa Transformation in Goa',
-      category: 'CASE STUDY',
-      filterCat: 'Residential Vastu',
-      date: 'Sep 01, 2026',
-      readTime: '5 min read',
-      excerpt:
-        'How Vastu principles helped create a balanced, peaceful and prosperous living space.',
-      image: '/images/projects/villa-goa.jpg',
-      slug: 'case-study-luxury-villa-transformation-goa',
-    },
-    {
-      id: 'astrology-complements-vastu',
-      title: 'How Astrology Complements Vastu in Life Planning',
-      category: 'ASTROLOGY',
-      filterCat: 'Astrology',
-      date: 'Aug 28, 2026',
-      readTime: '7 min read',
-      excerpt:
-        'Understand how Vedic astrology and Vastu together can guide you towards a more balanced and harmonious life.',
-      image: '/images/services/astrology-consultation.jpg',
-      slug: 'how-astrology-complements-vastu-life-planning',
-    },
-  ]
-
-  // 5 Popular Articles from Mockup Sidebar
-  const popularArticles = [
-    {
-      title: 'Vastu for New Home Construction',
-      readTime: '12 min read',
-      image: '/images/services/residential-vastu.jpg',
-      slug: 'vastu-for-new-home-construction',
-    },
-    {
-      title: 'Main Door Vastu: Directions & Tips',
-      readTime: '8 min read',
-      image: '/images/services/residential-new-home.jpg',
-      slug: 'main-door-vastu-directions-tips',
-    },
-    {
-      title: 'Kitchen Vastu: Best Placement & Remedies',
-      readTime: '7 min read',
-      image: '/images/services/commercial-restaurant-dining.jpg',
-      slug: 'kitchen-vastu-placement-remedies',
-    },
-    {
-      title: 'Vastu for Office Spaces',
-      readTime: '6 min read',
-      image: '/images/services/corporate-vastu.jpg',
-      slug: 'vastu-for-office-spaces',
-    },
-    {
-      title: 'Common Vastu Mistakes to Avoid',
-      readTime: '5 min read',
+      title: 'South-Facing House Vastu: Myths vs Reality',
+      readTime: '10 min read',
       image: '/images/services/residential-corrections.jpg',
-      slug: 'common-vastu-mistakes-to-avoid',
+      slug: 'south-facing-house-vastu-myths',
+    },
+    {
+      title: 'Astrology vs Vastu: Differences & Synergy',
+      readTime: '10 min read',
+      image: '/images/services/astrology-consultation.jpg',
+      slug: 'astrology-vs-vastu-difference-and-synthesis',
     },
   ]
 
-  // Categories Widget with Counts
+  // Categories Widget with dynamic counts
+  const categoryCounts = blogPostsData.reduce<Record<string, number>>((acc, post) => {
+    acc[post.category] = (acc[post.category] || 0) + 1
+    return acc
+  }, {})
+
   const categoriesList = [
-    { name: 'Vastu Basics', count: 12 },
-    { name: 'Residential Vastu', count: 18 },
-    { name: 'Commercial Vastu', count: 14 },
-    { name: 'Industrial Vastu', count: 8 },
-    { name: 'Astrology', count: 10 },
-    { name: 'Bangalore Insights', count: 15 },
-    { name: 'Tips & Guides', count: 20 },
-    { name: 'Case Studies', count: 6 },
+    { name: 'Residential Vastu', count: categoryCounts['Residential Vastu'] || 0 },
+    { name: 'Commercial Vastu', count: categoryCounts['Commercial Vastu'] || 0 },
+    { name: 'Industrial Vastu', count: categoryCounts['Industrial Vastu'] || 0 },
+    { name: 'Vedic Astrology', count: categoryCounts['Vedic Astrology'] || 0 },
+    { name: 'Geopathic Stress', count: categoryCounts['Geopathic Stress'] || 0 },
   ]
 
   // Filter logic
   const filteredArticles = articles.filter((article) => {
     const matchesCategory =
       activeCategory === 'All Articles' ||
-      article.filterCat === activeCategory ||
+      article.filterCat.toLowerCase() === activeCategory.toLowerCase() ||
       article.category.toLowerCase().includes(activeCategory.toLowerCase())
 
     const matchesSearch =
@@ -233,6 +134,14 @@ export const BlogPage: React.FC = () => {
 
     return matchesCategory && matchesSearch
   })
+
+  // Pagination calculations (9 per page)
+  const postsPerPage = 9
+  const totalPages = Math.ceil(filteredArticles.length / postsPerPage) || 1
+  const paginatedArticles = filteredArticles.slice(
+    (currentPage - 1) * postsPerPage,
+    currentPage * postsPerPage
+  )
 
   return (
     <>
@@ -370,7 +279,7 @@ export const BlogPage: React.FC = () => {
               </div>
 
               {/* 3x3 Articles Grid */}
-              {filteredArticles.length === 0 ? (
+              {paginatedArticles.length === 0 ? (
                 <div className="rounded-2xl border border-slate-200 bg-slate-50/50 p-12 text-center">
                   <p className="font-serif text-base text-slate-600">
                     No articles found matching your criteria.
@@ -387,7 +296,7 @@ export const BlogPage: React.FC = () => {
                 </div>
               ) : (
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  {filteredArticles.map((article) => (
+                  {paginatedArticles.map((article) => (
                     <article
                       key={article.id}
                       className="group flex flex-col overflow-hidden rounded-2xl border border-slate-200/70 bg-white shadow-2xs transition-all duration-300 hover:-translate-y-1 hover:border-amber-400 hover:shadow-lg"
@@ -440,56 +349,38 @@ export const BlogPage: React.FC = () => {
                 </div>
               )}
 
-              {/* Pagination */}
-              <div className="mt-12 flex items-center justify-center gap-2">
-                <button
-                  onClick={() => setCurrentPage(1)}
-                  className={`flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold transition ${
-                    currentPage === 1
-                      ? 'bg-amber-500 text-slate-950 shadow-xs'
-                      : 'border border-slate-200 text-slate-600 hover:border-amber-400'
-                  }`}
-                >
-                  1
-                </button>
-                <button
-                  onClick={() => setCurrentPage(2)}
-                  className={`flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold transition ${
-                    currentPage === 2
-                      ? 'bg-amber-500 text-slate-950 shadow-xs'
-                      : 'border border-slate-200 text-slate-600 hover:border-amber-400'
-                  }`}
-                >
-                  2
-                </button>
-                <button
-                  onClick={() => setCurrentPage(3)}
-                  className={`flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold transition ${
-                    currentPage === 3
-                      ? 'bg-amber-500 text-slate-950 shadow-xs'
-                      : 'border border-slate-200 text-slate-600 hover:border-amber-400'
-                  }`}
-                >
-                  3
-                </button>
-                <span className="px-1 text-slate-400">...</span>
-                <button
-                  onClick={() => setCurrentPage(10)}
-                  className={`flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold transition ${
-                    currentPage === 10
-                      ? 'bg-amber-500 text-slate-950 shadow-xs'
-                      : 'border border-slate-200 text-slate-600 hover:border-amber-400'
-                  }`}
-                >
-                  10
-                </button>
-                <button
-                  onClick={() => setCurrentPage((p) => Math.min(10, p + 1))}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition hover:border-amber-400 hover:text-amber-800"
-                >
-                  <ChevronRight className="h-3.5 w-3.5" />
-                </button>
-              </div>
+              {/* Dynamic Pagination */}
+              {totalPages > 1 && (
+                <div className="mt-12 flex items-center justify-center gap-2">
+                  {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+                    <button
+                      key={pageNum}
+                      onClick={() => {
+                        setCurrentPage(pageNum)
+                        window.scrollTo({ top: 400, behavior: 'smooth' })
+                      }}
+                      className={`flex h-8 w-8 items-center justify-center rounded-full text-xs font-bold transition ${
+                        currentPage === pageNum
+                          ? 'bg-amber-500 text-slate-950 shadow-xs'
+                          : 'border border-slate-200 text-slate-600 hover:border-amber-400'
+                      }`}
+                    >
+                      {pageNum}
+                    </button>
+                  ))}
+                  {currentPage < totalPages && (
+                    <button
+                      onClick={() => {
+                        setCurrentPage((p) => Math.min(totalPages, p + 1))
+                        window.scrollTo({ top: 400, behavior: 'smooth' })
+                      }}
+                      className="flex h-8 w-8 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition hover:border-amber-400 hover:text-amber-800"
+                    >
+                      <ChevronRight className="h-3.5 w-3.5" />
+                    </button>
+                  )}
+                </div>
+              )}
             </div>
 
             {/* Right Column: Sidebar Widgets (lg:col-span-4) */}
