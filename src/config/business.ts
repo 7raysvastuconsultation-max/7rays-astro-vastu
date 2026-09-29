@@ -88,8 +88,8 @@ export const businessConfig: BusinessConfig = {
   gbpUrl: 'https://maps.app.goo.gl/wcoHwGSBggq6n3Fe9',
   latitude: 13.0645,
   longitude: 77.5875,
-  websiteUrl: 'https://7raysastrovastu.com',
-  logo: 'https://7raysastrovastu.com/images/og-image.svg',
+  websiteUrl: 'https://7raysastrovastu.in',
+  logo: 'https://7raysastrovastu.in/images/og-image.svg',
   socialProfiles: {
     facebook: null,
     instagram: null,

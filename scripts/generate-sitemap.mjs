@@ -16,7 +16,7 @@ if (
   rawSiteUrl.includes('127.0.0.1') ||
   rawSiteUrl.startsWith('http://')
 ) {
-  rawSiteUrl = 'https://7raysastrovastu.com'
+  rawSiteUrl = 'https://7raysastrovastu.in'
 }
 const SITE_URL = rawSiteUrl.replace(/\/$/, '')
 const TODAY = new Date().toISOString().split('T')[0]
@@ -34,10 +34,6 @@ const staticRoutes = [
   { path: 'vastu/office-vastu', changefreq: 'weekly', priority: 0.9 },
   { path: 'vastu/corporate', changefreq: 'weekly', priority: 0.9 },
   { path: 'vastu/industrial', changefreq: 'weekly', priority: 0.9 },
-  { path: 'vastu-services/residential-vastu', changefreq: 'weekly', priority: 0.95 },
-  { path: 'vastu-services/commercial-vastu', changefreq: 'weekly', priority: 0.95 },
-  { path: 'vastu-services/industrial-vastu', changefreq: 'weekly', priority: 0.9 },
-  { path: 'vastu-services/corporate-vastu', changefreq: 'weekly', priority: 0.9 },
   { path: 'vastu-services/vastu-audit', changefreq: 'weekly', priority: 0.9 },
   { path: 'astrology', changefreq: 'weekly', priority: 0.9 },
   { path: 'astrology/birth-chart', changefreq: 'weekly', priority: 0.85 },

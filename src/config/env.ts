@@ -5,7 +5,7 @@
 
 export const env = {
   // Site & Domain
-  siteUrl: (import.meta.env.VITE_SITE_URL as string) || 'https://7raysastrovastu.com',
+  siteUrl: (import.meta.env.VITE_SITE_URL as string) || 'https://7raysastrovastu.in',
   siteName: (import.meta.env.VITE_SITE_NAME as string) || '7Rays Astro Vastu',
   defaultTitle:
     (import.meta.env.VITE_SITE_DEFAULT_TITLE as string) ||
