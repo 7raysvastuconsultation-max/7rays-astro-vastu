@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, NavLink, useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Menu, X, ArrowRight, Phone, MessageSquare, Compass } from 'lucide-react'
 import { siteConfig } from '@/config/site'
 import { env } from '@/config/env'
@@ -63,6 +63,97 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
     env.whatsAppDefaultMessage
   )}`
 
+  // Helper to determine if a navigation link should be highlighted for the current route
+  const isRouteActive = (linkPath: string, currentPath: string): boolean => {
+    if (linkPath === '/') {
+      return currentPath === '/'
+    }
+
+    if (linkPath === '/insights') {
+      return (
+        currentPath === '/insights' ||
+        currentPath.startsWith('/insights/') ||
+        currentPath === '/blog' ||
+        currentPath.startsWith('/blog/') ||
+        currentPath.startsWith('/case-studies')
+      )
+    }
+
+    if (linkPath === '/about') {
+      return (
+        currentPath === '/about' ||
+        currentPath === '/the-7-rays' ||
+        currentPath === '/process' ||
+        currentPath.startsWith('/consultant/')
+      )
+    }
+
+    if (linkPath === '/vastu/commercial') {
+      return (
+        currentPath === '/vastu/commercial' ||
+        currentPath === '/vastu/office-vastu' ||
+        currentPath === '/vastu/office' ||
+        currentPath === '/vastu-services/commercial-vastu' ||
+        currentPath === '/vastu-services/office-vastu' ||
+        currentPath === '/locations/bangalore/commercial-vastu'
+      )
+    }
+
+    if (linkPath === '/vastu/residential') {
+      return (
+        currentPath === '/vastu/residential' ||
+        currentPath === '/vastu/apartment-vastu' ||
+        currentPath === '/vastu/home' ||
+        currentPath === '/vastu/flat' ||
+        currentPath === '/vastu-services/residential-vastu' ||
+        currentPath === '/vastu-services/apartment-vastu' ||
+        currentPath === '/locations/bangalore/residential-vastu'
+      )
+    }
+
+    if (linkPath === '/vastu-services') {
+      if (
+        currentPath.includes('/commercial') ||
+        currentPath.includes('/office') ||
+        currentPath.includes('/residential') ||
+        currentPath.includes('/apartment')
+      ) {
+        return false
+      }
+      return (
+        currentPath === '/vastu-services' ||
+        currentPath === '/services' ||
+        currentPath.startsWith('/services/') ||
+        currentPath.startsWith('/vastu-services/') ||
+        currentPath === '/vastu/non-demolition' ||
+        currentPath === '/vastu/corporate' ||
+        currentPath === '/vastu/industrial' ||
+        currentPath === '/vastu/consultation' ||
+        currentPath === '/vastu/interior' ||
+        currentPath === '/vastu/plot'
+      )
+    }
+
+    if (linkPath === '/astrology') {
+      return (
+        currentPath === '/astrology' ||
+        currentPath.startsWith('/astrology/') ||
+        currentPath === '/astrology-consultation' ||
+        currentPath === '/locations/bangalore/astrology'
+      )
+    }
+
+    if (linkPath === '/international') {
+      return currentPath === '/international' || currentPath.startsWith('/international')
+    }
+
+    if (linkPath === '/contact') {
+      return currentPath === '/contact'
+    }
+
+    return currentPath === linkPath || currentPath.startsWith(`${linkPath}/`)
+  }
+
   return (
     <header
       className={`fixed top-0 right-0 left-0 z-40 transition-all duration-300 ${
@@ -90,19 +181,25 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
 
         {/* Desktop Navigation Links */}
         <nav className="hidden items-center gap-6 text-[13px] font-medium tracking-wide xl:flex">
-          {navLinks.map((link) => (
-            <NavLink
-              key={link.path}
-              to={link.path}
-              className={({ isActive }) =>
-                `transition duration-200 hover:text-amber-400 ${
-                  isActive ? 'font-semibold text-amber-400' : 'text-slate-300'
-                }`
-              }
-            >
-              {link.label}
-            </NavLink>
-          ))}
+          {navLinks.map((link) => {
+            const isActive = isRouteActive(link.path, location.pathname)
+            return (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`relative py-1.5 transition-all duration-200 ${
+                  isActive
+                    ? 'font-semibold text-amber-400 drop-shadow-[0_0_12px_rgba(251,191,36,0.35)]'
+                    : 'text-slate-300 hover:text-amber-400'
+                }`}
+              >
+                <span>{link.label}</span>
+                {isActive && (
+                  <span className="absolute right-0 -bottom-1 left-0 h-[2px] rounded-full bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.6)]" />
+                )}
+              </Link>
+            )
+          })}
         </nav>
 
         {/* Action Button Desktop */}
@@ -148,23 +245,27 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
           id="mobile-navigation-menu"
           className="animate-fadeIn border-b border-amber-500/20 bg-slate-950/98 px-6 py-6 backdrop-blur-xl xl:hidden"
         >
-          <nav className="flex flex-col space-y-4 text-sm font-medium">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.path}
-                to={link.path}
-                onClick={() => setIsMobileMenuOpen(false)}
-                className={({ isActive }) =>
-                  `border-b border-slate-900 py-1.5 transition ${
+          <nav className="flex flex-col space-y-2 text-sm font-medium">
+            {navLinks.map((link) => {
+              const isActive = isRouteActive(link.path, location.pathname)
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`flex items-center justify-between rounded-lg px-3 py-2.5 transition-all duration-200 ${
                     isActive
-                      ? 'border-amber-500/30 pl-2 font-semibold text-amber-400'
-                      : 'text-slate-300 hover:text-amber-400'
-                  }`
-                }
-              >
-                {link.label}
-              </NavLink>
-            ))}
+                      ? 'border-l-2 border-amber-400 bg-amber-500/10 font-semibold text-amber-400'
+                      : 'border-b border-slate-900/60 text-slate-300 hover:bg-slate-900/40 hover:text-amber-400'
+                  }`}
+                >
+                  <span>{link.label}</span>
+                  {isActive && (
+                    <span className="h-1.5 w-1.5 rounded-full bg-amber-400 shadow-[0_0_8px_#f59e0b]" />
+                  )}
+                </Link>
+              )
+            })}
 
             <div className="space-y-3 pt-4">
               <button
