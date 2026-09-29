@@ -83,7 +83,7 @@ export const HomePage: React.FC = () => {
             </div>
 
             {/* Main Headline in Pure Elegant White */}
-            <h1 className="font-serif text-4xl leading-[1.08] font-bold tracking-tight text-white sm:text-6xl lg:text-[68px]">
+            <h1 className="font-serif text-3xl leading-[1.12] font-bold tracking-tight text-white sm:text-5xl lg:text-[68px]">
               Align Your Space. <br />
               Transform Your Life.
             </h1>
@@ -94,10 +94,10 @@ export const HomePage: React.FC = () => {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            <div className="flex flex-col items-stretch gap-3 pt-2 sm:flex-row sm:items-center">
               <button
                 onClick={() => openBooking('hero-cta')}
-                className="group inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-7 py-3.5 text-xs font-bold text-slate-950 shadow-xl shadow-amber-500/25 transition-all duration-300 hover:from-amber-300 hover:to-amber-500 hover:shadow-amber-500/40"
+                className="group inline-flex w-full items-center justify-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-7 py-3.5 text-xs font-bold text-slate-950 shadow-xl shadow-amber-500/25 transition-all duration-300 hover:from-amber-300 hover:to-amber-500 hover:shadow-amber-500/40 active:scale-95 sm:w-auto"
               >
                 <span>Book a Consultation</span>
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -105,7 +105,7 @@ export const HomePage: React.FC = () => {
 
               <Link
                 to="/vastu-services"
-                className="inline-flex items-center gap-2 rounded-lg border border-white/25 bg-slate-900/60 px-7 py-3.5 text-xs font-semibold text-white backdrop-blur-md transition hover:border-amber-400/60 hover:bg-slate-900/80"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-white/25 bg-slate-900/60 px-7 py-3.5 text-xs font-semibold text-white backdrop-blur-md transition hover:border-amber-400/60 hover:bg-slate-900/80 active:scale-95 sm:w-auto"
               >
                 <span>Explore Our Services</span>
               </Link>

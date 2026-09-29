@@ -217,19 +217,19 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
         </div>
 
         {/* Mobile Hamburger Toggle */}
-        <div className="flex items-center gap-3 xl:hidden">
+        <div className="flex items-center gap-2.5 xl:hidden">
           <button
             onClick={() => {
               trackConversion('consultation_booking', 'Mobile Header CTA')
               onOpenConsultation()
             }}
-            className="inline-flex items-center gap-1 rounded bg-amber-500 px-3 py-1.5 text-[11px] font-bold text-slate-950 sm:hidden"
+            className="inline-flex items-center gap-1 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-3 py-1.5 text-xs font-bold text-slate-950 shadow-md shadow-amber-500/25 active:scale-95 sm:hidden"
           >
             Book
           </button>
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="rounded-lg p-2 text-slate-300 hover:text-amber-400 focus:outline-none"
+            className="flex h-11 w-11 items-center justify-center rounded-lg text-slate-300 transition hover:bg-slate-900 hover:text-amber-400 focus:outline-none active:scale-95"
             aria-label="Toggle navigation menu"
             aria-expanded={isMobileMenuOpen}
             aria-controls="mobile-navigation-menu"
@@ -243,7 +243,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
       {isMobileMenuOpen && (
         <div
           id="mobile-navigation-menu"
-          className="animate-fadeIn border-b border-amber-500/20 bg-slate-950/98 px-6 py-6 backdrop-blur-xl xl:hidden"
+          className="animate-fadeIn max-h-[calc(100vh-70px)] overflow-y-auto overscroll-contain border-b border-amber-500/20 bg-slate-950/98 px-6 py-6 backdrop-blur-2xl xl:hidden"
         >
           <nav className="flex flex-col space-y-2 text-sm font-medium">
             {navLinks.map((link) => {

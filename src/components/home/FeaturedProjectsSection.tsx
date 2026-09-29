@@ -72,7 +72,7 @@ export const FeaturedProjectsSection: React.FC = () => {
             <Link
               key={scenario.title}
               to={scenario.to}
-              className="group relative flex h-96 flex-col justify-end overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 p-6 transition-all duration-500 hover:border-amber-500/40 hover:shadow-2xl hover:shadow-amber-500/10"
+              className="group relative flex h-72 flex-col justify-end overflow-hidden rounded-2xl border border-slate-800 bg-slate-900 p-5 transition-all duration-500 hover:border-amber-500/40 hover:shadow-2xl hover:shadow-amber-500/10 sm:h-80 sm:p-6 lg:h-96"
             >
               {/* Background Photography with Zoom Effect */}
               <img

@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
       <div className="pointer-events-none absolute inset-0 bg-slate-950/90" />
       <div className="pointer-events-none absolute top-0 right-1/4 h-96 w-96 rounded-full bg-amber-500/10 blur-3xl" />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-16 pb-12 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 pt-16 pb-28 sm:px-6 sm:pb-16 lg:px-8 lg:pb-12">
         <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           {/* Col 1: Brand & Philosophy (lg:col-span-3) */}
           <div className="space-y-4 lg:col-span-3">

@@ -423,6 +423,32 @@ export const BlogPostPage: React.FC = () => {
               </ul>
             </div>
 
+            {/* Mobile Collapsible Table of Contents (Hidden on lg+ where sticky sidebar displays) */}
+            {tocItems.length > 0 && (
+              <details className="group rounded-2xl border border-amber-200/80 bg-[#FAF8F5] p-4.5 shadow-2xs lg:hidden">
+                <summary className="flex cursor-pointer list-none items-center justify-between text-xs font-bold tracking-wide text-slate-900 uppercase">
+                  <span className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-amber-500" />
+                    <span>Table of Contents ({tocItems.length} Sections)</span>
+                  </span>
+                  <span className="text-amber-700 transition-transform duration-200 group-open:rotate-180">
+                    ▼
+                  </span>
+                </summary>
+                <nav className="mt-3.5 space-y-2 border-t border-amber-200/60 pt-3">
+                  {tocItems.map((item) => (
+                    <a
+                      key={item.id}
+                      href={`#${item.id}`}
+                      className="block text-xs leading-relaxed text-slate-700 transition hover:text-amber-800"
+                    >
+                      {item.title}
+                    </a>
+                  ))}
+                </nav>
+              </details>
+            )}
+
             {/* Dynamic Markdown Content Renderer */}
             <article className="max-w-none text-slate-700">
               <MarkdownRenderer content={post.content} />

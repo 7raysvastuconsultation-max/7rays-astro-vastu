@@ -25,8 +25,8 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
       {/* Interactive Consultation Modal */}
       <ConsultationModal isOpen={isConsultationOpen} onClose={() => setIsConsultationOpen(false)} />
 
-      {/* Luxury Responsive Floating Actions (iOS bottom bar on mobile/tablet, tiny buttons on desktop) */}
-      <FloatingActions />
+      {/* Luxury Responsive Floating Actions (Call + WhatsApp + Instant Book on mobile/tablet) */}
+      <FloatingActions onOpenConsultation={() => setIsConsultationOpen(true)} />
     </div>
   )
 }
