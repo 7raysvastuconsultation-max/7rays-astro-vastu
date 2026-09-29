@@ -424,7 +424,7 @@ export const BlogPostPage: React.FC = () => {
             </div>
 
             {/* Dynamic Markdown Content Renderer */}
-            <article className="prose prose-slate max-w-none">
+            <article className="max-w-none text-slate-700">
               <MarkdownRenderer content={post.content} />
             </article>
 
