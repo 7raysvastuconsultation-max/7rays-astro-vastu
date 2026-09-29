@@ -85,23 +85,24 @@ export const SevenRaysSection: React.FC = () => {
   ]
 
   return (
-    <section className="relative overflow-hidden border-y border-amber-500/20 bg-slate-950 py-20 sm:py-24">
-      {/* Full Photographic Cosmic Starfield Background (Matching Mockup) */}
-      <img
-        src="/images/seven-rays-bg.jpg"
-        alt="Seven Rays Cosmic Energies Celestial Background"
-        loading="lazy"
-        className="pointer-events-none absolute inset-0 -z-20 h-full w-full object-cover object-center opacity-45 mix-blend-screen"
-      />
-      {/* Dark Vignette & Gradient Overlays for Crystal Clear Typography */}
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-gradient-to-r from-slate-950/95 via-slate-950/75 to-slate-950/90" />
-      <div className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(circle_at_50%_50%,rgba(21,32,66,0.6)_0%,#080d1a_85%)]" />
-      <div className="pointer-events-none absolute top-1/2 left-1/2 -z-10 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-amber-500/10 blur-[130px]" />
+    <section className="relative overflow-hidden border-y border-amber-500/20 bg-slate-950 py-16 sm:py-24">
+      {/* Background Image: Directly Related Seven Rays Architectural Sanctuary & Cosmic Beams */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <img
+          src="/images/seven-rays-bg.jpg"
+          alt="Seven Rays Cosmic Energies Celestial Sanctuary"
+          loading="eager"
+          className="h-full w-full object-cover object-center opacity-45 brightness-110 contrast-120"
+        />
+        {/* Soft edge gradient vignettes so the image remains clearly visible while foreground text maintains perfect contrast */}
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/85 via-slate-950/30 to-slate-950/85" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-950/70 via-transparent to-slate-950/80" />
+      </div>
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12 lg:gap-12">
           {/* Left Column: Heading & Philosophy */}
-          <div className="space-y-6 text-left lg:col-span-4">
+          <div className="space-y-5 text-left lg:col-span-4 lg:space-y-6">
             <div className="inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-amber-400 uppercase">
               <Sparkles className="h-3.5 w-3.5" />
               <span>THE 7 RAYS</span>
@@ -131,9 +132,9 @@ export const SevenRaysSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Center Column: Radiant 7 Rays Geometric Mandala */}
-          <div className="flex items-center justify-center py-6 lg:col-span-5">
-            <div className="relative h-[340px] w-[340px] sm:h-[400px] sm:w-[400px]">
+          {/* Center Column: Radiant 7 Rays Geometric Mandala (Responsive Scalable Architecture) */}
+          <div className="flex items-center justify-center py-4 sm:py-6 lg:col-span-5">
+            <div className="relative mx-auto aspect-square w-full max-w-[285px] sm:max-w-[360px] md:max-w-[400px]">
               {/* Outer Golden Concentric Geometry */}
               <svg
                 viewBox="0 0 400 400"
@@ -142,7 +143,7 @@ export const SevenRaysSection: React.FC = () => {
                 <circle
                   cx="200"
                   cy="200"
-                  r="180"
+                  r="175"
                   stroke="#F59E0B"
                   strokeWidth="0.75"
                   strokeDasharray="4,4"
@@ -152,7 +153,7 @@ export const SevenRaysSection: React.FC = () => {
                 <circle
                   cx="200"
                   cy="200"
-                  r="140"
+                  r="135"
                   stroke="#F59E0B"
                   strokeWidth="0.5"
                   opacity="0.25"
@@ -161,7 +162,7 @@ export const SevenRaysSection: React.FC = () => {
                 <circle
                   cx="200"
                   cy="200"
-                  r="95"
+                  r="90"
                   stroke="#F59E0B"
                   strokeWidth="1"
                   opacity="0.4"
@@ -170,8 +171,8 @@ export const SevenRaysSection: React.FC = () => {
                 {/* 7 Radiating Light Rays */}
                 {rays.map((ray, i) => {
                   const angle = (i * (360 / 7) - 90) * (Math.PI / 180)
-                  const x2 = 200 + 140 * Math.cos(angle)
-                  const y2 = 200 + 140 * Math.sin(angle)
+                  const x2 = 200 + 135 * Math.cos(angle)
+                  const y2 = 200 + 135 * Math.sin(angle)
                   return (
                     <line
                       key={ray.id}
@@ -189,21 +190,21 @@ export const SevenRaysSection: React.FC = () => {
               </svg>
 
               {/* Central Glowing Core Emblem */}
-              <div className="absolute top-1/2 left-1/2 z-10 flex h-28 w-28 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-amber-400/60 bg-slate-950/90 text-center shadow-xl shadow-amber-500/20 backdrop-blur-md sm:h-32 sm:w-32">
-                <span className="font-serif text-[11px] font-semibold text-amber-200 sm:text-xs">
+              <div className="absolute top-1/2 left-1/2 z-10 flex h-24 w-24 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-amber-400/60 bg-slate-950/90 text-center shadow-xl shadow-amber-500/20 backdrop-blur-md sm:h-28 sm:w-28 md:h-32 md:w-32">
+                <span className="font-serif text-[10px] font-semibold text-amber-200 sm:text-xs">
                   The 7 Rays
                 </span>
-                <span className="font-serif text-[13px] font-bold text-amber-400 sm:text-sm">
+                <span className="font-serif text-xs font-bold text-amber-400 sm:text-sm">
                   of Balance
                 </span>
               </div>
 
-              {/* 7 Orbiting Glowing Orbs */}
+              {/* 7 Orbiting Glowing Orbs - Percentage Positioned for Perfect Scaling Across Devices */}
               {rays.map((ray, i) => {
                 const angle = (i * (360 / 7) - 90) * (Math.PI / 180)
-                const radius = 140 // Distance from center
-                const x = 200 + radius * Math.cos(angle) - 30
-                const y = 200 + radius * Math.sin(angle) - 30
+                const radiusPercent = 33.75 // exactly (135 / 400) * 100
+                const leftPercent = 50 + radiusPercent * Math.cos(angle)
+                const topPercent = 50 + radiusPercent * Math.sin(angle)
 
                 const isCurrent = activeRay === i
 
@@ -212,24 +213,24 @@ export const SevenRaysSection: React.FC = () => {
                     key={ray.id}
                     onClick={() => setActiveRay(isCurrent ? null : i)}
                     onMouseEnter={() => setActiveRay(i)}
-                    className="group absolute flex flex-col items-center justify-center transition-transform duration-300 hover:scale-125 focus:outline-none"
-                    style={{ left: `${x}px`, top: `${y}px`, width: '60px', height: '60px' }}
+                    className="group absolute flex -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center transition-transform duration-300 hover:scale-115 focus:outline-none"
+                    style={{ left: `${leftPercent}%`, top: `${topPercent}%` }}
                     aria-label={`Ray ${ray.name}: ${ray.description}`}
                   >
                     <div
-                      className={`flex h-11 w-11 items-center justify-center rounded-full shadow-lg transition-all duration-300 ${
+                      className={`flex h-9 w-9 items-center justify-center rounded-full shadow-lg transition-all duration-300 sm:h-10 sm:w-10 md:h-11 md:w-11 ${
                         isCurrent ? 'scale-110 ring-4 ring-white/80' : ''
                       }`}
                       style={{
                         backgroundColor: ray.color,
-                        boxShadow: `0 0 25px ${ray.color}99`,
+                        boxShadow: `0 0 20px ${ray.color}99`,
                       }}
                     >
-                      <span className="text-[10px] font-bold text-slate-950 uppercase">
+                      <span className="text-[10px] font-bold text-slate-950 uppercase sm:text-xs">
                         {ray.name[0]}
                       </span>
                     </div>
-                    <span className="mt-1 text-[10px] font-semibold tracking-wider text-slate-200 drop-shadow">
+                    <span className="mt-0.5 text-[9px] font-semibold tracking-wider text-slate-200 drop-shadow sm:mt-1 sm:text-[10px]">
                       {ray.name}
                     </span>
                   </button>

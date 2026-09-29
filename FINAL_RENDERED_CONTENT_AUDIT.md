@@ -11,6 +11,7 @@
 This final audit was conducted to independently verify whether the historical bug—where `BlogPostPage.tsx` contained hardcoded South-Facing House content causing multiple blog URLs to render identical content—has been permanently and rigorously resolved.
 
 ### Core Audit Outcomes
+
 - **Dynamic Content Pipeline**: **PASS**. Content is dynamically sourced from `src/data/blog.ts` records and rendered via `MarkdownRenderer.tsx`.
 - **Content Differentiation**: **PASS**. All 18 articles feature unique introductions, customized H2 heading structures, dedicated body content, domain-specific tables, and unique FAQs.
 - **Hardcoded South-Facing Bleed**: **PASS**. Zero South-Facing text or structure leaks into non-South articles.
@@ -22,6 +23,7 @@ This final audit was conducted to independently verify whether the historical bu
 ## 2. Rendering Pipeline Trace
 
 The rendering pipeline was audited directly through the source code:
+
 ```
 [User / Bot Request: /blog/:slug]
        │
@@ -50,6 +52,7 @@ The rendering pipeline was audited directly through the source code:
 ```
 
 ### Verification Across Key URLs:
+
 1. `/blog/vastu-principles-every-homeowner-should-know`
    - Rendered H1: Foundational Vastu Principles Every Homeowner Should Know
    - Key Sections: Solar/Magnetic Energy Axes, Pancha Tattva, 16-Zone Grid, Land Slope Matrix.
@@ -100,16 +103,16 @@ The rendering pipeline was audited directly through the source code:
 
 Educational articles maintain clear informational intent and link contextually to commercial service pages without duplicating them:
 
-| Educational Article | Primary Search Intent | Internal Contextual Service Link | Commercial Service Target |
-| :--- | :--- | :--- | :--- |
-| `vastu-for-modern-apartments-in-bangalore` | Informational | Apartment Vastu Consultation | `/vastu/apartment-vastu` |
-| `vastu-remedies-without-demolition-modern-apartments` | Informational | Non-Demolition Spatial Remediation | `/vastu/non-demolition` |
-| `best-directions-for-home-office` | Informational | Commercial & Office Consultancy | `/vastu/office-vastu` |
-| `master-bedroom-vastu-guidelines` | Informational | Residential Vastu Consultation | `/vastu/residential` |
-| `factory-machinery-and-raw-material-vastu` | Informational | Industrial & Factory Vastu Planning | `/vastu/industrial` |
-| `what-is-vedic-astrology-birth-chart-guide` | Informational | Vedic Astrology Consultation | `/astrology` |
-| `career-astrology-professional-path-guidelines` | Informational | Career & Professional Astrology | `/astrology/career` |
-| `how-geopathic-stress-causes-insomnia-and-fatigue` | Informational | Scientific Energy & Vastu Audit | `/vastu-services/vastu-audit` |
+| Educational Article                                   | Primary Search Intent | Internal Contextual Service Link    | Commercial Service Target     |
+| :---------------------------------------------------- | :-------------------- | :---------------------------------- | :---------------------------- |
+| `vastu-for-modern-apartments-in-bangalore`            | Informational         | Apartment Vastu Consultation        | `/vastu/apartment-vastu`      |
+| `vastu-remedies-without-demolition-modern-apartments` | Informational         | Non-Demolition Spatial Remediation  | `/vastu/non-demolition`       |
+| `best-directions-for-home-office`                     | Informational         | Commercial & Office Consultancy     | `/vastu/office-vastu`         |
+| `master-bedroom-vastu-guidelines`                     | Informational         | Residential Vastu Consultation      | `/vastu/residential`          |
+| `factory-machinery-and-raw-material-vastu`            | Informational         | Industrial & Factory Vastu Planning | `/vastu/industrial`           |
+| `what-is-vedic-astrology-birth-chart-guide`           | Informational         | Vedic Astrology Consultation        | `/astrology`                  |
+| `career-astrology-professional-path-guidelines`       | Informational         | Career & Professional Astrology     | `/astrology/career`           |
+| `how-geopathic-stress-causes-insomnia-and-fatigue`    | Informational         | Scientific Energy & Vastu Audit     | `/vastu-services/vastu-audit` |
 
 ---
 
@@ -132,6 +135,7 @@ Educational articles maintain clear informational intent and link contextually t
 ## 6. Responsive & Layout Verification
 
 The article rendering layout was checked across all viewport tiers:
+
 - **320px & 375px (Mobile Small)**: Margins and padding scale appropriately; tables feature horizontal scroll wrappers (`overflow-x-auto`); typography remains fully legible; floating WhatsApp button does not obstruct reading text.
 - **390px (Standard Mobile)**: Single column layout with stacked author metadata and inline callouts.
 - **768px (Tablet)**: Balanced typography, 2-column FAQ layouts, and expanded hero image aspect ratio.

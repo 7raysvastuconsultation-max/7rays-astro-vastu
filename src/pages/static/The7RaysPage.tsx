@@ -16,8 +16,19 @@ export const The7RaysPage: React.FC = () => {
       />
       <BreadcrumbSchema items={[{ name: 'The 7 Rays', url: '/the-7-rays' }]} />
 
-      <div className="border-b border-amber-500/20 bg-slate-950 py-16 text-slate-100 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative overflow-hidden border-b border-amber-500/20 bg-slate-950 py-16 text-slate-100 sm:py-24">
+        {/* Atmospheric Background Image */}
+        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+          <img
+            src="/images/seven-rays-bg.jpg"
+            alt="The 7 Rays Cosmic Energies Sanctuary"
+            className="h-full w-full object-cover object-center opacity-30 brightness-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/75 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/60" />
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-bold tracking-widest text-amber-400 uppercase">
               SIGNATURE PHILOSOPHY
