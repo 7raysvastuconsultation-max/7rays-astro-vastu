@@ -1,16 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
-import {
-  Menu,
-  X,
-  ArrowRight,
-  Phone,
-  MessageSquare,
-  Compass,
-  Search,
-  ShoppingBag,
-  User,
-} from 'lucide-react'
+import { Link, useLocation } from 'react-router-dom'
+import { Menu, X, ArrowRight, Phone, MessageSquare, Compass, ShoppingBag } from 'lucide-react'
 import { siteConfig } from '@/config/site'
 import { env } from '@/config/env'
 import { trackConversion } from '@/utils/analytics'
@@ -23,14 +13,12 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-  const [navSearch, setNavSearch] = useState('')
   const location = useLocation()
-  const navigate = useNavigate()
-  const { cartCount, openCart, openAccount } = useShop()
+  const { cartCount, openCart } = useShop()
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 15)
+      setIsScrolled(window.scrollY > 20)
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
@@ -61,7 +49,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
     setIsMobileMenuOpen(false)
   }
 
-  // Navigation Links matching user mockup
   const navLinks = [
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
@@ -75,15 +62,6 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
   const whatsAppUrl = `https://wa.me/${env.whatsAppPhone}?text=${encodeURIComponent(
     env.whatsAppDefaultMessage
   )}`
-
-  const handleSearchSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (navSearch.trim()) {
-      navigate(`/shop?search=${encodeURIComponent(navSearch.trim())}`)
-    } else {
-      navigate('/shop')
-    }
-  }
 
   // Helper to determine if a navigation link should be highlighted for the current route
   const isRouteActive = (linkPath: string, currentPath: string): boolean => {
@@ -147,128 +125,112 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
     <header
       className={`fixed top-0 right-0 left-0 z-40 transition-all duration-300 ${
         isScrolled
-          ? 'border-b border-amber-500/20 bg-slate-950/98 shadow-2xl shadow-slate-950/80 backdrop-blur-md'
-          : 'border-b border-slate-900/60 bg-slate-950/95 backdrop-blur-md'
+          ? 'border-b border-amber-500/20 bg-slate-950/95 py-3.5 shadow-2xl shadow-slate-950/80 backdrop-blur-md'
+          : 'bg-gradient-to-b from-slate-950/80 via-slate-950/30 to-transparent py-5'
       }`}
     >
-      {/* Top Bar (Flipkart style with Search, Account, Cart) */}
-      <div className="mx-auto flex max-w-7xl items-center justify-between border-b border-slate-900/80 px-3 py-2.5 sm:px-6 sm:py-3 lg:px-8">
-        {/* Mobile Left: Hamburger */}
-        <div className="flex items-center gap-2 md:hidden">
-          <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="flex h-9 w-9 items-center justify-center rounded-lg text-slate-300 transition hover:bg-slate-900 hover:text-amber-400 focus:outline-none"
-            aria-label="Toggle navigation menu"
-            aria-expanded={isMobileMenuOpen}
-          >
-            {isMobileMenuOpen ? (
-              <X className="h-5 w-5" />
-            ) : (
-              <Menu className="h-5 w-5 text-slate-200" />
-            )}
-          </button>
-        </div>
-
-        {/* Brand Logo (Centered on mobile as in mockup, left-aligned on desktop) */}
-        <Link to="/" className="group mx-auto flex items-center gap-2.5 md:mx-0">
-          <div className="relative flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 text-slate-950 shadow-md shadow-amber-500/20 sm:h-9 sm:w-9">
-            <Compass className="h-5 w-5 transition-transform duration-500 group-hover:rotate-90" />
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+        {/* Brand Logo */}
+        <Link to="/" className="group flex items-center gap-3">
+          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 text-slate-950 shadow-lg shadow-amber-500/20">
+            <Compass className="h-6 w-6 transition-transform duration-500 group-hover:rotate-90" />
             <div className="absolute inset-0 rounded-xl border border-amber-300/40" />
           </div>
-          <div className="flex flex-col text-left">
-            <span className="font-serif text-base font-bold tracking-widest text-slate-100 transition group-hover:text-amber-400 sm:text-lg">
+          <div className="flex flex-col">
+            <span className="font-serif text-lg font-bold tracking-widest text-slate-100 transition group-hover:text-amber-400">
               7RAYS
             </span>
-            <span className="-mt-1 text-[8px] font-semibold tracking-[0.22em] text-amber-400/90 uppercase sm:text-[9px]">
+            <span className="-mt-1 text-[9px] font-semibold tracking-[0.25em] text-amber-400/90 uppercase">
               Astro Vastu
             </span>
           </div>
         </Link>
 
-        {/* Central Search Bar (Desktop) */}
-        <div className="relative mx-6 hidden max-w-xl flex-1 md:block">
-          <form onSubmit={handleSearchSubmit} className="relative w-full">
-            <input
-              type="text"
-              value={navSearch}
-              onChange={(e) => setNavSearch(e.target.value)}
-              placeholder="Search Vastu Products, Crystals, Yantras, Home Decor..."
-              className="w-full rounded-full border border-slate-700 bg-slate-900/90 py-2 pr-11 pl-4 text-xs text-white placeholder-slate-400 shadow-inner transition focus:border-amber-400 focus:bg-slate-900 focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="absolute top-1/2 right-3 -translate-y-1/2 text-slate-400 transition hover:text-amber-400"
-              aria-label="Search products"
-            >
-              <Search className="h-4 w-4" />
-            </button>
-          </form>
-        </div>
+        {/* Desktop Navigation Links */}
+        <nav className="hidden items-center gap-7 text-[13px] font-medium tracking-wide lg:flex">
+          {navLinks.map((link) => {
+            const isActive = isRouteActive(link.path, location.pathname)
+            return (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`relative py-1.5 transition-all duration-200 ${
+                  isActive
+                    ? 'font-bold text-amber-400 drop-shadow-[0_0_12px_rgba(251,191,36,0.35)]'
+                    : 'text-slate-300 hover:text-amber-400'
+                }`}
+              >
+                <span>{link.label}</span>
+                {isActive && (
+                  <span className="absolute right-0 -bottom-1 left-0 h-[2px] rounded-full bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.6)]" />
+                )}
+              </Link>
+            )
+          })}
+        </nav>
 
-        {/* Header Right Actions (Desktop & Mobile) */}
-        <div className="flex items-center gap-3 sm:gap-6">
-          {/* Account Button (Desktop) */}
-          <button
-            onClick={openAccount}
-            className="hidden items-center gap-1.5 text-xs font-semibold text-slate-200 transition hover:text-amber-400 md:flex"
-          >
-            <User className="h-4 w-4 text-amber-400" />
-            <span>Account</span>
-          </button>
-
-          {/* Cart Button (Always visible with badge count!) */}
+        {/* Action Button Desktop & Cart */}
+        <div className="hidden items-center gap-4 sm:flex">
+          {/* Cart Icon */}
           <button
             onClick={openCart}
-            className="relative flex items-center gap-1.5 text-xs font-semibold text-slate-200 transition hover:text-amber-400"
+            className="relative flex h-10 w-10 items-center justify-center rounded-xl border border-slate-800 bg-slate-900/80 text-amber-400 transition hover:border-amber-500/50 hover:bg-slate-900"
             aria-label="View shopping cart"
           >
-            <div className="relative">
-              <ShoppingBag className="h-5 w-5 text-amber-400" />
-              {cartCount > 0 && (
-                <span className="absolute -top-1.5 -right-2 flex h-4 w-4 items-center justify-center rounded-full bg-gradient-to-r from-amber-400 to-amber-500 text-[9px] font-extrabold text-slate-950 shadow-xs">
-                  {cartCount}
-                </span>
-              )}
-            </div>
-            <span className="hidden sm:inline">Cart</span>
+            <ShoppingBag className="h-5 w-5" />
+            {cartCount > 0 && (
+              <span className="absolute -top-1.5 -right-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-gradient-to-r from-amber-400 to-amber-500 text-[9px] font-extrabold text-slate-950 shadow-xs">
+                {cartCount}
+              </span>
+            )}
           </button>
-        </div>
-      </div>
-
-      {/* Bottom Nav Tier (Desktop Links & CTA Button) */}
-      <div className="hidden border-t border-slate-900/50 bg-slate-950/70 py-2 md:block">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-7 text-[13px] font-medium tracking-wide">
-            {navLinks.map((link) => {
-              const isActive = isRouteActive(link.path, location.pathname)
-              return (
-                <Link
-                  key={link.path}
-                  to={link.path}
-                  className={`relative py-1 transition-all duration-200 ${
-                    isActive
-                      ? 'font-bold text-amber-400 drop-shadow-[0_0_12px_rgba(251,191,36,0.35)]'
-                      : 'text-slate-300 hover:text-amber-400'
-                  }`}
-                >
-                  <span>{link.label}</span>
-                  {isActive && (
-                    <span className="absolute right-0 -bottom-1.5 left-0 h-[2.5px] rounded-full bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500 shadow-[0_0_8px_rgba(245,158,11,0.6)]" />
-                  )}
-                </Link>
-              )
-            })}
-          </nav>
 
           <button
             onClick={() => {
               trackConversion('consultation_booking', 'Header CTA')
               onOpenConsultation()
             }}
-            className="group relative inline-flex items-center gap-1.5 rounded-lg bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-4 py-1.5 text-xs font-bold text-slate-950 shadow-md shadow-amber-500/20 transition-all duration-300 hover:shadow-amber-500/40 hover:brightness-110"
+            className="group relative inline-flex items-center gap-2 overflow-hidden rounded-lg bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-5 py-2.5 text-xs font-bold text-slate-950 shadow-md shadow-amber-500/20 transition-all duration-300 hover:shadow-amber-500/40 hover:brightness-110"
           >
             <span>Book Consultation</span>
-            <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-0.5" />
+            <ArrowRight className="h-3.5 w-3.5 transition-transform duration-300 group-hover:translate-x-1" />
+          </button>
+        </div>
+
+        {/* Mobile Hamburger & Controls */}
+        <div className="flex items-center gap-2.5 lg:hidden">
+          {/* Mobile Cart Button */}
+          <button
+            onClick={openCart}
+            className="relative flex h-10 w-10 items-center justify-center rounded-lg text-slate-300 transition hover:text-amber-400"
+            aria-label="View shopping cart"
+          >
+            <ShoppingBag className="h-5 w-5 text-amber-400" />
+            {cartCount > 0 && (
+              <span className="absolute top-1 right-1 flex h-4 w-4 items-center justify-center rounded-full bg-amber-400 text-[9px] font-bold text-slate-950">
+                {cartCount}
+              </span>
+            )}
+          </button>
+
+          <button
+            onClick={() => {
+              trackConversion('consultation_booking', 'Mobile Header CTA')
+              onOpenConsultation()
+            }}
+            className="inline-flex items-center gap-1 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-3 py-1.5 text-xs font-bold text-slate-950 shadow-md shadow-amber-500/25 active:scale-95 sm:hidden"
+          >
+            Book
+          </button>
+
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="flex h-11 w-11 items-center justify-center rounded-lg text-slate-300 transition hover:bg-slate-900 hover:text-amber-400 focus:outline-none active:scale-95"
+            aria-label="Toggle navigation menu"
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-navigation-menu"
+          >
+            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
         </div>
       </div>
@@ -277,26 +239,8 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
       {isMobileMenuOpen && (
         <div
           id="mobile-navigation-menu"
-          className="animate-fadeIn max-h-[calc(100vh-70px)] overflow-y-auto overscroll-contain border-b border-amber-500/20 bg-slate-950/98 px-6 py-6 backdrop-blur-2xl md:hidden"
+          className="animate-fadeIn max-h-[calc(100vh-70px)] overflow-y-auto overscroll-contain border-b border-amber-500/20 bg-slate-950/98 px-6 py-6 backdrop-blur-2xl lg:hidden"
         >
-          {/* Mobile search input */}
-          <form onSubmit={handleSearchSubmit} className="relative mb-5 w-full">
-            <input
-              type="text"
-              value={navSearch}
-              onChange={(e) => setNavSearch(e.target.value)}
-              placeholder="Search Vastu Products, Crystals..."
-              className="w-full rounded-xl border border-slate-700 bg-slate-900 py-2.5 pr-10 pl-4 text-xs text-white placeholder-slate-400 focus:border-amber-400 focus:outline-none"
-            />
-            <button
-              type="submit"
-              className="absolute top-1/2 right-3 -translate-y-1/2 text-slate-400 hover:text-amber-400"
-              aria-label="Submit search"
-            >
-              <Search className="h-4 w-4" />
-            </button>
-          </form>
-
           <nav className="flex flex-col space-y-2 text-sm font-medium">
             {navLinks.map((link) => {
               const isActive = isRouteActive(link.path, location.pathname)

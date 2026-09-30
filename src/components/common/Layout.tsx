@@ -23,7 +23,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         <Header onOpenConsultation={() => setIsConsultationOpen(true)} />
 
         {/* Main Page Slot with mobile bottom clearance */}
-        <main className="flex-1 pt-20 pb-14 md:pt-24 md:pb-0">{children}</main>
+        <main className="flex-1 pt-20 pb-14 md:pb-0">{children}</main>
 
         {/* Precision Luxury Footer */}
         <Footer />
