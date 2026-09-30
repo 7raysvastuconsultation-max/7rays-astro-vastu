@@ -115,7 +115,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
               <h2 className="mt-2 font-serif text-2xl font-bold text-slate-900 sm:text-3xl">
                 What is Non-Demolition Vastu?
               </h2>
-              <div className="mt-4 rounded-xl border-l-4 border-amber-500 bg-amber-50/60 p-5 text-sm leading-relaxed text-slate-800">
+              <div className="mt-4 rounded-xl border border-l-4 border-amber-200/80 border-l-amber-500 bg-[#FAF8F5] p-5 text-sm leading-relaxed text-slate-800">
                 <strong>Direct Answer:</strong> Non-demolition Vastu is the specialized methodology
                 of correcting directional, elemental, and subtle energetic imbalances within a
                 property without carrying out civil demolition or structural modifications. It
@@ -131,7 +131,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
                 and workplace productivity while preserving their architectural investments.
               </p>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 shadow-sm lg:col-span-5">
+            <div className="rounded-2xl border border-amber-200/80 bg-[#FAF8F5] p-6 shadow-sm lg:col-span-5">
               <h3 className="text-base font-bold text-slate-900">Key Pillars of Zero-Demolition</h3>
               <ul className="mt-4 space-y-3 text-xs text-slate-700">
                 <li className="flex items-start gap-2.5">
@@ -169,7 +169,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
       </section>
 
       {/* The 5 Elements & Metallic Remedy System */}
-      <section className="border-b border-slate-200 bg-slate-50 py-16 text-slate-900 sm:py-24">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
@@ -364,7 +364,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
       </section>
 
       {/* FAQs */}
-      <section className="border-b border-slate-200 bg-slate-50 py-16 text-slate-900 sm:py-24">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
@@ -379,7 +379,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
             {faqs.map((faq, idx) => (
               <div
                 key={idx}
-                className="rounded-xl border border-slate-200 bg-white p-6 shadow-sm transition hover:border-amber-400"
+                className="rounded-xl border border-amber-200/70 bg-white p-6 shadow-sm transition hover:border-amber-400"
               >
                 <div className="flex items-start gap-3">
                   <HelpCircle className="mt-0.5 h-5 w-5 shrink-0 text-amber-600" />

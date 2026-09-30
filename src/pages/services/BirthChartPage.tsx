@@ -171,7 +171,7 @@ export const BirthChartPage: React.FC = () => {
       </section>
 
       {/* Required Consultation Data Section */}
-      <section className="border-b border-slate-200 bg-amber-50/60 py-10 text-slate-900">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-10 text-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
             <div>
@@ -183,15 +183,15 @@ export const BirthChartPage: React.FC = () => {
               </h2>
             </div>
             <div className="flex flex-wrap gap-4 text-xs font-medium text-slate-800">
-              <div className="flex items-center gap-2 rounded-lg bg-white px-4 py-2 shadow-2xs">
+              <div className="flex items-center gap-2 rounded-xl border border-amber-200/80 bg-white px-4 py-2.5 shadow-2xs">
                 <Calendar className="h-4 w-4 text-amber-700" />
                 <span>Exact Date of Birth</span>
               </div>
-              <div className="flex items-center gap-2 rounded-lg bg-white px-4 py-2 shadow-2xs">
+              <div className="flex items-center gap-2 rounded-xl border border-amber-200/80 bg-white px-4 py-2.5 shadow-2xs">
                 <Clock className="h-4 w-4 text-amber-700" />
                 <span>Exact Time of Birth (AM/PM)</span>
               </div>
-              <div className="flex items-center gap-2 rounded-lg bg-white px-4 py-2 shadow-2xs">
+              <div className="flex items-center gap-2 rounded-xl border border-amber-200/80 bg-white px-4 py-2.5 shadow-2xs">
                 <MapPin className="h-4 w-4 text-amber-700" />
                 <span>City / Place of Birth</span>
               </div>
@@ -220,7 +220,7 @@ export const BirthChartPage: React.FC = () => {
             {chartComponents.map((item, idx) => (
               <div
                 key={idx}
-                className="flex flex-col justify-between rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md"
+                className="flex flex-col justify-between rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white hover:shadow-md"
               >
                 <div>
                   <span className="text-[11px] font-semibold text-amber-800 uppercase">
@@ -236,9 +236,9 @@ export const BirthChartPage: React.FC = () => {
       </section>
 
       {/* Ethics & Transparent Interpretation */}
-      <section className="border-b border-slate-200 bg-slate-50 py-16 text-slate-900 sm:py-20">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
+          <div className="rounded-2xl border border-amber-200/80 bg-white p-8 shadow-sm sm:p-10">
             <div className="flex items-center gap-3">
               <ShieldCheck className="h-6 w-6 text-amber-700" />
               <h2 className="font-serif text-2xl font-bold text-slate-900">
@@ -299,7 +299,7 @@ export const BirthChartPage: React.FC = () => {
             {birthChartFaqs.map((faq, idx) => (
               <div
                 key={idx}
-                className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-amber-400"
+                className="overflow-hidden rounded-xl border border-amber-200/70 bg-[#FAF8F5] transition hover:border-amber-400"
               >
                 <button
                   onClick={() => toggleFaq(idx)}

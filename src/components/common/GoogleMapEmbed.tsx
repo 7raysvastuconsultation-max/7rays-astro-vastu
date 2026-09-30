@@ -22,7 +22,7 @@ export const GoogleMapEmbed: React.FC<GoogleMapEmbedProps> = ({
       className={`overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-xs transition hover:shadow-md ${className}`}
     >
       {showCardHeader && (
-        <div className="flex flex-col justify-between gap-3 border-b border-slate-100 bg-slate-50/60 p-4 sm:flex-row sm:items-center sm:px-5 sm:py-3.5">
+        <div className="flex flex-col justify-between gap-3 border-b border-amber-200/60 bg-[#FAF8F5] p-4 sm:flex-row sm:items-center sm:px-5 sm:py-3.5">
           <div className="flex items-center gap-3">
             <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-amber-50 text-amber-700">
               <MapPin className="h-4 w-4" />

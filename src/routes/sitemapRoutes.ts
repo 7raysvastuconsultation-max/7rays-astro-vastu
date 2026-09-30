@@ -14,6 +14,7 @@ export const staticRoutes: SitemapRouteEntry[] = [
   { path: '/', changefreq: 'weekly', priority: 1.0 },
   { path: '/about', changefreq: 'monthly', priority: 0.8 },
   { path: '/services', changefreq: 'weekly', priority: 0.9 },
+  { path: '/shop', changefreq: 'daily', priority: 0.95 },
   { path: '/locations', changefreq: 'weekly', priority: 0.9 },
   { path: '/blog', changefreq: 'daily', priority: 0.8 },
   { path: '/case-studies', changefreq: 'monthly', priority: 0.7 },

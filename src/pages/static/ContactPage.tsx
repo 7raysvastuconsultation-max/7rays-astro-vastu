@@ -411,7 +411,7 @@ export const ContactPage: React.FC = () => {
                   </div>
 
                   {/* Row 6: Upload Floor Plan / Images */}
-                  <div className="relative rounded-xl border border-dashed border-slate-300 bg-slate-50/50 p-4 text-center transition hover:border-amber-400 hover:bg-white">
+                  <div className="relative rounded-xl border border-dashed border-amber-300 bg-[#FAF8F5] p-4 text-center transition hover:border-amber-400 hover:bg-white">
                     <input
                       type="file"
                       id="file-upload"
@@ -609,7 +609,7 @@ export const ContactPage: React.FC = () => {
                       href={googleMapsUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 rounded-xl border border-amber-300 bg-amber-50/60 px-4 py-2.5 text-xs font-bold text-amber-800 transition hover:bg-amber-100/70"
+                      className="inline-flex items-center gap-2 rounded-xl border border-amber-300 bg-amber-50 px-4 py-2.5 text-xs font-bold text-amber-800 transition hover:bg-amber-100"
                     >
                       <MapPin className="h-4 w-4 text-amber-700" />
                       <span>Get Directions on Google Maps</span>

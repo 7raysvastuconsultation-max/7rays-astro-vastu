@@ -174,7 +174,7 @@ export const ApartmentVastuPage: React.FC = () => {
               <h2 className="mt-2 font-serif text-2xl font-bold text-slate-900 sm:text-3xl">
                 How Apartment Vastu Works in Modern High-Rise Flats
               </h2>
-              <div className="mt-4 rounded-xl border border-amber-200/80 bg-amber-50/50 p-5">
+              <div className="mt-4 rounded-xl border border-amber-200/80 bg-[#FAF8F5] p-5">
                 <p className="text-xs leading-relaxed font-medium text-slate-800 sm:text-sm">
                   <strong>Quick Answer:</strong> In a multi-storey building, your apartment unit
                   functions as an independent energetic micro-cosmos. The compass grid is calculated
@@ -253,7 +253,7 @@ export const ApartmentVastuPage: React.FC = () => {
       </section>
 
       {/* 4 Apartment Pillars */}
-      <section className="bg-slate-50 py-16 text-slate-900 sm:py-20">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 text-center">
             <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
@@ -270,7 +270,7 @@ export const ApartmentVastuPage: React.FC = () => {
               return (
                 <div
                   key={idx}
-                  className="rounded-2xl border border-slate-200/80 bg-white p-6 shadow-xs transition hover:border-amber-400 hover:shadow-md"
+                  className="rounded-2xl border border-amber-200/70 bg-white p-6 shadow-xs transition hover:border-amber-400 hover:shadow-md"
                 >
                   <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-xl bg-amber-50 text-amber-700">
                     <ItemIcon className="h-6 w-6" />

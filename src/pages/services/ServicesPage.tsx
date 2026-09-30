@@ -173,7 +173,7 @@ export const ServicesPage: React.FC = () => {
 
             {/* Right: 4 Feature Cards Row */}
             <div className="grid grid-cols-2 gap-3.5 sm:grid-cols-4 lg:col-span-6">
-              <div className="flex flex-col items-center rounded-xl border border-slate-200 bg-slate-50/70 p-4 text-center shadow-2xs transition hover:border-amber-400">
+              <div className="flex flex-col items-center rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-4 text-center shadow-2xs transition hover:border-amber-400 hover:bg-white">
                 <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-amber-50 text-amber-700">
                   <Home className="h-5 w-5" />
                 </div>
@@ -181,7 +181,7 @@ export const ServicesPage: React.FC = () => {
                 <span className="text-[11px] text-slate-500">Consultations</span>
               </div>
 
-              <div className="flex flex-col items-center rounded-xl border border-slate-200 bg-slate-50/70 p-4 text-center shadow-2xs transition hover:border-amber-400">
+              <div className="flex flex-col items-center rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-4 text-center shadow-2xs transition hover:border-amber-400 hover:bg-white">
                 <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-amber-50 text-amber-700">
                   <CheckCircle2 className="h-5 w-5" />
                 </div>
@@ -189,7 +189,7 @@ export const ServicesPage: React.FC = () => {
                 <span className="text-[11px] text-slate-500">&amp; Implementable</span>
               </div>
 
-              <div className="flex flex-col items-center rounded-xl border border-slate-200 bg-slate-50/70 p-4 text-center shadow-2xs transition hover:border-amber-400">
+              <div className="flex flex-col items-center rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-4 text-center shadow-2xs transition hover:border-amber-400 hover:bg-white">
                 <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-amber-50 text-amber-700">
                   <Sparkles className="h-5 w-5" />
                 </div>
@@ -197,7 +197,7 @@ export const ServicesPage: React.FC = () => {
                 <span className="text-[11px] text-slate-500">Approach</span>
               </div>
 
-              <div className="flex flex-col items-center rounded-xl border border-slate-200 bg-slate-50/70 p-4 text-center shadow-2xs transition hover:border-amber-400">
+              <div className="flex flex-col items-center rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-4 text-center shadow-2xs transition hover:border-amber-400 hover:bg-white">
                 <div className="mb-2 flex h-10 w-10 items-center justify-center rounded-lg bg-amber-50 text-amber-700">
                   <ShieldCheck className="h-5 w-5" />
                 </div>
@@ -589,7 +589,7 @@ export const ServicesPage: React.FC = () => {
               return (
                 <div
                   key={idx}
-                  className="flex flex-col items-center rounded-xl border border-slate-200 bg-slate-50/50 p-5 text-center shadow-2xs transition-all duration-300 hover:border-amber-400 hover:shadow-md"
+                  className="flex flex-col items-center rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-5 text-center shadow-2xs transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md"
                 >
                   <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-700">
                     <IconComp className="h-5 w-5" />

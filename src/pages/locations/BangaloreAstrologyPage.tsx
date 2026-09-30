@@ -178,7 +178,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
       </section>
 
       {/* Verified NAP & Entity Banner */}
-      <section className="border-b border-slate-200 bg-amber-50/60 py-6 text-slate-900">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-6 text-slate-900">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 text-xs sm:text-sm">
             <MapPin className="h-4 w-4 text-amber-800" />
@@ -295,7 +295,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
       </section>
 
       {/* Greater Bengaluru Coverage Zones */}
-      <section className="border-b border-slate-200 bg-slate-50 py-16 text-slate-900 sm:py-20">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 text-center">
             <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
@@ -315,7 +315,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
             {bangaloreCoverageZones.map((zone, idx) => (
               <div
                 key={idx}
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md"
+                className="flex flex-col justify-between rounded-2xl border border-amber-200/70 bg-white p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md"
               >
                 <div>
                   <div className="flex items-center gap-2 text-amber-700">
@@ -341,7 +341,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
       {/* Consultation Ethics & Standards */}
       <section className="border-b border-slate-200 bg-white py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-slate-200 bg-amber-50/50 p-8 sm:p-10">
+          <div className="rounded-2xl border border-amber-200/80 bg-[#FAF8F5] p-8 sm:p-10">
             <div className="flex items-center gap-3">
               <ShieldCheck className="h-6 w-6 text-amber-800" />
               <h2 className="font-serif text-2xl font-bold text-slate-900">
@@ -387,7 +387,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
       </section>
 
       {/* Local FAQ Section */}
-      <section className="border-b border-slate-200 bg-slate-50 py-16 text-slate-900 sm:py-20">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <span className="text-[11px] font-bold tracking-widest text-amber-700 uppercase">
@@ -402,7 +402,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
             {localAstrologyFaqs.map((faq, idx) => (
               <div
                 key={idx}
-                className="overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:border-amber-400"
+                className="overflow-hidden rounded-xl border border-amber-200/70 bg-white transition hover:border-amber-400"
               >
                 <button
                   onClick={() => toggleFaq(idx)}

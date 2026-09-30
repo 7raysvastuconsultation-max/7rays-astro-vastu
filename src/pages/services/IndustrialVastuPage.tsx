@@ -221,7 +221,7 @@ export const IndustrialVastuPage: React.FC = () => {
               <h2 className="mt-2 font-serif text-2xl font-bold text-slate-900 sm:text-3xl">
                 How Does Industrial Vastu Optimize Manufacturing Plant Layouts?
               </h2>
-              <div className="mt-4 rounded-xl border border-amber-200/80 bg-amber-50/50 p-5">
+              <div className="mt-4 rounded-xl border border-amber-200/80 bg-[#FAF8F5] p-5">
                 <p className="text-xs leading-relaxed font-medium text-slate-800 sm:text-sm">
                   <strong>Direct Answer:</strong> Industrial Vastu optimizes plant efficiency,
                   workplace safety, and logistics flow by synchronizing heavy mass, thermodynamic
@@ -321,7 +321,7 @@ export const IndustrialVastuPage: React.FC = () => {
               return (
                 <div
                   key={idx}
-                  className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md"
+                  className="rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md"
                 >
                   <div className="mb-3 flex items-center justify-between">
                     <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
@@ -416,7 +416,7 @@ export const IndustrialVastuPage: React.FC = () => {
                   </button>
                   <Link
                     to="/insights/commercial-vastu/factory-machinery-and-raw-material-vastu"
-                    className="flex w-full items-center justify-center gap-2 rounded-lg border border-slate-200 bg-amber-50/60 px-4 py-2.5 text-xs font-semibold text-amber-900 transition hover:bg-amber-100"
+                    className="flex w-full items-center justify-center gap-2 rounded-lg border border-amber-200/80 bg-amber-50 px-4 py-2.5 text-xs font-semibold text-amber-900 transition hover:bg-amber-100"
                   >
                     <span>Read Industrial Machinery Guide</span>
                   </Link>
@@ -445,7 +445,7 @@ export const IndustrialVastuPage: React.FC = () => {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl border border-slate-200/80 bg-slate-50/50 transition-colors"
+                  className="rounded-2xl border border-amber-200/70 bg-[#FAF8F5] transition-colors"
                 >
                   <button
                     onClick={() => toggleFaq(index)}

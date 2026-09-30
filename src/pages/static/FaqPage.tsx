@@ -222,7 +222,7 @@ export const FaqPage: React.FC = () => {
           </div>
 
           {/* Prompt CTA */}
-          <div className="mt-16 rounded-2xl border border-amber-200 bg-amber-50/60 p-8 text-center">
+          <div className="mt-16 rounded-2xl border border-amber-200/80 bg-[#FAF8F5] p-8 text-center">
             <h2 className="font-serif text-xl font-bold text-slate-900">
               Have a Specific Property Question?
             </h2>

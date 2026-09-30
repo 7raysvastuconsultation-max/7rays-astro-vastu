@@ -174,7 +174,7 @@ export const BangaloreVastuAuditPage: React.FC = () => {
       </section>
 
       {/* Verified NAP Banner */}
-      <section className="border-b border-amber-200 bg-amber-50/70 py-6 text-slate-900">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-6 text-slate-900">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 text-xs sm:text-sm">
             <MapPin className="h-4 w-4 text-amber-800" />
@@ -216,7 +216,7 @@ export const BangaloreVastuAuditPage: React.FC = () => {
               return (
                 <div
                   key={idx}
-                  className="flex flex-col justify-between rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md"
+                  className="flex flex-col justify-between rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white hover:shadow-md"
                 >
                   <div>
                     <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-amber-50 text-amber-800">
@@ -233,9 +233,9 @@ export const BangaloreVastuAuditPage: React.FC = () => {
       </section>
 
       {/* Non-Demolition Commitment */}
-      <section className="border-b border-slate-200 bg-slate-50 py-16 text-slate-900 sm:py-20">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm sm:p-10">
+          <div className="rounded-2xl border border-amber-200/80 bg-white p-8 shadow-sm sm:p-10">
             <div className="flex items-center gap-3">
               <ShieldCheck className="h-6 w-6 text-amber-800" />
               <h2 className="font-serif text-2xl font-bold text-slate-900">
@@ -296,7 +296,7 @@ export const BangaloreVastuAuditPage: React.FC = () => {
             {auditFaqs.map((faq, idx) => (
               <div
                 key={idx}
-                className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition hover:border-amber-400"
+                className="overflow-hidden rounded-xl border border-amber-200/70 bg-[#FAF8F5] transition hover:border-amber-400"
               >
                 <button
                   onClick={() => toggleFaq(idx)}

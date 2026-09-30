@@ -160,7 +160,7 @@ export const BangaloreCommercialVastuPage: React.FC = () => {
       </section>
 
       {/* Headquarters vs Service Area Transparency Strip */}
-      <section className="border-b border-slate-200 bg-amber-50/60 py-6 text-slate-900">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-6 text-slate-900">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 text-xs sm:text-sm">
             <MapPin className="h-4 w-4 text-amber-800" />
@@ -202,7 +202,7 @@ export const BangaloreCommercialVastuPage: React.FC = () => {
               return (
                 <div
                   key={idx}
-                  className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md"
+                  className="rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md"
                 >
                   <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-800">
                     <HubIcon className="h-5 w-5" />
@@ -348,7 +348,7 @@ export const BangaloreCommercialVastuPage: React.FC = () => {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl border border-slate-200/80 bg-slate-50/50 transition-colors"
+                  className="rounded-2xl border border-amber-200/70 bg-[#FAF8F5] transition-colors"
                 >
                   <button
                     onClick={() => toggleFaq(index)}

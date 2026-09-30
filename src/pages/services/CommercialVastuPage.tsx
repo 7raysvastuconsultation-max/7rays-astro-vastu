@@ -367,7 +367,7 @@ export const CommercialVastuPage: React.FC = () => {
               <h2 className="mt-3 font-serif text-3xl leading-tight font-bold text-slate-900 sm:text-4xl">
                 Vastu for Offices, Retail Spaces and Business Premises
               </h2>
-              <div className="mt-4 rounded-xl border border-amber-200/80 bg-amber-50/50 p-4">
+              <div className="mt-4 rounded-xl border border-amber-200/80 bg-[#FAF8F5] p-4">
                 <p className="text-xs leading-relaxed font-medium text-slate-800">
                   <strong>Direct Answer:</strong> Commercial Vastu is the strategic spatial
                   organization of workplaces, retail showrooms, and corporate offices to support
@@ -569,7 +569,7 @@ export const CommercialVastuPage: React.FC = () => {
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {/* Zone Card 1: MD Cabin */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   SOUTH-WEST • NAIRUTYA
@@ -595,7 +595,7 @@ export const CommercialVastuPage: React.FC = () => {
             </div>
 
             {/* Zone Card 2: Accounts & Finance */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   NORTH ZONE • KUBER
@@ -621,7 +621,7 @@ export const CommercialVastuPage: React.FC = () => {
             </div>
 
             {/* Zone Card 3: Conference & Negotiations */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   NORTH-WEST • VAYU ZONE
@@ -647,7 +647,7 @@ export const CommercialVastuPage: React.FC = () => {
             </div>
 
             {/* Zone Card 4: Retail Display */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   RETAIL • FOOTFALL FLOW
@@ -673,7 +673,7 @@ export const CommercialVastuPage: React.FC = () => {
             </div>
 
             {/* Zone Card 5: Restaurant Kitchen */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   SOUTH-EAST • AGNEYA
@@ -699,7 +699,7 @@ export const CommercialVastuPage: React.FC = () => {
             </div>
 
             {/* Zone Card 6: Industrial Machinery */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   INDUSTRIAL • PLANT LAYOUT
@@ -726,8 +726,8 @@ export const CommercialVastuPage: React.FC = () => {
           </div>
 
           {/* Departmental & Executive Seating Decision Matrix */}
-          <div className="mt-14 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs">
-            <div className="border-b border-slate-200 bg-slate-50 px-6 py-4">
+          <div className="mt-14 overflow-hidden rounded-2xl border border-amber-200/80 bg-white shadow-xs">
+            <div className="border-b border-amber-200/80 bg-[#FAF8F5] px-6 py-4">
               <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                 EXECUTIVE DECISION FRAMEWORK
               </span>
@@ -743,7 +743,7 @@ export const CommercialVastuPage: React.FC = () => {
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-left text-xs text-slate-700">
-                <thead className="bg-slate-100/75 text-[11px] font-bold text-slate-800 uppercase">
+                <thead className="bg-amber-100/70 font-serif text-[11px] font-bold text-amber-950 uppercase">
                   <tr>
                     <th className="px-6 py-3">Role / Department</th>
                     <th className="px-6 py-3">Traditional Vastu Sector</th>
@@ -752,8 +752,8 @@ export const CommercialVastuPage: React.FC = () => {
                     <th className="px-6 py-3">Consultation Layout Guideline</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-slate-100">
-                  <tr className="hover:bg-slate-50/50">
+                <tbody className="divide-y divide-amber-100/60">
+                  <tr className="hover:bg-amber-50/40">
                     <td className="px-6 py-3.5 font-semibold text-slate-900">
                       Founders &amp; Managing Directors
                     </td>
@@ -767,7 +767,7 @@ export const CommercialVastuPage: React.FC = () => {
                       Solid wall backing; desk oriented facing North or East where layout permits.
                     </td>
                   </tr>
-                  <tr className="hover:bg-slate-50/50">
+                  <tr className="hover:bg-amber-50/40">
                     <td className="px-6 py-3.5 font-semibold text-slate-900">
                       Finance &amp; Accounts
                     </td>
@@ -782,7 +782,7 @@ export const CommercialVastuPage: React.FC = () => {
                       North or East.
                     </td>
                   </tr>
-                  <tr className="hover:bg-slate-50/50">
+                  <tr className="hover:bg-amber-50/40">
                     <td className="px-6 py-3.5 font-semibold text-slate-900">
                       Product &amp; Software Engineering
                     </td>
@@ -797,7 +797,7 @@ export const CommercialVastuPage: React.FC = () => {
                       focus.
                     </td>
                   </tr>
-                  <tr className="hover:bg-slate-50/50">
+                  <tr className="hover:bg-amber-50/40">
                     <td className="px-6 py-3.5 font-semibold text-slate-900">
                       Sales &amp; Business Development
                     </td>
@@ -811,7 +811,7 @@ export const CommercialVastuPage: React.FC = () => {
                       Open collaboration pods with dynamic lighting and unimpeded movement flow.
                     </td>
                   </tr>
-                  <tr className="hover:bg-slate-50/50">
+                  <tr className="hover:bg-amber-50/40">
                     <td className="px-6 py-3.5 font-semibold text-slate-900">
                       Server Hub &amp; Electricals
                     </td>

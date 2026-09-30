@@ -234,7 +234,7 @@ export const BangaloreMasterPage: React.FC = () => {
       </section>
 
       {/* 2. Verified Business Location vs Service Area Banner */}
-      <section className="border-b border-amber-200 bg-amber-50/70 py-6 text-slate-900">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-6 text-slate-900">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
             <div className="flex items-start gap-3">
@@ -337,7 +337,7 @@ export const BangaloreMasterPage: React.FC = () => {
       </section>
 
       {/* 4. Bangalore Geographic Zones & Coverage */}
-      <section className="border-b border-slate-200 bg-slate-50 py-16 text-slate-900 sm:py-20">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 text-center">
             <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
@@ -356,7 +356,7 @@ export const BangaloreMasterPage: React.FC = () => {
             {serviceZones.map((zone, idx) => (
               <div
                 key={idx}
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md"
+                className="flex flex-col justify-between rounded-2xl border border-amber-200/70 bg-white p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md"
               >
                 <div>
                   <div className="flex items-center gap-2 text-amber-800">
@@ -376,32 +376,32 @@ export const BangaloreMasterPage: React.FC = () => {
           </div>
 
           {/* Locality Quick Links */}
-          <div className="mt-10 rounded-xl border border-slate-200 bg-white p-6 shadow-2xs">
+          <div className="mt-10 rounded-xl border border-amber-200/70 bg-white p-6 shadow-2xs">
             <h4 className="font-serif text-xs font-bold tracking-wider text-slate-900 uppercase">
               Dedicated Locality Service Area Profiles
             </h4>
             <div className="mt-3 flex flex-wrap gap-2 text-xs">
               <Link
                 to="/locations/indiranagar"
-                className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
               >
                 Indiranagar (100ft &amp; Defence Colony)
               </Link>
               <Link
                 to="/locations/hsr-layout"
-                className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
               >
                 HSR Layout (Sectors 1–7)
               </Link>
               <Link
                 to="/locations/koramangala"
-                className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
               >
                 Koramangala (Blocks 1–8)
               </Link>
               <Link
                 to="/locations/whitefield"
-                className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
               >
                 Whitefield (ITPB &amp; Gated Villas)
               </Link>
@@ -427,7 +427,7 @@ export const BangaloreMasterPage: React.FC = () => {
           </div>
 
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs">
+            <div className="rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white">
               <span className="font-serif text-sm font-bold text-amber-700">01</span>
               <h3 className="mt-2 font-serif text-base font-bold text-slate-900">
                 Blueprint Review
@@ -438,7 +438,7 @@ export const BangaloreMasterPage: React.FC = () => {
               </p>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs">
+            <div className="rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white">
               <span className="font-serif text-sm font-bold text-amber-700">02</span>
               <h3 className="mt-2 font-serif text-base font-bold text-slate-900">
                 Calibrated On-Site Audit
@@ -449,7 +449,7 @@ export const BangaloreMasterPage: React.FC = () => {
               </p>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs">
+            <div className="rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white">
               <span className="font-serif text-sm font-bold text-amber-700">03</span>
               <h3 className="mt-2 font-serif text-base font-bold text-slate-900">
                 Non-Demolition Blueprint
@@ -460,7 +460,7 @@ export const BangaloreMasterPage: React.FC = () => {
               </p>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs">
+            <div className="rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white">
               <span className="font-serif text-sm font-bold text-amber-700">04</span>
               <h3 className="mt-2 font-serif text-base font-bold text-slate-900">
                 Ongoing Follow-up
@@ -475,7 +475,7 @@ export const BangaloreMasterPage: React.FC = () => {
       </section>
 
       {/* 6. Local AEO FAQ Accordion */}
-      <section className="border-b border-slate-200 bg-slate-50 py-18 text-slate-900 sm:py-24">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-18 text-slate-900 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <span className="text-[11px] font-bold tracking-widest text-amber-700 uppercase">

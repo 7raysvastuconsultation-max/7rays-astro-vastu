@@ -41,7 +41,7 @@ export const DisclaimerPage: React.FC = () => {
       <div className="bg-white py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="prose prose-slate max-w-none space-y-8 text-xs leading-relaxed sm:text-sm">
-            <section className="rounded-xl border border-amber-200 bg-amber-50/50 p-6">
+            <section className="rounded-xl border border-amber-200/80 bg-[#FAF8F5] p-6">
               <h2 className="text-base font-bold text-slate-900">
                 Summary of Professional Boundaries
               </h2>

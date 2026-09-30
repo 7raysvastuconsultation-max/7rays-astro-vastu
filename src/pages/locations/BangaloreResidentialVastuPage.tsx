@@ -157,7 +157,7 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
       </section>
 
       {/* Verified NAP & Entity Banner */}
-      <section className="border-b border-slate-200 bg-amber-50/60 py-6 text-slate-900">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-6 text-slate-900">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 text-xs sm:text-sm">
             <MapPin className="h-4 w-4 text-amber-800" />
@@ -197,7 +197,7 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
             {bangaloreZones.map((zone, idx) => (
               <div
                 key={idx}
-                className="flex flex-col justify-between rounded-2xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md"
+                className="flex flex-col justify-between rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white hover:shadow-md"
               >
                 <div>
                   <h3 className="font-serif text-base font-bold text-slate-900">{zone.name}</h3>
@@ -216,7 +216,7 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
       </section>
 
       {/* Local FAQ */}
-      <section className="border-t border-slate-100 bg-slate-50 py-16 text-slate-900 sm:py-20">
+      <section className="border-t border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="mb-10 text-center">
             <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
@@ -233,7 +233,7 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
               return (
                 <div
                   key={idx}
-                  className="overflow-hidden rounded-xl border border-slate-200/80 bg-white transition hover:border-amber-300"
+                  className="overflow-hidden rounded-xl border border-amber-200/70 bg-white transition hover:border-amber-300"
                 >
                   <button
                     onClick={() => toggleFaq(idx)}

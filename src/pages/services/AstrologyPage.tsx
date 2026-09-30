@@ -205,7 +205,7 @@ export const AstrologyPage: React.FC = () => {
       </section>
 
       {/* 2. AEO DIRECT ANSWER CARDS (Quick Answers for Search Engines & Clients) */}
-      <section className="border-b border-slate-200 bg-slate-50 py-16 text-slate-900 sm:py-20">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
@@ -622,7 +622,7 @@ export const AstrologyPage: React.FC = () => {
           </div>
 
           <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs">
+            <div className="rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white">
               <div className="flex items-center justify-between">
                 <span className="font-serif text-sm font-bold text-amber-700">01</span>
                 <Calendar className="h-5 w-5 text-amber-700" />
@@ -636,7 +636,7 @@ export const AstrologyPage: React.FC = () => {
               </p>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs">
+            <div className="rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white">
               <div className="flex items-center justify-between">
                 <span className="font-serif text-sm font-bold text-amber-700">02</span>
                 <BookOpen className="h-5 w-5 text-amber-700" />
@@ -650,7 +650,7 @@ export const AstrologyPage: React.FC = () => {
               </p>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs">
+            <div className="rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white">
               <div className="flex items-center justify-between">
                 <span className="font-serif text-sm font-bold text-amber-700">03</span>
                 <Compass className="h-5 w-5 text-amber-700" />
@@ -664,7 +664,7 @@ export const AstrologyPage: React.FC = () => {
               </p>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs">
+            <div className="rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white">
               <div className="flex items-center justify-between">
                 <span className="font-serif text-sm font-bold text-amber-700">04</span>
                 <ShieldCheck className="h-5 w-5 text-amber-700" />
@@ -682,9 +682,9 @@ export const AstrologyPage: React.FC = () => {
       </section>
 
       {/* 6. BANGALORE ASTROLOGY DESK INTEGRATION */}
-      <section className="border-b border-slate-200 bg-slate-50 py-16 text-slate-900 sm:py-20">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white p-8 shadow-sm sm:p-12">
+          <div className="overflow-hidden rounded-2xl border border-amber-200/80 bg-white p-8 shadow-sm sm:p-12">
             <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
               <div className="space-y-4 lg:col-span-8">
                 <div className="inline-flex items-center gap-2 rounded-full bg-amber-100 px-3 py-1 text-xs font-semibold text-amber-800">
@@ -719,7 +719,7 @@ export const AstrologyPage: React.FC = () => {
                   </a>
                 </div>
               </div>
-              <div className="rounded-xl border border-slate-200 bg-slate-50 p-6 text-xs text-slate-600 lg:col-span-4">
+              <div className="rounded-xl border border-amber-200/80 bg-amber-50/40 p-6 text-xs text-slate-600 lg:col-span-4">
                 <span className="font-serif text-sm font-bold text-slate-900">
                   Consultation Format Options
                 </span>
@@ -769,7 +769,7 @@ export const AstrologyPage: React.FC = () => {
       </section>
 
       {/* 8. FAQ ACCORDION SECTION */}
-      <section className="border-b border-slate-200 bg-slate-50 py-18 text-slate-900 sm:py-24">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-18 text-slate-900 sm:py-24">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <span className="text-[11px] font-bold tracking-widest text-amber-700 uppercase">
@@ -788,7 +788,7 @@ export const AstrologyPage: React.FC = () => {
             {astrologyFaqs.map((faq, idx) => (
               <div
                 key={idx}
-                className="overflow-hidden rounded-xl border border-slate-200 bg-white transition hover:border-amber-400"
+                className="overflow-hidden rounded-xl border border-amber-200/70 bg-white transition hover:border-amber-400"
               >
                 <button
                   onClick={() => toggleFaq(idx)}

@@ -208,7 +208,7 @@ export const CorporateVastuPage: React.FC = () => {
               return (
                 <div
                   key={idx}
-                  className="rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md"
+                  className="rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md"
                 >
                   <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-800">
                     <PillarIcon className="h-5 w-5" />
@@ -312,7 +312,7 @@ export const CorporateVastuPage: React.FC = () => {
                   </button>
                   <Link
                     to="/locations/bangalore/commercial-vastu"
-                    className="flex w-full items-center justify-center gap-2 rounded-lg border border-slate-200 bg-amber-50/60 px-4 py-2.5 text-xs font-semibold text-amber-900 transition hover:bg-amber-100"
+                    className="flex w-full items-center justify-center gap-2 rounded-lg border border-amber-200/80 bg-amber-50 px-4 py-2.5 text-xs font-semibold text-amber-900 transition hover:bg-amber-100"
                   >
                     <span>Bangalore Commercial Landing Page</span>
                   </Link>
@@ -341,7 +341,7 @@ export const CorporateVastuPage: React.FC = () => {
               return (
                 <div
                   key={index}
-                  className="rounded-2xl border border-slate-200/80 bg-slate-50/50 transition-colors"
+                  className="rounded-2xl border border-amber-200/70 bg-[#FAF8F5] transition-colors"
                 >
                   <button
                     onClick={() => toggleFaq(index)}

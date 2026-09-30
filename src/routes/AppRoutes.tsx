@@ -40,6 +40,7 @@ const ConsultantProfilePage = lazy(() =>
   }))
 )
 const FaqPage = lazy(() => import('@/pages/static/FaqPage').then((m) => ({ default: m.FaqPage })))
+const ShopPage = lazy(() => import('@/pages/shop/ShopPage').then((m) => ({ default: m.ShopPage })))
 
 const ServicesPage = lazy(() =>
   import('@/pages/services/ServicesPage').then((m) => ({ default: m.ServicesPage }))
@@ -218,6 +219,12 @@ export const AppRoutes: React.FC = () => {
           <Route path="/astrology/career" element={<CareerAstrologyPage />} />
           <Route path="/astrology/business" element={<BusinessAstrologyPage />} />
           <Route path="/astrology/marriage" element={<MarriageAstrologyPage />} />
+
+          {/* Vastu & Astrology E-Commerce Shop Section */}
+          <Route path="/shop" element={<ShopPage />} />
+          <Route path="/shop/:categoryOrSlug" element={<ShopPage />} />
+          <Route path="/store" element={<ShopPage />} />
+          <Route path="/products" element={<ShopPage />} />
 
           {/* Bangalore Local SEO Architecture */}
           <Route path="/locations" element={<LocationsPage />} />

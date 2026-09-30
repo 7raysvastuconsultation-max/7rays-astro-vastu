@@ -174,7 +174,7 @@ export const ConsultantProfilePage: React.FC = () => {
       </section>
 
       {/* Services Led by Consultant */}
-      <section className="bg-slate-50 py-16 text-slate-900 sm:py-20">
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <h2 className="font-serif text-2xl font-bold text-slate-900">
             Advisory Areas Led by Rishwa Sinha
@@ -182,7 +182,7 @@ export const ConsultantProfilePage: React.FC = () => {
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <Link
               to="/vastu/residential"
-              className="group rounded-xl border border-slate-200 bg-white p-5 transition hover:border-amber-400 hover:shadow-md"
+              className="group rounded-xl border border-amber-200/70 bg-white p-5 transition hover:border-amber-400 hover:shadow-md"
             >
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700">
                 Residential Vastu

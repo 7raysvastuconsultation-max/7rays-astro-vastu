@@ -357,7 +357,7 @@ export const ResidentialVastuPage: React.FC = () => {
               <h2 className="mt-3 font-serif text-3xl leading-tight font-bold text-slate-900 sm:text-4xl">
                 Vastu for Homes, Apartments and Villas
               </h2>
-              <div className="mt-4 rounded-xl border border-amber-200/80 bg-amber-50/50 p-4">
+              <div className="mt-4 rounded-xl border border-amber-200/80 bg-[#FAF8F5] p-4">
                 <p className="text-xs leading-relaxed font-medium text-slate-800">
                   <strong>Direct Answer:</strong> Residential Vastu is the spatial alignment of
                   domestic living zones—entrances, bedrooms, kitchens, and living areas—with natural
@@ -558,7 +558,7 @@ export const ResidentialVastuPage: React.FC = () => {
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {/* Room Card 1: Master Bedroom */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   SOUTH-WEST • NAIRUTYA
@@ -584,7 +584,7 @@ export const ResidentialVastuPage: React.FC = () => {
             </div>
 
             {/* Room Card 2: Kitchen & Agni */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   SOUTH-EAST • AGNEYA
@@ -610,7 +610,7 @@ export const ResidentialVastuPage: React.FC = () => {
             </div>
 
             {/* Room Card 3: Toilet & Drainage */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   DISPOSAL • NON-DEMOLITION
@@ -636,7 +636,7 @@ export const ResidentialVastuPage: React.FC = () => {
             </div>
 
             {/* Room Card 4: North Facing Blueprint */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   NORTH ZONE • KUBER
@@ -662,7 +662,7 @@ export const ResidentialVastuPage: React.FC = () => {
             </div>
 
             {/* Room Card 5: South Facing Myths */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   SOUTH ZONE • MARS &amp; YAMA
@@ -688,7 +688,7 @@ export const ResidentialVastuPage: React.FC = () => {
             </div>
 
             {/* Room Card 6: Apartment Specialized Service */}
-            <div className="group rounded-2xl border border-slate-200/80 bg-slate-50/60 p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
+            <div className="group rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 transition-all duration-300 hover:border-amber-400 hover:bg-white hover:shadow-md">
               <div className="mb-3 flex items-center justify-between">
                 <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                   HIGH-RISE • FLATS
@@ -715,8 +715,8 @@ export const ResidentialVastuPage: React.FC = () => {
           </div>
 
           {/* Comparative Framework: Apartment vs Villa Vastu Realities */}
-          <div className="mt-14 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs">
-            <div className="border-b border-slate-200 bg-slate-50 px-6 py-4">
+          <div className="mt-14 overflow-hidden rounded-2xl border border-amber-200/80 bg-white shadow-xs">
+            <div className="border-b border-amber-200/80 bg-[#FAF8F5] px-6 py-4">
               <span className="text-[11px] font-bold tracking-wider text-amber-800 uppercase">
                 PRACTICAL DECISION FRAMEWORK
               </span>
@@ -732,7 +732,7 @@ export const ResidentialVastuPage: React.FC = () => {
             </div>
             <div className="overflow-x-auto">
               <table className="w-full text-left text-xs text-slate-700">
-                <thead className="bg-slate-100/75 text-[11px] font-bold text-slate-800 uppercase">
+                <thead className="bg-amber-100/70 font-serif text-[11px] font-bold text-amber-950 uppercase">
                   <tr>
                     <th className="px-6 py-3">Evaluation Dimension</th>
                     <th className="px-6 py-3">High-Rise Apartment Reality</th>
@@ -741,7 +741,7 @@ export const ResidentialVastuPage: React.FC = () => {
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-slate-100">
-                  <tr className="hover:bg-slate-50/50">
+                  <tr className="hover:bg-amber-50/40">
                     <td className="px-6 py-3.5 font-semibold text-slate-900">
                       Structural Walls &amp; Columns
                     </td>
@@ -758,7 +758,7 @@ export const ResidentialVastuPage: React.FC = () => {
                       flooring; zero civil destruction.
                     </td>
                   </tr>
-                  <tr className="hover:bg-slate-50/50">
+                  <tr className="hover:bg-amber-50/40">
                     <td className="px-6 py-3.5 font-semibold text-slate-900">
                       Plumbing &amp; Wet Shafts
                     </td>
@@ -774,7 +774,7 @@ export const ResidentialVastuPage: React.FC = () => {
                       perimeters without altering plumbing.
                     </td>
                   </tr>
-                  <tr className="hover:bg-slate-50/50">
+                  <tr className="hover:bg-amber-50/40">
                     <td className="px-6 py-3.5 font-semibold text-slate-900">
                       Main Entrance (Pada)
                     </td>
@@ -791,7 +791,7 @@ export const ResidentialVastuPage: React.FC = () => {
                       alignments.
                     </td>
                   </tr>
-                  <tr className="hover:bg-slate-50/50">
+                  <tr className="hover:bg-amber-50/40">
                     <td className="px-6 py-3.5 font-semibold text-slate-900">
                       Environmental &amp; Subterranean Factors
                     </td>
