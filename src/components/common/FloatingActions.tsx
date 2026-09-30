@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { PhoneCall, MessageCircle, Calendar } from 'lucide-react'
+import { PhoneCall, MessageCircle } from 'lucide-react'
 import { env } from '@/config/env'
 import { siteConfig } from '@/config/site'
 import { trackConversion } from '@/utils/analytics'
@@ -8,7 +8,7 @@ interface FloatingActionsProps {
   onOpenConsultation?: () => void
 }
 
-export const FloatingActions: React.FC<FloatingActionsProps> = ({ onOpenConsultation }) => {
+export const FloatingActions: React.FC<FloatingActionsProps> = () => {
   const [isVisible, setIsVisible] = useState(true)
   const lastScrollY = useRef(0)
 
@@ -32,10 +32,10 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({ onOpenConsulta
         window.innerHeight + currentScrollY >= document.body.offsetHeight - 150
       ) {
         setIsVisible(true)
-      } else if (delta > 10) {
+      } else if (delta > 15) {
         // Fast scroll down -> minimize
         setIsVisible(false)
-      } else if (delta < -8) {
+      } else if (delta < -10) {
         // Scroll up -> reveal
         setIsVisible(true)
       }
@@ -55,83 +55,57 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({ onOpenConsulta
     trackConversion('whatsapp_click', 'Floating Action Button')
   }
 
-  const handleBookClick = () => {
-    trackConversion('consultation_booking', 'Floating Action Bar Mobile')
-    if (onOpenConsultation) {
-      onOpenConsultation()
-    }
-  }
-
   return (
     <>
       {/* ========================================================================= */}
-      {/* 1. MOBILE & TABLET: iOS-Style Floating Glass Quick Action Hub             */}
-      {/* Responsive: visible below md (<768px). Features Call + WhatsApp + Book     */}
+      {/* 1. MOBILE VIEW: Tiny Floating Round Buttons (WhatsApp & Call)             */}
+      {/* Stacked neatly on the bottom right above the bottom navigation bar        */}
+      {/* Does NOT overlap bottom nav (bottom-18 provides clear separation)         */}
       {/* ========================================================================= */}
       <aside
-        aria-label="Quick Contact Actions"
-        className={`pointer-events-none fixed inset-x-0 bottom-3 z-50 flex justify-center px-3 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] md:hidden ${
-          isVisible ? 'translate-y-0 scale-100 opacity-100' : 'translate-y-20 scale-95 opacity-0'
+        aria-label="Quick Mobile Contact"
+        className={`fixed right-3 bottom-18 z-40 flex flex-col items-center gap-2 transition-all duration-300 md:hidden ${
+          isVisible
+            ? 'translate-y-0 scale-100 opacity-100'
+            : 'pointer-events-none translate-y-8 scale-90 opacity-0'
         }`}
-        style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
       >
-        <div className="pointer-events-auto flex w-full max-w-[390px] items-center justify-between gap-1.5 rounded-full border border-amber-500/30 bg-slate-950/92 p-1.5 shadow-[0_12px_36px_rgba(0,0,0,0.7),0_0_20px_rgba(212,175,55,0.15)] backdrop-blur-2xl">
-          {/* Call Consultant Button */}
-          <a
-            href={telHref}
-            onClick={handleCallClick}
-            className="group flex flex-1 items-center justify-center gap-1.5 rounded-full border border-amber-500/20 bg-slate-900/90 py-2.5 text-[11px] font-semibold tracking-wide text-amber-300 transition-all duration-200 active:scale-95"
-            aria-label="Call 7Rays Astro Vastu Consultant"
-          >
-            <div className="flex h-5 w-5 items-center justify-center rounded-full bg-amber-400/15 text-amber-400">
-              <PhoneCall className="h-3 w-3" />
-            </div>
-            <span>Call</span>
-          </a>
+        {/* Tiny Round WhatsApp Button */}
+        <a
+          href={whatsAppHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={handleWhatsAppClick}
+          className="group relative flex h-10 w-10 items-center justify-center rounded-full border border-emerald-300/40 bg-emerald-500 text-white shadow-lg shadow-emerald-950/50 transition-transform active:scale-90"
+          aria-label="Chat on WhatsApp"
+        >
+          <MessageCircle className="h-5 w-5" />
+          <span className="absolute -top-0.5 -right-0.5 flex h-2 w-2">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-200 opacity-75" />
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-100" />
+          </span>
+        </a>
 
-          {/* WhatsApp Button */}
-          <a
-            href={whatsAppHref}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={handleWhatsAppClick}
-            className="group flex flex-1 items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-emerald-600 to-emerald-500 py-2.5 text-[11px] font-semibold tracking-wide text-white shadow-sm shadow-emerald-950/40 transition-all duration-200 active:scale-95"
-            aria-label="Chat on WhatsApp"
-          >
-            <div className="relative flex h-5 w-5 items-center justify-center rounded-full bg-white/20">
-              <MessageCircle className="h-3 w-3 text-white" />
-              <span className="absolute -top-0.5 -right-0.5 flex h-1.5 w-1.5">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-200 opacity-75" />
-                <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-100" />
-              </span>
-            </div>
-            <span>WhatsApp</span>
-          </a>
-
-          {/* Instant Book Consultation Button */}
-          <button
-            onClick={handleBookClick}
-            className="group flex flex-1 items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 py-2.5 text-[11px] font-bold tracking-wide text-slate-950 shadow-sm shadow-amber-500/30 transition-all duration-200 active:scale-95"
-            aria-label="Book a Consultation"
-          >
-            <div className="flex h-5 w-5 items-center justify-center rounded-full bg-slate-950/20 text-slate-950">
-              <Calendar className="h-3 w-3" />
-            </div>
-            <span>Book</span>
-          </button>
-        </div>
+        {/* Tiny Round Call Button */}
+        <a
+          href={telHref}
+          onClick={handleCallClick}
+          className="group flex h-9 w-9 items-center justify-center rounded-full border border-amber-500/50 bg-slate-950/95 text-amber-400 shadow-md shadow-black/60 transition-transform active:scale-90"
+          aria-label="Call 7Rays Astro Vastu Consultant"
+        >
+          <PhoneCall className="h-4 w-4" />
+        </a>
       </aside>
 
       {/* ========================================================================= */}
-      {/* 2. DESKTOP & LAPTOP: Floating WhatsApp & Call Buttons                      */}
-      {/* Responsive: visible on md:flex (>=768px)                                  */}
+      {/* 2. DESKTOP VIEW: Floating WhatsApp & Call Buttons (>=768px)                */}
       {/* ========================================================================= */}
       <aside
         aria-label="Desktop Quick Contact"
-        className={`fixed right-6 bottom-6 z-40 hidden flex-col items-end gap-2.5 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] md:flex ${
+        className={`fixed right-6 bottom-6 z-40 hidden flex-col items-end gap-2.5 transition-all duration-300 md:flex ${
           isVisible
             ? 'translate-y-0 scale-100 opacity-100'
-            : 'pointer-events-none translate-y-16 scale-90 opacity-0'
+            : 'pointer-events-none translate-y-12 scale-90 opacity-0'
         }`}
       >
         <a
@@ -139,27 +113,25 @@ export const FloatingActions: React.FC<FloatingActionsProps> = ({ onOpenConsulta
           target="_blank"
           rel="noopener noreferrer"
           onClick={handleWhatsAppClick}
-          className="group relative flex h-13 w-13 items-center justify-center rounded-full bg-gradient-to-tr from-emerald-600 to-emerald-500 text-white shadow-xl shadow-emerald-950/40 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-emerald-500/30"
+          className="group relative flex h-12 w-12 items-center justify-center rounded-full bg-gradient-to-tr from-emerald-600 to-emerald-500 text-white shadow-xl shadow-emerald-950/40 transition-all duration-300 hover:scale-110 hover:shadow-2xl hover:shadow-emerald-500/30"
           aria-label="Chat with 7Rays Astro Vastu Consultant on WhatsApp"
         >
           <MessageCircle className="h-6 w-6 transition-transform group-hover:rotate-6" />
-          <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
+          <span className="absolute -top-1 -right-1 flex h-3 w-3">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex h-3.5 w-3.5 rounded-full border-2 border-slate-950 bg-emerald-400" />
+            <span className="relative inline-flex h-3 w-3 rounded-full border-2 border-slate-950 bg-emerald-400" />
           </span>
         </a>
 
         <a
           href={telHref}
           onClick={handleCallClick}
-          className="group flex h-11 w-11 items-center justify-center rounded-full border border-amber-500/40 bg-slate-950/90 text-amber-400 shadow-lg shadow-black/60 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-amber-400 hover:text-amber-300"
+          className="group flex h-10 w-10 items-center justify-center rounded-full border border-amber-500/40 bg-slate-950/90 text-amber-400 shadow-lg shadow-black/60 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-amber-400 hover:text-amber-300"
           aria-label="Call 7Rays Astro Vastu Consultant"
         >
-          <PhoneCall className="h-4.5 w-4.5" />
+          <PhoneCall className="h-4 w-4" />
         </a>
       </aside>
     </>
   )
 }
-
-export default FloatingActions
