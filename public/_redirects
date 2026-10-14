@@ -1,18 +1,14 @@
 # ============================================================
-# 7Rays Astro Vastu — Cloudflare Pages Edge Redirects & SPA Routing
+# 7Rays Astro Vastu — Cloudflare Pages Edge Redirects
+# Note: Host-level redirects (e.g. www -> apex) are configured via Cloudflare DNS / Page Rules
 # ============================================================
 
-# 1. Dual-Domain Normalization (www to Apex Canonical 301)
-https://www.7raysastrovastu.in/*  https://7raysastrovastu.in/:splat  301!
-
-# 2. Service & National Landing Page Aliases (301 Permanent)
+# 1. Service & National Landing Page Aliases (301 Permanent)
 /online-vastu-consultation-india  /services/online-vastu-consultation  301
 /astro-vastu-consultation          /services/astro-vastu-synthesis      301
 /vastu/online                      /services/online-vastu-consultation  301
 /vastu/astro                       /services/astro-vastu-synthesis      301
 
-# 3. Blog & Insights Hierarchy Normalization (301 Permanent)
+# 2. Blog & Insights Hierarchy Normalization (301 Permanent)
 /insights/*                        /blog/:splat                         301
 
-# 4. SPA Client Routing Fallback
-/*                                 /index.html                          200

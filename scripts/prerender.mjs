@@ -74,7 +74,9 @@ const staticRoutes = [
   'privacy-policy',
   'terms',
   'disclaimer',
+  '404',
 ]
+
 
 const locationSlugs = ['indiranagar', 'hsr-layout', 'koramangala', 'whitefield']
 
@@ -192,6 +194,11 @@ for (const routePath of allRoutePaths) {
     }
 
     fs.writeFileSync(targetFile, pageHtml, 'utf8')
+
+    // If 404 route, also emit dist/404.html for Cloudflare Pages fallback
+    if (routePath === '404') {
+      fs.writeFileSync(path.join(distDir, '404.html'), pageHtml, 'utf8')
+    }
     preRenderedCount++
   } catch (err) {
     console.error(`⚠️ Failed to pre-render route "${url}":`, err)

@@ -3,13 +3,6 @@
   "name": "7rays-astro-vastu",
   "pages_build_output_dir": "dist",
   "compatibility_date": "2026-09-27",
-  "compatibility_flags": ["nodejs_compat"],
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "7rays-astro-vastu-db",
-      "database_id": "00000000-0000-0000-0000-000000000000",
-      "migrations_dir": "migrations"
-    }
-  ]
+  "compatibility_flags": ["nodejs_compat"]
 }
+
