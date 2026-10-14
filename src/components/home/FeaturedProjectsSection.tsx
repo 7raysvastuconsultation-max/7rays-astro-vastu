@@ -7,7 +7,7 @@ export const FeaturedProjectsSection: React.FC = () => {
     {
       title: 'Commercial Office Assessment',
       location: 'Bengaluru',
-      to: '/case-studies/commercial-office-vastu-assessment',
+      to: '/case-studies/corporate-office-bangalore',
       type: 'Illustrative Scenario',
       image: '/images/projects/corporate-office-bangalore.jpg',
       description:
@@ -16,7 +16,7 @@ export const FeaturedProjectsSection: React.FC = () => {
     {
       title: 'Residential & Geopathic Assessment',
       location: 'Bengaluru',
-      to: '/case-studies/residential-vastu-geopathic-stress-assessment',
+      to: '/case-studies/whitefield-apartment-health-harmony',
       type: 'Illustrative Scenario',
       image: '/images/projects/luxury-residence-mumbai.jpg',
       description:
@@ -25,7 +25,7 @@ export const FeaturedProjectsSection: React.FC = () => {
     {
       title: 'Industrial Facility Planning',
       location: 'Bengaluru Hubs',
-      to: '/services/industrial-vastu',
+      to: '/vastu-services/industrial-vastu',
       type: 'Service Protocol',
       image: '/images/services/industrial-vastu.jpg',
       description:
@@ -34,7 +34,7 @@ export const FeaturedProjectsSection: React.FC = () => {
     {
       title: 'Apartment Spatial Alignment',
       location: 'Bengaluru',
-      to: '/services/apartment-vastu',
+      to: '/vastu-services/apartment-vastu',
       type: 'Service Protocol',
       image: '/images/projects/villa-goa.jpg',
       description:
