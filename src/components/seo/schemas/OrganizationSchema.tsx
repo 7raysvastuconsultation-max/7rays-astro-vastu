@@ -46,6 +46,14 @@ export const OrganizationSchema: React.FC = () => {
       '@type': 'Person',
       '@id': `${siteConfig.url}/#rishwa-sinha`,
     },
+    areaServed: [
+      { '@type': 'Country', name: 'India' },
+      { '@type': 'City', name: 'Bengaluru' },
+      { '@type': 'City', name: 'Mumbai' },
+      { '@type': 'City', name: 'Delhi' },
+      { '@type': 'City', name: 'Hyderabad' },
+      { '@type': 'City', name: 'Pune' },
+    ],
   }
 
   if (businessConfig.phone) {

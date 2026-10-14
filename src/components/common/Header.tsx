@@ -53,6 +53,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
     { label: 'Home', path: '/' },
     { label: 'About', path: '/about' },
     { label: 'Vastu Services', path: '/vastu-services' },
+    { label: 'Online Vastu', path: '/services/online-vastu-consultation' },
     { label: 'Astrology', path: '/astrology' },
     { label: 'Shop', path: '/shop' },
     { label: 'Insights', path: '/insights' },

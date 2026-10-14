@@ -3,9 +3,16 @@
  * Validates and exposes environment variables without leaking secrets
  */
 
+// Normalize site URL: ensure production builds always resolve to authoritative canonical domain
+const rawSiteUrl = (import.meta.env.VITE_SITE_URL as string || '').trim()
+const isLocal = !rawSiteUrl || rawSiteUrl.includes('localhost') || rawSiteUrl.includes('127.0.0.1') || rawSiteUrl.startsWith('http://')
+const resolvedSiteUrl = (import.meta.env.PROD && isLocal) || !rawSiteUrl
+  ? 'https://7raysastrovastu.in'
+  : rawSiteUrl.replace(/\/$/, '')
+
 export const env = {
   // Site & Domain
-  siteUrl: (import.meta.env.VITE_SITE_URL as string) || 'https://7raysastrovastu.in',
+  siteUrl: resolvedSiteUrl,
   siteName: (import.meta.env.VITE_SITE_NAME as string) || '7Rays Astro Vastu',
   defaultTitle:
     (import.meta.env.VITE_SITE_DEFAULT_TITLE as string) ||

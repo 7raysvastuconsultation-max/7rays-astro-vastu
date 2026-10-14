@@ -71,6 +71,12 @@ const NonDemolitionVastuPage = lazy(() =>
 const VastuAuditPage = lazy(() =>
   import('@/pages/services/VastuAuditPage').then((m) => ({ default: m.VastuAuditPage }))
 )
+const OnlineVastuPage = lazy(() =>
+  import('@/pages/services/OnlineVastuPage').then((m) => ({ default: m.OnlineVastuPage }))
+)
+const AstroVastuPage = lazy(() =>
+  import('@/pages/services/AstroVastuPage').then((m) => ({ default: m.AstroVastuPage }))
+)
 const ServiceDetailPage = lazy(() =>
   import('@/pages/services/ServiceDetailPage').then((m) => ({ default: m.ServiceDetailPage }))
 )
@@ -201,6 +207,10 @@ export const AppRoutes: React.FC = () => {
           <Route path="/vastu-services/corporate-vastu" element={<CorporateVastuPage />} />
           <Route path="/vastu-services/non-demolition-vastu" element={<NonDemolitionVastuPage />} />
           <Route path="/vastu-services/vastu-audit" element={<VastuAuditPage />} />
+          <Route path="/services/online-vastu-consultation" element={<OnlineVastuPage />} />
+          <Route path="/online-vastu-consultation-india" element={<OnlineVastuPage />} />
+          <Route path="/services/astro-vastu-synthesis" element={<AstroVastuPage />} />
+          <Route path="/astro-vastu-consultation" element={<AstroVastuPage />} />
           <Route path="/vastu-services/:slug" element={<ServiceDetailPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/services/:slug" element={<ServiceDetailPage />} />

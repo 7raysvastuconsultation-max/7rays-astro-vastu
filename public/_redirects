@@ -1,7 +1,18 @@
 # ============================================================
-# 7Rays Astro Vastu — Cloudflare Pages SPA Routing Fallback
+# 7Rays Astro Vastu — Cloudflare Pages Edge Redirects & SPA Routing
 # ============================================================
-# Direct deep links, subpaths, and browser refreshes must resolve
-# to index.html with a 200 OK status code for React Router v7.
 
-/*    /index.html   200
+# 1. Dual-Domain Normalization (www to Apex Canonical 301)
+https://www.7raysastrovastu.in/*  https://7raysastrovastu.in/:splat  301!
+
+# 2. Service & National Landing Page Aliases (301 Permanent)
+/online-vastu-consultation-india  /services/online-vastu-consultation  301
+/astro-vastu-consultation          /services/astro-vastu-synthesis      301
+/vastu/online                      /services/online-vastu-consultation  301
+/vastu/astro                       /services/astro-vastu-synthesis      301
+
+# 3. Blog & Insights Hierarchy Normalization (301 Permanent)
+/insights/*                        /blog/:splat                         301
+
+# 4. SPA Client Routing Fallback
+/*                                 /index.html                          200

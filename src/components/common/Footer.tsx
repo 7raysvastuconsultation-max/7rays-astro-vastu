@@ -144,6 +144,16 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link to="/services/online-vastu-consultation" className="transition hover:text-amber-400">
+                  Online Vastu (Pan-India)
+                </Link>
+              </li>
+              <li>
+                <Link to="/services/astro-vastu-synthesis" className="transition hover:text-amber-400">
+                  Astro-Vastu Synthesis
+                </Link>
+              </li>
+              <li>
                 <Link to="/vastu/residential" className="transition hover:text-amber-400">
                   Residential Vastu
                 </Link>

@@ -259,7 +259,7 @@ export const HtmlSitemapPage: React.FC = () => {
                 {blogPostsData.map((post) => (
                   <li key={post.slug}>
                     <Link
-                      to={`/insights/${post.slug}`}
+                      to={`/blog/${post.slug}`}
                       className="line-clamp-1 hover:text-amber-800"
                     >
                       {post.title}

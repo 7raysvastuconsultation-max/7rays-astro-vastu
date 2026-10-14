@@ -35,6 +35,8 @@ const staticRoutes = [
   { path: 'vastu/corporate', changefreq: 'weekly', priority: 0.9 },
   { path: 'vastu/industrial', changefreq: 'weekly', priority: 0.9 },
   { path: 'vastu/non-demolition', changefreq: 'weekly', priority: 0.9 },
+  { path: 'services/online-vastu-consultation', changefreq: 'weekly', priority: 0.95 },
+  { path: 'services/astro-vastu-synthesis', changefreq: 'weekly', priority: 0.95 },
   { path: 'vastu-services/vastu-audit', changefreq: 'weekly', priority: 0.9 },
   { path: 'international', changefreq: 'weekly', priority: 0.85 },
   { path: 'astrology', changefreq: 'weekly', priority: 0.9 },

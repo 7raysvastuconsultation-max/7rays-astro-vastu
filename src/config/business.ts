@@ -100,7 +100,15 @@ export const businessConfig: BusinessConfig = {
   description:
     'Vastu Shastra and Vedic Astrology consultancy in Bengaluru led by Certified Vastu Consultant Rishwa Sinha. Practical, non-demolition energy alignment for residential, commercial, and industrial spaces.',
   serviceAreas: [
+    'India',
     'Bengaluru',
+    'Mumbai',
+    'Delhi NCR',
+    'Hyderabad',
+    'Pune',
+    'Kolkata',
+    'Chennai',
+    'Ahmedabad',
     'Dasarahalli',
     'Hebbal',
     'Yelahanka',
@@ -113,7 +121,6 @@ export const businessConfig: BusinessConfig = {
     'Jayanagar',
     'Malleshwaram',
     'Karnataka',
-    'India',
   ],
   // Verified operational capabilities confirmed by founder Rishwa Sinha:
   diagnosticTools: ['Calibrated digital compass', 'Digital Gauss meter', 'Dowsing rods'],
