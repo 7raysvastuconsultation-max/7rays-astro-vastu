@@ -140,6 +140,17 @@ for (const routePath of allRoutePaths) {
     const canonicalMatch = renderedAppHtml.match(/<link rel="canonical" href="([\s\S]*?)"\s*\/?>/)
     const canonicalUrl = canonicalMatch ? canonicalMatch[1] : `https://7raysastrovastu.in${url}`.replace(/\/$/, '')
 
+    // Extract Robots Meta
+    const robotsMatch = renderedAppHtml.match(/<meta name="robots" content="([\s\S]*?)"\s*\/?>/)
+    const robotsContent = robotsMatch
+      ? robotsMatch[1]
+      : (routePath === '404' ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')
+
+    const googlebotMatch = renderedAppHtml.match(/<meta name="googlebot" content="([\s\S]*?)"\s*\/?>/)
+    const googlebotContent = googlebotMatch
+      ? googlebotMatch[1]
+      : robotsContent
+
     // Extract all JSON-LD scripts
     const jsonLdMatches = renderedAppHtml.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g) || []
     const jsonLdMarkup = jsonLdMatches.join('\n    ')
@@ -165,7 +176,26 @@ for (const routePath of allRoutePaths) {
       `<meta name="description" content="${metaDescription}" />`
     )
 
-    // 3. Inject Canonical Link
+    // 3. Inject Robots Directives
+    if (pageHtml.includes('<meta name="robots"')) {
+      pageHtml = pageHtml.replace(
+        /<meta name="robots" content="[\s\S]*?"\s*\/?>/,
+        `<meta name="robots" content="${robotsContent}" />`
+      )
+    } else {
+      pageHtml = pageHtml.replace('</head>', `  <meta name="robots" content="${robotsContent}" />\n  </head>`)
+    }
+
+    if (pageHtml.includes('<meta name="googlebot"')) {
+      pageHtml = pageHtml.replace(
+        /<meta name="googlebot" content="[\s\S]*?"\s*\/?>/,
+        `<meta name="googlebot" content="${googlebotContent}" />`
+      )
+    } else {
+      pageHtml = pageHtml.replace('</head>', `  <meta name="googlebot" content="${googlebotContent}" />\n  </head>`)
+    }
+
+    // 4. Inject Canonical Link
     if (pageHtml.includes('<link rel="canonical"')) {
       pageHtml = pageHtml.replace(
         /<link rel="canonical" href="[\s\S]*?"\s*\/?>/,
@@ -175,15 +205,15 @@ for (const routePath of allRoutePaths) {
       pageHtml = pageHtml.replace('</head>', `  <link rel="canonical" href="${canonicalUrl}" />\n  </head>`)
     }
 
-    // 4. Inject JSON-LD Structured Data
+    // 5. Inject JSON-LD Structured Data
     if (jsonLdMarkup) {
       pageHtml = pageHtml.replace('</head>', `  ${jsonLdMarkup}\n  </head>`)
     }
 
-    // 5. Inject Pre-rendered Body into #root
+    // 6. Inject Pre-rendered Body into #root
     pageHtml = pageHtml.replace('<div id="root"></div>', `<div id="root">${bodyContent}</div>`)
 
-    // 6. Write to destination file
+    // 7. Write to destination file
     let targetFile
     if (routePath === '') {
       targetFile = path.join(distDir, 'index.html')
