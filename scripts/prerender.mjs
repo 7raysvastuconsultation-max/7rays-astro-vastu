@@ -124,110 +124,125 @@ let preRenderedCount = 0
 for (const routePath of allRoutePaths) {
   const url = `/${routePath}`.replace(/\/+/g, '/')
   try {
-    const { html: renderedAppHtml } = render(url)
+    const renderResult = render(url)
+    const renderedAppHtml = renderResult.html || ""
+    const head = renderResult.head || {}
 
-    // Extract Title
-    const titleMatch = renderedAppHtml.match(/<title>([\s\S]*?)<\/title>/)
-    const pageTitle = titleMatch ? titleMatch[1] : '7Rays Astro Vastu | Vastu & Astrology Consultation in Bangalore'
+    // Extract or fall back to title
+    let pageTitle = ""
+    if (head.title) {
+      const match = head.title.match(/<title[^>]*>([\s\S]*?)<\/title>/i)
+      if (match) pageTitle = match[1]
+    }
+    if (!pageTitle) {
+      const match = renderedAppHtml.match(/<title[^>]*>([\s\S]*?)<\/title>/i)
+      if (match) pageTitle = match[1]
+    }
+    if (!pageTitle) {
+      pageTitle = "7Rays Astro Vastu | Vastu & Astrology Consultation in Bangalore"
+    }
 
-    // Extract Meta Description
-    const metaDescMatch = renderedAppHtml.match(/<meta name="description" content="([\s\S]*?)"\s*\/?>/)
-    const metaDescription = metaDescMatch
-      ? metaDescMatch[1]
-      : 'Vastu Shastra and Vedic Astrology consultations in Bengaluru led by Certified Vastu Consultant Rishwa Sinha.'
+    // Extract or fall back to canonical URL
+    let canonicalUrl = ""
+    if (head.link) {
+      const match = head.link.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["'][^>]*\/?>/i)
+      if (match) canonicalUrl = match[1]
+    }
+    if (!canonicalUrl) {
+      canonicalUrl = `https://7raysastrovastu.in${url}`.replace(/\/$/, "") || "https://7raysastrovastu.in"
+    }
 
-    // Extract Canonical
-    const canonicalMatch = renderedAppHtml.match(/<link rel="canonical" href="([\s\S]*?)"\s*\/?>/)
-    const canonicalUrl = canonicalMatch ? canonicalMatch[1] : `https://7raysastrovastu.in${url}`.replace(/\/$/, '')
+    // Default robots content
+    const robotsContent =
+      routePath === "404"
+        ? "noindex, nofollow"
+        : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 
-    // Extract Robots Meta
-    const robotsMatch = renderedAppHtml.match(/<meta name="robots" content="([\s\S]*?)"\s*\/?>/)
-    const robotsContent = robotsMatch
-      ? robotsMatch[1]
-      : (routePath === '404' ? 'noindex, nofollow' : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')
-
-    const googlebotMatch = renderedAppHtml.match(/<meta name="googlebot" content="([\s\S]*?)"\s*\/?>/)
-    const googlebotContent = googlebotMatch
-      ? googlebotMatch[1]
-      : robotsContent
-
-    // Extract all JSON-LD scripts
-    const jsonLdMatches = renderedAppHtml.match(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g) || []
-    const jsonLdMarkup = jsonLdMatches.join('\n    ')
-
-    // Clean up body content (strip hoisted head tags from the body container)
+    // Clean body content (remove JSON-LD and hoisted title tags from root container)
     let bodyContent = renderedAppHtml
-      .replace(/<title>[\s\S]*?<\/title>/g, '')
-      .replace(/<meta name="description"[\s\S]*?\/?>/g, '')
-      .replace(/<meta name="robots"[\s\S]*?\/?>/g, '')
-      .replace(/<meta name="googlebot"[\s\S]*?\/?>/g, '')
-      .replace(/<link rel="canonical"[\s\S]*?\/?>/g, '')
-      .replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g, '')
+      .replace(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi, "")
+      .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
 
     // Compose final static HTML document
     let pageHtml = indexHtmlTemplate
 
-    // 1. Inject Title
-    pageHtml = pageHtml.replace(/<title>[\s\S]*?<\/title>/, `<title>${pageTitle}</title>`)
+    // Clean fallback metadata tags from template
+    pageHtml = pageHtml
+      .replace(/<title>[\s\S]*?<\/title>/gi, "")
+      .replace(/<meta\s+name=["']description["'][\s\S]*?\/?>/gi, "")
+      .replace(/<meta\s+name=["']robots["'][\s\S]*?\/?>/gi, "")
+      .replace(/<meta\s+name=["']googlebot["'][\s\S]*?\/?>/gi, "")
+      .replace(/<meta\s+name=["']bingbot["'][\s\S]*?\/?>/gi, "")
+      .replace(/<meta\s+property=["']og:title["'][\s\S]*?\/?>/gi, "")
+      .replace(/<meta\s+property=["']og:description["'][\s\S]*?\/?>/gi, "")
+      .replace(/<meta\s+property=["']og:url["'][\s\S]*?\/?>/gi, "")
+      .replace(/<link\s+rel=["']canonical["'][\s\S]*?\/?>/gi, "")
 
-    // 2. Inject Meta Description
-    pageHtml = pageHtml.replace(
-      /<meta name="description" content="[\s\S]*?"\s*\/?>/,
-      `<meta name="description" content="${metaDescription}" />`
-    )
+    // Prepare tags to inject into <head>
+    const headInjections = []
 
-    // 3. Inject Robots Directives
-    if (pageHtml.includes('<meta name="robots"')) {
-      pageHtml = pageHtml.replace(
-        /<meta name="robots" content="[\s\S]*?"\s*\/?>/,
-        `<meta name="robots" content="${robotsContent}" />`
-      )
+    // Inject title
+    if (head.title) {
+      headInjections.push(head.title)
     } else {
-      pageHtml = pageHtml.replace('</head>', `  <meta name="robots" content="${robotsContent}" />\n  </head>`)
+      headInjections.push(`<title>${pageTitle}</title>`)
     }
 
-    if (pageHtml.includes('<meta name="googlebot"')) {
-      pageHtml = pageHtml.replace(
-        /<meta name="googlebot" content="[\s\S]*?"\s*\/?>/,
-        `<meta name="googlebot" content="${googlebotContent}" />`
-      )
+    // Inject meta tags from Helmet (contains description, robots, googlebot, og:*, twitter:*)
+    if (head.meta) {
+      let metaTags = head.meta
+      if (routePath === "404") {
+        metaTags = metaTags.replace(/content=["']index,\s*follow[^"']*["']/gi, "content=\"noindex, nofollow\"")
+      }
+      headInjections.push(metaTags)
     } else {
-      pageHtml = pageHtml.replace('</head>', `  <meta name="googlebot" content="${googlebotContent}" />\n  </head>`)
+      headInjections.push(`<meta name="description" content="Vastu Shastra and Vedic Astrology consultations in Bengaluru led by Certified Vastu Consultant Rishwa Sinha." />`)
+      headInjections.push(`<meta name="robots" content="${robotsContent}" />`)
+      headInjections.push(`<meta name="googlebot" content="${robotsContent}" />`)
     }
 
-    // 4. Inject Canonical Link
-    if (pageHtml.includes('<link rel="canonical"')) {
-      pageHtml = pageHtml.replace(
-        /<link rel="canonical" href="[\s\S]*?"\s*\/?>/,
-        `<link rel="canonical" href="${canonicalUrl}" />`
-      )
+    // Inject canonical link
+    if (head.link) {
+      headInjections.push(head.link)
     } else {
-      pageHtml = pageHtml.replace('</head>', `  <link rel="canonical" href="${canonicalUrl}" />\n  </head>`)
+      headInjections.push(`<link rel="canonical" href="${canonicalUrl}" />`)
     }
 
-    // 5. Inject JSON-LD Structured Data
-    if (jsonLdMarkup) {
-      pageHtml = pageHtml.replace('</head>', `  ${jsonLdMarkup}\n  </head>`)
+    // Inject Helmet scripts (JSON-LD structured data)
+    if (head.script) {
+      headInjections.push(head.script)
     }
 
-    // 6. Inject Pre-rendered Body into #root
+    // Also extract any JSON-LD scripts that were rendered in body
+    const jsonLdMatches = renderedAppHtml.match(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi) || []
+    for (const scriptTag of jsonLdMatches) {
+      if (!headInjections.some((inj) => inj.includes(scriptTag))) {
+        headInjections.push(scriptTag)
+      }
+    }
+
+    // Inject all into </head>
+    const headMarkup = "\n    " + headInjections.filter(Boolean).join("\n    ") + "\n  "
+    pageHtml = pageHtml.replace("</head>", `${headMarkup}</head>`)
+
+    // Inject Pre-rendered Body into #root
     pageHtml = pageHtml.replace('<div id="root"></div>', `<div id="root">${bodyContent}</div>`)
 
-    // 7. Write to destination file
+    // Write to destination file
     let targetFile
-    if (routePath === '') {
-      targetFile = path.join(distDir, 'index.html')
+    if (routePath === "") {
+      targetFile = path.join(distDir, "index.html")
     } else {
       const targetDir = path.join(distDir, routePath)
       fs.mkdirSync(targetDir, { recursive: true })
-      targetFile = path.join(targetDir, 'index.html')
+      targetFile = path.join(targetDir, "index.html")
     }
 
-    fs.writeFileSync(targetFile, pageHtml, 'utf8')
+    fs.writeFileSync(targetFile, pageHtml, "utf8")
 
     // If 404 route, also emit dist/404.html for Cloudflare Pages fallback
-    if (routePath === '404') {
-      fs.writeFileSync(path.join(distDir, '404.html'), pageHtml, 'utf8')
+    if (routePath === "404") {
+      fs.writeFileSync(path.join(distDir, "404.html"), pageHtml, "utf8")
     }
     preRenderedCount++
   } catch (err) {

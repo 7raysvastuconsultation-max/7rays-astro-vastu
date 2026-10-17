@@ -169,5 +169,19 @@ export function render(url: string) {
     </HelmetProvider>
   )
 
-  return { html }
+  const helmet = helmetContext.helmet || {}
+
+  return {
+    html,
+    head: {
+      title: helmet.title ? helmet.title.toString() : '',
+      meta: helmet.meta ? helmet.meta.toString() : '',
+      link: helmet.link ? helmet.link.toString() : '',
+      script: helmet.script ? helmet.script.toString() : '',
+      style: helmet.style ? helmet.style.toString() : '',
+      htmlAttributes: helmet.htmlAttributes ? helmet.htmlAttributes.toString() : '',
+      bodyAttributes: helmet.bodyAttributes ? helmet.bodyAttributes.toString() : '',
+    },
+    helmet,
+  }
 }
