@@ -7,7 +7,7 @@
     "dev": "vite",
     "dev:all": "node scripts/start-dev.mjs",
     "validate:business": "node scripts/validate-business-truth.mjs",
-    "build": "node scripts/validate-business-truth.mjs && tsc -b && vite build && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs",
+    "build": "node scripts/validate-business-truth.mjs && tsc -b && vite build && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs && node scripts/check-internal-links.mjs",
     "typecheck": "tsc -b --noEmit",
     "test": "vitest run",
     "lint": "eslint .",
@@ -17,7 +17,8 @@
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "server": "node server/index.mjs",
     "server:dev": "node --watch server/index.mjs",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "check:links": "node scripts/check-internal-links.mjs"
   },
   "dependencies": {
     "cors": "^2.8.6",
