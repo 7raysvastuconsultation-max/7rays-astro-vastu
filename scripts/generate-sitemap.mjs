@@ -51,7 +51,7 @@ const staticRoutes = [
   { path: 'locations/bangalore/vastu-audit', changefreq: 'weekly', priority: 0.9 },
   { path: 'locations/bangalore/astrology', changefreq: 'weekly', priority: 0.9 },
   { path: 'case-studies', changefreq: 'monthly', priority: 0.75 },
-  { path: 'insights', changefreq: 'daily', priority: 0.85 },
+  { path: 'blog', changefreq: 'daily', priority: 0.85 },
   { path: 'contact', changefreq: 'monthly', priority: 0.8 },
   { path: 'consultant/rishwa-sinha', changefreq: 'monthly', priority: 0.85 },
   { path: 'faq', changefreq: 'weekly', priority: 0.85 },
@@ -93,27 +93,32 @@ const caseStudySlugs = [
   'whitefield-apartment-health-harmony',
 ]
 
+function formatSitemapUrl(subPath) {
+  const clean = (subPath || '').replace(/^\/+/, '').replace(/\/+$/, '')
+  return clean ? `${SITE_URL}/${clean}/` : `${SITE_URL}/`
+}
+
 const allRoutes = [
   ...staticRoutes.map((r) => ({
-    url: `${SITE_URL}/${r.path}`.replace(/\/$/, ''),
+    url: formatSitemapUrl(r.path),
     changefreq: r.changefreq,
     priority: r.priority,
     lastmod: TODAY,
   })),
   ...locationSlugs.map((slug) => ({
-    url: `${SITE_URL}/locations/${slug}`,
+    url: formatSitemapUrl(`locations/${slug}`),
     changefreq: 'weekly',
     priority: 0.85,
     lastmod: TODAY,
   })),
   ...blogSlugs.map((slug) => ({
-    url: `${SITE_URL}/blog/${slug}`,
+    url: formatSitemapUrl(`blog/${slug}`),
     changefreq: 'monthly',
     priority: 0.75,
     lastmod: TODAY,
   })),
   ...caseStudySlugs.map((slug) => ({
-    url: `${SITE_URL}/case-studies/${slug}`,
+    url: formatSitemapUrl(`case-studies/${slug}`),
     changefreq: 'monthly',
     priority: 0.7,
     lastmod: TODAY,

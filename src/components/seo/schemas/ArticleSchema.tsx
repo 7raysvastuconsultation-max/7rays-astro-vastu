@@ -22,22 +22,28 @@ export const ArticleSchema: React.FC<ArticleSchemaProps> = ({
   datePublished,
   dateModified,
   authorName = siteConfig.founder.name,
-  authorUrl = `${siteConfig.url}/about`,
+  authorUrl = `${siteConfig.url}/about/`,
   publisherName = siteConfig.name,
   publisherLogo = siteConfig.logoUrl,
 }) => {
+  const normalizedImage = image?.startsWith('http')
+    ? image
+    : `${siteConfig.url}${image?.startsWith('/') ? '' : '/'}${image || 'images/og-image.jpg'}`
+
+  const normalizedUrl = url?.endsWith('/') ? url : `${url}/`
+
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline,
     description,
-    url,
-    image: [image],
+    url: normalizedUrl,
+    image: [normalizedImage],
     datePublished,
     dateModified: dateModified || datePublished,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': url,
+      '@id': normalizedUrl,
     },
     // Author uses stable @id to link to canonical Person entity
     author: {

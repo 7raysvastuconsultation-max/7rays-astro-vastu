@@ -1,8 +1,35 @@
 import React from 'react'
 import { Helmet } from 'react-helmet-async'
+import { useLocation } from 'react-router-dom'
 import { env } from '@/config/env'
 import { siteConfig } from '@/config/site'
 import type { MetaTagProps } from '@/types/seo'
+
+function normalizeCanonical(rawUrl?: string, pathname = '/'): string {
+  const baseUrl = (env.siteUrl || 'https://7raysastrovastu.in').replace(/\/+$/, '')
+  const input = rawUrl?.trim()
+
+  if (!input) {
+    const cleanPath = pathname.replace(/^\/+/, '').replace(/\/+$/, '')
+    return cleanPath ? `${baseUrl}/${cleanPath}/` : `${baseUrl}/`
+  }
+
+  // If a relative path was passed (e.g. "/about" or "services/online-vastu-consultation")
+  if (input.startsWith('/') || !input.includes('://')) {
+    const cleanPath = input.replace(/^\/+/, '').replace(/\/+$/, '')
+    return cleanPath ? `${baseUrl}/${cleanPath}/` : `${baseUrl}/`
+  }
+
+  // Absolute URL
+  try {
+    const parsed = new URL(input)
+    const cleanPath = parsed.pathname.replace(/^\/+/, '').replace(/\/+$/, '')
+    const pathWithSlash = cleanPath ? `/${cleanPath}/` : '/'
+    return `${parsed.origin}${pathWithSlash}`
+  } catch {
+    return input.endsWith('/') ? input : `${input}/`
+  }
+}
 
 export const SEOHead: React.FC<MetaTagProps> = ({
   title,
@@ -19,6 +46,9 @@ export const SEOHead: React.FC<MetaTagProps> = ({
   section,
   tags,
 }) => {
+  const location = useLocation()
+  const pathname = location?.pathname || '/'
+
   // Intelligent title synthesis: avoid double brand suffixes (e.g., "| 7Rays Astro Vastu | 7Rays")
   const fullTitle = React.useMemo(() => {
     if (!title) return env.defaultTitle
@@ -29,7 +59,10 @@ export const SEOHead: React.FC<MetaTagProps> = ({
   }, [title])
 
   const metaDescription = description || env.defaultDescription
-  const currentCanonical = canonicalUrl || env.siteUrl
+  const currentCanonical = React.useMemo(() => {
+    return normalizeCanonical(canonicalUrl, pathname)
+  }, [canonicalUrl, pathname])
+
   const shareImage = ogImage || siteConfig.ogImage
 
   const robotsContent = [

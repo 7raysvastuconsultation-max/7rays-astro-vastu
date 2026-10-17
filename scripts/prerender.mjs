@@ -162,7 +162,7 @@ for (const routePath of allRoutePaths) {
       metaDescription = "Vastu Shastra and Vedic Astrology consultations in Bengaluru led by Certified Vastu Consultant Rishwa Sinha. Non-demolition energy alignment for modern spaces."
     }
 
-    // Extract Canonical URL
+    // Extract Canonical URL and enforce trailing-slash consistency
     let canonicalUrl = ""
     const canonicalMatch = renderedAppHtml.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([\s\S]*?)["'][^>]*\/?>/i)
     if (canonicalMatch) {
@@ -172,7 +172,16 @@ for (const routePath of allRoutePaths) {
       if (hl) canonicalUrl = hl[1].trim()
     }
     if (!canonicalUrl) {
-      canonicalUrl = `https://7raysastrovastu.in${url}`.replace(/\/$/, "") || "https://7raysastrovastu.in"
+      const cleanPath = url.replace(/^\/+/, "").replace(/\/+$/, "")
+      canonicalUrl = cleanPath ? `https://7raysastrovastu.in/${cleanPath}/` : "https://7raysastrovastu.in/"
+    } else {
+      try {
+        const parsed = new URL(canonicalUrl)
+        const cleanPath = parsed.pathname.replace(/^\/+/, "").replace(/\/+$/, "")
+        canonicalUrl = cleanPath ? `${parsed.origin}/${cleanPath}/` : `${parsed.origin}/`
+      } catch {
+        if (!canonicalUrl.endsWith("/")) canonicalUrl += "/"
+      }
     }
 
     // Robots directive
@@ -235,7 +244,7 @@ for (const routePath of allRoutePaths) {
       )
     }
 
-    // 4. Inject Canonical Link
+    // 4. Inject Canonical Link & Normalize Open Graph URL
     if (/<link\s+rel=["']canonical["']/i.test(pageHtml)) {
       pageHtml = pageHtml.replace(
         /<link\s+rel=["']canonical["'][\s\S]*?\/?>/i,
@@ -243,6 +252,13 @@ for (const routePath of allRoutePaths) {
       )
     } else {
       pageHtml = pageHtml.replace("</head>", `  <link rel="canonical" href="${canonicalUrl}" />\n  </head>`)
+    }
+
+    if (/<meta\s+property=["']og:url["']/i.test(pageHtml)) {
+      pageHtml = pageHtml.replace(
+        /<meta\s+property=["']og:url["'][\s\S]*?\/?>/i,
+        `<meta property="og:url" content="${canonicalUrl}" />`
+      )
     }
 
     // 5. Inject Social Meta Tags and JSON-LD Structured Data
