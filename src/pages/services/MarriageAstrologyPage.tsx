@@ -73,15 +73,15 @@ export const MarriageAstrologyPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Marriage Astrology & Kundli Milan in Bangalore | 7Rays"
-        description="Compassionate, ethical Vedic marriage compatibility and Kundli Milan in Bangalore with Certified Vastu Consultant Rishwa Sinha. In-depth, fear-free guidance."
+        title="Marriage Astrology & Kundli Milan India | Horoscope Matching | 7Rays"
+        description="Compassionate, ethical Vedic marriage compatibility and Kundli Milan across India with Rishwa Sinha. In-depth Ashta Kuta analysis and relationship timing."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Astrology', url: '/astrology' },
-          { name: 'Marriage Astrology', url: '/astrology/marriage' },
+          { name: 'Astrology', url: '/astrology/' },
+          { name: 'Marriage Astrology', url: '/astrology/marriage/' },
         ]}
       />
       <ServiceSchema

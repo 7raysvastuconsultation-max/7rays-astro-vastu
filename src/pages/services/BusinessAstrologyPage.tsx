@@ -81,15 +81,15 @@ export const BusinessAstrologyPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Business Astrology Consultation in Bangalore | 7Rays"
-        description="Vedic business astrology for founders, executives, and commercial enterprises in Bangalore by Rishwa Sinha. Venture timing, partnership synergy & ethics."
+        title="Business Astrology Consultation India | Founder & Venture Guidance | 7Rays"
+        description="Vedic business astrology for founders, executives, and commercial enterprises across India by Rishwa Sinha. Venture timing, partnership synergy, and expansion horizons."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Astrology', url: '/astrology' },
-          { name: 'Business Astrology', url: '/astrology/business' },
+          { name: 'Astrology', url: '/astrology/' },
+          { name: 'Business Astrology', url: '/astrology/business/' },
         ]}
       />
       <ServiceSchema

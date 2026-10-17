@@ -36,8 +36,8 @@ export const ResidentialVastuPage: React.FC = () => {
   const routerLocation = useLocation()
   const isVastuServicesAlias = routerLocation.pathname.includes('/vastu-services/')
   const pageTitle = isVastuServicesAlias
-    ? 'Home Vastu Shastra Consultation in Bangalore | 7Rays'
-    : 'Residential Vastu Consultant in Bangalore | 7Rays'
+    ? 'Home Vastu Shastra Consultation India | 7Rays'
+    : 'Residential Vastu Consultant India | Scientific Home Vastu | 7Rays'
   const canonicalUrl = `${siteConfig.url}/vastu/residential`
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('Residential Vastu Consultation')
@@ -225,19 +225,19 @@ export const ResidentialVastuPage: React.FC = () => {
     <>
       <SEOHead
         title={pageTitle}
-        description="Create a harmonious and prosperous home with expert Residential Vastu consultation for apartments, villas, and independent homes. Zero structural demolition."
+        description="Consult India's trusted residential Vastu consultant for flats, villas, and homes. Scientific 16-zone energy balancing with zero demolition across India."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Vastu Services', url: '/vastu-services' },
-          { name: 'Residential Vastu', url: '/vastu-services/residential-vastu' },
+          { name: 'Vastu Services', url: '/vastu-services/' },
+          { name: 'Residential Vastu', url: '/vastu/residential/' },
         ]}
       />
       <ServiceSchema
-        name="Residential Vastu Consultation"
-        description="Expert Residential Vastu consultation for apartments, villas, new homes, and existing properties."
+        name="Residential Vastu Consultation India"
+        description="Expert scientific Residential Vastu consultation for apartments, villas, and independent homes across India with zero structural demolition."
         serviceType="Residential Vastu Shastra"
         providerName={siteConfig.name}
         providerUrl={siteConfig.url}

@@ -38,19 +38,19 @@ export const VastuAuditPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Vastu Audit & Consultation in Bangalore | 7Rays"
-        description="Book a scientific Vastu Audit with 7Rays. Complete 16-zone CAD energy mapping, geopathic stress scanning, and zero-demolition remedy blueprints in Bangalore."
+        title="Scientific Vastu Audit Across India | 16-Zone Energy Mapping | 7Rays"
+        description="Book a scientific Vastu Audit across India with 7Rays. Complete 16-zone CAD energy mapping, geopathic stress evaluation, and zero-demolition remedy blueprints."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Vastu Services', url: '/vastu-services' },
-          { name: 'Vastu Audit', url: '/vastu-services/vastu-audit' },
+          { name: 'Vastu Services', url: '/vastu-services/' },
+          { name: 'Vastu Audit', url: '/vastu-services/vastu-audit/' },
         ]}
       />
       <ServiceSchema
-        name="Vastu Audit & Property Energy Assessment"
-        description="Scientific directional and energy audit of existing properties with detailed CAD reporting."
+        name="Scientific Vastu Audit Across India"
+        description="Scientific directional and energy audit of existing properties with detailed CAD reporting across India."
         serviceType="Vastu Audit Service"
         providerName={siteConfig.name}
         providerUrl={siteConfig.url}

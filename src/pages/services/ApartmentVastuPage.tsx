@@ -87,21 +87,21 @@ export const ApartmentVastuPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Apartment Vastu Consultant in Bangalore | 7Rays"
-        description="Specialized Apartment Vastu consultancy in Bangalore for modern flats and high-rise living. Non-demolition elemental remedies, 16-zone CAD audits, and entrance pada balancing."
+        title="Apartment Vastu Consultant India | Flats & High-Rise Living | 7Rays"
+        description="Specialized Apartment Vastu consultancy across India for modern flats, penthouses, and high-rise living. Non-demolition elemental remedies and 16-zone CAD audits."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Vastu Services', url: '/vastu-services' },
-          { name: 'Residential Vastu', url: '/vastu-services/residential-vastu' },
-          { name: 'Apartment Vastu', url: '/vastu/apartment-vastu' },
+          { name: 'Vastu Services', url: '/vastu-services/' },
+          { name: 'Residential Vastu', url: '/vastu/residential/' },
+          { name: 'Apartment Vastu', url: '/vastu/apartment-vastu/' },
         ]}
       />
       <ServiceSchema
-        name="Apartment Vastu Consultation"
-        description="Scientific non-demolition Vastu consultation for modern high-rise apartments and flats in Bangalore."
+        name="Apartment Vastu Consultation India"
+        description="Scientific non-demolition Vastu consultation for modern high-rise apartments, flats, and penthouses across India."
         serviceType="Apartment Vastu Shastra"
         providerName={siteConfig.name}
         providerUrl={siteConfig.url}

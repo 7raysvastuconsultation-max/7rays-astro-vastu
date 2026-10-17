@@ -96,14 +96,14 @@ export const BirthChartPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Birth Chart Analysis in Bangalore | Janam Kundli | 7Rays"
-        description="Detailed Vedic birth chart (Janam Kundli) analysis in Bangalore with Certified Vastu Consultant Rishwa Sinha. Lagna, 12 Bhavas, and Dasha timing clarity."
+        title="Online Janam Kundli & Birth Chart Analysis India | 7Rays"
+        description="Comprehensive Vedic birth chart (Janam Kundli) analysis across India with Rishwa Sinha. In-depth Lagna, 12 Bhavas, planetary yogas, and Dasha timing clarity."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Astrology', url: '/astrology' },
+          { name: 'Astrology', url: '/astrology/' },
           { name: 'Birth Chart Analysis', url: '/astrology/birth-chart' },
         ]}
       />

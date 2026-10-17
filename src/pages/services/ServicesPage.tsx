@@ -73,11 +73,11 @@ export const ServicesPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Vastu Consultancy Services in Bangalore | 7Rays"
-        description="Comprehensive Vastu Shastra and Vedic Astrology consultation services in Bangalore by Certified Vastu Consultant Rishwa Sinha. Non-demolition residential, commercial, industrial, and audit solutions."
+        title="Vastu Consultancy Services India | Scientific Vastu Shastra | 7Rays"
+        description="Scientific Vastu Shastra and Vedic Astrology consultations across India by Certified Vastu Consultant Rishwa Sinha. Non-demolition residential, commercial, and industrial solutions."
         canonicalUrl={`${siteConfig.url}/vastu-services`}
       />
-      <BreadcrumbSchema items={[{ name: 'Vastu Services', url: '/vastu-services' }]} />
+      <BreadcrumbSchema items={[{ name: 'Vastu Services', url: '/vastu-services/' }]} />
       <FAQSchema items={faqs.map((f) => ({ question: f.q, answer: f.a }))} />
 
       {/* 1. HERO SECTION (Matching Mockup with Luxury Penthouse Background) */}

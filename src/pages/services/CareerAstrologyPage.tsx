@@ -73,20 +73,20 @@ export const CareerAstrologyPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Career Astrology Consultation in Bangalore | 7Rays"
-        description="Navigate career transitions, leadership opportunities, and vocational timing with Vedic career astrology in Bangalore led by Rishwa Sinha. Ethical & grounded."
+        title="Career Astrology Consultation India | Job & Business Timing | 7Rays"
+        description="Navigate career transitions, leadership opportunities, and vocational timing with Vedic career astrology across India led by Rishwa Sinha. Grounded and ethical guidance."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Astrology', url: '/astrology' },
-          { name: 'Career Astrology', url: '/astrology/career' },
+          { name: 'Astrology', url: '/astrology/' },
+          { name: 'Career Astrology', url: '/astrology/career/' },
         ]}
       />
       <ServiceSchema
-        name="Vedic Career Astrology Consultation"
-        description="Comprehensive career horoscope analysis evaluating 10th house Karma Bhava, D10 Dashamsha, and planetary timing for professional alignment and decision clarity."
+        name="Vedic Career Astrology Consultation India"
+        description="Comprehensive career horoscope analysis across India evaluating 10th house Karma Bhava, D10 Dashamsha, and planetary timing for professional alignment."
         serviceType="Astrology Consultation"
         providerName={siteConfig.name}
         providerUrl={siteConfig.url}

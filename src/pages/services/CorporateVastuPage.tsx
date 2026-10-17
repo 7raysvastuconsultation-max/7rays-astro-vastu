@@ -26,8 +26,8 @@ export const CorporateVastuPage: React.FC = () => {
   const routerLocation = useLocation()
   const isVastuServicesAlias = routerLocation.pathname.includes('/vastu-services/')
   const pageTitle = isVastuServicesAlias
-    ? 'Corporate Campus & Tech Park Vastu in Bangalore | 7Rays'
-    : 'Corporate Vastu Consultant in Bangalore | 7Rays'
+    ? 'Corporate Campus & Workplace Vastu India | 7Rays'
+    : 'Corporate Vastu Consultant India | Tech Parks & Headquarters | 7Rays'
   const canonicalUrl = `${siteConfig.url}/vastu/corporate`
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('Corporate Vastu Consultation')
@@ -102,19 +102,19 @@ export const CorporateVastuPage: React.FC = () => {
     <>
       <SEOHead
         title={pageTitle}
-        description="Enterprise corporate Vastu consultancy for technology campuses, multinational headquarters, and high-growth startups in Bangalore. Non-demolition spatial engineering."
+        description="Enterprise corporate Vastu consultancy for technology campuses, multinational headquarters, and high-growth commercial spaces across India. Zero demolition spatial alignment."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Commercial Vastu', url: '/vastu/commercial' },
-          { name: 'Corporate Vastu', url: '/vastu/corporate' },
+          { name: 'Commercial Vastu', url: '/vastu/commercial/' },
+          { name: 'Corporate Vastu', url: '/vastu/corporate/' },
         ]}
       />
       <ServiceSchema
-        name="Corporate Vastu Consulting"
-        description="Enterprise workplace Vastu and leadership spatial engineering across Bengaluru tech parks."
+        name="Corporate Vastu Consulting India"
+        description="Enterprise workplace Vastu and leadership spatial engineering for corporate headquarters and tech campuses across India."
         serviceType="Corporate Vastu Shastra"
         providerName={siteConfig.name}
         providerUrl={siteConfig.url}

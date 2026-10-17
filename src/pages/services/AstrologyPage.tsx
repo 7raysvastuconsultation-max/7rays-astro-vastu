@@ -91,19 +91,19 @@ export const AstrologyPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Vedic Astrology Consultation in Bangalore | 7Rays"
-        description="Authentic Vedic astrology consultations in Bangalore by Certified Vastu Consultant Rishwa Sinha. Detailed birth chart (Kundli) analysis, career timing, and relationship guidance."
+        title="Vedic Astrology Consultation India | Online Kundli & Horoscope | 7Rays"
+        description="Authentic Vedic astrology consultations across India and globally by Rishwa Sinha. Detailed Janam Kundli analysis, career timing, business synergy, and life guidance."
         canonicalUrl={`${siteConfig.url}/astrology`}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Astrology', url: '/astrology' },
+          { name: 'Astrology', url: '/astrology/' },
         ]}
       />
       <ServiceSchema
-        name="Vedic Astrology & Life Guidance Consultation"
-        description="Authentic Vedic astrology horoscope readings, birth chart synthesis, career timing, and relationship guidance rooted in classical Parashari Jyotish principles."
+        name="Vedic Astrology Consultation India"
+        description="Authentic Vedic astrology horoscope readings, birth chart synthesis, career timing, and relationship guidance across India rooted in classical Parashari Jyotish principles."
         serviceType="Astrology Consultation"
         providerName={siteConfig.name}
         providerUrl={siteConfig.url}

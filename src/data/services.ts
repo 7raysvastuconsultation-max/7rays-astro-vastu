@@ -8,7 +8,7 @@ export const servicesData: ServiceItem[] = [
     shortDescription:
       'Optimize office layouts, cash flow directions, leadership cabins, and team productivity using non-demolition Astro-Vastu techniques.',
     fullDescription:
-      'Our Commercial Vastu audit provides in-depth energetic and directional analysis for corporate offices, retail showrooms, co-working spaces, and tech startups in Bangalore. We harmonize the 16 Vastu zones with the founder horoscope to remove obstacles in revenue generation and employee retention.',
+      'Our Commercial Vastu audit provides in-depth energetic and directional analysis for corporate offices, retail showrooms, co-working spaces, and tech startups across India. We harmonize the 16 Vastu zones with the founder horoscope to remove obstacles in revenue generation and employee retention.',
     category: 'vastu',
     iconName: 'Building2',
     benefits: [
@@ -66,7 +66,7 @@ export const servicesData: ServiceItem[] = [
     slug: 'residential-apartment-vastu',
     title: 'Residential & Flat Vastu Consultation',
     shortDescription:
-      'Scientific Vastu analysis for apartments, villas, and independent homes across Bangalore to bring peace, health, and family prosperity.',
+      'Scientific Vastu analysis for apartments, villas, and independent homes across India to bring peace, health, and family prosperity.',
     fullDescription:
       'Whether buying a new flat or experiencing recurring challenges in an existing home, our residential Vastu service evaluates main entrance energy (pada evaluation), kitchen placement, master bedroom tranquility, and children study orientations.',
     category: 'vastu',

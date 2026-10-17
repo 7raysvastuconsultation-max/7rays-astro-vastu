@@ -119,20 +119,20 @@ export const OfficeVastuPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Office Vastu Consultant in Bangalore | 7Rays"
-        description="Professional office Vastu consultation for startups, corporate suites, and professional studios in Bangalore. Optimize CEO cabins, workstations, and finance desks without demolition."
+        title="Office Vastu Consultant India | Workplace & Cabin Layouts | 7Rays"
+        description="Professional office Vastu consultation for startups, corporate suites, and business spaces across India. Optimize CEO cabins, workstations, and cash flow without demolition."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Commercial Vastu', url: '/vastu/commercial' },
-          { name: 'Office Vastu', url: '/vastu/office-vastu' },
+          { name: 'Commercial Vastu', url: '/vastu/commercial/' },
+          { name: 'Office Vastu', url: '/vastu/office-vastu/' },
         ]}
       />
       <ServiceSchema
-        name="Office Vastu Consultation"
-        description="Comprehensive workplace spatial layout, executive cabin orientation, and department zoning for modern offices in Bangalore."
+        name="Office Vastu Consultation India"
+        description="Comprehensive workplace spatial layout, executive cabin orientation, and department zoning for modern offices across India."
         serviceType="Commercial Office Vastu Shastra"
         providerName={siteConfig.name}
         providerUrl={siteConfig.url}

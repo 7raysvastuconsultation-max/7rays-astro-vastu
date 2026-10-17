@@ -44,8 +44,8 @@ export const CommercialVastuPage: React.FC = () => {
   const routerLocation = useLocation()
   const isVastuServicesAlias = routerLocation.pathname.includes('/vastu-services/')
   const pageTitle = isVastuServicesAlias
-    ? 'Commercial Space & Retail Vastu in Bangalore | 7Rays'
-    : 'Commercial Vastu Consultant in Bangalore | 7Rays'
+    ? 'Commercial Space & Business Vastu Consultation India | 7Rays'
+    : 'Commercial Vastu Consultant India | Office & Retail Vastu | 7Rays'
   const canonicalUrl = `${siteConfig.url}/vastu/commercial`
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('Commercial Vastu Consultation')
@@ -243,19 +243,19 @@ export const CommercialVastuPage: React.FC = () => {
     <>
       <SEOHead
         title={pageTitle}
-        description="Transform your workplace with expert Commercial Vastu consultation for offices, retail spaces, hotels, co-working spaces, and factories. Zero demolition."
+        description="Expert commercial Vastu consultation for offices, retail stores, showrooms, and business premises across India. Scientific energy alignment with zero demolition."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Vastu Services', url: '/vastu-services' },
-          { name: 'Commercial Vastu', url: '/vastu-services/commercial-vastu' },
+          { name: 'Vastu Services', url: '/vastu-services/' },
+          { name: 'Commercial Vastu', url: '/vastu/commercial/' },
         ]}
       />
       <ServiceSchema
-        name="Commercial Vastu Consultation"
-        description="Expert Commercial Vastu consultation for offices, retail stores, showrooms, co-working spaces, hotels, and business premises."
+        name="Commercial Vastu Consultation India"
+        description="Expert Commercial Vastu consultation for offices, retail stores, showrooms, co-working spaces, and businesses across India with zero demolition."
         serviceType="Commercial Vastu Shastra"
         providerName={siteConfig.name}
         providerUrl={siteConfig.url}

@@ -27,8 +27,8 @@ export const IndustrialVastuPage: React.FC = () => {
   const routerLocation = useLocation()
   const isVastuServicesAlias = routerLocation.pathname.includes('/vastu-services/')
   const pageTitle = isVastuServicesAlias
-    ? 'Factory & Manufacturing Plant Vastu in Bangalore | 7Rays'
-    : 'Industrial Vastu Consultant in Bangalore | 7Rays'
+    ? 'Manufacturing Plant & Factory Vastu Consultation India | 7Rays'
+    : 'Industrial Vastu Consultant India | Factory & Plant Layouts | 7Rays'
   const canonicalUrl = `${siteConfig.url}/vastu/industrial`
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('Industrial Vastu Consultation')
@@ -121,19 +121,19 @@ export const IndustrialVastuPage: React.FC = () => {
     <>
       <SEOHead
         title={pageTitle}
-        description="Certified industrial Vastu consultant in Bangalore. Expert manufacturing plant layouts, heavy machinery orientation, and warehouse logistics without operational downtime."
+        description="Certified industrial Vastu consultant in India. Expert manufacturing plant layouts, heavy machinery orientation, and warehouse logistics without operational downtime."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Commercial Vastu', url: '/vastu/commercial' },
-          { name: 'Industrial Vastu', url: '/vastu/industrial' },
+          { name: 'Commercial Vastu', url: '/vastu/commercial/' },
+          { name: 'Industrial Vastu', url: '/vastu/industrial/' },
         ]}
       />
       <ServiceSchema
-        name="Industrial Vastu Consultation in Bangalore"
-        description="Comprehensive industrial plant and warehouse spatial engineering across Karnataka manufacturing corridors."
+        name="Industrial Vastu Consultation India"
+        description="Comprehensive industrial plant, manufacturing facility, and warehouse spatial engineering across India without operational downtime."
         serviceType="Industrial Vastu Shastra"
         providerName={siteConfig.name}
         providerUrl={siteConfig.url}
