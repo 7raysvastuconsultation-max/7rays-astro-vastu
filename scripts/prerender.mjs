@@ -1,44 +1,42 @@
-/**
- * 7Rays Astro Vastu - Pan-India SSG Pre-Renderer (v2)
- *
- * Pre-renders all 64 canonical routes to high-performance, fully indexable static HTML.
- * Injects route-specific <title>, <meta name="description">, canonical <link>,
- * Open Graph / Twitter tags, and Schema.org JSON-LD structured data into <head>.
- */
-
+#!/usr/bin/env node
 import fs from "node:fs"
 import path from "node:path"
 import { fileURLToPath } from "node:url"
+import { execSync } from "node:child_process"
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 const rootDir = path.resolve(__dirname, "..")
 const distDir = path.resolve(rootDir, "dist")
 const tempSsrDir = path.resolve(rootDir, ".temp-ssr")
 
-// 1. Verify production build exists
-if (!fs.existsSync(distDir)) {
-  console.error("❌ Error: dist/ directory does not exist. Run vite build first.")
-  process.exit(1)
-}
+console.log("⚡ [SSG] Starting Static HTML Pre-rendering Pipeline...")
 
-const templatePath = path.resolve(distDir, "index.html")
+// 1. Build the SSR bundle
+console.log("📦 Compiling SSR bundle with Vite...")
+execSync("npx vite build --ssr src/entry-server.tsx --outDir .temp-ssr", {
+  cwd: rootDir,
+  stdio: "inherit",
+  env: {
+    ...process.env,
+    NODE_ENV: "production",
+    VITE_SITE_URL: "https://7raysastrovastu.in",
+  },
+})
+
+// 2. Import the compiled server render function
+const ssrEntryPath = path.resolve(tempSsrDir, "entry-server.js")
+const { render } = await import(`file://${ssrEntryPath}`)
+
+// 3. Read client build template
+const templatePath = path.join(distDir, "index.html")
 if (!fs.existsSync(templatePath)) {
-  console.error("❌ Error: dist/index.html template not found.")
+  console.error("❌ dist/index.html not found. Run vite build first.")
   process.exit(1)
 }
-
 const indexHtmlTemplate = fs.readFileSync(templatePath, "utf8")
 
-// 2. Load SSR entry point
-const serverEntryPath = path.resolve(tempSsrDir, "entry-server.js")
-if (!fs.existsSync(serverEntryPath)) {
-  console.error("❌ Error: Compiled SSR entry point not found at", serverEntryPath)
-  process.exit(1)
-}
-
-const { render } = await import(serverEntryPath)
-
-// 3. Define all 64 canonical routes
+// 4. Define all routes to pre-render
 const staticRoutes = [
   "",
   "vastu-services",
@@ -120,140 +118,124 @@ for (const routePath of allRoutePaths) {
     const renderedAppHtml = renderResult.html || ""
     const head = renderResult.head || {}
 
-    // 1. Extract Title: from Helmet head, or rendered markup
+    // Extract Title
     let pageTitle = ""
     if (head.title) {
       const match = head.title.match(/<title[^>]*>([\s\S]*?)<\/title>/i)
       if (match) pageTitle = match[1].trim()
     }
     if (!pageTitle) {
-      const match = renderedAppHtml.match(/<title[^>]*>([\s\S]*?)<\/title>/i)
-      if (match) pageTitle = match[1].trim()
-    }
-    if (!pageTitle) {
-      pageTitle = "7Rays Astro Vastu | Scientific Vastu Shastra & Astrology"
+      const titleMatch = renderedAppHtml.match(/<title[^>]*>([\s\S]*?)<\/title>/i)
+      pageTitle = titleMatch ? titleMatch[1].trim() : "7Rays Astro Vastu | Scientific Vastu Shastra & Astrology"
     }
 
-    // 2. Extract Canonical URL
-    let canonicalUrl = ""
-    if (head.link) {
-      const match = head.link.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["'][^>]*\/?>/i)
-      if (match) canonicalUrl = match[1]
+    // Extract Meta Description
+    let metaDescription = ""
+    const metaDescMatch = renderedAppHtml.match(/<meta\s+name=["']description["']\s+content=["']([\s\S]*?)["'][^>]*\/?>/i)
+    if (metaDescMatch) {
+      metaDescription = metaDescMatch[1].trim()
+    } else if (head.meta) {
+      const hm = head.meta.match(/<meta\s+name=["']description["']\s+content=["']([\s\S]*?)["'][^>]*\/?>/i)
+      if (hm) metaDescription = hm[1].trim()
     }
-    if (!canonicalUrl) {
-      const match = renderedAppHtml.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([^"']+)["'][^>]*\/?>/i)
-      if (match) canonicalUrl = match[1]
+    if (!metaDescription) {
+      metaDescription = "Vastu Shastra and Vedic Astrology consultations in Bengaluru led by Certified Vastu Consultant Rishwa Sinha. Non-demolition energy alignment for modern spaces."
+    }
+
+    // Extract Canonical URL
+    let canonicalUrl = ""
+    const canonicalMatch = renderedAppHtml.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([\s\S]*?)["'][^>]*\/?>/i)
+    if (canonicalMatch) {
+      canonicalUrl = canonicalMatch[1].trim()
+    } else if (head.link) {
+      const hl = head.link.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([\s\S]*?)["'][^>]*\/?>/i)
+      if (hl) canonicalUrl = hl[1].trim()
     }
     if (!canonicalUrl) {
       canonicalUrl = `https://7raysastrovastu.in${url}`.replace(/\/$/, "") || "https://7raysastrovastu.in"
     }
 
-    // 3. Extract All Meta tags rendered by React (SEOHead)
-    // React 18 renders meta tags into the component HTML tree during SSR
-    const extractedMetaTags = []
-    const metaTagRegex = /<meta\s+[^>]*\/?>/gi
-    let metaMatch
-    while ((metaMatch = metaTagRegex.exec(renderedAppHtml)) !== null) {
-      extractedMetaTags.push(metaMatch[0])
-    }
-
-    // Also get meta tags from head.meta if provided by Helmet
-    if (head.meta) {
-      const helmetMetaMatches = head.meta.match(/<meta\s+[^>]*\/?>/gi) || []
-      for (const hm of helmetMetaMatches) {
-        if (!extractedMetaTags.includes(hm)) {
-          extractedMetaTags.push(hm)
-        }
-      }
-    }
-
-    // Extract preload links rendered by components
-    const preloadLinks = []
-    const preloadRegex = /<link\s+[^>]*rel=["']preload["'][^>]*\/?>/gi
-    let preloadMatch
-    while ((preloadMatch = preloadRegex.exec(renderedAppHtml)) !== null) {
-      preloadLinks.push(preloadMatch[0])
-    }
-
-    // 4. Extract JSON-LD Scripts
-    const jsonLdScripts = []
-    if (head.script) {
-      const helmetScripts = head.script.match(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi) || []
-      jsonLdScripts.push(...helmetScripts)
-    }
-    const bodyJsonLdMatches = renderedAppHtml.match(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi) || []
-    for (const s of bodyJsonLdMatches) {
-      if (!jsonLdScripts.includes(s)) {
-        jsonLdScripts.push(s)
-      }
-    }
-
-    // 5. Clean body content so header tags do not leak into #root
-    let bodyContent = renderedAppHtml
-      .replace(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi, "")
-      .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
-      .replace(/<link[^>]+rel=["']canonical["'][^>]*\/?>/gi, "")
-      .replace(/<link[^>]+rel=["']preload["'][^>]*\/?>/gi, "")
-      .replace(/<meta\s+[^>]*\/?>/gi, "")
-
-    // 6. Robots directive
+    // Robots directive
     const robotsContent =
       routePath === "404"
         ? "noindex, nofollow"
         : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
 
-    // 7. Compose final static HTML document
+    // Extract OG and Twitter meta tags from renderedAppHtml
+    const socialMetaTags = []
+    const ogRegex = /<meta\s+(?:property=["']og:[^"']+["']|name=["']twitter:[^"']+["'])\s+content=["'][^"']*["'][^>]*\/?>/gi
+    let ogMatch
+    while ((ogMatch = ogRegex.exec(renderedAppHtml)) !== null) {
+      socialMetaTags.push(ogMatch[0])
+    }
+
+    // Extract all JSON-LD scripts
+    const jsonLdMatches = renderedAppHtml.match(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi) || []
+    if (head.script) {
+      const hs = head.script.match(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi) || []
+      for (const s of hs) {
+        if (!jsonLdMatches.includes(s)) jsonLdMatches.push(s)
+      }
+    }
+
+    // Clean up body content (strip hoisted head tags from the body container)
+    let bodyContent = renderedAppHtml
+      .replace(/<title[^>]*>[\s\S]*?<\/title>/gi, "")
+      .replace(/<meta\s+[^>]*\/?>/gi, "")
+      .replace(/<link[^>]+rel=["']canonical["'][^>]*\/?>/gi, "")
+      .replace(/<link[^>]+rel=["']preload["'][^>]*\/?>/gi, "")
+      .replace(/<script type="application\/ld\+json"[^>]*>[\s\S]*?<\/script>/gi, "")
+
+    // Compose final static HTML document
     let pageHtml = indexHtmlTemplate
 
-    // Strip ALL fallback meta tags, titles, and open graph from template
-    pageHtml = pageHtml
-      .replace(/<title>[\s\S]*?<\/title>/gi, "")
-      .replace(/<meta\s+name=["']description["'][\s\S]*?\/?>/gi, "")
-      .replace(/<meta\s+name=["']robots["'][\s\S]*?\/?>/gi, "")
-      .replace(/<meta\s+name=["']googlebot["'][\s\S]*?\/?>/gi, "")
-      .replace(/<meta\s+name=["']bingbot["'][\s\S]*?\/?>/gi, "")
-      .replace(/<meta\s+property=["']og:title["'][\s\S]*?\/?>/gi, "")
-      .replace(/<meta\s+property=["']og:description["'][\s\S]*?\/?>/gi, "")
-      .replace(/<meta\s+property=["']og:url["'][\s\S]*?\/?>/gi, "")
+    // 1. Inject Title
+    pageHtml = pageHtml.replace(/<title>[\s\S]*?<\/title>/i, `<title>${pageTitle}</title>`)
 
-    // Build unique head tags for this route
-    const headInjections = []
+    // 2. Inject Meta Description (flexible regex handling any spacing or line breaks)
+    pageHtml = pageHtml.replace(
+      /<meta\s+name=["']description["'][\s\S]*?\/?>/i,
+      `<meta name="description" content="${metaDescription}" />`
+    )
 
-    // Title tag
-    headInjections.push(`<title>${pageTitle}</title>`)
-
-    // Canonical link
-    headInjections.push(`<link rel="canonical" href="${canonicalUrl}" />`)
-
-    // Robots tags
-    headInjections.push(`<meta name="robots" content="${robotsContent}" />`)
-    headInjections.push(`<meta name="googlebot" content="${robotsContent}" />`)
-
-    // Inject all extracted route-specific meta tags (description, og:*, twitter:*)
-    for (const tag of extractedMetaTags) {
-      // Avoid duplicate robots or canonical tags
-      if (/name=["'](robots|googlebot|bingbot)["']/i.test(tag)) continue
-      headInjections.push(tag)
+    // 3. Inject Robots Directives
+    if (/<meta\s+name=["']robots["']/i.test(pageHtml)) {
+      pageHtml = pageHtml.replace(
+        /<meta\s+name=["']robots["'][\s\S]*?\/?>/i,
+        `<meta name="robots" content="${robotsContent}" />`
+      )
+    } else {
+      pageHtml = pageHtml.replace("</head>", `  <meta name="robots" content="${robotsContent}" />\n  </head>`)
     }
 
-    // Inject preload links
-    for (const pl of preloadLinks) {
-      headInjections.push(pl)
+    if (/<meta\s+name=["']googlebot["']/i.test(pageHtml)) {
+      pageHtml = pageHtml.replace(
+        /<meta\s+name=["']googlebot["'][\s\S]*?\/?>/i,
+        `<meta name="googlebot" content="${robotsContent}" />`
+      )
     }
 
-    // Inject JSON-LD structured data scripts
-    for (const s of jsonLdScripts) {
-      headInjections.push(s)
+    // 4. Inject Canonical Link
+    if (/<link\s+rel=["']canonical["']/i.test(pageHtml)) {
+      pageHtml = pageHtml.replace(
+        /<link\s+rel=["']canonical["'][\s\S]*?\/?>/i,
+        `<link rel="canonical" href="${canonicalUrl}" />`
+      )
+    } else {
+      pageHtml = pageHtml.replace("</head>", `  <link rel="canonical" href="${canonicalUrl}" />\n  </head>`)
     }
 
-    // Inject head tags before </head>
-    const headMarkup = "\n    " + headInjections.filter(Boolean).join("\n    ") + "\n  "
-    pageHtml = pageHtml.replace("</head>", `${headMarkup}</head>`)
+    // 5. Inject Social Meta Tags and JSON-LD Structured Data
+    const extraHeadTags = [...socialMetaTags, ...jsonLdMatches]
+    if (extraHeadTags.length > 0) {
+      const extraHeadMarkup = "\n    " + extraHeadTags.join("\n    ") + "\n  "
+      pageHtml = pageHtml.replace("</head>", `${extraHeadMarkup}</head>`)
+    }
 
-    // Inject pre-rendered body into #root
+    // 6. Inject Pre-rendered Body into #root
     pageHtml = pageHtml.replace('<div id="root"></div>', `<div id="root">${bodyContent}</div>`)
 
-    // Write to destination file
+    // 7. Write to destination file
     let targetFile
     if (routePath === "") {
       targetFile = path.join(distDir, "index.html")
@@ -265,7 +247,7 @@ for (const routePath of allRoutePaths) {
 
     fs.writeFileSync(targetFile, pageHtml, "utf8")
 
-    // If 404 route, also emit dist/404.html for Cloudflare Pages
+    // If 404 route, also emit dist/404.html for Cloudflare Pages fallback
     if (routePath === "404") {
       fs.writeFileSync(path.join(distDir, "404.html"), pageHtml, "utf8")
     }
