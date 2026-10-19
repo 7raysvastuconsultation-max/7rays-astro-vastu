@@ -252,7 +252,7 @@ export const HtmlSitemapPage: React.FC = () => {
               </h2>
               <ul className="space-y-2 text-xs text-slate-700">
                 <li>
-                  <Link to="/insights" className="font-semibold hover:text-amber-800">
+                  <Link to="/blog" className="font-semibold hover:text-amber-800">
                     All Insights / Blog
                   </Link>
                 </li>

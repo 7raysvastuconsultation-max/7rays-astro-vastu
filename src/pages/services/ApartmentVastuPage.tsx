@@ -153,7 +153,7 @@ export const ApartmentVastuPage: React.FC = () => {
                 <ArrowRight className="h-4 w-4" />
               </button>
               <Link
-                to="/vastu-services/residential-vastu"
+                to="/vastu/residential"
                 className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-5 py-3.5 text-xs font-semibold text-slate-200 backdrop-blur-sm transition hover:border-amber-400/50 hover:text-white"
               >
                 <span>Back to Residential Vastu</span>

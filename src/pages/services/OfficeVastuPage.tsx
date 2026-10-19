@@ -407,7 +407,7 @@ export const OfficeVastuPage: React.FC = () => {
                 </p>
                 <div className="mt-6">
                   <Link
-                    to="/insights/commercial-vastu/office-layout-executive-cabin-vastu"
+                    to="/blog/office-layout-executive-cabin-vastu"
                     className="inline-flex items-center gap-2 rounded-lg border border-amber-400 bg-amber-50 px-5 py-3 text-xs font-bold text-amber-900 transition hover:bg-amber-100"
                   >
                     <span>Read Executive Cabin Guide</span>

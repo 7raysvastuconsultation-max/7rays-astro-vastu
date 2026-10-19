@@ -256,8 +256,8 @@ export const BlogPostPage: React.FC = () => {
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Insights', url: '/insights' },
-          { name: post.category, url: '/insights' },
+          { name: 'Insights', url: '/blog' },
+          { name: post.category, url: '/blog' },
           { name: post.title, url: `/blog/${post.slug}` },
         ]}
       />
@@ -280,11 +280,11 @@ export const BlogPostPage: React.FC = () => {
               Home
             </Link>
             <ChevronRight className="mx-2 h-3.5 w-3.5 text-slate-400" />
-            <Link to="/insights" className="transition hover:text-slate-900">
+            <Link to="/blog" className="transition hover:text-slate-900">
               Insights
             </Link>
             <ChevronRight className="mx-2 h-3.5 w-3.5 text-slate-400" />
-            <Link to="/insights" className="transition hover:text-slate-900">
+            <Link to="/blog" className="transition hover:text-slate-900">
               {post.category || 'Residential Vastu'}
             </Link>
             <ChevronRight className="mx-2 h-3.5 w-3.5 text-slate-400" />
@@ -599,7 +599,7 @@ export const BlogPostPage: React.FC = () => {
               <div className="mb-3 flex items-center justify-between">
                 <h3 className="font-serif text-base font-bold text-slate-900">Categories</h3>
                 <Link
-                  to="/insights"
+                  to="/blog"
                   className="text-xs font-semibold text-[#8B5E28] transition hover:underline"
                 >
                   View All &rarr;

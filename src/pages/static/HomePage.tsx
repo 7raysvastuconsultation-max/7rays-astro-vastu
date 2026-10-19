@@ -340,7 +340,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="p-3 pt-0 sm:p-3.5 sm:pt-0">
                 <Link
-                  to="/vastu-services/residential-vastu"
+                  to="/vastu/residential"
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore</span>
@@ -374,7 +374,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="p-3 pt-0 sm:p-3.5 sm:pt-0">
                 <Link
-                  to="/vastu-services/commercial-vastu"
+                  to="/vastu/commercial"
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore</span>
@@ -408,7 +408,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="p-3 pt-0 sm:p-3.5 sm:pt-0">
                 <Link
-                  to="/vastu-services/industrial-vastu"
+                  to="/vastu/industrial"
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore</span>
@@ -442,7 +442,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="p-3 pt-0 sm:p-3.5 sm:pt-0">
                 <Link
-                  to="/vastu-services/corporate-vastu"
+                  to="/vastu/corporate"
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore</span>

@@ -574,7 +574,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/insights/master-bedroom-vastu-guidelines"
+                  to="/blog/master-bedroom-vastu-guidelines"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Master Bedroom Guide</span>
@@ -600,7 +600,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/insights/kitchen-vastu-direction-guide"
+                  to="/blog/kitchen-vastu-direction-guide"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Kitchen Vastu Guide</span>
@@ -626,7 +626,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/insights/bathroom-toilet-vastu-remedies"
+                  to="/blog/bathroom-toilet-vastu-remedies"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Toilet Remedies Guide</span>
@@ -652,7 +652,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/insights/north-facing-house-vastu-plan"
+                  to="/blog/north-facing-house-vastu-plan"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read North Facing Blueprint</span>
@@ -678,7 +678,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/insights/south-facing-house-vastu-myths"
+                  to="/blog/south-facing-house-vastu-myths"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read South Facing Myth Guide</span>

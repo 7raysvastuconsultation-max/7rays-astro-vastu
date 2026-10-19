@@ -94,7 +94,7 @@ export const CommercialVastuPage: React.FC = () => {
       icon: Store,
       description:
         'Optimize customer footfall circulation, cash counter positioning, and product display staging.',
-      link: '/insights/commercial-vastu/retail-store-and-showroom-vastu',
+      link: '/blog/retail-store-and-showroom-vastu',
       cta: 'Read Retail Guide',
     },
     {
@@ -104,7 +104,7 @@ export const CommercialVastuPage: React.FC = () => {
       icon: UtensilsCrossed,
       description:
         'Balance commercial kitchen burners, water elements, bar counters, and dining comfort.',
-      link: '/insights/commercial-vastu/restaurant-and-hospitality-vastu',
+      link: '/blog/restaurant-and-hospitality-vastu',
       cta: 'Read Dining Guide',
     },
     {
@@ -611,7 +611,7 @@ export const CommercialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/insights/commercial-vastu/office-layout-executive-cabin-vastu"
+                  to="/blog/office-layout-executive-cabin-vastu"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Accounts Placement Guide</span>
@@ -663,7 +663,7 @@ export const CommercialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/insights/commercial-vastu/retail-store-and-showroom-vastu"
+                  to="/blog/retail-store-and-showroom-vastu"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Retail Showroom Guide</span>
@@ -689,7 +689,7 @@ export const CommercialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/insights/commercial-vastu/restaurant-and-hospitality-vastu"
+                  to="/blog/restaurant-and-hospitality-vastu"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Hospitality Guide</span>

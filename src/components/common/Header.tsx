@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
     { label: 'Online Vastu', path: '/services/online-vastu-consultation' },
     { label: 'Astrology', path: '/astrology' },
     { label: 'Shop', path: '/shop' },
-    { label: 'Insights', path: '/insights' },
+    { label: 'Insights', path: '/blog' },
     { label: 'Contact', path: '/contact' },
   ]
 
@@ -79,7 +79,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
       )
     }
 
-    if (linkPath === '/insights') {
+    if (linkPath === '/blog') {
       return (
         currentPath === '/insights' ||
         currentPath.startsWith('/insights/') ||

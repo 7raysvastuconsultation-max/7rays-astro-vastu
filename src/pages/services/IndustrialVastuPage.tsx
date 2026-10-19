@@ -415,7 +415,7 @@ export const IndustrialVastuPage: React.FC = () => {
                     <ArrowRight className="h-4 w-4" />
                   </button>
                   <Link
-                    to="/insights/commercial-vastu/factory-machinery-and-raw-material-vastu"
+                    to="/blog/factory-machinery-and-raw-material-vastu"
                     className="flex w-full items-center justify-center gap-2 rounded-lg border border-amber-200/80 bg-amber-50 px-4 py-2.5 text-xs font-semibold text-amber-900 transition hover:bg-amber-100"
                   >
                     <span>Read Industrial Machinery Guide</span>

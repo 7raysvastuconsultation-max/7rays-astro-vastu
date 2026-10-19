@@ -25,7 +25,7 @@ export const FeaturedProjectsSection: React.FC = () => {
     {
       title: 'Industrial Facility Planning',
       location: 'Bengaluru Hubs',
-      to: '/vastu-services/industrial-vastu',
+      to: '/vastu/industrial',
       type: 'Service Protocol',
       image: '/images/services/industrial-vastu.jpg',
       description:
@@ -34,7 +34,7 @@ export const FeaturedProjectsSection: React.FC = () => {
     {
       title: 'Apartment Spatial Alignment',
       location: 'Bengaluru',
-      to: '/vastu-services/apartment-vastu',
+      to: '/vastu/apartment-vastu',
       type: 'Service Protocol',
       image: '/images/projects/villa-goa.jpg',
       description:

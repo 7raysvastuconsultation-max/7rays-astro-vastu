@@ -36,6 +36,7 @@ const staticRoutes = [
   { path: 'astrology/career', changefreq: 'weekly', priority: 0.85 },
   { path: 'astrology/business', changefreq: 'weekly', priority: 0.85 },
   { path: 'astrology/marriage', changefreq: 'weekly', priority: 0.85 },
+  { path: 'locations', changefreq: 'weekly', priority: 0.85 },
   { path: 'locations/bangalore', changefreq: 'weekly', priority: 0.95 },
   { path: 'locations/bangalore/residential-vastu', changefreq: 'weekly', priority: 0.9 },
   { path: 'locations/bangalore/commercial-vastu', changefreq: 'weekly', priority: 0.9 },

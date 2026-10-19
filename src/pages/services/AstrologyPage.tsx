@@ -551,7 +551,7 @@ export const AstrologyPage: React.FC = () => {
               </div>
               <div className="pt-2">
                 <Link
-                  to="/insights/astrology-vs-vastu-difference-and-synthesis"
+                  to="/blog/astrology-vs-vastu-difference-and-synthesis"
                   className="inline-flex items-center gap-2 text-xs font-bold text-amber-400 hover:text-amber-300"
                 >
                   <span>Read our comprehensive Astro-Vastu Synthesis Guide</span>

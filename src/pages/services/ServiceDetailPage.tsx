@@ -16,7 +16,7 @@ export const ServiceDetailPage: React.FC = () => {
     return (
       <div className="py-24 text-center">
         <h1 className="text-2xl font-bold">Service Not Found</h1>
-        <Link to="/services" className="mt-4 inline-block text-amber-400 underline">
+        <Link to="/vastu-services" className="mt-4 inline-block text-amber-400 underline">
           Back to all services
         </Link>
       </div>
@@ -34,7 +34,7 @@ export const ServiceDetailPage: React.FC = () => {
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Services', url: '/services' },
+          { name: 'Services', url: '/vastu-services' },
           { name: service.title, url: `/services/${service.slug}` },
         ]}
       />

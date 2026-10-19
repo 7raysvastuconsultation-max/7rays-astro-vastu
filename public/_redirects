@@ -9,7 +9,16 @@
 /astro-vastu-consultation          /services/astro-vastu-synthesis      301
 /vastu/online                      /services/online-vastu-consultation  301
 /vastu/astro                       /services/astro-vastu-synthesis      301
+/services                          /vastu-services                      301
+/services/                         /vastu-services                      301
 
 # 2. Blog & Insights Hierarchy Normalization (301 Permanent)
+/insights                          /blog/                               301
+/insights/                         /blog/                               301
+/insights/commercial-vastu/:slug   /blog/:slug                          301
+/insights/residential-vastu/:slug  /blog/:slug                          301
+/insights/astrology/:slug          /blog/:slug                          301
+/blog/commercial-vastu/:slug       /blog/:slug                          301
+/blog/residential-vastu/:slug      /blog/:slug                          301
+/blog/astrology/:slug              /blog/:slug                          301
 /insights/*                        /blog/:splat                         301
-

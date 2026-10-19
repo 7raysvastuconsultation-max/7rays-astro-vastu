@@ -73,7 +73,7 @@ const clientExperiences: ClientExperienceItem[] = [
     location: '100 Feet Road, Indiranagar, Bengaluru',
     propertyType: 'High-Street Retail Store',
     serviceType: 'Retail & Commercial Vastu',
-    serviceUrl: '/vastu-services/commercial-vastu',
+    serviceUrl: '/vastu/commercial',
     consultationType: 'On-Site Property Audit',
     period: 'January 2026',
     quote:

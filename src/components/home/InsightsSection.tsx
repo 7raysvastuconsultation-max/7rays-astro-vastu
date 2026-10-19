@@ -50,7 +50,7 @@ export const InsightsSection: React.FC = () => {
           </div>
 
           <Link
-            to="/insights"
+            to="/blog"
             className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 transition hover:text-amber-900 sm:mt-0"
           >
             <span>View All Articles</span>
