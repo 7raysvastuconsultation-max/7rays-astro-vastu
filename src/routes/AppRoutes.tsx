@@ -210,6 +210,7 @@ export const AppRoutes: React.FC = () => {
           <Route path="/services/online-vastu-consultation" element={<OnlineVastuPage />} />
           <Route path="/online-vastu-consultation-india" element={<OnlineVastuPage />} />
           <Route path="/services/astro-vastu-synthesis" element={<AstroVastuPage />} />
+          <Route path="/services/astro-vastu-consultation" element={<AstroVastuPage />} />
           <Route path="/astro-vastu-consultation" element={<AstroVastuPage />} />
           <Route path="/vastu-services/:slug" element={<ServiceDetailPage />} />
           <Route path="/services" element={<ServicesPage />} />

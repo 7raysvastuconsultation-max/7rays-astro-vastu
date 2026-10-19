@@ -22,3 +22,9 @@
 /blog/residential-vastu/:slug      /blog/:slug                          301
 /blog/astrology/:slug              /blog/:slug                          301
 /insights/*                        /blog/:splat                         301
+
+/services/astro-vastu-consultation    /services/astro-vastu-synthesis/    301
+/services/astro-vastu-consultation/   /services/astro-vastu-synthesis/    301
+/astro-vastu-consultation/            /services/astro-vastu-synthesis/    301
+/services/online-vastu-consultation   /services/online-vastu-consultation/ 301
+/services/astro-vastu-synthesis      /services/astro-vastu-synthesis/    301
