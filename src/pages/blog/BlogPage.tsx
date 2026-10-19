@@ -20,7 +20,7 @@ import { ConsultationModal } from '@/components/common/ConsultationModal'
 import { blogPostsData } from '@/data/blog'
 
 export const BlogPage: React.FC = () => {
-  const canonicalUrl = `${siteConfig.url}/insights`
+  const canonicalUrl = `${siteConfig.url}/blog`
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('General Consultation')
   const [activeCategory, setActiveCategory] = useState('All Articles')

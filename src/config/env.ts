@@ -3,12 +3,9 @@
  * Validates and exposes environment variables without leaking secrets
  */
 
-// Normalize site URL: ensure production builds always resolve to authoritative canonical domain
-const rawSiteUrl = (import.meta.env.VITE_SITE_URL as string || '').trim()
-const isLocal = !rawSiteUrl || rawSiteUrl.includes('localhost') || rawSiteUrl.includes('127.0.0.1') || rawSiteUrl.startsWith('http://')
-const resolvedSiteUrl = (import.meta.env.PROD && isLocal) || !rawSiteUrl
-  ? 'https://7raysastrovastu.in'
-  : rawSiteUrl.replace(/\/$/, '')
+// Canonical public origin used by all generated SEO metadata and structured data.
+// Keep this fixed even if a deployment environment accidentally sets VITE_SITE_URL to www.
+const resolvedSiteUrl = 'https://7raysastrovastu.in'
 
 export const env = {
   // Site & Domain
