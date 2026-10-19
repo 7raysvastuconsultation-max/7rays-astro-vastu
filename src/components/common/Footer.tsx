@@ -20,9 +20,11 @@ export const Footer: React.FC = () => {
     <footer className="relative overflow-hidden border-t border-amber-500/20 bg-slate-950 text-slate-400">
       {/* Background Cosmic Starfield Image Overlay */}
       <img
-        src="/images/seven-rays-bg.jpg"
+        src="/images/seven-rays-bg.webp"
         alt=""
         aria-hidden="true"
+        width={1376}
+        height={768}
         className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20 mix-blend-screen"
       />
       <div className="pointer-events-none absolute inset-0 bg-slate-950/90" />
@@ -129,67 +131,67 @@ export const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-2">
               <li>
-                <Link to="/about" className="transition hover:text-amber-400">
+                <Link to="/about/" className="transition hover:text-amber-400">
                   About
                 </Link>
               </li>
               <li>
-                <Link to="/consultant/rishwa-sinha" className="transition hover:text-amber-400">
+                <Link to="/consultant/rishwa-sinha/" className="transition hover:text-amber-400">
                   Lead Consultant
                 </Link>
               </li>
               <li>
-                <Link to="/vastu-services" className="transition hover:text-amber-400">
+                <Link to="/vastu-services/" className="transition hover:text-amber-400">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/services/online-vastu-consultation" className="transition hover:text-amber-400">
+                <Link to="/services/online-vastu-consultation/" className="transition hover:text-amber-400">
                   Online Vastu (Pan-India)
                 </Link>
               </li>
               <li>
-                <Link to="/services/astro-vastu-synthesis" className="transition hover:text-amber-400">
+                <Link to="/services/astro-vastu-synthesis/" className="transition hover:text-amber-400">
                   Astro-Vastu Synthesis
                 </Link>
               </li>
               <li>
-                <Link to="/vastu/residential" className="transition hover:text-amber-400">
+                <Link to="/vastu/residential/" className="transition hover:text-amber-400">
                   Residential Vastu
                 </Link>
               </li>
               <li>
-                <Link to="/vastu/commercial" className="transition hover:text-amber-400">
+                <Link to="/vastu/commercial/" className="transition hover:text-amber-400">
                   Commercial Vastu
                 </Link>
               </li>
               <li>
-                <Link to="/vastu/non-demolition" className="transition hover:text-amber-400">
+                <Link to="/vastu/non-demolition/" className="transition hover:text-amber-400">
                   Non-Demolition Vastu
                 </Link>
               </li>
               <li>
-                <Link to="/astrology" className="transition hover:text-amber-400">
+                <Link to="/astrology/" className="transition hover:text-amber-400">
                   Astrology
                 </Link>
               </li>
               <li>
-                <Link to="/international" className="transition hover:text-amber-400">
+                <Link to="/international/" className="transition hover:text-amber-400">
                   International / NRI
                 </Link>
               </li>
               <li>
-                <Link to="/faq" className="transition hover:text-amber-400">
+                <Link to="/faq/" className="transition hover:text-amber-400">
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link to="/blog" className="transition hover:text-amber-400">
+                <Link to="/blog/" className="transition hover:text-amber-400">
                   Insights
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="transition hover:text-amber-400">
+                <Link to="/contact/" className="transition hover:text-amber-400">
                   Contact
                 </Link>
               </li>
@@ -287,16 +289,16 @@ export const Footer: React.FC = () => {
         <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-slate-900 pt-6 text-xs text-slate-500 sm:flex-row">
           <div>&copy; 2026 {siteConfig.legalName || '7Rays Astro Vastu'}. All Rights Reserved.</div>
           <div className="flex flex-wrap items-center gap-6">
-            <Link to="/privacy-policy" className="transition hover:text-amber-400">
+            <Link to="/privacy-policy/" className="transition hover:text-amber-400">
               Privacy Policy
             </Link>
-            <Link to="/terms" className="transition hover:text-amber-400">
+            <Link to="/terms/" className="transition hover:text-amber-400">
               Terms &amp; Conditions
             </Link>
-            <Link to="/disclaimer" className="transition hover:text-amber-400">
+            <Link to="/disclaimer/" className="transition hover:text-amber-400">
               Disclaimer
             </Link>
-            <Link to="/sitemap" className="transition hover:text-amber-400">
+            <Link to="/sitemap/" className="transition hover:text-amber-400">
               Sitemap
             </Link>
           </div>

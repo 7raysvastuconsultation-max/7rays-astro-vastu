@@ -650,7 +650,7 @@ export const ContactPage: React.FC = () => {
               {/* Background Image with Dark Vignette */}
               <div className="absolute inset-0 z-0">
                 <img
-                  src="/images/hero-penthouse.jpg"
+                  src="/images/hero-penthouse.webp"
                   alt="Harmonious Space Help"
                   className="h-full w-full object-cover object-[center_35%]"
                 />

@@ -9,16 +9,24 @@ interface BreadcrumbSchemaProps {
 
 export const BreadcrumbSchema: React.FC<BreadcrumbSchemaProps> = ({ items }) => {
   const sanitizedItems = items.filter(
-    (item) => item.name.toLowerCase() !== 'home' && item.url !== '/'
+    (item) => item.name.toLowerCase() !== 'home' && item.url !== '/' && item.url !== ''
   )
 
+  const normalizeItemUrl = (rawUrl: string): string => {
+    if (rawUrl.startsWith('http://') || rawUrl.startsWith('https://')) {
+      const urlObj = new URL(rawUrl)
+      const cleanPath = urlObj.pathname.replace(/^\/+/, '').replace(/\/+$/, '')
+      return cleanPath ? `${siteConfig.url}/${cleanPath}/` : `${siteConfig.url}/`
+    }
+    const cleanPath = rawUrl.replace(/^\/+/, '').replace(/\/+$/, '')
+    return cleanPath ? `${siteConfig.url}/${cleanPath}/` : `${siteConfig.url}/`
+  }
+
   const fullItems = [
-    { name: 'Home', url: siteConfig.url },
+    { name: 'Home', url: `${siteConfig.url}/` },
     ...sanitizedItems.map((item) => ({
       name: item.name,
-      url: item.url.startsWith('http')
-        ? item.url
-        : `${siteConfig.url}${item.url.startsWith('/') ? item.url : `/${item.url}`}`,
+      url: normalizeItemUrl(item.url),
     })),
   ]
 

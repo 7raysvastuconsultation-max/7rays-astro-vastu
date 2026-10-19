@@ -20,7 +20,7 @@ export const The7RaysPage: React.FC = () => {
         {/* Atmospheric Background Image */}
         <div className="pointer-events-none absolute inset-0 overflow-hidden">
           <img
-            src="/images/seven-rays-bg.jpg"
+            src="/images/seven-rays-bg.webp"
             alt="The 7 Rays Cosmic Energies Sanctuary"
             className="h-full w-full object-cover object-center opacity-30 brightness-110"
           />

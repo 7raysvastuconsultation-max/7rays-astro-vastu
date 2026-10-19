@@ -89,9 +89,11 @@ export const SevenRaysSection: React.FC = () => {
       {/* Background Image: Directly Related Seven Rays Architectural Sanctuary & Cosmic Beams */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <img
-          src="/images/seven-rays-bg.jpg"
+          src="/images/seven-rays-bg.webp"
           alt="Seven Rays Cosmic Energies Celestial Sanctuary"
           loading="eager"
+          width={1376}
+          height={768}
           className="h-full w-full object-cover object-center opacity-45 brightness-110 contrast-120"
         />
         {/* Soft edge gradient vignettes so the image remains clearly visible while foreground text maintains perfect contrast */}

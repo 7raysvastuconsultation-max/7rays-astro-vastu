@@ -1161,7 +1161,7 @@ export const CommercialVastuPage: React.FC = () => {
       <section className="relative w-full overflow-hidden bg-slate-950 py-8 text-white sm:py-10">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero-penthouse.jpg"
+            src="/images/hero-penthouse.webp"
             alt="Commercial Prosperity Sunset Skyline"
             className="h-full w-full object-cover object-[center_35%]"
           />

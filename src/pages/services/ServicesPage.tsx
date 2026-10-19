@@ -83,7 +83,7 @@ export const ServicesPage: React.FC = () => {
       {/* 1. HERO SECTION (Matching Mockup with Luxury Penthouse Background) */}
       <section className="relative flex min-h-[75vh] items-center justify-center overflow-hidden py-24 sm:py-32">
         <img
-          src="/images/hero-penthouse.jpg"
+          src="/images/hero-penthouse.webp"
           alt="Luxury penthouse interior with floor to ceiling glass windows and golden sunlight"
           className="absolute inset-0 h-full w-full object-cover object-center brightness-60"
         />
@@ -608,7 +608,7 @@ export const ServicesPage: React.FC = () => {
       {/* 6. PRE-FOOTER SUNSET CTA BANNER (With Translucent Quote Card on Right) */}
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         <img
-          src="/images/cta-sunset-villa.jpg"
+          src="/images/cta-sunset-villa.webp"
           alt="Luxury architectural terrace overlooking golden sunset horizon"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />

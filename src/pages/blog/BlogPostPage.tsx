@@ -669,7 +669,7 @@ export const BlogPostPage: React.FC = () => {
       <section className="relative overflow-hidden bg-slate-950 py-16 text-white sm:py-20">
         <div className="absolute inset-0">
           <img
-            src="/images/cta-sunset-villa.jpg"
+            src="/images/cta-sunset-villa.webp"
             alt="7Rays Astro Vastu Consultations"
             className="h-full w-full object-cover"
           />

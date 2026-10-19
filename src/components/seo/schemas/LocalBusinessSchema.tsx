@@ -45,6 +45,7 @@ export const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
     legalName,
     description,
     url,
+    priceRange: "₹₹",
     image,
     // Maps URL correctly placed in hasMap (a location reference, not an identity)
     hasMap: businessConfig.googleMapsUrl,

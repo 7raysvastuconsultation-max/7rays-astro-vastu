@@ -66,7 +66,7 @@ export const AboutPage: React.FC = () => {
       {/* 1. HERO SECTION (Matching Mockup with Luxury Penthouse Background) */}
       <section className="relative flex min-h-[75vh] items-center justify-center overflow-hidden py-24 sm:py-32">
         <img
-          src="/images/hero-penthouse.jpg"
+          src="/images/hero-penthouse.webp"
           alt="Luxury penthouse interior with golden sunlight streaming through floor to ceiling windows"
           fetchPriority="high"
           loading="eager"
@@ -622,7 +622,7 @@ export const AboutPage: React.FC = () => {
       <section className="relative overflow-hidden border-b border-amber-500/20 bg-slate-950 py-20 text-slate-100 sm:py-24">
         {/* Ambient Evening Architecture Backdrop */}
         <img
-          src="/images/cta-sunset-villa.jpg"
+          src="/images/cta-sunset-villa.webp"
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-15 mix-blend-screen"
@@ -791,7 +791,7 @@ export const AboutPage: React.FC = () => {
       {/* 10. PRE-FOOTER SUNSET CTA BANNER */}
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         <img
-          src="/images/cta-sunset-villa.jpg"
+          src="/images/cta-sunset-villa.webp"
           alt="Luxury architectural terrace overlooking golden sunset horizon"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />

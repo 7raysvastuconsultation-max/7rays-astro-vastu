@@ -51,13 +51,13 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
 
   const navLinks = [
     { label: 'Home', path: '/' },
-    { label: 'About', path: '/about' },
-    { label: 'Vastu Services', path: '/vastu-services' },
-    { label: 'Online Vastu', path: '/services/online-vastu-consultation' },
-    { label: 'Astrology', path: '/astrology' },
-    { label: 'Shop', path: '/shop' },
-    { label: 'Insights', path: '/blog' },
-    { label: 'Contact', path: '/contact' },
+    { label: 'About', path: '/about/' },
+    { label: 'Vastu Services', path: '/vastu-services/' },
+    { label: 'Online Vastu', path: '/services/online-vastu-consultation/' },
+    { label: 'Astrology', path: '/astrology/' },
+    { label: 'Shop', path: '/shop/' },
+    { label: 'Insights', path: '/blog/' },
+    { label: 'Contact', path: '/contact/' },
   ]
 
   const whatsAppUrl = `https://wa.me/${env.whatsAppPhone}?text=${encodeURIComponent(
@@ -66,11 +66,14 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
 
   // Helper to determine if a navigation link should be highlighted for the current route
   const isRouteActive = (linkPath: string, currentPath: string): boolean => {
-    if (linkPath === '/') {
-      return currentPath === '/'
+    const cleanLink = linkPath.replace(/\/+$/, '')
+    const cleanCurrent = currentPath.replace(/\/+$/, '')
+
+    if (cleanLink === '') {
+      return cleanCurrent === ''
     }
 
-    if (linkPath === '/shop') {
+    if (cleanLink === '/shop') {
       return (
         currentPath === '/shop' ||
         currentPath.startsWith('/shop/') ||
@@ -79,7 +82,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
       )
     }
 
-    if (linkPath === '/blog') {
+    if (cleanLink === '/blog') {
       return (
         currentPath === '/insights' ||
         currentPath.startsWith('/insights/') ||
@@ -89,7 +92,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
       )
     }
 
-    if (linkPath === '/about') {
+    if (cleanLink === '/about') {
       return (
         currentPath === '/about' ||
         currentPath === '/the-7-rays' ||
@@ -98,7 +101,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
       )
     }
 
-    if (linkPath === '/vastu-services') {
+    if (cleanLink === '/vastu-services') {
       return (
         currentPath === '/vastu-services' ||
         currentPath.startsWith('/vastu-services/') ||
@@ -106,7 +109,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
       )
     }
 
-    if (linkPath === '/astrology') {
+    if (cleanLink === '/astrology') {
       return (
         currentPath === '/astrology' ||
         currentPath.startsWith('/astrology/') ||
@@ -115,11 +118,11 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
       )
     }
 
-    if (linkPath === '/contact') {
-      return currentPath === '/contact'
+    if (cleanLink === '/contact') {
+      return cleanCurrent === '/contact'
     }
 
-    return currentPath === linkPath || currentPath.startsWith(`${linkPath}/`)
+    return cleanCurrent === cleanLink || cleanCurrent.startsWith(`${cleanLink}/`)
   }
 
   return (

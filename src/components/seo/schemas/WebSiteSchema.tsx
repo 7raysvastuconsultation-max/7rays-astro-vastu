@@ -34,7 +34,7 @@ export const WebSiteSchema: React.FC = () => {
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: `${siteConfig.url}/blog?q={search_term_string}`,
+      target: `${siteConfig.url}/blog/?q={search_term_string}`,
       'query-input': 'required name=search_term_string',
     },
   }

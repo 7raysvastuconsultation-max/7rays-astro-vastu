@@ -57,7 +57,7 @@ export const HomePage: React.FC = () => {
       <section className="relative flex min-h-[85vh] items-center overflow-hidden bg-slate-950 lg:min-h-[92vh]">
         {/* Full-Bleed Background Penthouse Image */}
         <img
-          src="/images/hero-penthouse.jpg"
+          src="/images/hero-penthouse.webp"
           alt="7Rays Astro Vastu Luxury Penthouse with Golden Sunbeams and Sacred Geometry"
           fetchPriority="high"
           loading="eager"
@@ -82,15 +82,14 @@ export const HomePage: React.FC = () => {
               <span>HARMONIOUS SPACES • BRIGHTER LIVES</span>
             </div>
 
-            {/* Main Headline in Pure Elegant White */}
-            <h1 className="font-serif text-3xl leading-[1.12] font-bold tracking-tight text-white sm:text-5xl lg:text-[68px]">
-              Align Your Space. <br />
-              Transform Your Life.
+            {/* Main Headline with Target Commercial Intent */}
+            <h1 className="font-serif text-3xl leading-[1.15] font-bold tracking-tight text-white sm:text-5xl lg:text-[62px]">
+              Vastu Shastra &amp; Vedic Astrology Consultant in Bangalore
             </h1>
 
             {/* Subtitle */}
-            <p className="max-w-lg text-sm leading-relaxed font-light text-slate-200 sm:text-base">
-              Ancient Vastu wisdom, refined for modern living and thriving spaces.
+            <p className="subtitle max-w-xl text-sm leading-relaxed font-light text-slate-200 sm:text-base">
+              Align Your Space. Transform Your Life Through Scientific Non-Demolition Energy Balancing.
             </p>
 
             {/* CTA Buttons */}
@@ -323,6 +322,8 @@ export const HomePage: React.FC = () => {
                     src="/images/services/residential-vastu.jpg"
                     alt="Residential Vastu living room in Bangalore"
                     loading="lazy"
+                    width={1200}
+                    height={896}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -357,6 +358,8 @@ export const HomePage: React.FC = () => {
                     src="/images/services/commercial-vastu.jpg"
                     alt="Commercial Vastu modern office layout in Bangalore"
                     loading="lazy"
+                    width={1200}
+                    height={896}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -391,6 +394,8 @@ export const HomePage: React.FC = () => {
                     src="/images/services/industrial-vastu.jpg"
                     alt="Industrial and factory Vastu planning"
                     loading="lazy"
+                    width={1200}
+                    height={896}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -425,6 +430,8 @@ export const HomePage: React.FC = () => {
                     src="/images/services/corporate-vastu.jpg"
                     alt="Corporate Vastu workplace architecture"
                     loading="lazy"
+                    width={1200}
+                    height={896}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -459,6 +466,8 @@ export const HomePage: React.FC = () => {
                     src="/images/services/astrology-consultation.jpg"
                     alt="Vedic Astrology celestial horoscope reading"
                     loading="lazy"
+                    width={1200}
+                    height={896}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -493,6 +502,8 @@ export const HomePage: React.FC = () => {
                     src="/images/services/vastu-audit.jpg"
                     alt="Vastu Audit architectural CAD blueprint review"
                     loading="lazy"
+                    width={1200}
+                    height={896}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
@@ -541,7 +552,7 @@ export const HomePage: React.FC = () => {
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         {/* Full-width Luxury Sunset Penthouse Villa Background */}
         <img
-          src="/images/cta-sunset-villa.jpg"
+          src="/images/cta-sunset-villa.webp"
           alt="Luxury architectural terrace overlooking golden sunset horizon"
           loading="lazy"
           width={1376}

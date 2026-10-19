@@ -815,7 +815,7 @@ export const AstrologyPage: React.FC = () => {
       {/* 9. PRE-FOOTER SUNSET BANNER */}
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         <img
-          src="/images/cta-sunset-villa.jpg"
+          src="/images/cta-sunset-villa.webp"
           alt="Luxury architectural terrace overlooking golden sunset horizon"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />

@@ -162,7 +162,7 @@ export const BlogPage: React.FC = () => {
         {/* Background Image with Dark Vignette & Gradient */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero-penthouse.jpg"
+            src="/images/hero-penthouse.webp"
             alt="Insights for Better Spaces & Better Living"
             className="h-full w-full object-cover object-[center_35%]"
           />
@@ -502,7 +502,7 @@ export const BlogPage: React.FC = () => {
       <section className="relative w-full overflow-hidden bg-slate-950 py-8 text-white sm:py-10">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/cta-sunset-villa.jpg"
+            src="/images/cta-sunset-villa.webp"
             alt="Align Your Space Energy Sunset"
             className="h-full w-full object-cover object-[center_40%]"
           />

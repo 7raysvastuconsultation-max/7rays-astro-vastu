@@ -249,7 +249,7 @@ export const ResidentialVastuPage: React.FC = () => {
         {/* Background Image with Dark Vignette & Gradient */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero-penthouse.jpg"
+            src="/images/hero-penthouse.webp"
             alt="Residential Vastu Harmonious Living Room"
             fetchPriority="high"
             loading="eager"
@@ -1152,7 +1152,7 @@ export const ResidentialVastuPage: React.FC = () => {
       <section className="relative w-full overflow-hidden bg-slate-950 py-8 text-white sm:py-10">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero-penthouse.jpg"
+            src="/images/hero-penthouse.webp"
             alt="Residential Harmony Living Room Sunset"
             className="h-full w-full object-cover object-[center_35%]"
           />
