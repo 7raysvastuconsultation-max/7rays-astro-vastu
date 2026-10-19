@@ -9,16 +9,8 @@ const rootDir = path.resolve(__dirname, '..')
 const publicDir = path.resolve(rootDir, 'public')
 const distDir = path.resolve(rootDir, 'dist')
 
-let rawSiteUrl = (process.env.VITE_SITE_URL || '').trim()
-if (
-  !rawSiteUrl ||
-  rawSiteUrl.includes('localhost') ||
-  rawSiteUrl.includes('127.0.0.1') ||
-  rawSiteUrl.startsWith('http://')
-) {
-  rawSiteUrl = 'https://7raysastrovastu.in'
-}
-const SITE_URL = rawSiteUrl.replace(/\/$/, '')
+// Strict canonical apex site URL for search engines
+const SITE_URL = 'https://7raysastrovastu.in'
 const TODAY = new Date().toISOString().split('T')[0]
 
 // Define all active canonical site routes matching SEO Strategy Template

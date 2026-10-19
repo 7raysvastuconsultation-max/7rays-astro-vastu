@@ -162,7 +162,7 @@ for (const routePath of allRoutePaths) {
       metaDescription = "Vastu Shastra and Vedic Astrology consultations in Bengaluru led by Certified Vastu Consultant Rishwa Sinha. Non-demolition energy alignment for modern spaces."
     }
 
-    // Extract Canonical URL and enforce trailing-slash consistency
+    // Extract Canonical URL and enforce canonical apex domain: https://7raysastrovastu.in/
     let canonicalUrl = ""
     const canonicalMatch = renderedAppHtml.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([\s\S]*?)["'][^>]*\/?>/i)
     if (canonicalMatch) {
@@ -171,18 +171,16 @@ for (const routePath of allRoutePaths) {
       const hl = head.link.match(/<link[^>]+rel=["']canonical["'][^>]+href=["']([\s\S]*?)["'][^>]*\/?>/i)
       if (hl) canonicalUrl = hl[1].trim()
     }
-    if (!canonicalUrl) {
-      const cleanPath = url.replace(/^\/+/, "").replace(/\/+$/, "")
-      canonicalUrl = cleanPath ? `https://7raysastrovastu.in/${cleanPath}/` : "https://7raysastrovastu.in/"
-    } else {
+    let rawPath = url
+    if (canonicalUrl) {
       try {
-        const parsed = new URL(canonicalUrl)
-        const cleanPath = parsed.pathname.replace(/^\/+/, "").replace(/\/+$/, "")
-        canonicalUrl = cleanPath ? `${parsed.origin}/${cleanPath}/` : `${parsed.origin}/`
+        rawPath = new URL(canonicalUrl).pathname
       } catch {
-        if (!canonicalUrl.endsWith("/")) canonicalUrl += "/"
+        rawPath = canonicalUrl
       }
     }
+    const cleanPath = rawPath.replace(/^\/+/, "").replace(/\/+$/, "")
+    canonicalUrl = cleanPath ? `https://7raysastrovastu.in/${cleanPath}/` : "https://7raysastrovastu.in/"
 
     // Robots directive
     const robotsContent =

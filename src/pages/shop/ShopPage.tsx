@@ -120,7 +120,7 @@ export const ShopPage: React.FC = () => {
           name="keywords"
           content="vastu products online, vastu pyramid for home, brass ganesha idol, vastu dosh nivaran yantra, 7 chakra bracelet, himalayan salt lamp, buy authentic vastu items bangalore"
         />
-        <link rel="canonical" href="https://7raysastrovastu.com/shop" />
+        <link rel="canonical" href="https://7raysastrovastu.in/shop/" />
       </Helmet>
 
       {/* Main Container */}

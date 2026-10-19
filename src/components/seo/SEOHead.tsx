@@ -6,7 +6,7 @@ import { siteConfig } from '@/config/site'
 import type { MetaTagProps } from '@/types/seo'
 
 function normalizeCanonical(rawUrl?: string, pathname = '/'): string {
-  const baseUrl = (env.siteUrl || 'https://7raysastrovastu.in').replace(/\/+$/, '')
+  const baseUrl = 'https://7raysastrovastu.in'
   const input = rawUrl?.trim()
 
   if (!input) {
@@ -20,14 +20,14 @@ function normalizeCanonical(rawUrl?: string, pathname = '/'): string {
     return cleanPath ? `${baseUrl}/${cleanPath}/` : `${baseUrl}/`
   }
 
-  // Absolute URL
+  // Absolute URL: strictly normalize to canonical apex origin https://7raysastrovastu.in
   try {
     const parsed = new URL(input)
     const cleanPath = parsed.pathname.replace(/^\/+/, '').replace(/\/+$/, '')
-    const pathWithSlash = cleanPath ? `/${cleanPath}/` : '/'
-    return `${parsed.origin}${pathWithSlash}`
+    return cleanPath ? `${baseUrl}/${cleanPath}/` : `${baseUrl}/`
   } catch {
-    return input.endsWith('/') ? input : `${input}/`
+    const cleanPath = input.replace(/^https?:\/\/[^\/]+/, '').replace(/^\/+/, '').replace(/\/+$/, '')
+    return cleanPath ? `${baseUrl}/${cleanPath}/` : `${baseUrl}/`
   }
 }
 

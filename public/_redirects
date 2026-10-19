@@ -3,7 +3,6 @@
 # ============================================================
 
 # 0. Canonical Host Normalization (www -> apex)
-https://www.7raysastrovastu.in/*  https://7raysastrovastu.in/:splat  301!
 
 # 1. Service & National Landing Page Aliases (301 Permanent)
 /online-vastu-consultation-india  /services/online-vastu-consultation  301
