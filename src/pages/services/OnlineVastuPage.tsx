@@ -105,12 +105,13 @@ export const OnlineVastuPage: React.FC = () => {
   ]
 
   const metroHubs = [
-    { city: 'Mumbai & MMR', focus: 'High-Rise Apartments, Sea-Facing Penthouses & BKC Commercial Offices' },
-    { city: 'Delhi NCR (Gurgaon & Noida)', focus: 'Corporate Headquarters, Luxury Villas & Industrial Units' },
-    { city: 'Hyderabad', focus: 'HITEC City Tech Parks, Gachibowli Gated Communities & Commercial Retail' },
-    { city: 'Pune', focus: 'IT Spaces in Hinjawadi, Baner Residential Flats & Industrial Warehouses' },
-    { city: 'Bengaluru', focus: 'Tech Hub Apartments, Indiranagar Villas & Startup Workspace Energy Alignment' },
-    { city: 'Global NRIs (USA, UAE, UK, Singapore)', focus: 'Overseas Floor Plan Vastu Audits & International Property Investments' },
+    { city: 'Mumbai & MMR', focus: 'High-Rise Apartments, Sea-Facing Penthouses & BKC Commercial Offices', href: '/locations/mumbai/' },
+    { city: 'Delhi NCR (Gurgaon & Noida)', focus: 'Corporate Headquarters, Luxury Villas & Industrial Units', href: '/locations/delhi-ncr/' },
+    { city: 'Hyderabad', focus: 'HITEC City Tech Parks, Gachibowli Gated Communities & Commercial Retail', href: '/locations/hyderabad/' },
+    { city: 'Pune', focus: 'IT Spaces in Hinjawadi, Baner Residential Flats & Industrial Warehouses', href: '/locations/pune/' },
+    { city: 'Kolkata', focus: 'Ancestral Courtyard Homes, New Town High-Rises & Salt Lake Offices', href: '/locations/kolkata/' },
+    { city: 'Bengaluru', focus: 'Tech Hub Apartments, Indiranagar Villas & Startup Workspace Energy Alignment', href: '/locations/bangalore/' },
+    { city: 'Global NRIs (USA, UAE, UK, Singapore)', focus: 'Overseas Floor Plan Vastu Audits & International Property Investments', href: '/international/' },
   ]
 
   return (
@@ -335,16 +336,20 @@ export const OnlineVastuPage: React.FC = () => {
 
           <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {metroHubs.map((hub) => (
-              <div
+              <Link
                 key={hub.city}
-                className="rounded-xl border border-amber-400/20 bg-slate-900/80 p-5 backdrop-blur-xs transition hover:border-amber-400/50"
+                to={hub.href}
+                className="group block rounded-xl border border-amber-400/20 bg-slate-900/80 p-5 backdrop-blur-xs transition hover:border-amber-400/60 hover:bg-slate-900"
               >
-                <div className="flex items-center gap-2.5 text-amber-400">
-                  <MapPin className="h-4 w-4 shrink-0" />
-                  <h3 className="font-serif text-base font-bold text-white">{hub.city}</h3>
+                <div className="flex items-center justify-between text-amber-400">
+                  <div className="flex items-center gap-2.5">
+                    <MapPin className="h-4 w-4 shrink-0" />
+                    <h3 className="font-serif text-base font-bold text-white group-hover:text-amber-300">{hub.city}</h3>
+                  </div>
+                  <ArrowRight className="h-3.5 w-3.5 opacity-60 transition group-hover:translate-x-1 group-hover:opacity-100" />
                 </div>
                 <p className="mt-2.5 text-xs leading-relaxed text-slate-300">{hub.focus}</p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

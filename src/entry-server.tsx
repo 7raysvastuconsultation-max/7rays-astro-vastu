@@ -47,6 +47,7 @@ import { BangaloreIndustrialVastuPage } from '@/pages/locations/BangaloreIndustr
 import { BangaloreVastuAuditPage } from '@/pages/locations/BangaloreVastuAuditPage'
 import { BangaloreAstrologyPage } from '@/pages/locations/BangaloreAstrologyPage'
 import { LocationDetailPage } from '@/pages/locations/LocationDetailPage'
+import { RegionalLocationPage } from '@/pages/locations/RegionalLocationPage'
 
 import { BlogPage } from '@/pages/blog/BlogPage'
 import { BlogPostPage } from '@/pages/blog/BlogPostPage'
@@ -136,6 +137,11 @@ export function ServerApp() {
         />
         <Route path="/locations/bangalore/vastu-audit" element={<BangaloreVastuAuditPage />} />
         <Route path="/locations/bangalore/astrology" element={<BangaloreAstrologyPage />} />
+        <Route path="/locations/mumbai" element={<RegionalLocationPage />} />
+        <Route path="/locations/delhi-ncr" element={<RegionalLocationPage />} />
+        <Route path="/locations/hyderabad" element={<RegionalLocationPage />} />
+        <Route path="/locations/pune" element={<RegionalLocationPage />} />
+        <Route path="/locations/kolkata" element={<RegionalLocationPage />} />
         <Route path="/locations/:slug" element={<LocationDetailPage />} />
 
         {/* Insights & Blog Hierarchy */}

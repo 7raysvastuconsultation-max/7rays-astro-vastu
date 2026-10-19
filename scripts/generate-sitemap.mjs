@@ -55,7 +55,7 @@ const staticRoutes = [
   { path: 'disclaimer', changefreq: 'yearly', priority: 0.3 },
 ]
 
-const locationSlugs = ['indiranagar', 'hsr-layout', 'koramangala', 'whitefield']
+const locationSlugs = ['indiranagar', 'hsr-layout', 'koramangala', 'whitefield', 'mumbai', 'delhi-ncr', 'hyderabad', 'pune', 'kolkata']
 
 const blogSlugs = [
   'vastu-for-modern-apartments-in-bangalore',

@@ -61,6 +61,40 @@ export const LocationsPage: React.FC = () => {
         </div>
       </section>
 
+      {/* 2.5 REGIONAL HUBS (PAN-INDIA REMOTE CONSULTATION) */}
+      <section className="border-b border-amber-200/60 bg-[#FBF9F5] py-14 text-slate-900">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-2xl">
+            <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">PAN-INDIA REMOTE CONSULTATION HUBS</span>
+            <h2 className="mt-2 font-serif text-3xl font-bold text-slate-900 sm:text-4xl">Metropolitan Consultation Desks</h2>
+            <p className="mt-3 text-sm text-slate-600">Property-specific online Vastu reviews across major metropolitan regions. Consult with Certified Vastu Consultant Rishwa Sinha from your architectural floor plan.</p>
+          </div>
+          <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+            {[
+              { slug: 'mumbai', name: 'Mumbai', desc: 'High-rise apartments, compact modular layouts, sea-facing flats & BKC offices.' },
+              { slug: 'delhi-ncr', name: 'Delhi-NCR', desc: 'Multi-level builder floors, basements, farmhouses & Gurugram/Noida workspaces.' },
+              { slug: 'hyderabad', name: 'Hyderabad', desc: 'Gated community villas, road-approach geometry & HITEC City offices.' },
+              { slug: 'pune', name: 'Pune', desc: 'Sloped-site properties, WFH home-offices, duplexes & PCMC facilities.' },
+              { slug: 'kolkata', name: 'Kolkata', desc: 'Ancestral & heritage courtyard homes, high-rises in New Town & Salt Lake offices.' },
+            ].map((hub) => (
+              <div key={hub.slug} className="flex flex-col justify-between rounded-2xl border border-amber-200/70 bg-white p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md">
+                <div>
+                  <div className="mb-2 flex items-center gap-2 text-amber-800"><MapPin className="h-4 w-4" /><span className="text-xs font-bold tracking-wider uppercase">Remote Consultation Hub</span></div>
+                  <h3 className="font-serif text-xl font-bold text-slate-900">{hub.name}</h3>
+                  <p className="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm">{hub.desc}</p>
+                </div>
+                <div className="mt-5 border-t border-slate-100 pt-3">
+                  <Link to={`/locations/${hub.slug}/`} className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 transition hover:text-amber-950">
+                    <span>Explore {hub.name} Page</span>
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* 3. LOCATIONS DIRECTORY GRID (Clean White Background) */}
       <section className="bg-white py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

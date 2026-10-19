@@ -135,6 +135,9 @@ const BangaloreAstrologyPage = lazy(() =>
 const LocationDetailPage = lazy(() =>
   import('@/pages/locations/LocationDetailPage').then((m) => ({ default: m.LocationDetailPage }))
 )
+const RegionalLocationPage = lazy(() =>
+  import('@/pages/locations/RegionalLocationPage').then((m) => ({ default: m.RegionalLocationPage }))
+)
 
 const BlogPage = lazy(() => import('@/pages/blog/BlogPage').then((m) => ({ default: m.BlogPage })))
 const BlogPostPage = lazy(() =>
@@ -254,6 +257,11 @@ export const AppRoutes: React.FC = () => {
           />
           <Route path="/locations/bangalore/vastu-audit" element={<BangaloreVastuAuditPage />} />
           <Route path="/locations/bangalore/astrology" element={<BangaloreAstrologyPage />} />
+          <Route path="/locations/mumbai" element={<RegionalLocationPage />} />
+          <Route path="/locations/delhi-ncr" element={<RegionalLocationPage />} />
+          <Route path="/locations/hyderabad" element={<RegionalLocationPage />} />
+          <Route path="/locations/pune" element={<RegionalLocationPage />} />
+          <Route path="/locations/kolkata" element={<RegionalLocationPage />} />
           <Route path="/locations/:slug" element={<LocationDetailPage />} />
 
           {/* Insights & Blog Hierarchy */}

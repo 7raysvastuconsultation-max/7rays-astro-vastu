@@ -1,5 +1,6 @@
 import { servicesData } from '@/data/services'
 import { locationsData } from '@/data/locations'
+import { regionalLocations } from '@/data/regionalLocations'
 import { blogPostsData } from '@/data/blog'
 import { caseStudiesData } from '@/data/caseStudies'
 
@@ -50,5 +51,5 @@ export function getAllSitemapRoutes(): SitemapRouteEntry[] {
     lastmod: cs.date,
   }))
 
-  return [...staticRoutes, ...serviceRoutes, ...locationRoutes, ...blogRoutes, ...caseStudyRoutes]
+  return [...staticRoutes, ...serviceRoutes, ...locationRoutes, ...regionalLocations.map((loc) => ({ path: `/locations/${loc.slug}`, changefreq: 'weekly' as const, priority: 0.85 })), ...blogRoutes, ...caseStudyRoutes]
 }

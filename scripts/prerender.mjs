@@ -85,7 +85,7 @@ const staticRoutes = [
   "404",
 ]
 
-const locationSlugs = ["indiranagar", "hsr-layout", "koramangala", "whitefield"]
+const locationSlugs = ["indiranagar", "hsr-layout", "koramangala", "whitefield", "mumbai", "delhi-ncr", "hyderabad", "pune", "kolkata"]
 
 const blogSlugs = [
   "vastu-for-modern-apartments-in-bangalore",

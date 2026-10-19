@@ -191,7 +191,24 @@ export const HtmlSitemapPage: React.FC = () => {
               </ul>
             </div>
 
-            {/* Bangalore Hubs */}
+            {/* Metropolitan & Bangalore Hubs */}
+            <div className="space-y-4">
+              <h2 className="flex items-center gap-2 border-b border-amber-200 pb-2 font-serif text-base font-bold text-slate-900">
+                <MapPin className="h-4 w-4 text-amber-700" />
+                <span>Pan-India & Metropolitan Hubs</span>
+              </h2>
+              <ul className="space-y-2 text-xs text-slate-700">
+                <li><Link to="/locations/mumbai/" className="font-semibold hover:text-amber-800">Mumbai Vastu Consultation</Link></li>
+                <li><Link to="/locations/delhi-ncr/" className="font-semibold hover:text-amber-800">Delhi-NCR Vastu Consultation</Link></li>
+                <li><Link to="/locations/hyderabad/" className="font-semibold hover:text-amber-800">Hyderabad Vastu Consultation</Link></li>
+                <li><Link to="/locations/pune/" className="font-semibold hover:text-amber-800">Pune Vastu Consultation</Link></li>
+                <li><Link to="/locations/kolkata/" className="font-semibold hover:text-amber-800">Kolkata Vastu Consultation</Link></li>
+                <li><Link to="/locations/bangalore/" className="font-semibold hover:text-amber-800">Bangalore Master Hub</Link></li>
+                <li><Link to="/locations/" className="hover:text-amber-800">All Locations Directory</Link></li>
+              </ul>
+            </div>
+
+            {/* Bangalore Local Desks */}
             <div className="space-y-4">
               <h2 className="flex items-center gap-2 border-b border-amber-200 pb-2 font-serif text-base font-bold text-slate-900">
                 <MapPin className="h-4 w-4 text-amber-700" />
