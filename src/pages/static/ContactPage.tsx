@@ -129,7 +129,7 @@ export const ContactPage: React.FC = () => {
         {/* Background Image with Dark Vignette & Gradient */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/services/commercial-reception-lobby.jpg"
+            src="/images/services/commercial-reception-lobby.webp"
             alt="7Rays Astro Vastu Reception Lobby"
             fetchPriority="high"
             loading="eager"

@@ -296,13 +296,13 @@ export const MarkdownRenderer: React.FC<MarkdownRendererProps> = ({ content, cla
             const rawTitle = block.content || ''
             const cleanTitle = rawTitle.replace(/\*\*/g, '').trim()
             return (
-              <h1
+              <h2
                 key={idx}
                 id={slugify(cleanTitle)}
-                className="mt-10 mb-4 font-serif text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl"
+                className="mt-10 mb-4 scroll-mt-24 border-b border-amber-200/50 pb-3 font-serif text-2xl font-bold tracking-tight text-slate-900 sm:text-[28px]"
               >
                 {renderInlineFormatting(rawTitle)}
-              </h1>
+              </h2>
             )
           }
 

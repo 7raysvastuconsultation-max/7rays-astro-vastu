@@ -9,7 +9,7 @@ export const FeaturedProjectsSection: React.FC = () => {
       location: 'Bengaluru',
       to: '/case-studies/corporate-office-bangalore',
       type: 'Illustrative Scenario',
-      image: '/images/projects/corporate-office-bangalore.jpg',
+      image: '/images/projects/corporate-office-bangalore.webp',
       description:
         'Directional zone realignment and executive seating orientation using calibrated digital compass mapping.',
     },
@@ -18,7 +18,7 @@ export const FeaturedProjectsSection: React.FC = () => {
       location: 'Bengaluru',
       to: '/case-studies/whitefield-apartment-health-harmony',
       type: 'Illustrative Scenario',
-      image: '/images/projects/luxury-residence-mumbai.jpg',
+      image: '/images/projects/luxury-residence-mumbai.webp',
       description:
         'Environmental earth energy evaluation and non-demolition metallic boundary remedies for bedrooms.',
     },
@@ -27,7 +27,7 @@ export const FeaturedProjectsSection: React.FC = () => {
       location: 'Bengaluru Hubs',
       to: '/vastu/industrial',
       type: 'Service Protocol',
-      image: '/images/services/industrial-vastu.jpg',
+      image: '/images/services/industrial-vastu.webp',
       description:
         'Zero-downtime spatial zoning for active manufacturing units, machinery placement, and material flow.',
     },
@@ -36,7 +36,7 @@ export const FeaturedProjectsSection: React.FC = () => {
       location: 'Bengaluru',
       to: '/vastu/apartment-vastu',
       type: 'Service Protocol',
-      image: '/images/projects/villa-goa.jpg',
+      image: '/images/projects/villa-goa.webp',
       description:
         'Non-demolition elemental boundary corrections tailored for leased flats and high-rise apartment units.',
     },

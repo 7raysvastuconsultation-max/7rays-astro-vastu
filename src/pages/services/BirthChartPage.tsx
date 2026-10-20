@@ -120,7 +120,7 @@ export const BirthChartPage: React.FC = () => {
       <section className="relative min-h-[500px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/services/astrology-consultation.jpg"
+            src="/images/services/astrology-consultation.webp"
             alt="Vedic birth chart Janam Kundli reading"
             fetchPriority="high"
             loading="eager"

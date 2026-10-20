@@ -25,7 +25,7 @@ export const PersonSchema: React.FC<PersonSchemaProps> = ({
   jobTitle = businessConfig.ownerJobTitle,
   description = `${businessConfig.ownerName} is a ${businessConfig.ownerCertification} and Founder of ${businessConfig.businessName} with ${businessConfig.ownerExperience} of experience in Bengaluru, India.`,
   url = `${siteConfig.url}/about`,
-  image = `${siteConfig.url}/images/rishwa-sinha.jpg`,
+  image = `${siteConfig.url}/images/rishwa-sinha.webp`,
   knowsAbout = [
     'Vastu Shastra',
     'Residential Vastu',

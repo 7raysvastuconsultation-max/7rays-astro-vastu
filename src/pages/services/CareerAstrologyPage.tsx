@@ -97,7 +97,7 @@ export const CareerAstrologyPage: React.FC = () => {
       <section className="relative min-h-[500px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/services/astro-career.jpg"
+            src="/images/services/astro-career.webp"
             alt="Career Guidance modern city skyline at sunrise"
             className="h-full w-full object-cover object-center brightness-60"
           />

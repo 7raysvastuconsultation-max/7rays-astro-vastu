@@ -149,7 +149,7 @@ export const ShopPage: React.FC = () => {
           {/* Background image with warm ambient spiritual lighting */}
           <div className="relative aspect-[16/9] min-h-[300px] w-full sm:aspect-[21/9] sm:min-h-[360px] lg:min-h-[420px]">
             <img
-              src="/images/shop/shop-hero-banner.jpg"
+              src="/images/shop/shop-hero-banner.webp"
               alt="Authentic Vastu Products and Crystals Altar"
               className="absolute inset-0 h-full w-full object-cover object-center brightness-90"
               loading="eager"

@@ -14,6 +14,7 @@ import { BreadcrumbSchema } from '@/components/seo/schemas/BreadcrumbSchema'
 import { caseStudiesData } from '@/data/caseStudies'
 import { siteConfig } from '@/config/site'
 import { businessConfig } from '@/config/business'
+import { AuthorBioBox } from '@/components/common/AuthorBioBox'
 
 export const CaseStudyDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
@@ -214,6 +215,13 @@ export const CaseStudyDetailPage: React.FC = () => {
               Non-Demolition Remedies →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* 4.5 LEAD CONSULTANT METHODOLOGY & BIO */}
+      <section className="border-t border-slate-100 bg-[#FCFBF8] py-12">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <AuthorBioBox />
         </div>
       </section>
 

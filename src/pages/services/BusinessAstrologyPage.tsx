@@ -105,7 +105,7 @@ export const BusinessAstrologyPage: React.FC = () => {
       <section className="relative min-h-[500px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/services/commercial-vastu.jpg"
+            src="/images/services/commercial-vastu.webp"
             alt="Business Astrology Consultation for Founders"
             className="h-full w-full object-cover object-center brightness-60"
           />

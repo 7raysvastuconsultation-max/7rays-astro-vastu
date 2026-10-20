@@ -41,7 +41,7 @@ export const AboutPage: React.FC = () => {
         jobTitle="Certified Vastu Consultant & Founder"
         description="Rishwa Sinha is a Certified Vastu Consultant and Founder of 7Rays Astro Vastu with 5+ years of experience providing non-demolition Vastu Shastra and Vedic Astrology consultations for homes, offices, commercial spaces and industrial units in Bengaluru, India."
         url={`${siteConfig.url}/about`}
-        image={`${siteConfig.url}/images/rishwa-sinha.jpg`}
+        image={`${siteConfig.url}/images/rishwa-sinha.webp`}
         knowsAbout={[
           'Vastu Shastra',
           'Residential Vastu',
@@ -127,7 +127,7 @@ export const AboutPage: React.FC = () => {
             <div className="lg:col-span-5">
               <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
                 <img
-                  src="/images/rishwa-sinha.jpg"
+                  src="/images/rishwa-sinha.webp"
                   alt="Rishwa Sinha - Certified Vastu Consultant & Founder"
                   className="h-auto w-full object-cover"
                 />
@@ -308,7 +308,7 @@ export const AboutPage: React.FC = () => {
             <div className="lg:col-span-4">
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
                 <img
-                  src="/images/rishwa-sinha.jpg"
+                  src="/images/rishwa-sinha.webp"
                   alt="Rishwa Sinha - Dedicated Vastu Consultant"
                   className="h-auto w-full object-cover"
                 />
@@ -418,7 +418,7 @@ export const AboutPage: React.FC = () => {
             <div className="lg:col-span-4">
               <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-md">
                 <img
-                  src="/images/about-zen-courtyard.jpg"
+                  src="/images/about-zen-courtyard.webp"
                   alt="Minimalist indoor Zen garden courtyard with peaceful Bonsai tree and sunlight"
                   className="h-full w-full object-cover"
                 />
@@ -476,25 +476,25 @@ export const AboutPage: React.FC = () => {
             {[
               {
                 step: '01',
-                image: '/images/services/vastu-audit.jpg',
+                image: '/images/services/vastu-audit.webp',
                 title: 'Traditional Knowledge',
                 desc: 'Rooted in authentic Vastu principles and Vedic wisdom.',
               },
               {
                 step: '02',
-                image: '/images/services/corporate-vastu.jpg',
+                image: '/images/services/corporate-vastu.webp',
                 title: 'Modern Perspective',
                 desc: 'Integrated with modern architecture and lifestyle.',
               },
               {
                 step: '03',
-                image: '/images/services/residential-vastu.jpg',
+                image: '/images/services/residential-vastu.webp',
                 title: 'Personalized Guidance',
                 desc: 'Tailored recommendations for your unique needs.',
               },
               {
                 step: '04',
-                image: '/images/services/commercial-vastu.jpg',
+                image: '/images/services/commercial-vastu.webp',
                 title: 'Practical Implementation',
                 desc: 'Realistic, effective and implementable solutions.',
               },

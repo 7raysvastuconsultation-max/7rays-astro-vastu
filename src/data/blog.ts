@@ -8,7 +8,7 @@ export const blogPostsData: BlogPostItem[] = [
     seoTitle: 'Vastu for Modern Apartments in Bangalore | High-Rise Guide | 7Rays Astro Vastu',
     excerpt:
       'Navigating high-rise constraints, RERA builder layouts, fixed plumbing shafts, and cantilevered balconies across Bangalore tech corridors with practical Vastu solutions.',
-    coverImage: '/images/insights/insight-apartments.jpg',
+    coverImage: '/images/insights/insight-apartments.webp',
     category: 'Residential Vastu',
     tags: [
       'Bangalore Apartments',
@@ -20,7 +20,7 @@ export const blogPostsData: BlogPostItem[] = [
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-02-14T10:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -128,7 +128,7 @@ Explore our dedicated [Apartment Vastu Consultation Services](/vastu/apartment-v
     seoTitle: 'Non-Demolition Vastu Remedies: Non-Invasive Spatial Cures | 7Rays Astro Vastu',
     excerpt:
       'Discover the physics of non-demolition Vastu remedies. How metallic boundary strips, elemental color frequencies, and directional stabilizers rectify architectural flaws without civil work.',
-    coverImage: '/images/insights/insight-principles.jpg',
+    coverImage: '/images/insights/insight-principles.webp',
     category: 'Vastu Remedies',
     tags: [
       'Non-Demolition Vastu',
@@ -140,7 +140,7 @@ Explore our dedicated [Apartment Vastu Consultation Services](/vastu/apartment-v
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-02-15T09:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -246,13 +246,13 @@ Learn more about our practical [Non-Demolition Vastu Services](/vastu/non-demoli
     seoTitle: 'Foundational Vastu Principles for Homeowners | 7Rays Astro Vastu',
     excerpt:
       'Master the foundational architectural theory of Vastu Shastra: Pancha Tattva cycles, directional energy axes, 16-zone mass distribution, and a 6-point homeowner decision framework.',
-    coverImage: '/images/insights/insight-principles.jpg',
+    coverImage: '/images/insights/insight-principles.webp',
     category: 'Vastu Basics',
     tags: ['Foundational Vastu', 'Pancha Tattva', 'Homeowner Framework', 'Energy Axes', '16 Zones'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-02-20T10:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -378,7 +378,7 @@ Plan your home with scientific precision through our [Residential Vastu Consulta
     seoTitle: 'Best Directions for Home Office & WFH Vastu | 7Rays Astro Vastu',
     excerpt:
       'Design an ergonomic, high-productivity home workspace. Learn optimal desk facing, the command seating position, video call framing, and electromagnetic field balance.',
-    coverImage: '/images/insights/insight-home-office.jpg',
+    coverImage: '/images/insights/insight-home-office.webp',
     category: 'Vastu Tips',
     tags: [
       'Home Office Vastu',
@@ -390,7 +390,7 @@ Plan your home with scientific precision through our [Residential Vastu Consulta
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-02-25T11:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -500,13 +500,13 @@ Optimize your broader commercial space with our [Office Vastu Consultancy](/vast
     seoTitle: 'Master Bedroom Direction & Bed Placement as per Vastu | 7Rays Astro Vastu',
     excerpt:
       'Learn why Southwest (Nairutya) is the paramount zone for the primary bedroom, optimal sleeping head directions, and how to balance master suites in modern apartments.',
-    coverImage: '/images/services/residential-bedroom.jpg',
+    coverImage: '/images/services/residential-bedroom.webp',
     category: 'Residential Vastu',
     tags: ['Master Bedroom', 'Sleep Health', 'Southwest Vastu', 'Bed Placement'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-10T10:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -596,13 +596,13 @@ For comprehensive layout evaluations, explore our [Residential Vastu Consultancy
     seoTitle: 'Kitchen Direction & Agni Placement as per Vastu | 7Rays Astro Vastu',
     excerpt:
       'Master the placement of the fire element in your kitchen. Avoid fire-water conflicts and balance digestive health using non-structural Vastu adjustments.',
-    coverImage: '/images/services/residential-vastu.jpg',
+    coverImage: '/images/services/residential-vastu.webp',
     category: 'Residential Vastu',
     tags: ['Kitchen Vastu', 'Agni Element', 'Modular Kitchen', 'Fire Water Conflict'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-12T11:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -676,13 +676,13 @@ To learn more about elemental balancing, read our [Toilet & Bathroom Non-Demolit
     seoTitle: 'Toilet & Bathroom Direction Vastu Remedies | 7Rays Astro Vastu',
     excerpt:
       'Neutralize the negative drainage field of wrongly placed toilets in modern flats. How brass, zinc, and copper metal wire bounding remediates bathroom imbalances.',
-    coverImage: '/images/insights/insight-five-elements.jpg',
+    coverImage: '/images/insights/insight-five-elements.webp',
     category: 'Vastu Remedies',
     tags: ['Toilet Vastu', 'Non-Demolition', 'Metal Strips', 'Vastu Corrections'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-14T09:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -742,13 +742,13 @@ Explore our [Non-Demolition Vastu Services](/vastu/non-demolition) for exact on-
     seoTitle: 'North Facing House Vastu: Layout Principles & Wealth Flow | 7Rays Astro Vastu',
     excerpt:
       'Discover the exact architectural requirements for a prosperous north-facing house plan, the auspicious Mukhya and Bhallat entrance padas, and common mistakes.',
-    coverImage: '/images/insights/insight-principles.jpg',
+    coverImage: '/images/insights/insight-principles.webp',
     category: 'Directional Vastu',
     tags: ['North Facing', 'Kuber Zone', '32 Padas', 'House Plan'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-16T10:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -803,7 +803,7 @@ Learn more with our [Residential Vastu Planning](/vastu/residential).
     seoTitle: 'South Facing House Vastu: Key Principles & Layout Guide | 7Rays Astro Vastu',
     excerpt:
       'Explore the essential Vastu principles for south facing houses, common myths, layout guidance and practical remedies to create a balanced and prosperous home.',
-    coverImage: '/images/insights/south-facing-house-villa.jpg',
+    coverImage: '/images/insights/south-facing-house-villa.webp',
     category: 'Residential Vastu',
     tags: [
       'South Facing House',
@@ -815,7 +815,7 @@ Learn more with our [Residential Vastu Planning](/vastu/residential).
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-18T10:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -886,13 +886,13 @@ Explore our [Residential Vastu Consultancy](/vastu/residential) or contact our [
     seoTitle: 'Office Vastu: Executive Cabin, Workstation & Layout Guide | 7Rays Astro Vastu',
     excerpt:
       'Strategic placement of leadership cabins, accounts desks, and conference rooms to enhance organizational focus and administrative harmony.',
-    coverImage: '/images/insights/insight-commercial.jpg',
+    coverImage: '/images/insights/insight-commercial.webp',
     category: 'Commercial Vastu',
     tags: ['Office Vastu', 'Executive Cabin', 'Workstation Design', 'Commercial Planning'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-20T11:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -969,13 +969,13 @@ Consult our [Commercial & Office Vastu Consultancy](/vastu/office-vastu) or [Com
     seoTitle: 'Retail Store & Showroom Vastu: Layout & Cash Counter Guide | 7Rays Astro Vastu',
     excerpt:
       'Scientific spatial layout for retail stores and commercial showrooms. Optimize customer circulation, cash counter orientation, and stock staging.',
-    coverImage: '/images/insights/insight-commercial.jpg',
+    coverImage: '/images/insights/insight-commercial.webp',
     category: 'Commercial Vastu',
     tags: ['Retail Vastu', 'Showroom Layout', 'Cash Counter Direction', 'Footfall Optimization'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-22T10:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -1038,13 +1038,13 @@ Learn more with our [Commercial Vastu Services](/vastu/commercial).
     seoTitle: 'Restaurant & Hospitality Vastu: Kitchen & Seating Layout Guide | 7Rays Astro Vastu',
     excerpt:
       'Balancing kitchen fire dynamics, guest seating sectors, and beverage counters in restaurants and hospitality spaces without structural disruption.',
-    coverImage: '/images/insights/insight-commercial.jpg',
+    coverImage: '/images/insights/insight-commercial.webp',
     category: 'Commercial Vastu',
     tags: ['Restaurant Vastu', 'Commercial Kitchen', 'Hospitality Design', 'Dining Layout'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-24T11:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -1100,13 +1100,13 @@ Explore our full range of [Commercial Vastu Consultations](/vastu/commercial).
     seoTitle: 'Industrial Vastu: Machinery Orientation & Factory Layout Guide | 7Rays Astro Vastu',
     excerpt:
       'Structural stability, heavy machine orientation, and raw-to-finished goods material flow for manufacturing plants and industrial warehouses.',
-    coverImage: '/images/services/commercial-vastu.jpg',
+    coverImage: '/images/services/commercial-vastu.webp',
     category: 'Industrial Vastu',
     tags: ['Industrial Vastu', 'Factory Layout', 'Machinery Placement', 'Warehouse Logistics'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-25T10:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -1167,13 +1167,13 @@ Schedule an industrial consultation with our [Industrial Vastu Services](/vastu/
     seoTitle: 'How Geopathic Stress Causes Insomnia & Fatigue | 7Rays Astro Vastu',
     excerpt:
       'Waking up tired despite 8 hours of sleep? Learn how subterranean earth radiation lines drain your biological energy field and how to neutralize them.',
-    coverImage: '/images/insights/insight-five-elements.jpg',
+    coverImage: '/images/insights/insight-five-elements.webp',
     category: 'Energy Scanning',
     tags: ['Geopathic Stress', 'Sleep Health', 'Earth Energy', 'Bio-Resonance'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-05T10:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -1245,13 +1245,13 @@ Schedule a scientific property inspection through our [Scientific Vastu Audit Se
     seoTitle: 'What Is Vedic Astrology: Birth Chart & Kundli Guide | 7Rays Astro Vastu',
     excerpt:
       'Demystify Vedic Astrology (Jyotish). Learn how Janam Kundli charts are calculated, the role of 12 Bhavas, 9 planets, and how birth charts provide self-awareness without fatalism.',
-    coverImage: '/images/insights/insight-five-elements.jpg',
+    coverImage: '/images/insights/insight-five-elements.webp',
     category: 'Vedic Astrology',
     tags: ['Vedic Astrology', 'Birth Chart', 'Janam Kundli', 'Jyotish Basics', '12 Houses'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-27T10:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -1352,7 +1352,7 @@ Explore your personal cosmic blueprint through our [Birth Chart Consultations](/
     seoTitle: 'Career Astrology: 10th House, Timing & Career Transitions | 7Rays Astro Vastu',
     excerpt:
       'Explore how Vedic astrology analyzes vocation through the 10th house, Saturn, and D10 Dashamsha. Learn how planetary timing supports career clarity without false promises.',
-    coverImage: '/images/insights/insight-home-office.jpg',
+    coverImage: '/images/insights/insight-home-office.webp',
     category: 'Career Astrology',
     tags: [
       'Career Astrology',
@@ -1364,7 +1364,7 @@ Explore your personal cosmic blueprint through our [Birth Chart Consultations](/
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-28T09:30:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -1429,7 +1429,7 @@ Explore personalized vocational guidance through our [Career Astrology Services]
     seoTitle: 'Astrology vs Vastu Shastra: Differences & Synthesis | 7Rays Astro Vastu',
     excerpt:
       'Understand the fundamental distinctions between time-oriented Vedic astrology and space-oriented Vastu Shastra, and discover how an Astro-Vastu consultation bridges them.',
-    coverImage: '/images/insights/insight-five-elements.jpg',
+    coverImage: '/images/insights/insight-five-elements.webp',
     category: 'Astro-Vastu',
     tags: [
       'Astro-Vastu',
@@ -1441,7 +1441,7 @@ Explore personalized vocational guidance through our [Career Astrology Services]
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-28T14:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',
@@ -1526,13 +1526,13 @@ Explore our [Vedic Astrology Consultations](/astrology), explore our [Residentia
     seoTitle: 'Understanding Dasha Cycles & Planetary Life Transitions | 7Rays Astro Vastu',
     excerpt:
       'A clear, practical guide to Vimshottari Mahadasha and Antardasha. Discover how planetary periods unfold in classical Vedic astrology and how to navigate shifts constructively.',
-    coverImage: '/images/insights/insight-five-elements.jpg',
+    coverImage: '/images/insights/insight-five-elements.webp',
     category: 'Vedic Astrology',
     tags: ['Vimshottari Dasha', 'Mahadasha', 'Antardasha', 'Planetary Cycles', 'Saturn Sade Sati'],
     author: {
       name: 'Rishwa Sinha',
       title: 'Certified Vastu Consultant',
-      avatar: '/images/rishwa-sinha.jpg',
+      avatar: '/images/rishwa-sinha.webp',
     },
     publishedAt: '2026-03-28T16:00:00+05:30',
     updatedAt: '2026-03-29T15:00:00+05:30',

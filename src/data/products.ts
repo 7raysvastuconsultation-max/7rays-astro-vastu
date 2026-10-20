@@ -128,7 +128,7 @@ export const PRODUCTS: Product[] = [
     rating: 4.8,
     reviewsCount: 120,
     badge: 'Bestseller',
-    image: '/images/shop/vastu-pyramid.jpg',
+    image: '/images/shop/vastu-pyramid.webp',
     description:
       'Engineered multi-tier sacred brass pyramid calibrated to neutralize directional Vastu doshas in residences and offices. Consecrated with Vedic mantras to amplify cosmic bio-energy and dispel stagnant vibrations.',
     features: [

@@ -218,7 +218,7 @@ export const ServicesPage: React.FC = () => {
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/residential-vastu.jpg"
+                    src="/images/services/residential-vastu.webp"
                     alt="Residential Vastu apartment in Bangalore"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -252,7 +252,7 @@ export const ServicesPage: React.FC = () => {
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/commercial-vastu.jpg"
+                    src="/images/services/commercial-vastu.webp"
                     alt="Commercial Vastu modern office layout in Bangalore"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -286,7 +286,7 @@ export const ServicesPage: React.FC = () => {
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/residential-vastu.jpg"
+                    src="/images/services/residential-vastu.webp"
                     alt="Non-Demolition Vastu metallic inlays and elemental balancing"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -320,7 +320,7 @@ export const ServicesPage: React.FC = () => {
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/industrial-vastu.jpg"
+                    src="/images/services/industrial-vastu.webp"
                     alt="Industrial manufacturing plant Vastu planning"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -354,7 +354,7 @@ export const ServicesPage: React.FC = () => {
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/corporate-vastu.jpg"
+                    src="/images/services/corporate-vastu.webp"
                     alt="Corporate Vastu executive boardroom"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -387,7 +387,7 @@ export const ServicesPage: React.FC = () => {
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/astrology-consultation.jpg"
+                    src="/images/services/astrology-consultation.webp"
                     alt="Vedic Astrology birth chart reading"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -420,7 +420,7 @@ export const ServicesPage: React.FC = () => {
               <div>
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/vastu-audit.jpg"
+                    src="/images/services/vastu-audit.webp"
                     alt="Vastu Audit blueprint analysis"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />

@@ -70,7 +70,7 @@ export const CommercialVastuPage: React.FC = () => {
     {
       id: 'office-vastu',
       title: 'Office Vastu',
-      image: '/images/services/corporate-vastu.jpg',
+      image: '/images/services/corporate-vastu.webp',
       icon: Building2,
       description:
         'Create productive, focused and harmonious workspaces for executive and team pods.',
@@ -80,7 +80,7 @@ export const CommercialVastuPage: React.FC = () => {
     {
       id: 'corporate-vastu',
       title: 'Corporate Vastu',
-      image: '/images/services/commercial-boardroom-hero.jpg',
+      image: '/images/services/commercial-boardroom-hero.webp',
       icon: Users2,
       description:
         'Enterprise workplace spatial architecture for IT parks, tech campuses, and headquarters.',
@@ -90,7 +90,7 @@ export const CommercialVastuPage: React.FC = () => {
     {
       id: 'retail-vastu',
       title: 'Retail & Showroom Vastu',
-      image: '/images/services/commercial-retail-showroom.jpg',
+      image: '/images/services/commercial-retail-showroom.webp',
       icon: Store,
       description:
         'Optimize customer footfall circulation, cash counter positioning, and product display staging.',
@@ -100,7 +100,7 @@ export const CommercialVastuPage: React.FC = () => {
     {
       id: 'hotel-restaurant-vastu',
       title: 'Hotel & Restaurant Vastu',
-      image: '/images/services/commercial-restaurant-dining.jpg',
+      image: '/images/services/commercial-restaurant-dining.webp',
       icon: UtensilsCrossed,
       description:
         'Balance commercial kitchen burners, water elements, bar counters, and dining comfort.',
@@ -110,7 +110,7 @@ export const CommercialVastuPage: React.FC = () => {
     {
       id: 'industrial-vastu',
       title: 'Industrial & Factory Vastu',
-      image: '/images/services/industrial-vastu.jpg',
+      image: '/images/services/industrial-vastu.webp',
       icon: Factory,
       description:
         'Optimize manufacturing plants, heavy machinery orientation, and warehouse dispatch logistics.',
@@ -186,7 +186,7 @@ export const CommercialVastuPage: React.FC = () => {
       focus: 'Departmental Seating & Server Room Vastu',
       protocol: '16-zone CAD mapping, metallic floor inlays & executive desk realignment',
       slug: 'corporate-office-bangalore',
-      image: '/images/projects/corporate-office-bangalore.jpg',
+      image: '/images/projects/corporate-office-bangalore.webp',
     },
     {
       title: 'Fintech Scale-Up Workspace',
@@ -194,7 +194,7 @@ export const CommercialVastuPage: React.FC = () => {
       focus: 'Open-Plan Startup Layout & Founder Cabins',
       protocol: 'Southwest leadership orientation & North finance pod balancing',
       slug: 'fintech-startup-growth-hsr-layout',
-      image: '/images/services/commercial-retail-showroom.jpg',
+      image: '/images/services/commercial-retail-showroom.webp',
     },
     {
       title: 'Flagship Retail Showroom',
@@ -202,7 +202,7 @@ export const CommercialVastuPage: React.FC = () => {
       focus: 'Customer Footfall Circulation & Cash Counter',
       protocol: 'Clockwise pedestrian flow analysis & Southeast illumination planning',
       slug: 'commercial-space-hyderabad',
-      image: '/images/services/commercial-restaurant-dining.jpg',
+      image: '/images/services/commercial-restaurant-dining.webp',
     },
   ]
 
@@ -267,7 +267,7 @@ export const CommercialVastuPage: React.FC = () => {
         {/* Background Image with Dark Vignette & Gradient */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/services/commercial-boardroom-hero.jpg"
+            src="/images/services/commercial-boardroom-hero.webp"
             alt="Commercial Vastu Boardroom Skyline"
             fetchPriority="high"
             loading="eager"
@@ -459,7 +459,7 @@ export const CommercialVastuPage: React.FC = () => {
             <div className="relative overflow-hidden rounded-2xl shadow-xl lg:col-span-3">
               <div className="relative aspect-[3/4] w-full overflow-hidden">
                 <img
-                  src="/images/services/commercial-reception-lobby.jpg"
+                  src="/images/services/commercial-reception-lobby.webp"
                   alt="Modern Luxury Office Reception"
                   className="h-full w-full object-cover transition duration-700 hover:scale-105"
                 />

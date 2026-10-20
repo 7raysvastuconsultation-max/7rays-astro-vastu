@@ -143,7 +143,7 @@ export const OfficeVastuPage: React.FC = () => {
       <section className="relative min-h-[540px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:min-h-[580px] sm:pt-36 sm:pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/services/corporate-vastu.jpg"
+            src="/images/services/corporate-vastu.webp"
             alt="Modern Corporate Office Interior Bangalore"
             fetchPriority="high"
             loading="eager"

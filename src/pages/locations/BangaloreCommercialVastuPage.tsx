@@ -114,7 +114,7 @@ export const BangaloreCommercialVastuPage: React.FC = () => {
       <section className="relative min-h-[520px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/services/commercial-boardroom-hero.jpg"
+            src="/images/services/commercial-boardroom-hero.webp"
             alt="Commercial Vastu Bangalore Office Skyline"
             className="h-full w-full object-cover object-center"
           />

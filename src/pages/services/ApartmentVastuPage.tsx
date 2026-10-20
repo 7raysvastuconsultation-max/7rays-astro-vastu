@@ -112,7 +112,7 @@ export const ApartmentVastuPage: React.FC = () => {
       <section className="relative min-h-[520px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/projects/luxury-residence-mumbai.jpg"
+            src="/images/projects/luxury-residence-mumbai.webp"
             alt="Luxury High Rise Apartment Vastu Interior"
             fetchPriority="high"
             loading="eager"

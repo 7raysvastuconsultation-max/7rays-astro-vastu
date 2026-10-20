@@ -131,7 +131,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
       <section className="relative min-h-[520px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/astrology-hero-study.jpg"
+            src="/images/astrology-hero-study.webp"
             alt="Vedic astrology chart analysis in Bangalore studio"
             className="h-full w-full object-cover object-center brightness-60"
           />

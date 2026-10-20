@@ -77,31 +77,31 @@ export const BlogPage: React.FC = () => {
     {
       title: 'Vastu Principles Every Homeowner Should Know',
       readTime: '9 min read',
-      image: '/images/insights/insight-principles.jpg',
+      image: '/images/insights/insight-principles.webp',
       slug: 'vastu-principles-every-homeowner-should-know',
     },
     {
       title: 'Vastu Remedies Without Demolition for Apartments',
       readTime: '9 min read',
-      image: '/images/insights/insight-apartments.jpg',
+      image: '/images/insights/insight-apartments.webp',
       slug: 'vastu-remedies-without-demolition-modern-apartments',
     },
     {
       title: 'Best Directions for Your Home Office Workspace',
       readTime: '8 min read',
-      image: '/images/insights/insight-home-office.jpg',
+      image: '/images/insights/insight-home-office.webp',
       slug: 'best-directions-for-home-office',
     },
     {
       title: 'South-Facing House Vastu: Myths vs Reality',
       readTime: '10 min read',
-      image: '/images/services/residential-corrections.jpg',
+      image: '/images/services/residential-corrections.webp',
       slug: 'south-facing-house-vastu-myths',
     },
     {
       title: 'Astrology vs Vastu: Differences & Synergy',
       readTime: '10 min read',
-      image: '/images/services/astrology-consultation.jpg',
+      image: '/images/services/astrology-consultation.webp',
       slug: 'astrology-vs-vastu-difference-and-synthesis',
     },
   ]

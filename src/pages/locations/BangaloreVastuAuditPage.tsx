@@ -126,7 +126,7 @@ export const BangaloreVastuAuditPage: React.FC = () => {
       <section className="relative min-h-[520px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/services/vastu-audit.jpg"
+            src="/images/services/vastu-audit.webp"
             alt="Scientific Vastu Audit and Digital Energy Scanning Bangalore"
             className="h-full w-full object-cover object-center brightness-55"
           />

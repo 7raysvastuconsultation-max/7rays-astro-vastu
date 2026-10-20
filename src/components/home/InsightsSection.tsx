@@ -8,31 +8,31 @@ export const InsightsSection: React.FC = () => {
       title: 'Vastu Principles Every Homeowner Should Know',
       slug: 'vastu-principles-every-homeowner-should-know',
       category: 'Home Vastu',
-      image: '/images/insights/insight-principles.jpg',
+      image: '/images/insights/insight-principles.webp',
     },
     {
       title: 'Vastu for Modern Apartments Without Demolition',
       slug: 'vastu-remedies-without-demolition-modern-apartments',
       category: 'Apartments',
-      image: '/images/insights/insight-apartments.jpg',
+      image: '/images/insights/insight-apartments.webp',
     },
     {
       title: 'Best Directions for Your Home Office',
       slug: 'best-directions-for-home-office',
       category: 'Workspace',
-      image: '/images/insights/insight-home-office.jpg',
+      image: '/images/insights/insight-home-office.webp',
     },
     {
       title: 'Vastu for Commercial & Retail Spaces',
       slug: 'retail-store-and-showroom-vastu',
       category: 'Commercial',
-      image: '/images/insights/insight-commercial.jpg',
+      image: '/images/insights/insight-commercial.webp',
     },
     {
       title: 'Astrology vs Vastu: Differences & Synergy',
       slug: 'astrology-vs-vastu-difference-and-synthesis',
       category: 'Vedic Wisdom',
-      image: '/images/insights/insight-five-elements.jpg',
+      image: '/images/insights/insight-five-elements.webp',
     },
   ]
 

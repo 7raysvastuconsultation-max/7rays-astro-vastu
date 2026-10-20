@@ -113,7 +113,7 @@ export const AstrologyPage: React.FC = () => {
       {/* 1. HERO SECTION */}
       <section className="relative flex min-h-[82vh] items-center justify-center overflow-hidden py-24 sm:py-32">
         <img
-          src="/images/astrology-hero-study.jpg"
+          src="/images/astrology-hero-study.webp"
           alt="Atmospheric Vedic astrology library study with glowing zodiac wheel and candlelight"
           fetchPriority="high"
           loading="eager"
@@ -312,7 +312,7 @@ export const AstrologyPage: React.FC = () => {
               <div>
                 <div className="h-36 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/astrology-consultation.jpg"
+                    src="/images/services/astrology-consultation.webp"
                     alt="Birth Chart Analysis horoscope"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -351,7 +351,7 @@ export const AstrologyPage: React.FC = () => {
               <div>
                 <div className="h-36 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/astro-career.jpg"
+                    src="/images/services/astro-career.webp"
                     alt="Career Guidance modern city skyline at sunrise"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -390,7 +390,7 @@ export const AstrologyPage: React.FC = () => {
               <div>
                 <div className="h-36 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/commercial-vastu.jpg"
+                    src="/images/services/commercial-vastu.webp"
                     alt="Business Astrology Consultation"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -429,7 +429,7 @@ export const AstrologyPage: React.FC = () => {
               <div>
                 <div className="h-36 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/astro-relationship.jpg"
+                    src="/images/services/astro-relationship.webp"
                     alt="Relationship & Marriage harmony"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -468,7 +468,7 @@ export const AstrologyPage: React.FC = () => {
               <div>
                 <div className="h-36 w-full overflow-hidden bg-slate-100">
                   <img
-                    src="/images/services/astro-wealth.jpg"
+                    src="/images/services/astro-wealth.webp"
                     alt="Wealth & Financial Decision Timing"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />

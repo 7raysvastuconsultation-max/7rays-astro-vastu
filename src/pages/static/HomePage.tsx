@@ -192,7 +192,7 @@ export const HomePage: React.FC = () => {
             <div className="relative lg:col-span-5">
               <div className="relative overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl">
                 <img
-                  src="/images/rishwa-sinha.jpg"
+                  src="/images/rishwa-sinha.webp"
                   alt="Rishwa Sinha - Certified Vastu Consultant & Founder of 7Rays Astro Vastu"
                   loading="lazy"
                   width={853}
@@ -319,7 +319,7 @@ export const HomePage: React.FC = () => {
               <div>
                 <div className="h-28 w-full overflow-hidden bg-slate-100 sm:h-32">
                   <img
-                    src="/images/services/residential-vastu.jpg"
+                    src="/images/services/residential-vastu.webp"
                     alt="Residential Vastu living room in Bangalore"
                     loading="lazy"
                     width={1200}
@@ -355,7 +355,7 @@ export const HomePage: React.FC = () => {
               <div>
                 <div className="h-28 w-full overflow-hidden bg-slate-100 sm:h-32">
                   <img
-                    src="/images/services/commercial-vastu.jpg"
+                    src="/images/services/commercial-vastu.webp"
                     alt="Commercial Vastu modern office layout in Bangalore"
                     loading="lazy"
                     width={1200}
@@ -391,7 +391,7 @@ export const HomePage: React.FC = () => {
               <div>
                 <div className="h-28 w-full overflow-hidden bg-slate-100 sm:h-32">
                   <img
-                    src="/images/services/industrial-vastu.jpg"
+                    src="/images/services/industrial-vastu.webp"
                     alt="Industrial and factory Vastu planning"
                     loading="lazy"
                     width={1200}
@@ -427,7 +427,7 @@ export const HomePage: React.FC = () => {
               <div>
                 <div className="h-28 w-full overflow-hidden bg-slate-100 sm:h-32">
                   <img
-                    src="/images/services/corporate-vastu.jpg"
+                    src="/images/services/corporate-vastu.webp"
                     alt="Corporate Vastu workplace architecture"
                     loading="lazy"
                     width={1200}
@@ -463,7 +463,7 @@ export const HomePage: React.FC = () => {
               <div>
                 <div className="h-28 w-full overflow-hidden bg-slate-100 sm:h-32">
                   <img
-                    src="/images/services/astrology-consultation.jpg"
+                    src="/images/services/astrology-consultation.webp"
                     alt="Vedic Astrology celestial horoscope reading"
                     loading="lazy"
                     width={1200}
@@ -499,7 +499,7 @@ export const HomePage: React.FC = () => {
               <div>
                 <div className="h-28 w-full overflow-hidden bg-slate-100 sm:h-32">
                   <img
-                    src="/images/services/vastu-audit.jpg"
+                    src="/images/services/vastu-audit.webp"
                     alt="Vastu Audit architectural CAD blueprint review"
                     loading="lazy"
                     width={1200}

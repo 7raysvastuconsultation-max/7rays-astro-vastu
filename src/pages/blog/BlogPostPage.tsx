@@ -15,6 +15,7 @@ import { ArticleSchema } from '@/components/seo/schemas/ArticleSchema'
 import { FAQSchema } from '@/components/seo/schemas/FAQSchema'
 import { ConsultationModal } from '@/components/common/ConsultationModal'
 import { MarkdownRenderer } from '@/components/common/MarkdownRenderer'
+import { AuthorBioBox } from '@/components/common/AuthorBioBox'
 import { extractHeadings } from '@/utils/markdownUtils'
 import { NotFoundPage } from '@/pages/NotFoundPage'
 import { blogPostsData } from '@/data/blog'
@@ -34,31 +35,31 @@ const popularArticlesList = [
     title: '7 Vastu Principles Every Homeowner Should Know',
     slug: 'vastu-principles-every-homeowner-should-know',
     readingTime: '8 min read',
-    image: '/images/insights/insight-principles.jpg',
+    image: '/images/insights/insight-principles.webp',
   },
   {
     title: 'Non-Demolition Vastu for Modern Apartments',
     slug: 'vastu-remedies-without-demolition-modern-apartments',
     readingTime: '7 min read',
-    image: '/images/insights/insight-apartments.jpg',
+    image: '/images/insights/insight-apartments.webp',
   },
   {
     title: 'Best Directions for Your Home Office',
     slug: 'best-directions-for-home-office',
     readingTime: '7 min read',
-    image: '/images/insights/insight-home-office.jpg',
+    image: '/images/insights/insight-home-office.webp',
   },
   {
     title: 'Master Bedroom Vastu Guidelines & Sleep Science',
     slug: 'master-bedroom-vastu-guidelines',
     readingTime: '7 min read',
-    image: '/images/services/residential-bedroom.jpg',
+    image: '/images/services/residential-bedroom.webp',
   },
   {
     title: 'South Facing House Vastu: Myths vs Reality',
     slug: 'south-facing-house-vastu-myths',
     readingTime: '9 min read',
-    image: '/images/insights/south-facing-house-villa.jpg',
+    image: '/images/insights/south-facing-house-villa.webp',
   },
 ]
 
@@ -147,7 +148,7 @@ export const BlogPostPage: React.FC = () => {
     setPdfDownloaded(true)
     trackConversion('form_submission', 'Vastu Checklist for Home Buyers')
     const link = document.createElement('a')
-    link.href = '/images/vastu-checklist-book-cover.jpg'
+    link.href = '/images/vastu-checklist-book-cover.webp'
     link.download = '7Rays-Vastu-Checklist-for-Home-Buyers.jpg'
     document.body.appendChild(link)
     link.click()
@@ -238,6 +239,12 @@ export const BlogPostPage: React.FC = () => {
     }
   }
 
+  // Clean leading duplicate title heading from markdown content
+  const cleanContent = useMemo(() => {
+    if (!post?.content) return ''
+    return post.content.replace(/^#\s+[^\n]+\n+/, '')
+  }, [post?.content])
+
   const relatedService = getRelatedService()
 
   return (
@@ -320,12 +327,14 @@ export const BlogPostPage: React.FC = () => {
         <div className="mt-6 flex flex-col justify-between gap-4 border-b border-slate-100 pb-6 sm:flex-row sm:items-center">
           <div className="flex items-center gap-3">
             <img
-              src={post.author.avatar || '/images/rishwa-sinha.jpg'}
+              src={post.author.avatar || '/images/rishwa-sinha.webp'}
               alt={post.author.name}
               className="h-11 w-11 rounded-full border border-amber-200/60 object-cover shadow-2xs"
             />
             <div>
-              <div className="text-sm font-semibold text-slate-900">By {post.author.name}</div>
+              <Link to="/about/" className="text-sm font-semibold text-slate-900 transition hover:text-amber-800">
+                By {post.author.name}
+              </Link>
               <div className="text-xs text-slate-500">
                 {post.author.title || 'Certified Vastu Consultant'} | 7Rays Astro Vastu
               </div>
@@ -388,7 +397,7 @@ export const BlogPostPage: React.FC = () => {
         {/* Hero Featured Image */}
         <div className="my-8 overflow-hidden rounded-2xl border border-slate-200/80 shadow-md sm:rounded-3xl">
           <img
-            src={post.coverImage || '/images/insights/insight-principles.jpg'}
+            src={post.coverImage || '/images/insights/insight-principles.webp'}
             alt={post.title}
             className="aspect-[16/9] max-h-[540px] w-full object-cover"
             loading="eager"
@@ -451,8 +460,11 @@ export const BlogPostPage: React.FC = () => {
 
             {/* Dynamic Markdown Content Renderer */}
             <article className="max-w-none text-slate-700">
-              <MarkdownRenderer content={post.content} />
+              <MarkdownRenderer content={cleanContent} />
             </article>
+
+            {/* Author Bio Box */}
+            <AuthorBioBox className="mt-10" />
 
             {/* Frequently Asked Questions Section */}
             {post.faqs && post.faqs.length > 0 && (
@@ -627,7 +639,7 @@ export const BlogPostPage: React.FC = () => {
             <div className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs">
               <div className="flex items-start gap-4">
                 <img
-                  src="/images/vastu-checklist-book-cover.jpg"
+                  src="/images/vastu-checklist-book-cover.webp"
                   alt="Vastu Checklist for Home Buyers"
                   className="w-20 shrink-0 rounded-md object-cover shadow-sm sm:w-22"
                   loading="lazy"

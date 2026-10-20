@@ -178,7 +178,7 @@ export const BangaloreMasterPage: React.FC = () => {
       <section className="relative min-h-[560px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/services/commercial-vastu.jpg"
+            src="/images/services/commercial-vastu.webp"
             alt="Bangalore City skyline and modern architecture"
             fetchPriority="high"
             loading="eager"

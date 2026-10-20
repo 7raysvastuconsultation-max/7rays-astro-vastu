@@ -154,7 +154,7 @@ export const BangaloreIndustrialVastuPage: React.FC = () => {
       <section className="relative min-h-[520px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/services/industrial-vastu.jpg"
+            src="/images/services/industrial-vastu.webp"
             alt="Bangalore Industrial Manufacturing Plant Vastu Inspection"
             className="h-full w-full object-cover object-center brightness-55"
           />

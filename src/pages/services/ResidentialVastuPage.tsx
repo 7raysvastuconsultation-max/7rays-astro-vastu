@@ -62,7 +62,7 @@ export const ResidentialVastuPage: React.FC = () => {
     {
       id: 'apartment-vastu',
       title: 'Apartment & Flat Vastu',
-      image: '/images/projects/luxury-residence-mumbai.jpg',
+      image: '/images/projects/luxury-residence-mumbai.webp',
       icon: Building2,
       description:
         'Practical non-demolition Vastu solutions for high-rise apartments, shared walls, and leased flats.',
@@ -72,7 +72,7 @@ export const ResidentialVastuPage: React.FC = () => {
     {
       id: 'villa-vastu',
       title: 'Villa & Duplex Vastu',
-      image: '/images/projects/villa-goa.jpg',
+      image: '/images/projects/villa-goa.webp',
       icon: Sparkles,
       description:
         'Harmonious space planning for independent villas, gated community duplexes, and private estates.',
@@ -82,7 +82,7 @@ export const ResidentialVastuPage: React.FC = () => {
     {
       id: 'new-home-vastu',
       title: 'New Home Construction',
-      image: '/images/services/residential-vastu.jpg',
+      image: '/images/services/residential-vastu.webp',
       icon: Home,
       description:
         'Ensure your architectural CAD blueprints and foundation are aligned with cardinal energies before building.',
@@ -92,7 +92,7 @@ export const ResidentialVastuPage: React.FC = () => {
     {
       id: 'existing-home-corrections',
       title: 'Existing Home Corrections',
-      image: '/images/services/residential-corrections.jpg',
+      image: '/images/services/residential-corrections.webp',
       icon: Wrench,
       description:
         'Practical, non-demolition remedies using elemental metallic strips and spatial alignment for existing homes.',
@@ -168,7 +168,7 @@ export const ResidentialVastuPage: React.FC = () => {
       focus: 'Master Bedroom Sleep & Directional Alignment',
       protocol: 'Calibrated digital compass mapping & zinc boundary strip floor inlays',
       slug: 'whitefield-apartment-health-harmony',
-      image: '/images/services/residential-new-home.jpg',
+      image: '/images/services/residential-new-home.webp',
     },
     {
       property: 'Independent Villa',
@@ -176,7 +176,7 @@ export const ResidentialVastuPage: React.FC = () => {
       focus: 'Perimeter Drainage & Geopathic Evaluation',
       protocol: 'Digital Gauss meter electromagnetic scan & directional landscaping',
       slug: 'villa-goa',
-      image: '/images/projects/villa-goa.jpg',
+      image: '/images/projects/villa-goa.webp',
     },
     {
       property: 'Coastal Penthouse',
@@ -184,7 +184,7 @@ export const ResidentialVastuPage: React.FC = () => {
       focus: 'Entrance Pada & Non-Demolition Grid Overlay',
       protocol: '16-zone CAD grid overlay & brass threshold boundary alignment',
       slug: 'luxury-residence-mumbai',
-      image: '/images/projects/luxury-residence-mumbai.jpg',
+      image: '/images/projects/luxury-residence-mumbai.webp',
     },
   ]
 
@@ -449,7 +449,7 @@ export const ResidentialVastuPage: React.FC = () => {
             <div className="relative overflow-hidden rounded-2xl shadow-xl lg:col-span-3">
               <div className="relative aspect-[3/4] w-full overflow-hidden bg-white">
                 <img
-                  src="/images/services/residential-bedroom.jpg"
+                  src="/images/services/residential-bedroom.webp"
                   alt="Modern Luxury Master Bedroom"
                   className="h-full w-full object-cover transition duration-700 hover:scale-105"
                 />
