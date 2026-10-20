@@ -1,5 +1,5 @@
 import React, { useEffect, lazy, Suspense } from 'react'
-import { Routes, Route, useLocation } from 'react-router-dom'
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import { Layout } from '@/components/common/Layout'
 import { LoadingFallback } from '@/components/common/LoadingFallback'
 import { HomePage } from '@/pages/static/HomePage'
@@ -243,6 +243,9 @@ export const AppRoutes: React.FC = () => {
           {/* Bangalore Local SEO Architecture */}
           <Route path="/locations" element={<LocationsPage />} />
           <Route path="/locations/bangalore" element={<BangaloreMasterPage />} />
+          <Route path="/vastu-consultant-in-bangalore" element={<Navigate to="/locations/bangalore/" replace />} />
+          <Route path="/vastu-consultant-bangalore" element={<Navigate to="/locations/bangalore/" replace />} />
+          <Route path="/vastu-consultant-in-bengaluru" element={<Navigate to="/locations/bangalore/" replace />} />
           <Route
             path="/locations/bangalore/residential-vastu"
             element={<BangaloreResidentialVastuPage />}

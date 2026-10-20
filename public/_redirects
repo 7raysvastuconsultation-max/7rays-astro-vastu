@@ -1,3 +1,11 @@
+# Bangalore Local Hub Aliases
+/vastu-consultant-in-bangalore     /locations/bangalore/ 301
+/vastu-consultant-in-bangalore/    /locations/bangalore/ 301
+/vastu-consultant-bangalore        /locations/bangalore/ 301
+/vastu-consultant-bangalore/       /locations/bangalore/ 301
+/vastu-consultant-in-bengaluru     /locations/bangalore/ 301
+/vastu-consultant-in-bengaluru/    /locations/bangalore/ 301
+
 /locations/mumbai /locations/mumbai/ 301
 /locations/delhi-ncr /locations/delhi-ncr/ 301
 /locations/hyderabad /locations/hyderabad/ 301

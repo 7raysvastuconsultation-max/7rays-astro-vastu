@@ -65,6 +65,7 @@ const staticRoutes = [
   "astrology/business",
   "astrology/marriage",
   "locations",
+  "vastu-consultant-in-bangalore",
   "locations/bangalore",
   "locations/bangalore/residential-vastu",
   "locations/bangalore/commercial-vastu",
