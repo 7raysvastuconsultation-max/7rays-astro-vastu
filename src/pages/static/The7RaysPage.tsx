@@ -14,7 +14,7 @@ export const The7RaysPage: React.FC = () => {
         description="Discover the 7 Rays of Balance: Space, Light, Direction, Elements, Energy, Balance, and Harmony. The signature Astro-Vastu philosophy developed by 7Rays."
         canonicalUrl={`${siteConfig.url}/the-7-rays`}
       />
-      <BreadcrumbSchema items={[{ name: 'The 7 Rays', url: '/the-7-rays' }]} />
+      <BreadcrumbSchema items={[{ name: 'The 7 Rays', url: '/the-7-rays/' }]} />
 
       <div className="relative overflow-hidden border-b border-amber-500/20 bg-slate-950 py-16 text-slate-100 sm:py-24">
         {/* Atmospheric Background Image */}

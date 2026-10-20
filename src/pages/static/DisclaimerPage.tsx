@@ -18,7 +18,7 @@ export const DisclaimerPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Disclaimer', url: '/disclaimer' },
+          { name: 'Disclaimer', url: '/disclaimer/' },
         ]}
       />
 

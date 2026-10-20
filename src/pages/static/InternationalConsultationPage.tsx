@@ -48,7 +48,7 @@ export const InternationalConsultationPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'International Consultation', url: '/international' },
+          { name: 'International Consultation', url: '/international/' },
         ]}
       />
       <ServiceSchema

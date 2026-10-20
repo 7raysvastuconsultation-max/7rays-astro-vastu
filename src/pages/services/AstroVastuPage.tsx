@@ -119,8 +119,8 @@ export const AstroVastuPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Services', url: '/vastu-services' },
-          { name: 'Astro-Vastu Synthesis', url: '/services/astro-vastu-synthesis' },
+          { name: 'Services', url: '/vastu-services/' },
+          { name: 'Astro-Vastu Synthesis', url: '/services/astro-vastu-synthesis/' },
         ]}
       />
 

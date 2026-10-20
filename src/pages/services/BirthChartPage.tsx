@@ -104,7 +104,7 @@ export const BirthChartPage: React.FC = () => {
         items={[
           { name: 'Home', url: '/' },
           { name: 'Astrology', url: '/astrology/' },
-          { name: 'Birth Chart Analysis', url: '/astrology/birth-chart' },
+          { name: 'Birth Chart Analysis', url: '/astrology/birth-chart/' },
         ]}
       />
       <ServiceSchema

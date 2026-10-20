@@ -34,8 +34,8 @@ export const ServiceDetailPage: React.FC = () => {
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Services', url: '/vastu-services' },
-          { name: service.title, url: `/services/${service.slug}` },
+          { name: 'Services', url: '/vastu-services/' },
+          { name: service.title, url: `/services/${service.slug}/` },
         ]}
       />
       <ServiceSchema

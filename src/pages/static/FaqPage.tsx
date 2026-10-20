@@ -145,7 +145,7 @@ export const FaqPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'FAQ', url: '/faq' },
+          { name: 'FAQ', url: '/faq/' },
         ]}
       />
       <FAQSchema items={allFaqs} />

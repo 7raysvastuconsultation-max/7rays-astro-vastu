@@ -13,9 +13,9 @@ export const LocationsPage: React.FC = () => {
       <SEOHead
         title="Vastu Consultation Locations in Bangalore | 7Rays"
         description="Find verified Astro-Vastu consultation coverage across Bengaluru: Indiranagar, HSR Layout, Koramangala, Whitefield, and surrounding hubs. On-site property audits."
-        canonicalUrl={`${siteConfig.url}/locations`}
+        canonicalUrl={`${siteConfig.url}/locations/`}
       />
-      <BreadcrumbSchema items={[{ name: 'Bangalore Locations', url: '/locations' }]} />
+      <BreadcrumbSchema items={[{ name: 'Bangalore Locations', url: '/locations/' }]} />
 
       {/* 1. HERO SECTION (Dark Luxury) */}
       <section className="relative min-h-[460px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">

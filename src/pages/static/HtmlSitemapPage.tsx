@@ -16,7 +16,7 @@ export const HtmlSitemapPage: React.FC = () => {
         description="Comprehensive index of all static pages, Vastu services, Bangalore locations, insights, and case studies on 7Rays Astro Vastu."
         canonicalUrl={`${siteConfig.url}/sitemap`}
       />
-      <BreadcrumbSchema items={[{ name: 'Sitemap', url: '/sitemap' }]} />
+      <BreadcrumbSchema items={[{ name: 'Sitemap', url: '/sitemap/' }]} />
 
       <div className="border-b border-amber-500/20 bg-slate-950 py-16 text-slate-100">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

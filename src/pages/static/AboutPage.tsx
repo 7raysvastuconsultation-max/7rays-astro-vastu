@@ -34,7 +34,7 @@ export const AboutPage: React.FC = () => {
         description="Learn about 7Rays Astro Vastu and founder Rishwa Sinha, Certified Vastu Consultant. Blending ancient Vedic wisdom with modern architecture and astrology across Bangalore and India."
         canonicalUrl={`${siteConfig.url}/about`}
       />
-      <BreadcrumbSchema items={[{ name: 'About Us', url: '/about' }]} />
+      <BreadcrumbSchema items={[{ name: 'About Us', url: '/about/' }]} />
       {/* Person entity — canonical authority page for Rishwa Sinha */}
       <PersonSchema
         name="Rishwa Sinha"

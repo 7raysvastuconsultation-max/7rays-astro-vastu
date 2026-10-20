@@ -11,7 +11,7 @@ export const TermsPage: React.FC = () => {
         description="Terms of service, consultation protocols, and disclaimer for 7Rays Astro Vastu advisory services."
         canonicalUrl={`${siteConfig.url}/terms`}
       />
-      <BreadcrumbSchema items={[{ name: 'Terms of Service', url: '/terms' }]} />
+      <BreadcrumbSchema items={[{ name: 'Terms of Service', url: '/terms/' }]} />
 
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <h1 className="mb-6 font-serif text-3xl font-bold text-amber-400">

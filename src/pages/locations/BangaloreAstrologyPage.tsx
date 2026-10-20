@@ -102,9 +102,9 @@ export const BangaloreAstrologyPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Locations', url: '/locations' },
-          { name: 'Bangalore', url: '/locations/bangalore' },
-          { name: 'Astrology', url: '/locations/bangalore/astrology' },
+          { name: 'Locations', url: '/locations/' },
+          { name: 'Bangalore', url: '/locations/bangalore/' },
+          { name: 'Astrology', url: '/locations/bangalore/astrology/' },
         ]}
       />
       <LocalBusinessSchema

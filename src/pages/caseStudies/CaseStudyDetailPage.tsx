@@ -43,8 +43,8 @@ export const CaseStudyDetailPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Illustrative Scenarios', url: '/case-studies' },
-          { name: cs.title, url: `/case-studies/${cs.slug}` },
+          { name: 'Illustrative Scenarios', url: '/case-studies/' },
+          { name: cs.title, url: `/case-studies/${cs.slug}/` },
         ]}
       />
 

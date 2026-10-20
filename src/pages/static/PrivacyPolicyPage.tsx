@@ -11,7 +11,7 @@ export const PrivacyPolicyPage: React.FC = () => {
         description="Privacy policy for 7Rays Astro Vastu client consultations, data protection, and confidential horoscope information."
         canonicalUrl={`${siteConfig.url}/privacy-policy`}
       />
-      <BreadcrumbSchema items={[{ name: 'Privacy Policy', url: '/privacy-policy' }]} />
+      <BreadcrumbSchema items={[{ name: 'Privacy Policy', url: '/privacy-policy/' }]} />
 
       <div className="mx-auto max-w-4xl px-4 py-16 sm:px-6">
         <h1 className="mb-6 font-serif text-3xl font-bold text-amber-400">Privacy Policy</h1>

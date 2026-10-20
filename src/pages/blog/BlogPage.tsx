@@ -153,7 +153,7 @@ export const BlogPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Insights', url: '/blog' },
+          { name: 'Insights', url: '/blog/' },
         ]}
       />
 

@@ -14,7 +14,7 @@ export const ProcessPage: React.FC = () => {
         description="Explore the 7Rays 4-step consultation protocol: blueprint review, directional analysis, non-demolition recommendations, and spatial transformation."
         canonicalUrl={`${siteConfig.url}/process`}
       />
-      <BreadcrumbSchema items={[{ name: 'Consultation Process', url: '/process' }]} />
+      <BreadcrumbSchema items={[{ name: 'Consultation Process', url: '/process/' }]} />
 
       <div className="border-b border-amber-500/20 bg-slate-950 py-16 text-slate-100 sm:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

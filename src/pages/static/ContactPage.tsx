@@ -119,7 +119,7 @@ export const ContactPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Contact', url: '/contact' },
+          { name: 'Contact', url: '/contact/' },
         ]}
       />
       <LocalBusinessSchema />

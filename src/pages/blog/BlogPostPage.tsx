@@ -263,9 +263,9 @@ export const BlogPostPage: React.FC = () => {
       />
       <BreadcrumbSchema
         items={[
-          { name: 'Insights', url: '/blog' },
-          { name: post.category, url: '/blog' },
-          { name: post.title, url: `/blog/${post.slug}` },
+          { name: 'Insights', url: '/blog/' },
+          { name: post.category, url: '/blog/' },
+          { name: post.title, url: `/blog/${post.slug}/` },
         ]}
       />
       <ArticleSchema

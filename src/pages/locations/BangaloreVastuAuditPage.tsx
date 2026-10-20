@@ -97,9 +97,9 @@ export const BangaloreVastuAuditPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Locations', url: '/locations' },
-          { name: 'Bangalore', url: '/locations/bangalore' },
-          { name: 'Vastu Audit', url: '/locations/bangalore/vastu-audit' },
+          { name: 'Locations', url: '/locations/' },
+          { name: 'Bangalore', url: '/locations/bangalore/' },
+          { name: 'Vastu Audit', url: '/locations/bangalore/vastu-audit/' },
         ]}
       />
       <LocalBusinessSchema

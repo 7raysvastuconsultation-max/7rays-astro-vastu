@@ -45,9 +45,9 @@ export const LocationDetailPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Locations', url: '/locations' },
-          { name: 'Bangalore', url: '/locations/bangalore' },
-          { name: location.name, url: `/locations/${location.slug}` },
+          { name: 'Locations', url: '/locations/' },
+          { name: 'Bangalore', url: '/locations/bangalore/' },
+          { name: location.name, url: `/locations/${location.slug}/` },
         ]}
       />
       {/* Authoritative Single-Location Schema: Dasarahalli Headquarters with Area Served */}

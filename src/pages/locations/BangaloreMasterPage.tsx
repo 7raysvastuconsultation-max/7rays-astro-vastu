@@ -85,35 +85,35 @@ export const BangaloreMasterPage: React.FC = () => {
     {
       icon: Home,
       title: 'Residential Vastu',
-      url: '/locations/bangalore/residential-vastu',
+      url: '/locations/bangalore/residential-vastu/',
       description:
         'On-site audits for high-rise flats, villas, and independent houses across Bengaluru. Master bedroom, kitchen Agni alignment, and non-demolition remedies.',
     },
     {
       icon: Building,
       title: 'Commercial & Office Vastu',
-      url: '/locations/bangalore/commercial-vastu',
+      url: '/locations/bangalore/commercial-vastu/',
       description:
         'Layout optimization for tech startup headquarters, corporate workstations, executive cabins, and retail spaces in HSR, Koramangala, and CBD.',
     },
     {
       icon: Factory,
       title: 'Industrial & Factory Vastu',
-      url: '/locations/bangalore/industrial-vastu',
+      url: '/locations/bangalore/industrial-vastu/',
       description:
         'Heavy machinery orientation, electrical substations, raw material storage, and dispatch loading bay alignment for plants in Peenya, Bommasandra, and Bidadi.',
     },
     {
       icon: Compass,
       title: 'Scientific Vastu Energy Audit',
-      url: '/locations/bangalore/vastu-audit',
+      url: '/locations/bangalore/vastu-audit/',
       description:
         'Diagnostic 16-zone angular grid analysis, digital compass verification, and geopathic stress detection for new and existing Bangalore properties.',
     },
     {
       icon: Sparkles,
       title: 'Vedic Astrology Consultation',
-      url: '/locations/bangalore/astrology',
+      url: '/locations/bangalore/astrology/',
       description:
         'One-on-one Janam Kundli analysis, career timing, and business advisory at our Dasarahalli consulting desk and via high-definition video calls.',
     },
@@ -157,8 +157,8 @@ export const BangaloreMasterPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Locations', url: '/locations' },
-          { name: 'Bangalore', url: '/locations/bangalore' },
+          { name: 'Locations', url: '/locations/' },
+          { name: 'Bangalore', url: '/locations/bangalore/' },
         ]}
       />
       <LocalBusinessSchema

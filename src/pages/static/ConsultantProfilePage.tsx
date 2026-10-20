@@ -28,8 +28,8 @@ export const ConsultantProfilePage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'About', url: '/about' },
-          { name: 'Rishwa Sinha', url: '/consultant/rishwa-sinha' },
+          { name: 'About', url: '/about/' },
+          { name: 'Rishwa Sinha', url: '/consultant/rishwa-sinha/' },
         ]}
       />
       <PersonSchema />

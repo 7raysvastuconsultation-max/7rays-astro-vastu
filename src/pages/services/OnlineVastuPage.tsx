@@ -125,8 +125,8 @@ export const OnlineVastuPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Services', url: '/vastu-services' },
-          { name: 'Online Vastu Consultation', url: '/services/online-vastu-consultation' },
+          { name: 'Services', url: '/vastu-services/' },
+          { name: 'Online Vastu Consultation', url: '/services/online-vastu-consultation/' },
         ]}
       />
 
