@@ -16,7 +16,7 @@ export const env = {
     '7Rays Astro Vastu | Vastu & Astrology Consultation in Bangalore',
   defaultDescription:
     (import.meta.env.VITE_SITE_DEFAULT_DESCRIPTION as string) ||
-    'Vastu Shastra and Vedic Astrology consultations in Bengaluru led by Certified Vastu Consultant Rishwa Sinha. Non-demolition energy alignment for modern spaces.',
+    'Explore residential, apartment and office Vastu consultations in Bangalore with 7Rays Astro Vastu. Learn about the assessment process, on-site coverage and non-demolition options.',
 
   // Analytics & Tracking
   ga4MeasurementId: (import.meta.env.VITE_GA4_MEASUREMENT_ID as string) || '',

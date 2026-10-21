@@ -150,8 +150,8 @@ export const BangaloreMasterPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Vastu Consultation Services in Bangalore | 7Rays"
-        description="Professional Vastu Shastra and Vedic Astrology consultancy in Bangalore led by Certified Vastu Consultant Rishwa Sinha. On-site audits across Bengaluru. Zero demolition."
+        title="Best Vastu Consultant in Bangalore? Services & Process | 7Rays"
+        description="Looking for a Vastu consultant in Bangalore? Explore 7Rays residential, apartment and commercial consultations, on-site Bengaluru coverage, the assessment process and non-demolition options."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
@@ -198,9 +198,9 @@ export const BangaloreMasterPage: React.FC = () => {
             </div>
 
             <h1 className="font-serif text-3xl leading-tight font-bold text-white sm:text-5xl lg:text-6xl">
-              Vastu &amp; Astrology Consultant <br />
+              Vastu Consultant <br />
               <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">
-                in Bangalore
+                in Bangalore for Homes &amp; Offices
               </span>
             </h1>
 
@@ -270,7 +270,7 @@ export const BangaloreMasterPage: React.FC = () => {
               LOCAL SERVICE PORTFOLIO
             </span>
             <h2 className="mt-2 font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
-              Specialized Bangalore Consultation Services
+              Bangalore Vastu Consultations for Homes, Apartments & Businesses
             </h2>
             <p className="mt-3 text-xs leading-relaxed text-slate-600 sm:text-sm">
               Each discipline addresses the distinct physical, regulatory, and architectural
@@ -418,15 +418,18 @@ export const BangaloreMasterPage: React.FC = () => {
               CONSULTATION METHODOLOGY
             </span>
             <h2 className="mt-2 font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
-              How Our Bangalore On-Site Audits Work
+              How to Choose a Vastu Consultant in Bangalore
             </h2>
             <p className="mt-3 text-xs leading-relaxed text-slate-600 sm:text-sm">
-              A transparent, non-superstitious scientific process from initial plan intake to
-              post-audit review.
+              Compare a consultant’s credentials, local visit availability, assessment scope,
+              written recommendations, and whether they avoid promising guaranteed outcomes.
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <h3 className="mt-10 text-center font-serif text-xl font-bold text-slate-900 sm:text-2xl">
+            What to Expect from a 7Rays On-Site Audit
+          </h3>
+          <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <div className="rounded-xl border border-amber-200/70 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:bg-white">
               <span className="font-serif text-sm font-bold text-amber-700">01</span>
               <h3 className="mt-2 font-serif text-base font-bold text-slate-900">

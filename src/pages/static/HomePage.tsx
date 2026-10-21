@@ -45,8 +45,8 @@ export const HomePage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Vastu & Astrology Consultant in Bangalore | 7Rays Astro Vastu"
-        description="7Rays Astro Vastu blends ancient Vastu Shastra principles with modern spatial architecture, Vedic astrology, and geopathic energy diagnostics in Bangalore, India."
+        title="Vastu Consultant in Bangalore for Homes & Offices | 7Rays"
+        description="Explore residential, apartment and office Vastu consultations in Bangalore with 7Rays Astro Vastu. Learn about the assessment process, on-site coverage and non-demolition options."
         canonicalUrl={siteConfig.url}
       />
       <OrganizationSchema />
@@ -84,7 +84,7 @@ export const HomePage: React.FC = () => {
 
             {/* Main Headline with Target Commercial Intent */}
             <h1 className="font-serif text-3xl leading-[1.15] font-bold tracking-tight text-white sm:text-5xl lg:text-[62px]">
-              Vastu Shastra &amp; Vedic Astrology Consultant in Bangalore
+              Vastu Consultant in Bangalore for Homes &amp; Offices
             </h1>
 
             {/* Subtitle */}
