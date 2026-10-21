@@ -382,25 +382,25 @@ export const BangaloreMasterPage: React.FC = () => {
             </h4>
             <div className="mt-3 flex flex-wrap gap-2 text-xs">
               <Link
-                to="/locations/indiranagar"
+                to="/locations/indiranagar/"
                 className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
               >
                 Indiranagar (100ft &amp; Defence Colony)
               </Link>
               <Link
-                to="/locations/hsr-layout"
+                to="/locations/hsr-layout/"
                 className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
               >
                 HSR Layout (Sectors 1–7)
               </Link>
               <Link
-                to="/locations/koramangala"
+                to="/locations/koramangala/"
                 className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
               >
                 Koramangala (Blocks 1–8)
               </Link>
               <Link
-                to="/locations/whitefield"
+                to="/locations/whitefield/"
                 className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
               >
                 Whitefield (ITPB &amp; Gated Villas)
@@ -469,6 +469,180 @@ export const BangaloreMasterPage: React.FC = () => {
                 Post-implementation guidance to verify correct remedy installation and address any
                 architectural adjustments during interior fit-outs.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+            {/* Real-World Bengaluru Consultation Walkthroughs (Whitefield & HSR Layout) */}
+      <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col justify-between sm:flex-row sm:items-end">
+            <div>
+              <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+                DOCUMENTED LOCAL ASSESSMENTS
+              </span>
+              <h2 className="mt-2 font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
+                Bengaluru Case Walkthroughs: Whitefield &amp; HSR Layout
+              </h2>
+              <p className="mt-3 max-w-2xl text-xs leading-relaxed text-slate-600 sm:text-sm">
+                Real-world spatial diagnostics conducted across Bengaluru properties. In strict adherence
+                to client confidentiality and verifiable claim governance, client identities are anonymized
+                and outcomes are strictly confined to verified spatial deliverables and non-demolition specifications.
+              </p>
+            </div>
+            <Link
+              to="/case-studies/"
+              className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-800 sm:mt-0"
+            >
+              <span>Explore All Scenarios</span>
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-8 md:grid-cols-2">
+            {/* Whitefield Case Study Card */}
+            <div className="flex flex-col justify-between rounded-2xl border border-amber-200/80 bg-white p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md sm:p-8">
+              <div>
+                <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+                  <span className="rounded-full bg-amber-100 px-3 py-1 font-semibold text-amber-900">
+                    Residential Assessment
+                  </span>
+                  <div className="flex items-center gap-1.5 text-slate-600">
+                    <MapPin className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Bengaluru (Whitefield)</span>
+                  </div>
+                </div>
+
+                <h3 className="mt-4 font-serif text-xl font-bold text-slate-900 sm:text-2xl">
+                  High-Rise Apartment Master Bedroom &amp; Sleep Alignment
+                </h3>
+
+                <div className="mt-4 space-y-3">
+                  <div className="rounded-xl border border-slate-200/80 bg-slate-50/60 p-4 text-xs leading-relaxed text-slate-700">
+                    <strong className="block mb-1 font-semibold text-slate-900 uppercase tracking-wider text-[11px]">
+                      Spatial Context &amp; Constraint:
+                    </strong>
+                    A high-rise residential apartment experiencing spatial restlessness and sleep disruption in the master suite. Fixed plumbing shafts and common structural shear walls prohibited any civil relocation or wall demolition.
+                  </div>
+
+                  <div className="rounded-xl border border-amber-200/60 bg-amber-50/40 p-4 text-xs leading-relaxed text-slate-700">
+                    <strong className="block mb-1 font-semibold text-amber-900 uppercase tracking-wider text-[11px]">
+                      Diagnostic &amp; Remedial Protocol:
+                    </strong>
+                    On-site evaluation using a calibrated digital compass, digital Gauss meter, and dowsing instruments. Specified reorienting the bed headboard toward the South quadrant, establishing an elemental boundary using zinc strips along the attached bathroom perimeter, and balancing Northwest balcony air-flow.
+                  </div>
+
+                  <div className="rounded-xl border border-emerald-200/70 bg-emerald-50/50 p-4 text-xs leading-relaxed text-slate-700">
+                    <strong className="block mb-1.5 font-semibold text-emerald-900 uppercase tracking-wider text-[11px]">
+                      Verified Deliverables &amp; Outcomes:
+                    </strong>
+                    <ul className="space-y-1.5 text-slate-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-emerald-600 font-bold">✓</span>
+                        <span>Digital compass degree documentation establishing true magnetic alignment</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-emerald-600 font-bold">✓</span>
+                        <span>Electromagnetic field readings and geopathic stress scan logs</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-emerald-600 font-bold">✓</span>
+                        <span>Zero-demolition furniture realignment blueprint for restful sleep orientation</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-emerald-600 font-bold">✓</span>
+                        <span>Precision metallic zinc boundary inlay specifications for ensuite containment</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-slate-100 pt-5">
+                <span className="rounded-md border border-amber-200 bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-800">
+                  Energy Grid Correction
+                </span>
+                <Link
+                  to="/case-studies/whitefield-apartment-health-harmony/"
+                  className="group inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
+                >
+                  <span>Read Full Whitefield Walkthrough</span>
+                  <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
+            </div>
+
+            {/* HSR Layout Case Study Card */}
+            <div className="flex flex-col justify-between rounded-2xl border border-amber-200/80 bg-white p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md sm:p-8">
+              <div>
+                <div className="flex flex-wrap items-center justify-between gap-2 text-xs">
+                  <span className="rounded-full bg-amber-100 px-3 py-1 font-semibold text-amber-900">
+                    Commercial Assessment
+                  </span>
+                  <div className="flex items-center gap-1.5 text-slate-600">
+                    <MapPin className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Bengaluru (HSR Layout)</span>
+                  </div>
+                </div>
+
+                <h3 className="mt-4 font-serif text-xl font-bold text-slate-900 sm:text-2xl">
+                  Fintech Scale-Up Hub in HSR Layout
+                </h3>
+
+                <div className="mt-4 space-y-3">
+                  <div className="rounded-xl border border-slate-200/80 bg-slate-50/60 p-4 text-xs leading-relaxed text-slate-700">
+                    <strong className="block mb-1 font-semibold text-slate-900 uppercase tracking-wider text-[11px]">
+                      Spatial Context &amp; Constraint:
+                    </strong>
+                    A fast-scaling fintech enterprise occupying an open-plan leased facility. High workstation density, glass meeting rooms, and team expansion required structured spatial zoning with strict prohibition of civil demolition under lease terms.
+                  </div>
+
+                  <div className="rounded-xl border border-amber-200/60 bg-amber-50/40 p-4 text-xs leading-relaxed text-slate-700">
+                    <strong className="block mb-1 font-semibold text-amber-900 uppercase tracking-wider text-[11px]">
+                      Diagnostic &amp; Remedial Protocol:
+                    </strong>
+                    16-zone directional analysis mapped executive workstations to the Southwest quadrant for strategic stability, placed finance operations in the North Kuber sector, and applied non-demolition brass threshold transition strips at entrance vectors.
+                  </div>
+
+                  <div className="rounded-xl border border-emerald-200/70 bg-emerald-50/50 p-4 text-xs leading-relaxed text-slate-700">
+                    <strong className="block mb-1.5 font-semibold text-emerald-900 uppercase tracking-wider text-[11px]">
+                      Verified Deliverables &amp; Outcomes:
+                    </strong>
+                    <ul className="space-y-1.5 text-slate-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-emerald-600 font-bold">✓</span>
+                        <span>Open-plan seating distribution matrix aligned with 16 elemental Vastu zones</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-emerald-600 font-bold">✓</span>
+                        <span>Leadership cabin alignment blueprint for executive focus and strategic decisions</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-emerald-600 font-bold">✓</span>
+                        <span>Non-destructive threshold correction specifications utilizing precision brass floor inlays</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-emerald-600 font-bold">✓</span>
+                        <span>Scalable floor plate roadmap for phased hiring without disrupting directional balance</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-slate-100 pt-5">
+                <span className="rounded-md border border-amber-200 bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-800">
+                  Non-demolition Vastu
+                </span>
+                <Link
+                  to="/case-studies/fintech-startup-growth-hsr-layout/"
+                  className="group inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
+                >
+                  <span>Read Full HSR Layout Walkthrough</span>
+                  <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
