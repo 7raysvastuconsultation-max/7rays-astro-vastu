@@ -38,7 +38,7 @@ export const VastuAuditPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Scientific Vastu Audit Across India | 16-Zone Energy Mapping | 7Rays"
+        title="Scientific Vastu Audit in India | 16-Zone Energy Map | 7Rays"
         description="Book a scientific Vastu Audit across India with 7Rays. Complete 16-zone CAD energy mapping, geopathic stress evaluation, and zero-demolition remedy blueprints."
         canonicalUrl={canonicalUrl}
       />
@@ -248,6 +248,8 @@ export const VastuAuditPage: React.FC = () => {
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <img
                   src="/images/evidence/vastu-diagnostic-instruments.webp"
+            width={1024}
+            height={682}
                   alt="Diagnostic equipment overview: digital compass, EMF meter, and dowsing rods used in 7Rays methodology"
                   className="h-full w-full object-cover"
                   loading="lazy"
@@ -286,6 +288,8 @@ export const VastuAuditPage: React.FC = () => {
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <img
                   src="/images/evidence/vastu-remedial-metal-strips.webp"
+            width={1024}
+            height={682}
                   alt="Authentic Brass, Copper, Zinc, and Lead non-demolition remedial strips with millimeter precision ruler"
                   className="h-full w-full object-cover"
                   loading="lazy"

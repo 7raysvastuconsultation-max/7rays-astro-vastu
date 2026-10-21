@@ -25,7 +25,7 @@ interface FAQCategory {
 export const FaqPage: React.FC = () => {
   const canonicalUrl = `${siteConfig.url}/faq`
   const [activeTab, setActiveTab] = useState<string>('vastu')
-  const [openIndexes, setOpenIndexes] = useState<Record<string, number | null>>({})
+  const [openIndexes, setOpenIndexes] = useState<Record<string, number | null>>({ vastu: 0, residential: 0, commercial: 0, astrology: 0, international: 0 })
 
   const toggleAccordion = (catId: string, idx: number) => {
     setOpenIndexes((prev) => ({
@@ -133,7 +133,6 @@ export const FaqPage: React.FC = () => {
   ]
 
   const allFaqs = categories.flatMap((c) => c.faqs)
-  const currentCategory = categories.find((c) => c.id === activeTab) || categories[0]
 
   return (
     <>
@@ -190,32 +189,44 @@ export const FaqPage: React.FC = () => {
             })}
           </div>
 
-          {/* Accordion Questions */}
-          <div className="mt-8 space-y-4">
-            {currentCategory.faqs.map((faq, idx) => {
-              const isOpen = openIndexes[currentCategory.id] === idx
+          {/* Accordion Questions for All Categories (Fully SSR Indexed) */}
+          <div className="mt-8 space-y-6">
+            {categories.map((cat) => {
+              const isActive = cat.id === activeTab
               return (
-                <div
-                  key={idx}
-                  className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition"
-                >
-                  <button
-                    onClick={() => toggleAccordion(currentCategory.id, idx)}
-                    className="flex w-full items-center justify-between p-5 text-left text-sm font-bold text-slate-900 focus:outline-none"
-                    aria-expanded={isOpen}
-                  >
-                    <span>{faq.question}</span>
-                    <ChevronDown
-                      className={`h-4 w-4 shrink-0 text-amber-700 transition-transform duration-200 ${
-                        isOpen ? 'rotate-180 text-amber-600' : ''
-                      }`}
-                    />
-                  </button>
-                  {isOpen && (
-                    <div className="border-t border-slate-200/80 bg-white p-5 text-xs leading-relaxed text-slate-700 sm:text-sm">
-                      {faq.answer}
-                    </div>
-                  )}
+                <div key={cat.id} className={isActive ? 'space-y-4' : 'hidden'}>
+                  <h2 className="sr-only">{cat.name}</h2>
+                  {cat.faqs.map((faq, idx) => {
+                    const isOpen = openIndexes[cat.id] === idx
+                    return (
+                      <div
+                        key={idx}
+                        className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50 transition"
+                      >
+                        <button
+                          onClick={() => toggleAccordion(cat.id, idx)}
+                          className="flex w-full items-center justify-between p-5 text-left text-sm font-bold text-slate-900 focus:outline-none"
+                          aria-expanded={isOpen}
+                        >
+                          <span>{faq.question}</span>
+                          <ChevronDown
+                            className={`h-4 w-4 shrink-0 text-amber-700 transition-transform duration-200 ${
+                              isOpen ? 'rotate-180 text-amber-600' : ''
+                            }`}
+                          />
+                        </button>
+                        <div
+                          className={
+                            isOpen
+                              ? 'border-t border-slate-200/80 bg-white p-5 text-xs leading-relaxed text-slate-700 sm:text-sm'
+                              : 'hidden'
+                          }
+                        >
+                          {faq.answer}
+                        </div>
+                      </div>
+                    )
+                  })}
                 </div>
               )
             })}

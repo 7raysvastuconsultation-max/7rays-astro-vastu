@@ -146,7 +146,7 @@ export const BlogPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Vastu & Astrology Insights & Practical Guides | 7Rays Astro Vastu"
+        title="Vastu & Astrology Insights & Practical Guides | 7Rays"
         description="Explore practical Vastu Shastra articles, non-demolition spatial insights, and Vedic astrology guidance by Certified Vastu Consultant Rishwa Sinha."
         canonicalUrl={canonicalUrl}
       />
@@ -163,6 +163,8 @@ export const BlogPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/hero-penthouse.webp"
+            width={1376}
+            height={768}
             alt="Insights for Better Spaces & Better Living"
             className="h-full w-full object-cover object-[center_35%]"
           />
@@ -503,6 +505,8 @@ export const BlogPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/cta-sunset-villa.webp"
+            width={1376}
+            height={768}
             alt="Align Your Space Energy Sunset"
             className="h-full w-full object-cover object-[center_40%]"
           />

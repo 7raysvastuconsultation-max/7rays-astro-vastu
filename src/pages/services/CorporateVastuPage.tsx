@@ -27,7 +27,7 @@ export const CorporateVastuPage: React.FC = () => {
   const isVastuServicesAlias = routerLocation.pathname.includes('/vastu-services/')
   const pageTitle = isVastuServicesAlias
     ? 'Corporate Campus & Workplace Vastu India | 7Rays'
-    : 'Corporate Vastu Consultant India | Tech Parks & Headquarters | 7Rays'
+    : 'Corporate Vastu Consultant India | Tech Parks | 7Rays'
   const canonicalUrl = `${siteConfig.url}/vastu/corporate`
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('Corporate Vastu Consultation')
@@ -126,6 +126,8 @@ export const CorporateVastuPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/services/commercial-boardroom-hero.webp"
+            width={1376}
+            height={768}
             alt="Corporate Boardroom Vastu Bangalore"
             className="h-full w-full object-cover object-center"
           />

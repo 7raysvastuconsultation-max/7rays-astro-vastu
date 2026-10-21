@@ -11,7 +11,7 @@ export const DisclaimerPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Consultation Disclaimer & Scope of Practice | 7Rays Astro Vastu"
+        title="Consultation Disclaimer & Scope of Practice | 7Rays"
         description="Official disclaimer regarding Vastu Shastra and Vedic Astrology advisory services. Understanding the boundaries between traditional advisory and medical, financial, or architectural engineering."
         canonicalUrl={canonicalUrl}
       />

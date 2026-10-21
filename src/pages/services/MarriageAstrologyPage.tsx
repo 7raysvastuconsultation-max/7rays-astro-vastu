@@ -73,7 +73,7 @@ export const MarriageAstrologyPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Marriage Astrology & Kundli Milan India | Horoscope Matching | 7Rays"
+        title="Marriage Astrology & Kundli Milan | Horoscope Match | 7Rays"
         description="Compassionate, ethical Vedic marriage compatibility and Kundli Milan across India with Rishwa Sinha. In-depth Ashta Kuta analysis and relationship timing."
         canonicalUrl={canonicalUrl}
       />
@@ -98,6 +98,8 @@ export const MarriageAstrologyPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/services/astro-relationship.webp"
+            width={1376}
+            height={768}
             alt="Relationship and Marriage Astrology Harmony"
             className="h-full w-full object-cover object-center brightness-60"
           />

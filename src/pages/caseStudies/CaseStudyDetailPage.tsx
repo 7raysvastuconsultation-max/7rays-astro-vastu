@@ -36,7 +36,7 @@ export const CaseStudyDetailPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title={`${cs.seoTitle || cs.title} | 7Rays Astro Vastu`}
+        title={`${cs.seoTitle || cs.title} | 7Rays`}
         description={`Illustrative consultation scenario: ${cs.challenge.slice(0, 140)}...`}
         canonicalUrl={canonicalUrl}
       />

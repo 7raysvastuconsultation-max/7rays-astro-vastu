@@ -37,7 +37,7 @@ export const ResidentialVastuPage: React.FC = () => {
   const isVastuServicesAlias = routerLocation.pathname.includes('/vastu-services/')
   const pageTitle = isVastuServicesAlias
     ? 'Home Vastu Shastra Consultation India | 7Rays'
-    : 'Residential Vastu Consultant India | Scientific Home Vastu | 7Rays'
+    : 'Residential Vastu Consultant India | Home Vastu | 7Rays'
   const canonicalUrl = `${siteConfig.url}/vastu/residential`
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('Residential Vastu Consultation')
@@ -1153,6 +1153,8 @@ export const ResidentialVastuPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/hero-penthouse.webp"
+            width={1376}
+            height={768}
             alt="Residential Harmony Living Room Sunset"
             className="h-full w-full object-cover object-[center_35%]"
           />

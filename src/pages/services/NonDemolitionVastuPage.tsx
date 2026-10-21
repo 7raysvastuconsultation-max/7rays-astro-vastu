@@ -51,7 +51,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Non-Demolition Vastu Remedies India | Zero Structural Damage | 7Rays"
+        title="Non-Demolition Vastu Remedies | Zero Civil Damage | 7Rays"
         description="Scientific non-demolition Vastu remedies across India for apartments, rented homes, and offices. Balance the 16 Vastu zones with metallic inlays and energy balancing."
         canonicalUrl={canonicalUrl}
       />

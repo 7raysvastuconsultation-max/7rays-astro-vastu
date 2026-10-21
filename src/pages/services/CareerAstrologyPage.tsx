@@ -73,7 +73,7 @@ export const CareerAstrologyPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Career Astrology Consultation India | Job & Business Timing | 7Rays"
+        title="Career Astrology Consultation | Job & Timing Guide | 7Rays"
         description="Navigate career transitions, leadership opportunities, and vocational timing with Vedic career astrology across India led by Rishwa Sinha. Grounded and ethical guidance."
         canonicalUrl={canonicalUrl}
       />
@@ -98,6 +98,8 @@ export const CareerAstrologyPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/services/astro-career.webp"
+            width={1376}
+            height={768}
             alt="Career Guidance modern city skyline at sunrise"
             className="h-full w-full object-cover object-center brightness-60"
           />

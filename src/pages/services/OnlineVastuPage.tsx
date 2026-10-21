@@ -117,7 +117,7 @@ export const OnlineVastuPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Online Vastu Consultation India | Scientific Remote Vastu | 7Rays"
+        title="Online Vastu Consultation India | Remote Vastu Audit | 7Rays"
         description="Book scientific Online Vastu Consultation across India and globally with Certified Vastu Consultant Rishwa Sinha. Precision CAD blueprint analysis with zero demolition."
         canonicalUrl={canonicalUrl}
       />

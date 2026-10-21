@@ -111,7 +111,7 @@ export const AstroVastuPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Astro Vastu Consultant India | Scientific Kundli & Vastu | 7Rays"
+        title="Astro Vastu Consultant India | Kundli & Vastu | 7Rays"
         description="Integrate your Vedic birth chart with 16-zone Vastu architecture. Certified Vastu Consultant Rishwa Sinha provides scientific Astro-Vastu consultations across India."
         canonicalUrl={canonicalUrl}
       />

@@ -87,7 +87,7 @@ export const ApartmentVastuPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Apartment Vastu Consultant India | Flats & High-Rise Living | 7Rays"
+        title="Apartment Vastu Consultant India | High-Rise Living | 7Rays"
         description="Specialized Apartment Vastu consultancy across India for modern flats, penthouses, and high-rise living. Non-demolition elemental remedies and 16-zone CAD audits."
         canonicalUrl={canonicalUrl}
       />

@@ -132,6 +132,8 @@ export const BangaloreAstrologyPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/astrology-hero-study.webp"
+            width={1376}
+            height={768}
             alt="Vedic astrology chart analysis in Bangalore studio"
             className="h-full w-full object-cover object-center brightness-60"
           />

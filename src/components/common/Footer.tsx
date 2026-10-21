@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
       {/* Background Cosmic Starfield Image Overlay */}
       <img
         src="/images/seven-rays-bg.webp"
-        alt=""
+        alt="7Rays sacred geometry cosmic starfield background"
         aria-hidden="true"
         width={1376}
         height={768}
@@ -273,6 +273,8 @@ export const Footer: React.FC = () => {
               <img
                 src="/images/footer-mandala.png"
                 alt="7Rays Astro Vastu 16-Zone Sacred Geometry Astrolabe & Compass Rose"
+                width={192}
+                height={192}
                 loading="lazy"
                 className="relative h-40 w-40 object-contain drop-shadow-[0_0_30px_rgba(245,158,11,0.4)] transition-all duration-700 group-hover:scale-105 group-hover:drop-shadow-[0_0_40px_rgba(245,158,11,0.6)] sm:h-48 sm:w-48"
               />

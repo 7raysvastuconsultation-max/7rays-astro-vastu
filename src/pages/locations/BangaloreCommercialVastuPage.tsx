@@ -115,6 +115,8 @@ export const BangaloreCommercialVastuPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/services/commercial-boardroom-hero.webp"
+            width={1376}
+            height={768}
             alt="Commercial Vastu Bangalore Office Skyline"
             className="h-full w-full object-cover object-center"
           />

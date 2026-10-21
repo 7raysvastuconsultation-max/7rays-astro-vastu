@@ -119,7 +119,7 @@ export const OfficeVastuPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Office Vastu Consultant India | Workplace & Cabin Layouts | 7Rays"
+        title="Office Vastu Consultant India | Workplace Layouts | 7Rays"
         description="Professional office Vastu consultation for startups, corporate suites, and business spaces across India. Optimize CEO cabins, workstations, and cash flow without demolition."
         canonicalUrl={canonicalUrl}
       />

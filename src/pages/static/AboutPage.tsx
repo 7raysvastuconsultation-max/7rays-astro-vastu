@@ -419,6 +419,8 @@ export const AboutPage: React.FC = () => {
               <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-md">
                 <img
                   src="/images/about-zen-courtyard.webp"
+            width={1200}
+            height={896}
                   alt="Minimalist indoor Zen garden courtyard with peaceful Bonsai tree and sunlight"
                   className="h-full w-full object-cover"
                 />
@@ -548,6 +550,8 @@ export const AboutPage: React.FC = () => {
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <img
                   src="/images/evidence/7rays-bangalore-office-signboard.webp"
+            width={1024}
+            height={682}
                   alt="Conceptual rendering of 7Rays Vastu Consultant signage at Dasarahalli, Bengaluru"
                   className="h-full w-full object-cover"
                   loading="lazy"
@@ -572,6 +576,8 @@ export const AboutPage: React.FC = () => {
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <img
                   src="/images/evidence/vastu-diagnostic-instruments.webp"
+            width={1024}
+            height={682}
                   alt="Diagnostic instruments overview: digital compass, EMF meter, and dowsing rods"
                   className="h-full w-full object-cover"
                   loading="lazy"
@@ -596,6 +602,8 @@ export const AboutPage: React.FC = () => {
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                 <img
                   src="/images/evidence/vastu-remedial-metal-strips.webp"
+            width={1024}
+            height={682}
                   alt="Elemental metal strips for non-demolition remedies: Brass, Copper, Zinc, Lead"
                   className="h-full w-full object-cover"
                   loading="lazy"
@@ -623,6 +631,8 @@ export const AboutPage: React.FC = () => {
         {/* Ambient Evening Architecture Backdrop */}
         <img
           src="/images/cta-sunset-villa.webp"
+            width={1376}
+            height={768}
           alt=""
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-15 mix-blend-screen"
@@ -792,6 +802,8 @@ export const AboutPage: React.FC = () => {
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         <img
           src="/images/cta-sunset-villa.webp"
+            width={1376}
+            height={768}
           alt="Luxury architectural terrace overlooking golden sunset horizon"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />

@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react'
 import { Link } from 'react-router-dom'
-import { Helmet } from 'react-helmet-async'
+import { SEOHead } from '@/components/seo/SEOHead'
+import { BreadcrumbSchema } from '@/components/seo/schemas/BreadcrumbSchema'
 import {
   Search,
   Star,
@@ -110,18 +111,17 @@ export const ShopPage: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-[#FAF8F5] text-slate-900">
-      <Helmet>
-        <title>Shop Authentic Vastu Products, Crystals &amp; Yantras | 7Rays Astro Vastu</title>
-        <meta
-          name="description"
-          content="Buy pre-energised authentic Vastu remedies, brass pyramids, sacred yantras, healing crystals, and home décor. Curated by Certified Vastu Consultant Rishwa Sinha. Pan-India free delivery."
-        />
-        <meta
-          name="keywords"
-          content="vastu products online, vastu pyramid for home, brass ganesha idol, vastu dosh nivaran yantra, 7 chakra bracelet, himalayan salt lamp, buy authentic vastu items bangalore"
-        />
-        <link rel="canonical" href="https://7raysastrovastu.in/shop/" />
-      </Helmet>
+      <SEOHead
+        title="Shop Vastu Products, Crystals & Yantras"
+        description="Buy authentic energised Vastu remedies, brass pyramids, sacred yantras, healing crystals and home décor curated by 7Rays Astro Vastu. Pan-India delivery."
+        canonicalUrl="https://7raysastrovastu.in/shop/"
+      />
+      <BreadcrumbSchema
+        items={[
+          { name: 'Home', url: '/' },
+          { name: 'Shop', url: '/shop/' },
+        ]}
+      />
 
       {/* Main Container */}
       <div className="mx-auto max-w-7xl px-3 pt-2 pb-16 sm:px-6 lg:px-8">

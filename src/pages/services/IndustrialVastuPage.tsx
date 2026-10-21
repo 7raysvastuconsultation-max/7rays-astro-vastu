@@ -27,8 +27,8 @@ export const IndustrialVastuPage: React.FC = () => {
   const routerLocation = useLocation()
   const isVastuServicesAlias = routerLocation.pathname.includes('/vastu-services/')
   const pageTitle = isVastuServicesAlias
-    ? 'Manufacturing Plant & Factory Vastu Consultation India | 7Rays'
-    : 'Industrial Vastu Consultant India | Factory & Plant Layouts | 7Rays'
+    ? 'Plant & Factory Vastu Consultation India | 7Rays'
+    : 'Industrial Vastu Consultant India | Factory Layouts | 7Rays'
   const canonicalUrl = `${siteConfig.url}/vastu/industrial`
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('Industrial Vastu Consultation')

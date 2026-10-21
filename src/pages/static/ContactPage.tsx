@@ -651,6 +651,8 @@ export const ContactPage: React.FC = () => {
               <div className="absolute inset-0 z-0">
                 <img
                   src="/images/hero-penthouse.webp"
+            width={1376}
+            height={768}
                   alt="Harmonious Space Help"
                   className="h-full w-full object-cover object-[center_35%]"
                 />

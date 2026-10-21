@@ -155,6 +155,8 @@ export const BangaloreIndustrialVastuPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/services/industrial-vastu.webp"
+            width={1200}
+            height={896}
             alt="Bangalore Industrial Manufacturing Plant Vastu Inspection"
             className="h-full w-full object-cover object-center brightness-55"
           />

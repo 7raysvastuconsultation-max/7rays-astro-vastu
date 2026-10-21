@@ -111,6 +111,8 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/services/residential-vastu.webp"
+            width={1200}
+            height={896}
             alt="Bangalore Luxury Home Vastu Consultation"
             className="h-full w-full object-cover object-center brightness-60"
           />

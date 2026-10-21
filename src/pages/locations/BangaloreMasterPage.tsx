@@ -150,7 +150,7 @@ export const BangaloreMasterPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Best Vastu Consultant in Bangalore? Services & Process | 7Rays"
+        title="Best Vastu Consultant in Bangalore: Homes & Offices | 7Rays"
         description="Looking for a Vastu consultant in Bangalore? Explore 7Rays residential, apartment and commercial consultations, on-site Bengaluru coverage, the assessment process and non-demolition options."
         canonicalUrl={canonicalUrl}
       />
@@ -727,6 +727,8 @@ export const BangaloreMasterPage: React.FC = () => {
                 <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-100">
                   <img
                     src="/images/evidence/7rays-bangalore-office-signboard.webp"
+            width={1024}
+            height={682}
                     alt="Conceptual representation of 7Rays Vastu Consultant office signage at Dasarahalli, Bengaluru"
                     className="h-full w-full object-cover"
                     loading="lazy"

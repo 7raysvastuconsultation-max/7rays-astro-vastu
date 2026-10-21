@@ -640,6 +640,8 @@ export const BlogPostPage: React.FC = () => {
               <div className="flex items-start gap-4">
                 <img
                   src="/images/vastu-checklist-book-cover.webp"
+            width={896}
+            height={1200}
                   alt="Vastu Checklist for Home Buyers"
                   className="w-20 shrink-0 rounded-md object-cover shadow-sm sm:w-22"
                   loading="lazy"
@@ -682,6 +684,8 @@ export const BlogPostPage: React.FC = () => {
         <div className="absolute inset-0">
           <img
             src="/images/cta-sunset-villa.webp"
+            width={1376}
+            height={768}
             alt="7Rays Astro Vastu Consultations"
             className="h-full w-full object-cover"
           />

@@ -41,7 +41,7 @@ export const InternationalConsultationPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="International & NRI Vastu Consultation Worldwide | 7Rays Astro Vastu"
+        title="International & NRI Vastu Consultation Worldwide | 7Rays"
         description="Global remote Vastu and Vedic astrology consultations for NRIs and international property owners in USA, UK, UAE, Singapore, and Australia. Accurate CAD-based remote audits."
         canonicalUrl={canonicalUrl}
       />

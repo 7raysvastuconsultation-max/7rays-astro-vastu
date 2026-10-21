@@ -21,7 +21,7 @@ export const ConsultantProfilePage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Rishwa Sinha — Certified Vastu Consultant & Astrologer | 7Rays"
+        title="Rishwa Sinha — Vastu Consultant & Astrologer | 7Rays"
         description="Professional profile of Rishwa Sinha, Certified Vastu Consultant and Vedic Astrologer in Bengaluru with 5+ years of practical consultation experience."
         canonicalUrl={canonicalUrl}
       />

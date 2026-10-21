@@ -175,10 +175,10 @@ User-agent: ClaudeBot
 User-agent: anthropic-ai
 User-agent: Amazonbot
 User-agent: Cohere-ai
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: Google-Extended
 Allow: /
-Disallow: /api/
-Disallow: /*?*sort=
-Disallow: /*?*filter=
 
 # Canonical XML Sitemap
 Sitemap: ${SITE_URL}/sitemap.xml

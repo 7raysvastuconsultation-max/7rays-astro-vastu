@@ -73,7 +73,7 @@ export const ServicesPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Vastu Consultancy Services India | Scientific Vastu Shastra | 7Rays"
+        title="Vastu Consultancy Services India | Scientific Vastu | 7Rays"
         description="Scientific Vastu Shastra and Vedic Astrology consultations across India by Certified Vastu Consultant Rishwa Sinha. Non-demolition residential, commercial, and industrial solutions."
         canonicalUrl={`${siteConfig.url}/vastu-services`}
       />
@@ -84,6 +84,8 @@ export const ServicesPage: React.FC = () => {
       <section className="relative flex min-h-[75vh] items-center justify-center overflow-hidden py-24 sm:py-32">
         <img
           src="/images/hero-penthouse.webp"
+            width={1376}
+            height={768}
           alt="Luxury penthouse interior with floor to ceiling glass windows and golden sunlight"
           className="absolute inset-0 h-full w-full object-cover object-center brightness-60"
         />
@@ -219,6 +221,8 @@ export const ServicesPage: React.FC = () => {
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
                     src="/images/services/residential-vastu.webp"
+            width={1200}
+            height={896}
                     alt="Residential Vastu apartment in Bangalore"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -253,6 +257,8 @@ export const ServicesPage: React.FC = () => {
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
                     src="/images/services/commercial-vastu.webp"
+            width={1200}
+            height={896}
                     alt="Commercial Vastu modern office layout in Bangalore"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -287,6 +293,8 @@ export const ServicesPage: React.FC = () => {
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
                     src="/images/services/residential-vastu.webp"
+            width={1200}
+            height={896}
                     alt="Non-Demolition Vastu metallic inlays and elemental balancing"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -321,6 +329,8 @@ export const ServicesPage: React.FC = () => {
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
                     src="/images/services/industrial-vastu.webp"
+            width={1200}
+            height={896}
                     alt="Industrial manufacturing plant Vastu planning"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -355,6 +365,8 @@ export const ServicesPage: React.FC = () => {
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
                     src="/images/services/corporate-vastu.webp"
+            width={1200}
+            height={896}
                     alt="Corporate Vastu executive boardroom"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -388,6 +400,8 @@ export const ServicesPage: React.FC = () => {
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
                     src="/images/services/astrology-consultation.webp"
+            width={1200}
+            height={896}
                     alt="Vedic Astrology birth chart reading"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -421,6 +435,8 @@ export const ServicesPage: React.FC = () => {
                 <div className="h-52 w-full overflow-hidden bg-slate-100">
                   <img
                     src="/images/services/vastu-audit.webp"
+            width={1200}
+            height={896}
                     alt="Vastu Audit blueprint analysis"
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -609,6 +625,8 @@ export const ServicesPage: React.FC = () => {
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         <img
           src="/images/cta-sunset-villa.webp"
+            width={1376}
+            height={768}
           alt="Luxury architectural terrace overlooking golden sunset horizon"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />

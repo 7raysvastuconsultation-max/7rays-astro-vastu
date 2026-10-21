@@ -232,7 +232,7 @@ If you are considering a consultation with 7Rays Astro Vastu, review the relevan
     id: 'vastu-for-modern-apartments-in-bangalore',
     slug: 'vastu-for-modern-apartments-in-bangalore',
     title: 'Vastu for Modern Apartments in Bangalore: High-Rise Constraints & Layout Solutions',
-    seoTitle: 'Vastu for Modern Apartments in Bangalore | High-Rise Guide | 7Rays Astro Vastu',
+    seoTitle: 'Vastu for Apartments in Bangalore: High-Rise Guide | 7Rays',
     excerpt:
       'Navigating high-rise constraints, RERA builder layouts, fixed plumbing shafts, and cantilevered balconies across Bangalore tech corridors with practical Vastu solutions.',
     coverImage: '/images/insights/insight-apartments.webp',
@@ -352,7 +352,7 @@ Explore our dedicated [Apartment Vastu Consultation Services](/vastu/apartment-v
     id: 'vastu-remedies-without-demolition',
     slug: 'vastu-remedies-without-demolition-modern-apartments',
     title: 'Non-Demolition Vastu Remedies: The Science of Non-Invasive Spatial Cures',
-    seoTitle: 'Non-Demolition Vastu Remedies: Non-Invasive Spatial Cures | 7Rays Astro Vastu',
+    seoTitle: 'Non-Demolition Vastu Remedies & Spatial Cures | 7Rays',
     excerpt:
       'Discover the physics of non-demolition Vastu remedies. How metallic boundary strips, elemental color frequencies, and directional stabilizers rectify architectural flaws without civil work.',
     coverImage: '/images/insights/insight-principles.webp',
@@ -470,7 +470,7 @@ Learn more about our practical [Non-Demolition Vastu Services](/vastu/non-demoli
     id: 'vastu-principles-homeowner-guide',
     slug: 'vastu-principles-every-homeowner-should-know',
     title: 'Foundational Vastu Principles Every Homeowner Should Know',
-    seoTitle: 'Foundational Vastu Principles for Homeowners | 7Rays Astro Vastu',
+    seoTitle: 'Essential Vastu Principles for Homeowners | 7Rays',
     excerpt:
       'Master the foundational architectural theory of Vastu Shastra: Pancha Tattva cycles, directional energy axes, 16-zone mass distribution, and a 6-point homeowner decision framework.',
     coverImage: '/images/insights/insight-principles.webp',
@@ -602,7 +602,7 @@ Plan your home with scientific precision through our [Residential Vastu Consulta
     id: 'best-directions-home-office',
     slug: 'best-directions-for-home-office',
     title: 'Best Directions for Your Home Office: WFH Desk Orientation, Tech Alignment & Focus',
-    seoTitle: 'Best Directions for Home Office & WFH Vastu | 7Rays Astro Vastu',
+    seoTitle: 'Best Directions for Home Office & WFH Vastu | 7Rays',
     excerpt:
       'Design an ergonomic, high-productivity home workspace. Learn optimal desk facing, the command seating position, video call framing, and electromagnetic field balance.',
     coverImage: '/images/insights/insight-home-office.webp',
@@ -724,7 +724,7 @@ Optimize your broader commercial space with our [Office Vastu Consultancy](/vast
     id: 'master-bedroom-vastu-guidelines',
     slug: 'master-bedroom-vastu-guidelines',
     title: 'Master Bedroom Vastu Guidelines: Direction, Bed Placement & Sleep Science',
-    seoTitle: 'Master Bedroom Direction & Bed Placement as per Vastu | 7Rays Astro Vastu',
+    seoTitle: 'Master Bedroom Direction & Bed Placement Vastu | 7Rays',
     excerpt:
       'Learn why Southwest (Nairutya) is the paramount zone for the primary bedroom, optimal sleeping head directions, and how to balance master suites in modern apartments.',
     coverImage: '/images/services/residential-bedroom.webp',
@@ -820,7 +820,7 @@ For comprehensive layout evaluations, explore our [Residential Vastu Consultancy
     id: 'kitchen-vastu-direction-guide',
     slug: 'kitchen-vastu-direction-guide',
     title: 'Kitchen Vastu & Agni Element: Optimal Stove, Sink & Appliance Orientations',
-    seoTitle: 'Kitchen Direction & Agni Placement as per Vastu | 7Rays Astro Vastu',
+    seoTitle: 'Kitchen Direction & Agni Placement Vastu Guide | 7Rays',
     excerpt:
       'Master the placement of the fire element in your kitchen. Avoid fire-water conflicts and balance digestive health using non-structural Vastu adjustments.',
     coverImage: '/images/services/residential-vastu.webp',
@@ -900,7 +900,7 @@ To learn more about elemental balancing, read our [Toilet & Bathroom Non-Demolit
     id: 'bathroom-toilet-vastu-remedies',
     slug: 'bathroom-toilet-vastu-remedies',
     title: 'Toilet & Bathroom Vastu: Non-Demolition Remedies for Negative Drainage',
-    seoTitle: 'Toilet & Bathroom Direction Vastu Remedies | 7Rays Astro Vastu',
+    seoTitle: 'Toilet & Bathroom Direction Vastu Remedies | 7Rays',
     excerpt:
       'Neutralize the negative drainage field of wrongly placed toilets in modern flats. How brass, zinc, and copper metal wire bounding remediates bathroom imbalances.',
     coverImage: '/images/insights/insight-five-elements.webp',
@@ -966,7 +966,7 @@ Explore our [Non-Demolition Vastu Services](/vastu/non-demolition) for exact on-
     id: 'north-facing-house-vastu-plan',
     slug: 'north-facing-house-vastu-plan',
     title: 'North Facing House Vastu Blueprint: Kuber Zone, Entrance Padas & Wealth Flow',
-    seoTitle: 'North Facing House Vastu: Layout Principles & Wealth Flow | 7Rays Astro Vastu',
+    seoTitle: 'North Facing House Vastu: Layout & Wealth Flow | 7Rays',
     excerpt:
       'Discover the exact architectural requirements for a prosperous north-facing house plan, the auspicious Mukhya and Bhallat entrance padas, and common mistakes.',
     coverImage: '/images/insights/insight-principles.webp',
@@ -1027,7 +1027,7 @@ Learn more with our [Residential Vastu Planning](/vastu/residential).
     id: 'south-facing-house-vastu-myths',
     slug: 'south-facing-house-vastu-myths',
     title: 'South Facing House Vastu: Key Principles & Layout Guide',
-    seoTitle: 'South Facing House Vastu: Key Principles & Layout Guide | 7Rays Astro Vastu',
+    seoTitle: 'South Facing House Vastu: Layout Principles | 7Rays',
     excerpt:
       'Explore the essential Vastu principles for south facing houses, common myths, layout guidance and practical remedies to create a balanced and prosperous home.',
     coverImage: '/images/insights/south-facing-house-villa.webp',
@@ -1110,7 +1110,7 @@ Explore our [Residential Vastu Consultancy](/vastu/residential) or contact our [
     id: 'office-layout-executive-cabin-vastu',
     slug: 'office-layout-executive-cabin-vastu',
     title: 'Office Vastu Guidelines for Executive Cabins, Workstations, and Accounts',
-    seoTitle: 'Office Vastu: Executive Cabin, Workstation & Layout Guide | 7Rays Astro Vastu',
+    seoTitle: 'Office Vastu: Executive Cabin & Layout Guide | 7Rays',
     excerpt:
       'Strategic placement of leadership cabins, accounts desks, and conference rooms to enhance organizational focus and administrative harmony.',
     coverImage: '/images/insights/insight-commercial.webp',
@@ -1193,7 +1193,7 @@ Consult our [Commercial & Office Vastu Consultancy](/vastu/office-vastu) or [Com
     id: 'retail-store-and-showroom-vastu',
     slug: 'retail-store-and-showroom-vastu',
     title: 'Retail Store & Showroom Vastu: Entrance, Cash Counter, and Product Display Layout',
-    seoTitle: 'Retail Store & Showroom Vastu: Layout & Cash Counter Guide | 7Rays Astro Vastu',
+    seoTitle: 'Retail Store & Showroom Vastu: Layout Guide | 7Rays',
     excerpt:
       'Scientific spatial layout for retail stores and commercial showrooms. Optimize customer circulation, cash counter orientation, and stock staging.',
     coverImage: '/images/insights/insight-commercial.webp',
@@ -1262,7 +1262,7 @@ Learn more with our [Commercial Vastu Services](/vastu/commercial).
     id: 'restaurant-and-hospitality-vastu',
     slug: 'restaurant-and-hospitality-vastu',
     title: 'Restaurant & Hospitality Vastu: Commercial Kitchen, Dining Layout, and Cash Desk',
-    seoTitle: 'Restaurant & Hospitality Vastu: Kitchen & Seating Layout Guide | 7Rays Astro Vastu',
+    seoTitle: 'Restaurant & Hospitality Vastu: Kitchen Layout | 7Rays',
     excerpt:
       'Balancing kitchen fire dynamics, guest seating sectors, and beverage counters in restaurants and hospitality spaces without structural disruption.',
     coverImage: '/images/insights/insight-commercial.webp',
@@ -1324,7 +1324,7 @@ Explore our full range of [Commercial Vastu Consultations](/vastu/commercial).
     id: 'factory-machinery-and-raw-material-vastu',
     slug: 'factory-machinery-and-raw-material-vastu',
     title: 'Industrial Vastu: Heavy Machinery Orientation, Raw Materials, and Warehouse Logistics',
-    seoTitle: 'Industrial Vastu: Machinery Orientation & Factory Layout Guide | 7Rays Astro Vastu',
+    seoTitle: 'Industrial Vastu: Machinery & Factory Layout | 7Rays',
     excerpt:
       'Structural stability, heavy machine orientation, and raw-to-finished goods material flow for manufacturing plants and industrial warehouses.',
     coverImage: '/images/services/commercial-vastu.webp',
@@ -1391,7 +1391,7 @@ Schedule an industrial consultation with our [Industrial Vastu Services](/vastu/
     id: 'geopathic-stress-sleep-disorders',
     slug: 'how-geopathic-stress-causes-insomnia-and-fatigue',
     title: 'How Geopathic Stress Causes Insomnia, Chronic Fatigue, and Restlessness',
-    seoTitle: 'How Geopathic Stress Causes Insomnia & Fatigue | 7Rays Astro Vastu',
+    seoTitle: 'How Geopathic Stress Affects Sleep & Health | 7Rays',
     excerpt:
       'Waking up tired despite 8 hours of sleep? Learn how subterranean earth radiation lines drain your biological energy field and how to neutralize them.',
     coverImage: '/images/insights/insight-five-elements.webp',
@@ -1469,7 +1469,7 @@ Schedule a scientific property inspection through our [Scientific Vastu Audit Se
     slug: 'what-is-vedic-astrology-birth-chart-guide',
     title:
       'What Is Vedic Astrology? The Comprehensive Guide to Birth Charts, Houses & Planetary Cycles',
-    seoTitle: 'What Is Vedic Astrology: Birth Chart & Kundli Guide | 7Rays Astro Vastu',
+    seoTitle: 'Vedic Astrology Guide: Birth Chart & Kundli | 7Rays',
     excerpt:
       'Demystify Vedic Astrology (Jyotish). Learn how Janam Kundli charts are calculated, the role of 12 Bhavas, 9 planets, and how birth charts provide self-awareness without fatalism.',
     coverImage: '/images/insights/insight-five-elements.webp',
@@ -1576,7 +1576,7 @@ Explore your personal cosmic blueprint through our [Birth Chart Consultations](/
     id: 'career-astrology-professional-path',
     slug: 'career-astrology-professional-path-guidelines',
     title: 'Career Astrology: Navigating Professional Transitions, 10th House & Planetary Timing',
-    seoTitle: 'Career Astrology: 10th House, Timing & Career Transitions | 7Rays Astro Vastu',
+    seoTitle: 'Career Astrology: 10th House & Timing Guide | 7Rays',
     excerpt:
       'Explore how Vedic astrology analyzes vocation through the 10th house, Saturn, and D10 Dashamsha. Learn how planetary timing supports career clarity without false promises.',
     coverImage: '/images/insights/insight-home-office.webp',
@@ -1653,7 +1653,7 @@ Explore personalized vocational guidance through our [Career Astrology Services]
     id: 'astrology-vs-vastu-synthesis',
     slug: 'astrology-vs-vastu-difference-and-synthesis',
     title: 'Astrology vs Vastu Shastra: Key Differences and the Powerful Astro-Vastu Synthesis',
-    seoTitle: 'Astrology vs Vastu Shastra: Differences & Synthesis | 7Rays Astro Vastu',
+    seoTitle: 'Astrology vs Vastu Shastra: Differences & Cures | 7Rays',
     excerpt:
       'Understand the fundamental distinctions between time-oriented Vedic astrology and space-oriented Vastu Shastra, and discover how an Astro-Vastu consultation bridges them.',
     coverImage: '/images/insights/insight-five-elements.webp',
@@ -1750,7 +1750,7 @@ Explore our [Vedic Astrology Consultations](/astrology), explore our [Residentia
     id: 'understanding-dasha-cycles',
     slug: 'understanding-dasha-cycles-and-transitions',
     title: 'Understanding Dasha Cycles: How Planetary Time Periods Shape Life Transitions',
-    seoTitle: 'Understanding Dasha Cycles & Planetary Life Transitions | 7Rays Astro Vastu',
+    seoTitle: 'Understanding Dasha Cycles & Life Transitions | 7Rays',
     excerpt:
       'A clear, practical guide to Vimshottari Mahadasha and Antardasha. Discover how planetary periods unfold in classical Vedic astrology and how to navigate shifts constructively.',
     coverImage: '/images/insights/insight-five-elements.webp',

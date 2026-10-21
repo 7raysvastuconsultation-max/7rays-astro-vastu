@@ -81,7 +81,7 @@ export const BusinessAstrologyPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Business Astrology Consultation India | Founder & Venture Guidance | 7Rays"
+        title="Business Astrology Consultation | Founder Guidance | 7Rays"
         description="Vedic business astrology for founders, executives, and commercial enterprises across India by Rishwa Sinha. Venture timing, partnership synergy, and expansion horizons."
         canonicalUrl={canonicalUrl}
       />
@@ -106,6 +106,8 @@ export const BusinessAstrologyPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/services/commercial-vastu.webp"
+            width={1200}
+            height={896}
             alt="Business Astrology Consultation for Founders"
             className="h-full w-full object-cover object-center brightness-60"
           />
