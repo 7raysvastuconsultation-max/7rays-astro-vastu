@@ -2,6 +2,233 @@ import type { BlogPostItem } from '@/types/content'
 
 export const blogPostsData: BlogPostItem[] = [
   {
+    id: 'how-to-choose-vastu-consultation-services',
+    slug: 'how-to-choose-vastu-consultation-services',
+    title: 'How to Choose Vastu Consultation Services for Your Property',
+    seoTitle: 'How to Choose Vastu Consultation Services | 7Rays',
+    excerpt:
+      'Compare Vastu consultation services for homes, apartments, offices and industrial spaces. Learn what to ask, what to expect and how to choose a suitable consultant.',
+    content: `# How to Choose Vastu Consultation Services for Your Property
+
+Choosing a Vastu consultation starts with the property and the decision you need help with. An apartment, a planned home, a customer-facing shop, an office and a factory have different layouts and practical limits. Before booking, clarify what the consultant will assess, how the appointment will happen and what you will receive.
+
+Vastu Shastra is a traditional cultural framework. A consultation can offer guidance within that framework, but it cannot guarantee health, wealth, business growth or other personal outcomes. It should not replace advice from an architect, engineer, safety professional, doctor or financial adviser.
+
+This guide focuses on how to compare consultation services responsibly. For detailed guidance on a particular service, use the dedicated service pages linked below.
+
+## What are Vastu consultation services?
+
+Vastu consultation services review a property or plan through a consultant's stated interpretation of traditional Vastu principles. Depending on the provider and agreed scope, a consultation may involve discussing orientation, a floor plan, entrances, room use and other spatial features.
+
+The name of a service does not define its deliverables. One provider may offer a discussion and verbal guidance; another may include a written summary, marked-up plan, follow-up or a site visit. Confirm the exact scope before paying.
+
+## Choose the service that fits the property
+
+### Residential Vastu consultation for a house
+
+A residential consultation is for an existing or planned home. The discussion may cover the floor plan, entrance, room arrangement and what changes are realistically possible. For an existing property, distinguish between structural work, non-structural options and recommendations that may not be practical.
+
+**Who may enquire:** homeowners, families comparing properties, and people reviewing plans before or during construction.
+
+Explore [residential Vastu consultation](/vastu/residential/) or, for a flat-specific focus, [apartment Vastu consultation](/vastu/apartment-vastu/).
+
+### Apartment Vastu consultation
+
+Apartments can have fixed structural walls, shared services, plumbing shafts and building rules that residents cannot change. Ask whether the review concerns the individual flat, the wider building, or only the information you can provide. A responsible assessment should acknowledge these limits and avoid pressuring residents into expensive renovations.
+
+### Commercial Vastu consultation for shops and business premises
+
+A commercial consultation may be relevant to retail shops, showrooms and other customer-facing premises. Explain operational constraints such as a lease, customer access, utilities and building rules. Any suggestions must remain compatible with accessibility, fire safety, electrical work and applicable regulations.
+
+See [commercial Vastu consultation](/vastu/commercial/) for the service scope.
+
+### Office and corporate Vastu consultation
+
+Office requirements vary from a small workplace to a multi-floor corporate facility. A consultant may ask for a floor plan and details about which areas can be assessed. Keep ergonomics, accessibility, staff needs, building requirements and business operations central to any decision.
+
+Explore [office Vastu consultation](/vastu/office-vastu/) and [corporate Vastu consultation](/vastu/corporate/). Traditional spatial guidance should not be presented as proof that a workplace will become more productive or profitable.
+
+### Industrial Vastu consultation for factories and warehouses
+
+Industrial premises can include production areas, storage, machinery, utilities and vehicle routes. Before sharing plans, ask how confidential information is handled and which parts of the site the proposed assessment covers.
+
+Safety and engineering requirements take precedence. Do not move machinery, modify electrical systems or obstruct emergency routes solely to follow a traditional layout recommendation. See [industrial Vastu consultation](/vastu/industrial/) for the stated service scope.
+
+### Non-demolition Vastu consultation
+
+Some providers offer approaches intended to avoid structural demolition. Ask what each recommendation involves, why it is suggested within the consultant's stated framework, what it costs and what limitations apply. “Non-demolition” does not mean every concern has a suitable correction or that a result is guaranteed.
+
+Be cautious of fear-based pressure to buy costly products or remedies. Review [non-demolition Vastu consultation](/vastu/non-demolition/) for the provider's described approach.
+
+### Vastu audit for an existing property
+
+“Vastu audit” is not a standardised deliverable across providers. It may mean a structured review, but do not assume it includes a site visit, measurements, a written report or follow-up. Ask what the audit includes and what you will receive. The [Vastu audit service page](/vastu-services/vastu-audit/) describes the site's service offering.
+
+## Online or on-site: what should you compare?
+
+| Consideration | Online consultation | On-site consultation |
+| --- | --- | --- |
+| Information used | May rely on plans, photos, video and your explanations | May include direct observation of accessible areas |
+| Location | Can be considered for locations beyond the consultant's local area if the provider offers it | Depends on confirmed travel coverage and appointment availability |
+| Suitability | Depends on the property and completeness of the submitted information | Depends on the visit scope and what areas are accessible |
+| Deliverables | Confirm the format and follow-up before booking | Confirm the format and follow-up before booking |
+
+Neither format is automatically right for every property. Ask the consultant to review your situation and confirm whether the proposed format is suitable. For 7Rays, enquire about [online Vastu consultation](/services/online-vastu-consultation/) and confirm on-site availability separately for your location.
+
+## How a consultation commonly works
+
+The steps differ by provider. Use this sequence to confirm what is included rather than assuming every consultant follows the same process.
+
+1. **Describe the property and your question.** Share whether it is an existing property, a purchase under consideration or a plan for construction, and explain what you want assessed.
+2. **Ask what information is needed.** This could include a floor plan, orientation details, photographs or information about how rooms are used. Share sensitive or confidential material only after understanding how it will be handled.
+3. **Agree the scope and fee.** Confirm the format, deliverables, appointment arrangements, total fee and whether follow-up is included.
+4. **Review the observations.** Ask for recommendations in clear language, including practical limitations and which parts are traditional guidance rather than technical advice.
+5. **Decide at your own pace.** You should be able to consider the suggestions without pressure to accept every recommendation or buy additional products immediately.
+
+## How to choose a Vastu consultant
+
+Compare providers on evidence you can check, not superlatives in advertising.
+
+- **Relevant experience:** Ask whether the consultant works with your property type and constraints. Residential experience alone may not establish suitability for a complex factory or office.
+- **Clear methodology:** The provider should explain what information they review and how they develop recommendations within their stated Vastu approach.
+- **Transparent scope and fees:** Request a written description of the consultation, deliverables, fee, taxes if applicable and any additional charges.
+- **Verifiable background:** Review the consultant's published profile and verify credentials with the issuing organisation if those credentials matter to your decision. Be cautious of unsupported awards or “number one” claims.
+- **Responsible communication:** Be wary of frightening predictions, guaranteed outcomes or pressure to buy costly products. A careful provider explains uncertainty and limitations.
+- **Respect for professional boundaries:** Structural, electrical, safety, medical and financial decisions should be reviewed by appropriately qualified professionals.
+
+## Questions to ask before booking
+
+- Do you assess my type of property and its specific constraints?
+- Is the appointment online, on-site, or available in both formats for my location?
+- What plans, photographs or other information do you need?
+- What exactly is included, and what will I receive afterwards?
+- Will I receive written observations or an annotated floor plan?
+- What is the full fee, and are taxes or follow-up charges additional?
+- Are non-structural options available for my situation, and what are their limitations?
+- Which recommendations would require an architect, engineer or other qualified professional?
+- How will you handle private residential or confidential business plans?
+
+The answers make it easier to compare providers on their actual service rather than advertising claims.
+
+## What to know before enquiring with 7Rays Astro Vastu
+
+7Rays Astro Vastu lists residential, apartment, commercial, office, corporate, industrial, non-demolition and audit-related Vastu services. Its physical headquarters are in Bengaluru; the availability of an online consultation or an on-site visit should be confirmed for the specific property and location.
+
+Start with the relevant [Vastu services overview](/vastu-services/), then ask about the proposed consultation format, scope, deliverables, fee and limitations. No particular format or outcome should be assumed before the provider confirms it.
+
+For a property in Bengaluru, you can also review the [Bangalore consultation information](/locations/bangalore/). For other cities, confirm remote suitability and any travel coverage directly before booking.
+
+## Frequently asked questions
+
+### What are Vastu consultation services?
+They are consultations that provide guidance about a property through the consultant's interpretation of traditional Vastu Shastra principles. Scope and deliverables vary, so confirm them with the provider.
+
+### Can I get Vastu consultation online anywhere in India?
+Some providers offer remote consultations, but suitability depends on the property, available information and the provider's process. Confirm whether your specific property can be assessed remotely; do not assume nationwide on-site coverage.
+
+### What is the difference between a Vastu audit and a consultation?
+The terms are used differently by providers. “Audit” may describe a structured assessment, but it does not guarantee a site visit, measurements, written report or follow-up. Ask for the exact scope.
+
+### Is non-demolition Vastu consultation available?
+Some providers describe approaches intended to avoid structural demolition. Ask what is proposed, what it involves and what limitations apply. No remedy should be treated as a guaranteed outcome.
+
+### Is Vastu consultation suitable for commercial and industrial property?
+Some consultants offer it. Any consideration for a commercial or industrial site must remain subordinate to applicable regulations, engineering, accessibility and safety requirements.
+
+### How much does Vastu consultation cost in India?
+There is no single standard fee. Price may vary by provider, property, assessment format and deliverables. Request a clear quotation before booking.
+
+### Can Vastu consultation guarantee health, wealth or business success?
+No. A responsible provider should not guarantee these outcomes. Vastu Shastra is a traditional cultural framework, not a substitute for medical, financial, engineering or safety advice.
+
+## Choose based on your property and the agreed scope
+
+The right service depends on your property, your question and the assessment a provider can genuinely offer. Before booking, compare relevant experience, methodology, format, deliverables, fee and limitations. Prefer clear explanations over promises of guaranteed results.
+
+If you are considering a consultation with 7Rays Astro Vastu, review the relevant service page and enquire about the options available for your specific situation.
+
+*Editorial note: Vastu Shastra is a traditional cultural framework. A consultation does not guarantee health, financial, business or other personal outcomes and does not replace qualified architectural, engineering, safety, medical or financial advice.*
+`,
+    coverImage: '/images/insights/insight-commercial.webp',
+    category: 'Vastu Basics',
+    tags: [
+      'Vastu consultation services',
+      'Choosing a Vastu consultant',
+      'Residential Vastu consultation',
+      'Commercial Vastu consultation',
+      'Online Vastu consultation',
+    ],
+    author: {
+      name: 'Rishwa Sinha',
+      title: 'Vastu Consultant',
+      avatar: '/images/rishwa-sinha.webp',
+    },
+    publishedAt: '2026-10-21T11:45:00+05:30',
+    readingTimeMinutes: 10,
+    cluster: 'foundations',
+    searchIntent: 'commercial-investigation',
+    propertyType: 'all',
+    locationScope: 'india',
+    funnelStage: 'middle-of-funnel',
+    canonicalOwner: '/vastu-services/',
+    parentPillar: '/vastu-services/',
+    commercialTarget: '/vastu-services/',
+    entityTargets: ['Vastu consultation', 'Residential property', 'Commercial property', 'Online consultation'],
+    informationGain:
+      'A provider-selection guide that distinguishes property types, remote versus on-site scope, service deliverables, practical limitations and responsible claims.',
+    aeoQuestions: [
+      'What are Vastu consultation services?',
+      'Can I get Vastu consultation online anywhere in India?',
+      'What is the difference between a Vastu audit and a consultation?',
+      'How much does Vastu consultation cost in India?',
+      'Can Vastu consultation guarantee health, wealth or business success?',
+    ],
+    geoEntities: ['India', 'Bengaluru'],
+    keyTakeaways: [
+      'Choose the consultation based on property type and constraints, not a generic service label.',
+      'Confirm the format, scope, deliverables, fee and follow-up before booking.',
+      'Treat Vastu as traditional guidance, not a guarantee of personal or business outcomes.',
+      'Building, engineering, accessibility and safety requirements take precedence.',
+    ],
+    faqs: [
+      {
+        question: 'What are Vastu consultation services?',
+        answer:
+          'They are consultations that provide guidance about a property through the consultant's interpretation of traditional Vastu Shastra principles. Scope and deliverables vary, so confirm them with the provider.',
+      },
+      {
+        question: 'Can I get Vastu consultation online anywhere in India?',
+        answer:
+          'Some providers offer remote consultations, but suitability depends on the property, available information and the provider's process. Confirm whether your specific property can be assessed remotely; do not assume nationwide on-site coverage.',
+      },
+      {
+        question: 'What is the difference between a Vastu audit and a consultation?',
+        answer:
+          'The terms are used differently by providers. “Audit” may describe a structured assessment, but it does not guarantee a site visit, measurements, written report or follow-up. Ask for the exact scope.',
+      },
+      {
+        question: 'Is non-demolition Vastu consultation available?',
+        answer:
+          'Some providers describe approaches intended to avoid structural demolition. Ask what is proposed, what it involves and what limitations apply. No remedy should be treated as a guaranteed outcome.',
+      },
+      {
+        question: 'Is Vastu consultation suitable for commercial and industrial property?',
+        answer:
+          'Some consultants offer it. Any consideration for a commercial or industrial site must remain subordinate to applicable regulations, engineering, accessibility and safety requirements.',
+      },
+      {
+        question: 'How much does Vastu consultation cost in India?',
+        answer:
+          'There is no single standard fee. Price may vary by provider, property, assessment format and deliverables. Request a clear quotation before booking.',
+      },
+      {
+        question: 'Can Vastu consultation guarantee health, wealth or business success?',
+        answer:
+          'No. A responsible provider should not guarantee these outcomes. Vastu Shastra is a traditional cultural framework, not a substitute for medical, financial, engineering or safety advice.',
+      },
+    ],
+  },
+  {
     id: 'vastu-for-modern-apartments-in-bangalore',
     slug: 'vastu-for-modern-apartments-in-bangalore',
     title: 'Vastu for Modern Apartments in Bangalore: High-Rise Constraints & Layout Solutions',

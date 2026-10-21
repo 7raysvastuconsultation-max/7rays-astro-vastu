@@ -89,6 +89,7 @@ const staticRoutes = [
 const locationSlugs = ["indiranagar", "hsr-layout", "koramangala", "whitefield", "mumbai", "delhi-ncr", "hyderabad", "pune", "kolkata"]
 
 const blogSlugs = [
+  "how-to-choose-vastu-consultation-services",
   "vastu-for-modern-apartments-in-bangalore",
   "vastu-remedies-without-demolition-modern-apartments",
   "vastu-principles-every-homeowner-should-know",
