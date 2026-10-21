@@ -422,7 +422,15 @@ export const BangaloreMasterPage: React.FC = () => {
             </h2>
             <p className="mt-3 text-xs leading-relaxed text-slate-600 sm:text-sm">
               Compare a consultant’s credentials, local visit availability, assessment scope,
-              written recommendations, and whether they avoid promising guaranteed outcomes.
+              written recommendations, and whether they avoid promising guaranteed outcomes. For a
+              broader checklist of what to ask before booking, read our{' '}
+              <Link
+                to="/blog/how-to-choose-vastu-consultation-services/"
+                className="font-semibold text-amber-800 underline underline-offset-2 hover:text-amber-900"
+              >
+                guide to choosing Vastu consultation services
+              </Link>
+              .
             </p>
           </div>
 
