@@ -194,12 +194,12 @@ If you are considering a consultation with 7Rays Astro Vastu, review the relevan
       {
         question: 'What are Vastu consultation services?',
         answer:
-          'They are consultations that provide guidance about a property through the consultant's interpretation of traditional Vastu Shastra principles. Scope and deliverables vary, so confirm them with the provider.',
+          'They are consultations that provide guidance about a property through the consultant\'s interpretation of traditional Vastu Shastra principles. Scope and deliverables vary, so confirm them with the provider.',
       },
       {
         question: 'Can I get Vastu consultation online anywhere in India?',
         answer:
-          'Some providers offer remote consultations, but suitability depends on the property, available information and the provider's process. Confirm whether your specific property can be assessed remotely; do not assume nationwide on-site coverage.',
+          'Some providers offer remote consultations, but suitability depends on the property, available information and the provider\'s process. Confirm whether your specific property can be assessed remotely; do not assume nationwide on-site coverage.',
       },
       {
         question: 'What is the difference between a Vastu audit and a consultation?',
