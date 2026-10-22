@@ -242,7 +242,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/vastu/residential"
+                  to="/vastu/residential/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -278,7 +278,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/vastu/commercial"
+                  to="/vastu/commercial/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -314,7 +314,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/vastu/non-demolition"
+                  to="/vastu/non-demolition/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -350,7 +350,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/vastu/industrial"
+                  to="/vastu/industrial/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -385,7 +385,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/vastu/corporate"
+                  to="/vastu/corporate/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -420,7 +420,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/astrology"
+                  to="/astrology/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -456,7 +456,7 @@ export const ServicesPage: React.FC = () => {
               </div>
               <div className="p-6 pt-0">
                 <Link
-                  to="/vastu-services/vastu-audit"
+                  to="/vastu-services/vastu-audit/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Service</span>
@@ -492,7 +492,7 @@ export const ServicesPage: React.FC = () => {
               </p>
               <div className="pt-2">
                 <Link
-                  to="/process"
+                  to="/process/"
                   className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-md transition hover:from-amber-300 hover:to-amber-500"
                 >
                   <span>Learn About Our Process</span>
@@ -702,7 +702,7 @@ export const ServicesPage: React.FC = () => {
               </p>
               <div className="pt-2">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-5 py-2.5 text-xs font-bold text-slate-800 transition hover:border-amber-400 hover:text-amber-800"
                 >
                   <span>View All FAQs</span>

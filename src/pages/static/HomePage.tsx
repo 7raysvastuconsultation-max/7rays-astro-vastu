@@ -103,7 +103,7 @@ export const HomePage: React.FC = () => {
               </button>
 
               <Link
-                to="/vastu-services"
+                to="/vastu-services/"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-white/25 bg-slate-900/60 px-7 py-3.5 text-xs font-semibold text-white backdrop-blur-md transition hover:border-amber-400/60 hover:bg-slate-900/80 active:scale-95 sm:w-auto"
               >
                 <span>Explore Our Services</span>
@@ -283,7 +283,7 @@ export const HomePage: React.FC = () => {
 
               <div className="pt-4">
                 <Link
-                  to="/about"
+                  to="/about/"
                   className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 px-7 py-3.5 text-xs font-bold text-slate-950 shadow-md transition hover:from-amber-400 hover:to-amber-500"
                 >
                   <span>Discover Our Approach</span>
@@ -341,7 +341,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="p-3 pt-0 sm:p-3.5 sm:pt-0">
                 <Link
-                  to="/vastu/residential"
+                  to="/vastu/residential/"
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore</span>
@@ -377,7 +377,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="p-3 pt-0 sm:p-3.5 sm:pt-0">
                 <Link
-                  to="/vastu/commercial"
+                  to="/vastu/commercial/"
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore</span>
@@ -413,7 +413,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="p-3 pt-0 sm:p-3.5 sm:pt-0">
                 <Link
-                  to="/vastu/industrial"
+                  to="/vastu/industrial/"
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore</span>
@@ -449,7 +449,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="p-3 pt-0 sm:p-3.5 sm:pt-0">
                 <Link
-                  to="/vastu/corporate"
+                  to="/vastu/corporate/"
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore</span>
@@ -485,7 +485,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="p-3 pt-0 sm:p-3.5 sm:pt-0">
                 <Link
-                  to="/astrology"
+                  to="/astrology/"
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore</span>
@@ -521,7 +521,7 @@ export const HomePage: React.FC = () => {
               </div>
               <div className="p-3 pt-0 sm:p-3.5 sm:pt-0">
                 <Link
-                  to="/vastu-services/vastu-audit"
+                  to="/vastu-services/vastu-audit/"
                   className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore</span>

@@ -157,7 +157,7 @@ export const BangaloreCommercialVastuPage: React.FC = () => {
                 <ArrowRight className="h-4 w-4" />
               </button>
               <Link
-                to="/vastu/commercial"
+                to="/vastu/commercial/"
                 className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-5 py-3.5 text-xs font-medium text-slate-200 backdrop-blur-xs transition hover:bg-slate-800"
               >
                 <span>Commercial Pillar</span>
@@ -245,7 +245,7 @@ export const BangaloreCommercialVastuPage: React.FC = () => {
 
               <div className="mt-6 space-y-3">
                 <Link
-                  to="/vastu/office-vastu"
+                  to="/vastu/office-vastu/"
                   className="flex items-center justify-between rounded-xl border border-slate-200 bg-white p-4 shadow-2xs transition hover:border-amber-400 hover:shadow-xs"
                 >
                   <div>
@@ -260,7 +260,7 @@ export const BangaloreCommercialVastuPage: React.FC = () => {
                 </Link>
 
                 <Link
-                  to="/vastu/corporate"
+                  to="/vastu/corporate/"
                   className="flex items-center justify-between rounded-xl border border-slate-200 bg-white p-4 shadow-2xs transition hover:border-amber-400 hover:shadow-xs"
                 >
                   <div>
@@ -275,7 +275,7 @@ export const BangaloreCommercialVastuPage: React.FC = () => {
                 </Link>
 
                 <Link
-                  to="/vastu/industrial"
+                  to="/vastu/industrial/"
                   className="flex items-center justify-between rounded-xl border border-slate-200 bg-white p-4 shadow-2xs transition hover:border-amber-400 hover:shadow-xs"
                 >
                   <div>
@@ -454,7 +454,7 @@ export const BangaloreCommercialVastuPage: React.FC = () => {
 
           {/* Footer Quick Links */}
           <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-slate-800 pt-6 text-xs text-slate-400">
-            <Link to="/locations/bangalore" className="hover:text-amber-300">Bangalore Master Hub</Link>
+            <Link to="/locations/bangalore/" className="hover:text-amber-300">Bangalore Master Hub</Link>
             <Link to="/locations/" className="hover:text-amber-300">All Locations</Link>
             <Link to="/vastu/commercial/" className="hover:text-amber-300">Commercial Vastu</Link>
             <Link to="/consultant/rishwa-sinha/" className="hover:text-amber-300">Consultant Profile</Link>

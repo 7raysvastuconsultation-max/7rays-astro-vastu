@@ -172,7 +172,7 @@ export const AstrologyPage: React.FC = () => {
                   <ArrowRight className="h-4 w-4" />
                 </button>
                 <Link
-                  to="/locations/bangalore/astrology"
+                  to="/locations/bangalore/astrology/"
                   className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/70 px-5 py-3.5 text-xs font-semibold text-slate-200 backdrop-blur-sm transition hover:border-amber-400/50 hover:text-white"
                 >
                   <MapPin className="h-3.5 w-3.5 text-amber-400" />
@@ -298,7 +298,7 @@ export const AstrologyPage: React.FC = () => {
             </div>
             <div>
               <Link
-                to="/vastu-services"
+                to="/vastu-services/"
                 className="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 px-5 py-2.5 text-xs font-bold text-white shadow-xs transition hover:bg-slate-800"
               >
                 <span>Explore Vastu Services</span>
@@ -336,7 +336,7 @@ export const AstrologyPage: React.FC = () => {
               </div>
               <div className="space-y-2 p-4 pt-0">
                 <Link
-                  to="/astrology/birth-chart"
+                  to="/astrology/birth-chart/"
                   className="block text-[11px] font-bold text-amber-700 hover:underline"
                 >
                   Explore Birth Chart →
@@ -377,7 +377,7 @@ export const AstrologyPage: React.FC = () => {
               </div>
               <div className="space-y-2 p-4 pt-0">
                 <Link
-                  to="/astrology/career"
+                  to="/astrology/career/"
                   className="block text-[11px] font-bold text-amber-700 hover:underline"
                 >
                   Explore Career Advisory →
@@ -418,7 +418,7 @@ export const AstrologyPage: React.FC = () => {
               </div>
               <div className="space-y-2 p-4 pt-0">
                 <Link
-                  to="/astrology/business"
+                  to="/astrology/business/"
                   className="block text-[11px] font-bold text-amber-700 hover:underline"
                 >
                   Explore Business Advisory →
@@ -459,7 +459,7 @@ export const AstrologyPage: React.FC = () => {
               </div>
               <div className="space-y-2 p-4 pt-0">
                 <Link
-                  to="/astrology/marriage"
+                  to="/astrology/marriage/"
                   className="block text-[11px] font-bold text-amber-700 hover:underline"
                 >
                   Explore Compatibility →
@@ -563,7 +563,7 @@ export const AstrologyPage: React.FC = () => {
               </div>
               <div className="pt-2">
                 <Link
-                  to="/blog/astrology-vs-vastu-difference-and-synthesis"
+                  to="/blog/astrology-vs-vastu-difference-and-synthesis/"
                   className="inline-flex items-center gap-2 text-xs font-bold text-amber-400 hover:text-amber-300"
                 >
                   <span>Read our comprehensive Astro-Vastu Synthesis Guide</span>
@@ -714,7 +714,7 @@ export const AstrologyPage: React.FC = () => {
                 </p>
                 <div className="flex flex-wrap items-center gap-4 pt-2">
                   <Link
-                    to="/locations/bangalore/astrology"
+                    to="/locations/bangalore/astrology/"
                     className="inline-flex items-center gap-1.5 rounded-lg bg-amber-500 px-5 py-2.5 text-xs font-bold text-slate-950 transition hover:bg-amber-400"
                   >
                     <span>View Bangalore Astrology Hub</span>

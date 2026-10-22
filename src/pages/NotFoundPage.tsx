@@ -39,14 +39,14 @@ export const NotFoundPage: React.FC = () => {
             <span>Return Home</span>
           </Link>
           <Link
-            to="/vastu-services"
+            to="/vastu-services/"
             className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-5 py-2.5 text-xs font-semibold text-slate-200 transition hover:border-slate-500"
           >
             <span>Browse Services</span>
             <ArrowRight className="h-3.5 w-3.5" />
           </Link>
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-5 py-2.5 text-xs font-semibold text-slate-200 transition hover:border-slate-500"
           >
             <Phone className="h-3.5 w-3.5" />
@@ -60,28 +60,28 @@ export const NotFoundPage: React.FC = () => {
           </h2>
           <ul className="space-y-2 text-xs text-amber-400">
             <li>
-              <Link to="/vastu/commercial" className="hover:underline">
+              <Link to="/vastu/commercial/" className="hover:underline">
                 &rarr; Commercial &amp; Office Vastu Consultations
               </Link>
             </li>
             <li>
-              <Link to="/vastu/residential" className="hover:underline">
+              <Link to="/vastu/residential/" className="hover:underline">
                 &rarr; Residential &amp; Apartment Vastu
               </Link>
             </li>
             <li>
-              <Link to="/vastu/non-demolition" className="hover:underline">
+              <Link to="/vastu/non-demolition/" className="hover:underline">
                 &rarr; Non-Demolition Vastu Remedies
               </Link>
             </li>
             <li>
-              <Link to="/locations/hsr-layout" className="hover:underline">
+              <Link to="/locations/hsr-layout/" className="hover:underline">
                 &rarr; HSR Layout Bangalore Vastu Consultation
               </Link>
             </li>
             <li>
               <Link
-                to="/blog/vastu-remedies-without-demolition-modern-apartments"
+                to="/blog/vastu-remedies-without-demolition-modern-apartments/"
                 className="hover:underline"
               >
                 &rarr; Scientific Vastu Remedies Without Demolition

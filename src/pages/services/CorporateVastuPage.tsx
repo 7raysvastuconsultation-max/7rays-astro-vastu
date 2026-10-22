@@ -169,7 +169,7 @@ export const CorporateVastuPage: React.FC = () => {
                 <ArrowRight className="h-4 w-4" />
               </button>
               <Link
-                to="/vastu/commercial"
+                to="/vastu/commercial/"
                 className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-5 py-3.5 text-xs font-medium text-slate-200 backdrop-blur-xs transition hover:bg-slate-800"
               >
                 <span>Commercial Pillar</span>
@@ -186,7 +186,7 @@ export const CorporateVastuPage: React.FC = () => {
             Home
           </Link>
           <ChevronRight className="h-3 w-3 text-slate-400" />
-          <Link to="/vastu/commercial" className="transition hover:text-amber-800">
+          <Link to="/vastu/commercial/" className="transition hover:text-amber-800">
             Commercial Vastu
           </Link>
           <ChevronRight className="h-3 w-3 text-slate-400" />
@@ -319,7 +319,7 @@ export const CorporateVastuPage: React.FC = () => {
                     <ArrowRight className="h-4 w-4" />
                   </button>
                   <Link
-                    to="/locations/bangalore/commercial-vastu"
+                    to="/locations/bangalore/commercial-vastu/"
                     className="flex w-full items-center justify-center gap-2 rounded-lg border border-amber-200/80 bg-amber-50 px-4 py-2.5 text-xs font-semibold text-amber-900 transition hover:bg-amber-100"
                   >
                     <span>Bangalore Commercial Landing Page</span>

@@ -46,7 +46,7 @@ export const LocationDetailPage: React.FC = () => {
     return (
       <div className="py-24 text-center text-white">
         <h1 className="text-2xl font-bold">Location Not Found</h1>
-        <Link to="/locations/bangalore" className="mt-4 inline-block text-amber-400 underline">
+        <Link to="/locations/bangalore/" className="mt-4 inline-block text-amber-400 underline">
           View Bangalore Master Hub
         </Link>
       </div>
@@ -116,7 +116,7 @@ export const LocationDetailPage: React.FC = () => {
             <ChevronRight className="h-3 w-3 text-slate-500" />
             <Link to="/locations/" className="transition hover:text-amber-300">Locations</Link>
             <ChevronRight className="h-3 w-3 text-slate-500" />
-            <Link to="/locations/bangalore" className="transition hover:text-amber-300">Bangalore</Link>
+            <Link to="/locations/bangalore/" className="transition hover:text-amber-300">Bangalore</Link>
             <ChevronRight className="h-3 w-3 text-slate-500" />
             <span aria-current="page" className="text-amber-300 font-medium">{location.name}</span>
           </nav>
@@ -149,7 +149,7 @@ export const LocationDetailPage: React.FC = () => {
 
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-xl shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
                 >
                   <span>Book On-site Audit in {location.name}</span>
@@ -235,11 +235,11 @@ export const LocationDetailPage: React.FC = () => {
               Home
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
-            <Link to="/locations" className="transition hover:text-amber-800">
+            <Link to="/locations/" className="transition hover:text-amber-800">
               Locations
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
-            <Link to="/locations/bangalore" className="transition hover:text-amber-800">
+            <Link to="/locations/bangalore/" className="transition hover:text-amber-800">
               Bangalore
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
@@ -376,7 +376,7 @@ export const LocationDetailPage: React.FC = () => {
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4 pt-2 lg:justify-start">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-xl shadow-amber-500/30 transition hover:from-amber-300 hover:to-amber-500"
                 >
                   <span>Schedule {location.name} On-Site Audit</span>
@@ -426,7 +426,7 @@ export const LocationDetailPage: React.FC = () => {
 
           {/* Footer Quick Links */}
           <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-slate-800 pt-6 text-xs text-slate-400">
-            <Link to="/locations/bangalore" className="hover:text-amber-300">Bangalore Authority Hub</Link>
+            <Link to="/locations/bangalore/" className="hover:text-amber-300">Bangalore Authority Hub</Link>
             <Link to="/locations/" className="hover:text-amber-300">All Locations</Link>
             <Link to="/services/online-vastu-consultation/" className="hover:text-amber-300">Online Vastu Consultation</Link>
             <Link to="/consultant/rishwa-sinha/" className="hover:text-amber-300">Consultant Profile</Link>

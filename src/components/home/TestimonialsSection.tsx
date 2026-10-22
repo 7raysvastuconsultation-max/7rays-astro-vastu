@@ -314,7 +314,7 @@ export const TestimonialsSection: React.FC = () => {
 
           <div className="flex items-center gap-4">
             <Link
-              to="/case-studies"
+              to="/case-studies/"
               className="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700 transition hover:text-amber-800"
             >
               <span>View Case Studies</span>

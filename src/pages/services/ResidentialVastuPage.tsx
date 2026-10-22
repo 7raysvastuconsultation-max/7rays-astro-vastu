@@ -340,7 +340,7 @@ export const ResidentialVastuPage: React.FC = () => {
               Home
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
-            <Link to="/vastu-services" className="transition hover:text-amber-700">
+            <Link to="/vastu-services/" className="transition hover:text-amber-700">
               Vastu Services
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
@@ -574,7 +574,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/blog/master-bedroom-vastu-guidelines"
+                  to="/blog/master-bedroom-vastu-guidelines/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Master Bedroom Guide</span>
@@ -600,7 +600,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/blog/kitchen-vastu-direction-guide"
+                  to="/blog/kitchen-vastu-direction-guide/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Kitchen Vastu Guide</span>
@@ -626,7 +626,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/blog/bathroom-toilet-vastu-remedies"
+                  to="/blog/bathroom-toilet-vastu-remedies/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Toilet Remedies Guide</span>
@@ -652,7 +652,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/blog/north-facing-house-vastu-plan"
+                  to="/blog/north-facing-house-vastu-plan/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read North Facing Blueprint</span>
@@ -678,7 +678,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/blog/south-facing-house-vastu-myths"
+                  to="/blog/south-facing-house-vastu-myths/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read South Facing Myth Guide</span>
@@ -704,7 +704,7 @@ export const ResidentialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/vastu/apartment-vastu"
+                  to="/vastu/apartment-vastu/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Apartment Vastu Hub</span>
@@ -913,7 +913,7 @@ export const ResidentialVastuPage: React.FC = () => {
 
                 <div className="mt-6 space-y-3">
                   <Link
-                    to="/locations/bangalore/residential-vastu"
+                    to="/locations/bangalore/residential-vastu/"
                     className="flex w-full items-center justify-center gap-2 rounded-lg bg-slate-900 px-4 py-3 text-xs font-bold text-amber-300 transition hover:bg-slate-800"
                   >
                     <span>View Bangalore Residential Landing Page</span>
@@ -1059,7 +1059,7 @@ export const ResidentialVastuPage: React.FC = () => {
                   </p>
                 </div>
                 <Link
-                  to="/case-studies"
+                  to="/case-studies/"
                   className="group inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-800"
                 >
                   <span>View All Assessments</span>

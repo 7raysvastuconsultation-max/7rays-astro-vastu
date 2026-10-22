@@ -16,7 +16,7 @@ export const ServiceDetailPage: React.FC = () => {
     return (
       <div className="py-24 text-center">
         <h1 className="text-2xl font-bold">Service Not Found</h1>
-        <Link to="/vastu-services" className="mt-4 inline-block text-amber-400 underline">
+        <Link to="/vastu-services/" className="mt-4 inline-block text-amber-400 underline">
           Back to all services
         </Link>
       </div>
@@ -142,7 +142,7 @@ export const ServiceDetailPage: React.FC = () => {
         {/* CTA */}
         <div className="mt-16 border-t border-slate-800 pt-8 text-center">
           <Link
-            to="/contact"
+            to="/contact/"
             className="inline-flex items-center gap-2 rounded-lg bg-amber-500 px-6 py-3 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/20 transition hover:bg-amber-400 sm:text-sm"
           >
             <span>Book This Consultation</span>

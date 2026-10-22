@@ -80,14 +80,14 @@ export const LocationsPage: React.FC = () => {
 
               <div className="mt-8 flex flex-wrap items-center gap-4">
                 <Link
-                  to="/locations/bangalore"
+                  to="/locations/bangalore/"
                   className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-xl shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
                 >
                   <span>Explore Bangalore Master Hub</span>
                   <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
-                  to="/services/online-vastu-consultation"
+                  to="/services/online-vastu-consultation/"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/90 px-6 py-3.5 text-sm font-semibold text-slate-200 transition hover:border-amber-400/50 hover:text-white"
                 >
                   <Globe2 className="h-4 w-4 text-amber-400" />
@@ -302,14 +302,14 @@ export const LocationsPage: React.FC = () => {
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4 pt-2 lg:justify-start">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-xl shadow-amber-500/30 transition hover:from-amber-300 hover:to-amber-500"
                 >
                   <span>Schedule Bangalore Visit</span>
                   <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
-                  to="/locations/bangalore"
+                  to="/locations/bangalore/"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/90 px-6 py-3.5 text-sm font-semibold text-slate-200 transition hover:border-amber-400/50 hover:text-white"
                 >
                   <Building2 className="h-4 w-4 text-amber-400" />
@@ -350,7 +350,7 @@ export const LocationsPage: React.FC = () => {
 
           {/* Footer Quick Links */}
           <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-slate-800 pt-6 text-xs text-slate-400">
-            <Link to="/locations/bangalore" className="hover:text-amber-300">Bangalore Authority Hub</Link>
+            <Link to="/locations/bangalore/" className="hover:text-amber-300">Bangalore Authority Hub</Link>
             <Link to="/services/online-vastu-consultation/" className="hover:text-amber-300">Pan-India Online Consultation</Link>
             <Link to="/consultant/rishwa-sinha/" className="hover:text-amber-300">Consultant Profile</Link>
             <Link to="/case-studies/" className="hover:text-amber-300">Illustrative Case Studies</Link>

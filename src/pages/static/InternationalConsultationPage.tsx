@@ -84,7 +84,7 @@ export const InternationalConsultationPage: React.FC = () => {
 
             <div className="pt-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
               >
                 <span>Book Global Remote Consultation</span>
@@ -359,14 +359,14 @@ export const InternationalConsultationPage: React.FC = () => {
           </p>
           <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
             >
               <span>Schedule Your Remote Session</span>
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
-              to="/vastu/non-demolition"
+              to="/vastu/non-demolition/"
               className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-6 py-3.5 text-xs font-bold text-slate-200 transition hover:bg-slate-800"
             >
               <span>Learn About Non-Demolition Remedies</span>

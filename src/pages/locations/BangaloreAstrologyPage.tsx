@@ -179,7 +179,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
                   <ArrowRight className="h-4 w-4" />
                 </button>
                 <Link
-                  to="/astrology"
+                  to="/astrology/"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/80 px-6 py-3.5 text-sm font-semibold text-slate-200 backdrop-blur-sm transition hover:border-amber-400/50 hover:text-white"
                 >
                   <span>Astrology Pillar Overview</span>
@@ -286,7 +286,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
                 Bangalore's fast-paced tech and corporate sectors.
               </p>
               <Link
-                to="/astrology/career"
+                to="/astrology/career/"
                 className="mt-4 inline-flex items-center gap-1 text-xs font-bold text-amber-700 hover:underline"
               >
                 <span>Career Astrology Details</span>
@@ -306,7 +306,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
                 entrepreneurs across Bengaluru.
               </p>
               <Link
-                to="/astrology/business"
+                to="/astrology/business/"
                 className="mt-4 inline-flex items-center gap-1 text-xs font-bold text-amber-700 hover:underline"
               >
                 <span>Business Advisory Details</span>
@@ -326,7 +326,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
                 claims or superstitious fears.
               </p>
               <Link
-                to="/astrology/marriage"
+                to="/astrology/marriage/"
                 className="mt-4 inline-flex items-center gap-1 text-xs font-bold text-amber-700 hover:underline"
               >
                 <span>Compatibility Details</span>
@@ -344,7 +344,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
                 Vimshottari Dasha planetary periods.
               </p>
               <Link
-                to="/astrology/birth-chart"
+                to="/astrology/birth-chart/"
                 className="mt-4 inline-flex items-center gap-1 text-xs font-bold text-amber-700 hover:underline"
               >
                 <span>Birth Chart Details</span>
@@ -558,7 +558,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
 
           {/* Footer Quick Links */}
           <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-slate-800 pt-6 text-xs text-slate-400">
-            <Link to="/locations/bangalore" className="hover:text-amber-300">Bangalore Master Hub</Link>
+            <Link to="/locations/bangalore/" className="hover:text-amber-300">Bangalore Master Hub</Link>
             <Link to="/locations/" className="hover:text-amber-300">All Locations</Link>
             <Link to="/astrology/" className="hover:text-amber-300">Vedic Astrology</Link>
             <Link to="/consultant/rishwa-sinha/" className="hover:text-amber-300">Consultant Profile</Link>

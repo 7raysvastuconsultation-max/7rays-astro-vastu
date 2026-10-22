@@ -126,14 +126,14 @@ export const DisclaimerPage: React.FC = () => {
 
             <div className="flex items-center justify-between border-t border-slate-200 pt-6">
               <Link
-                to="/terms"
+                to="/terms/"
                 className="inline-flex items-center gap-2 text-xs font-semibold text-amber-700 hover:text-amber-800"
               >
                 <ArrowLeft className="h-4 w-4" />
                 <span>Return to Terms of Service</span>
               </Link>
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-4 py-2.5 text-xs font-bold text-white transition hover:bg-slate-800"
               >
                 <span>Contact Compliance Team</span>

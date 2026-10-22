@@ -200,7 +200,7 @@ export const BangaloreIndustrialVastuPage: React.FC = () => {
                 <ArrowRight className="h-4 w-4" />
               </button>
               <Link
-                to="/locations/bangalore"
+                to="/locations/bangalore/"
                 className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-5 py-3.5 text-xs font-semibold text-slate-200 backdrop-blur-sm transition hover:border-amber-400/50 hover:text-white"
               >
                 <span>Bangalore Authority Hub</span>
@@ -438,7 +438,7 @@ export const BangaloreIndustrialVastuPage: React.FC = () => {
                   <ArrowRight className="h-4 w-4" />
                 </button>
                 <Link
-                  to="/vastu/industrial"
+                  to="/vastu/industrial/"
                   className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/90 px-6 py-3.5 text-sm font-semibold text-slate-200 transition hover:border-amber-400/50 hover:text-white"
                 >
                   <span>Industrial Overview</span>
@@ -478,9 +478,9 @@ export const BangaloreIndustrialVastuPage: React.FC = () => {
 
           {/* Footer Quick Links */}
           <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-slate-800 pt-6 text-xs text-slate-400">
-            <Link to="/locations/bangalore" className="hover:text-amber-300">Bangalore Master Hub</Link>
+            <Link to="/locations/bangalore/" className="hover:text-amber-300">Bangalore Master Hub</Link>
             <Link to="/locations/" className="hover:text-amber-300">All Locations</Link>
-            <Link to="/vastu/industrial" className="hover:text-amber-300">Industrial Vastu</Link>
+            <Link to="/vastu/industrial/" className="hover:text-amber-300">Industrial Vastu</Link>
             <Link to="/consultant/rishwa-sinha/" className="hover:text-amber-300">Consultant Profile</Link>
           </div>
         </div>

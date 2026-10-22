@@ -243,14 +243,14 @@ export const FaqPage: React.FC = () => {
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-4">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-flex items-center gap-2 rounded-lg bg-amber-600 px-6 py-3 text-xs font-bold text-white shadow-md transition hover:bg-amber-700"
               >
                 <span>Ask a Consultant Directly</span>
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
-                to="/vastu/non-demolition"
+                to="/vastu/non-demolition/"
                 className="inline-flex items-center gap-2 rounded-lg border border-slate-300 bg-white px-5 py-3 text-xs font-bold text-slate-700 transition hover:bg-slate-50"
               >
                 <span>Explore Non-Demolition Solutions</span>

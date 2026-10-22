@@ -24,7 +24,7 @@ export const CaseStudyDetailPage: React.FC = () => {
     return (
       <div className="py-24 text-center text-white">
         <h1 className="text-2xl font-bold">Assessment Scenario Not Found</h1>
-        <Link to="/case-studies" className="mt-4 inline-block text-amber-400 underline">
+        <Link to="/case-studies/" className="mt-4 inline-block text-amber-400 underline">
           Back to all illustrative assessments
         </Link>
       </div>
@@ -53,7 +53,7 @@ export const CaseStudyDetailPage: React.FC = () => {
         <div className="pointer-events-none absolute inset-0 bg-radial-gradient from-amber-500/10 via-transparent to-transparent opacity-50" />
         <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
           <Link
-            to="/case-studies"
+            to="/case-studies/"
             className="mb-6 inline-flex items-center gap-1.5 text-xs font-semibold text-slate-400 transition hover:text-amber-400"
           >
             <ArrowLeft className="h-4 w-4" />
@@ -77,7 +77,7 @@ export const CaseStudyDetailPage: React.FC = () => {
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
             >
               <span>Request Similar Assessment</span>
@@ -102,7 +102,7 @@ export const CaseStudyDetailPage: React.FC = () => {
               Home
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
-            <Link to="/case-studies" className="transition hover:text-amber-800">
+            <Link to="/case-studies/" className="transition hover:text-amber-800">
               Scenarios
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
@@ -180,13 +180,13 @@ export const CaseStudyDetailPage: React.FC = () => {
             {cs.clientType === 'Commercial' ? (
               <>
                 <Link
-                  to="/vastu/commercial"
+                  to="/vastu/commercial/"
                   className="rounded-xl border border-amber-200/80 bg-white px-5 py-3 text-xs font-semibold text-slate-900 shadow-xs transition hover:border-amber-400 hover:text-amber-800"
                 >
                   Commercial Vastu Consultation →
                 </Link>
                 <Link
-                  to="/vastu/office-vastu"
+                  to="/vastu/office-vastu/"
                   className="rounded-xl border border-amber-200/80 bg-white px-5 py-3 text-xs font-semibold text-slate-900 shadow-xs transition hover:border-amber-400 hover:text-amber-800"
                 >
                   Office Layout Planning →
@@ -195,13 +195,13 @@ export const CaseStudyDetailPage: React.FC = () => {
             ) : (
               <>
                 <Link
-                  to="/vastu/residential"
+                  to="/vastu/residential/"
                   className="rounded-xl border border-amber-200/80 bg-white px-5 py-3 text-xs font-semibold text-slate-900 shadow-xs transition hover:border-amber-400 hover:text-amber-800"
                 >
                   Residential Vastu Consultation →
                 </Link>
                 <Link
-                  to="/vastu/apartment-vastu"
+                  to="/vastu/apartment-vastu/"
                   className="rounded-xl border border-amber-200/80 bg-white px-5 py-3 text-xs font-semibold text-slate-900 shadow-xs transition hover:border-amber-400 hover:text-amber-800"
                 >
                   Apartment &amp; Flat Vastu →
@@ -209,7 +209,7 @@ export const CaseStudyDetailPage: React.FC = () => {
               </>
             )}
             <Link
-              to="/vastu/non-demolition"
+              to="/vastu/non-demolition/"
               className="rounded-xl border border-amber-200/80 bg-white px-5 py-3 text-xs font-semibold text-slate-900 shadow-xs transition hover:border-amber-400 hover:text-amber-800"
             >
               Non-Demolition Remedies →
@@ -236,7 +236,7 @@ export const CaseStudyDetailPage: React.FC = () => {
           </p>
           <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-xl shadow-amber-500/20 transition hover:from-amber-300 hover:to-amber-500"
             >
               <span>Request Property Assessment</span>

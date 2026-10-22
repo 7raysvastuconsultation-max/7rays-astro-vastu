@@ -104,7 +104,7 @@ export const AccountDrawer: React.FC = () => {
             </a>
 
             <Link
-              to="/vastu-services"
+              to="/vastu-services/"
               onClick={closeAccount}
               className="flex items-center justify-between px-4 py-3.5 text-xs text-slate-700 hover:bg-amber-50/50"
             >
@@ -116,7 +116,7 @@ export const AccountDrawer: React.FC = () => {
             </Link>
 
             <Link
-              to="/astrology"
+              to="/astrology/"
               onClick={closeAccount}
               className="flex items-center justify-between px-4 py-3.5 text-xs text-slate-700 hover:bg-amber-50/50"
             >
@@ -128,7 +128,7 @@ export const AccountDrawer: React.FC = () => {
             </Link>
 
             <Link
-              to="/contact"
+              to="/contact/"
               onClick={closeAccount}
               className="flex items-center justify-between px-4 py-3.5 text-xs text-slate-700 hover:bg-amber-50/50"
             >

@@ -157,7 +157,7 @@ export const ApartmentVastuPage: React.FC = () => {
                 <ArrowRight className="h-4 w-4" />
               </button>
               <Link
-                to="/vastu/residential"
+                to="/vastu/residential/"
                 className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-5 py-3.5 text-xs font-semibold text-slate-200 backdrop-blur-sm transition hover:border-amber-400/50 hover:text-white"
               >
                 <span>Back to Residential Vastu</span>
@@ -243,7 +243,7 @@ export const ApartmentVastuPage: React.FC = () => {
 
                 <div className="mt-6 border-t border-slate-200 pt-4">
                   <Link
-                    to="/locations/bangalore/residential-vastu"
+                    to="/locations/bangalore/residential-vastu/"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                   >
                     <span>View Bangalore Residential Vastu Services</span>

@@ -223,7 +223,7 @@ export const AstroVastuPage: React.FC = () => {
               Home
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
-            <Link to="/vastu-services" className="transition hover:text-amber-800">
+            <Link to="/vastu-services/" className="transition hover:text-amber-800">
               Services
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />

@@ -94,7 +94,7 @@ export const ProcessPage: React.FC = () => {
 
           <div className="pt-6 text-center">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-md transition hover:from-amber-400 hover:to-amber-500"
             >
               <span>Initiate Your 4-Step Consultation</span>

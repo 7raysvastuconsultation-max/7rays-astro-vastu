@@ -59,7 +59,7 @@ export const FeaturedProjectsSection: React.FC = () => {
             </p>
           </div>
           <Link
-            to="/case-studies"
+            to="/case-studies/"
             className="mt-4 inline-flex items-center gap-1.5 text-xs font-bold text-amber-400 transition hover:text-amber-300 sm:mt-0"
           >
             <span>View Illustrative Scenarios</span>

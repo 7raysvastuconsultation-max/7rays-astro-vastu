@@ -111,7 +111,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
 
             <div className="pt-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
               >
                 <span>Request Non-Demolition Consultation</span>
@@ -370,7 +370,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
 
               <div className="mt-8 border-t border-amber-200/60 pt-6">
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="block w-full rounded-lg bg-amber-600 py-3 text-center text-xs font-bold text-white shadow-md transition hover:bg-amber-700"
                 >
                   Book Your Zero-Demolition Assessment
@@ -420,7 +420,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
           </h2>
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <Link
-              to="/vastu/apartment-vastu"
+              to="/vastu/apartment-vastu/"
               className="group rounded-xl border border-slate-200 p-5 transition hover:border-amber-400 hover:shadow-md"
             >
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700">
@@ -431,7 +431,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/vastu/office-vastu"
+              to="/vastu/office-vastu/"
               className="group rounded-xl border border-slate-200 p-5 transition hover:border-amber-400 hover:shadow-md"
             >
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700">Office Vastu</h3>
@@ -440,7 +440,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/vastu-services/vastu-audit"
+              to="/vastu-services/vastu-audit/"
               className="group rounded-xl border border-slate-200 p-5 transition hover:border-amber-400 hover:shadow-md"
             >
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700">
@@ -451,7 +451,7 @@ export const NonDemolitionVastuPage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/locations/bangalore"
+              to="/locations/bangalore/"
               className="group rounded-xl border border-slate-200 p-5 transition hover:border-amber-400 hover:shadow-md"
             >
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700">

@@ -98,7 +98,7 @@ export const VastuAuditPage: React.FC = () => {
 
             <div className="pt-6">
               <Link
-                to="/contact"
+                to="/contact/"
                 className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
               >
                 <span>Schedule a Property Audit</span>

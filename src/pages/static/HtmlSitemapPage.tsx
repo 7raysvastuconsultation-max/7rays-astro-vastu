@@ -49,52 +49,52 @@ export const HtmlSitemapPage: React.FC = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="hover:text-amber-800">
+                  <Link to="/about/" className="hover:text-amber-800">
                     About 7Rays
                   </Link>
                 </li>
                 <li>
-                  <Link to="/consultant/rishwa-sinha" className="hover:text-amber-800">
+                  <Link to="/consultant/rishwa-sinha/" className="hover:text-amber-800">
                     Lead Consultant (Rishwa Sinha)
                   </Link>
                 </li>
                 <li>
-                  <Link to="/the-7-rays" className="hover:text-amber-800">
+                  <Link to="/the-7-rays/" className="hover:text-amber-800">
                     The 7 Rays Philosophy
                   </Link>
                 </li>
                 <li>
-                  <Link to="/process" className="hover:text-amber-800">
+                  <Link to="/process/" className="hover:text-amber-800">
                     Consultation Process
                   </Link>
                 </li>
                 <li>
-                  <Link to="/faq" className="hover:text-amber-800">
+                  <Link to="/faq/" className="hover:text-amber-800">
                     Frequently Asked Questions (FAQ)
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contact" className="hover:text-amber-800">
+                  <Link to="/contact/" className="hover:text-amber-800">
                     Contact &amp; Bookings
                   </Link>
                 </li>
                 <li>
-                  <Link to="/international" className="hover:text-amber-800">
+                  <Link to="/international/" className="hover:text-amber-800">
                     International &amp; NRI Consultation
                   </Link>
                 </li>
                 <li>
-                  <Link to="/privacy-policy" className="hover:text-amber-800">
+                  <Link to="/privacy-policy/" className="hover:text-amber-800">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="/terms" className="hover:text-amber-800">
+                  <Link to="/terms/" className="hover:text-amber-800">
                     Terms &amp; Conditions
                   </Link>
                 </li>
                 <li>
-                  <Link to="/disclaimer" className="hover:text-amber-800">
+                  <Link to="/disclaimer/" className="hover:text-amber-800">
                     Consultation Disclaimer
                   </Link>
                 </li>
@@ -119,72 +119,72 @@ export const HtmlSitemapPage: React.FC = () => {
               </h2>
               <ul className="space-y-2 text-xs text-slate-700">
                 <li>
-                  <Link to="/vastu-services" className="hover:text-amber-800">
+                  <Link to="/vastu-services/" className="hover:text-amber-800">
                     All Vastu Services
                   </Link>
                 </li>
                 <li>
-                  <Link to="/vastu/residential" className="hover:text-amber-800">
+                  <Link to="/vastu/residential/" className="hover:text-amber-800">
                     Residential Vastu (Bangalore)
                   </Link>
                 </li>
                 <li>
-                  <Link to="/vastu/apartment-vastu" className="hover:text-amber-800">
+                  <Link to="/vastu/apartment-vastu/" className="hover:text-amber-800">
                     Apartment Vastu
                   </Link>
                 </li>
                 <li>
-                  <Link to="/vastu/commercial" className="hover:text-amber-800">
+                  <Link to="/vastu/commercial/" className="hover:text-amber-800">
                     Commercial Office Vastu
                   </Link>
                 </li>
                 <li>
-                  <Link to="/vastu/office-vastu" className="hover:text-amber-800">
+                  <Link to="/vastu/office-vastu/" className="hover:text-amber-800">
                     Office Cabin &amp; Workspace Vastu
                   </Link>
                 </li>
                 <li>
-                  <Link to="/vastu/industrial" className="hover:text-amber-800">
+                  <Link to="/vastu/industrial/" className="hover:text-amber-800">
                     Industrial &amp; Factory Vastu
                   </Link>
                 </li>
                 <li>
-                  <Link to="/vastu/corporate" className="hover:text-amber-800">
+                  <Link to="/vastu/corporate/" className="hover:text-amber-800">
                     Corporate Workplace Vastu
                   </Link>
                 </li>
                 <li>
-                  <Link to="/vastu/non-demolition" className="hover:text-amber-800">
+                  <Link to="/vastu/non-demolition/" className="hover:text-amber-800">
                     Non-Demolition Vastu Remedies
                   </Link>
                 </li>
                 <li>
-                  <Link to="/vastu-services/vastu-audit" className="hover:text-amber-800">
+                  <Link to="/vastu-services/vastu-audit/" className="hover:text-amber-800">
                     Vastu Audit &amp; Energy Scan
                   </Link>
                 </li>
                 <li className="pt-2 font-semibold text-slate-900">
-                  <Link to="/astrology" className="hover:text-amber-800">
+                  <Link to="/astrology/" className="hover:text-amber-800">
                     Vedic Astrology Hub
                   </Link>
                 </li>
                 <li>
-                  <Link to="/astrology/birth-chart" className="hover:text-amber-800">
+                  <Link to="/astrology/birth-chart/" className="hover:text-amber-800">
                     Birth Chart &amp; Kundli Analysis
                   </Link>
                 </li>
                 <li>
-                  <Link to="/astrology/career" className="hover:text-amber-800">
+                  <Link to="/astrology/career/" className="hover:text-amber-800">
                     Career Astrology Guidance
                   </Link>
                 </li>
                 <li>
-                  <Link to="/astrology/business" className="hover:text-amber-800">
+                  <Link to="/astrology/business/" className="hover:text-amber-800">
                     Business &amp; Enterprise Timing
                   </Link>
                 </li>
                 <li>
-                  <Link to="/astrology/marriage" className="hover:text-amber-800">
+                  <Link to="/astrology/marriage/" className="hover:text-amber-800">
                     Marriage &amp; Kundli Milan
                   </Link>
                 </li>
@@ -216,36 +216,36 @@ export const HtmlSitemapPage: React.FC = () => {
               </h2>
               <ul className="space-y-2 text-xs text-slate-700">
                 <li>
-                  <Link to="/locations/bangalore" className="font-semibold hover:text-amber-800">
+                  <Link to="/locations/bangalore/" className="font-semibold hover:text-amber-800">
                     Bangalore Master Hub
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/locations/bangalore/residential-vastu"
+                    to="/locations/bangalore/residential-vastu/"
                     className="hover:text-amber-800"
                   >
                     Bangalore Residential Vastu
                   </Link>
                 </li>
                 <li>
-                  <Link to="/locations/bangalore/commercial-vastu" className="hover:text-amber-800">
+                  <Link to="/locations/bangalore/commercial-vastu/" className="hover:text-amber-800">
                     Bangalore Commercial Vastu
                   </Link>
                 </li>
                 <li>
-                  <Link to="/locations/bangalore/industrial-vastu" className="hover:text-amber-800">
+                  <Link to="/locations/bangalore/industrial-vastu/" className="hover:text-amber-800">
                     Bangalore Industrial Vastu
                   </Link>
                 </li>
                 <li>
-                  <Link to="/locations/bangalore/vastu-audit" className="hover:text-amber-800">
+                  <Link to="/locations/bangalore/vastu-audit/" className="hover:text-amber-800">
                     Bangalore Vastu Energy Audit
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="/locations/bangalore/astrology"
+                    to="/locations/bangalore/astrology/"
                     className="font-medium text-amber-800 hover:text-amber-950"
                   >
                     Bangalore Astrology Desk
@@ -269,7 +269,7 @@ export const HtmlSitemapPage: React.FC = () => {
               </h2>
               <ul className="space-y-2 text-xs text-slate-700">
                 <li>
-                  <Link to="/blog" className="font-semibold hover:text-amber-800">
+                  <Link to="/blog/" className="font-semibold hover:text-amber-800">
                     All Insights / Blog
                   </Link>
                 </li>
@@ -284,7 +284,7 @@ export const HtmlSitemapPage: React.FC = () => {
                   </li>
                 ))}
                 <li className="pt-2">
-                  <Link to="/case-studies" className="font-semibold hover:text-amber-800">
+                  <Link to="/case-studies/" className="font-semibold hover:text-amber-800">
                     All Case Studies
                   </Link>
                 </li>

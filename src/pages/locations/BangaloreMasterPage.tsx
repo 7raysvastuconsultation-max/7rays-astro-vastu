@@ -329,7 +329,7 @@ export const BangaloreMasterPage: React.FC = () => {
               </div>
               <div className="mt-6 border-t border-amber-200 pt-4">
                 <Link
-                  to="/blog/astrology-vs-vastu-difference-and-synthesis"
+                  to="/blog/astrology-vs-vastu-difference-and-synthesis/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950"
                 >
                   <span>Read Astro-Vastu Synthesis</span>

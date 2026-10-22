@@ -125,7 +125,7 @@ export const SevenRaysSection: React.FC = () => {
 
             <div className="pt-2">
               <Link
-                to="/the-7-rays"
+                to="/the-7-rays/"
                 className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-5 py-3 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
               >
                 <span>Learn About The 7 Rays</span>

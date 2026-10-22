@@ -209,7 +209,7 @@ export const AnalyticsDashboardPage: React.FC = () => {
             </button>
 
             <a
-              href="/api/enquiries/export"
+              href="/api/enquiries/export/"
               download
               className="inline-flex items-center gap-2 rounded-lg bg-[#DEB86F] px-4 py-2 text-xs font-bold text-slate-950 shadow-xs transition hover:bg-[#d0a757]"
             >

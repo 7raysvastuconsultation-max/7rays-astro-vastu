@@ -106,14 +106,14 @@ export const ConsultantProfilePage: React.FC = () => {
                   </a>
                 )}
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
                 >
                   <span>Book Consultation with Rishwa</span>
                   <ArrowRight className="h-4 w-4" />
                 </Link>
                 <Link
-                  to="/the-7-rays"
+                  to="/the-7-rays/"
                   className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-5 py-3.5 text-xs font-bold text-slate-200 transition hover:bg-slate-800"
                 >
                   <span>Explore 7 Rays Methodology</span>
@@ -211,7 +211,7 @@ export const ConsultantProfilePage: React.FC = () => {
           </h2>
           <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             <Link
-              to="/vastu/residential"
+              to="/vastu/residential/"
               className="group rounded-xl border border-amber-200/70 bg-white p-5 transition hover:border-amber-400 hover:shadow-md"
             >
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700">
@@ -222,7 +222,7 @@ export const ConsultantProfilePage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/vastu/commercial"
+              to="/vastu/commercial/"
               className="group rounded-xl border border-slate-200 bg-white p-5 transition hover:border-amber-400 hover:shadow-md"
             >
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700">
@@ -233,7 +233,7 @@ export const ConsultantProfilePage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/astrology/birth-chart"
+              to="/astrology/birth-chart/"
               className="group rounded-xl border border-slate-200 bg-white p-5 transition hover:border-amber-400 hover:shadow-md"
             >
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700">
@@ -244,7 +244,7 @@ export const ConsultantProfilePage: React.FC = () => {
               </p>
             </Link>
             <Link
-              to="/international"
+              to="/international/"
               className="group rounded-xl border border-slate-200 bg-white p-5 transition hover:border-amber-400 hover:shadow-md"
             >
               <h3 className="font-bold text-slate-900 group-hover:text-amber-700">

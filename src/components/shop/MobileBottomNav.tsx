@@ -30,7 +30,7 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ onOpenConsulta
 
         {/* Shop */}
         <Link
-          to="/shop"
+          to="/shop/"
           className={`relative flex flex-col items-center gap-1 px-3 py-1 transition ${
             isShopActive ? 'font-bold text-amber-400' : 'text-slate-400 hover:text-slate-200'
           }`}

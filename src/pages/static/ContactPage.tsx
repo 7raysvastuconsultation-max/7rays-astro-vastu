@@ -446,7 +446,7 @@ export const ContactPage: React.FC = () => {
                     />
                     <label htmlFor="agree" className="text-xs text-slate-600">
                       I agree to the{' '}
-                      <Link to="/privacy-policy" className="text-amber-700 hover:underline">
+                      <Link to="/privacy-policy/" className="text-amber-700 hover:underline">
                         Privacy Policy
                       </Link>{' '}
                       and consent to being contacted by 7Rays Astro Vastu.

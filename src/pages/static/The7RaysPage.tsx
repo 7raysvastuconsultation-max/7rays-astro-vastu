@@ -166,7 +166,7 @@ export const The7RaysPage: React.FC = () => {
 
           <div className="pt-8 text-center">
             <Link
-              to="/contact"
+              to="/contact/"
               className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-md transition hover:from-amber-400 hover:to-amber-500"
             >
               <span>Harmonize Your Property With The 7 Rays</span>

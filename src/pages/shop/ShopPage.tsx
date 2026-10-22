@@ -735,14 +735,14 @@ export const ShopPage: React.FC = () => {
               </p>
               <div className="mt-5 flex flex-wrap gap-3">
                 <Link
-                  to="/vastu-services"
+                  to="/vastu-services/"
                   className="inline-flex items-center gap-2 rounded-xl bg-slate-900 px-5 py-2.5 text-xs font-bold text-amber-300 shadow-md transition hover:bg-slate-800"
                 >
                   <span>Book Vastu Audit Consultation</span>
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
                 <Link
-                  to="/contact"
+                  to="/contact/"
                   className="inline-flex items-center gap-2 rounded-xl border border-amber-300 bg-white px-5 py-2.5 text-xs font-bold text-amber-900 transition hover:bg-amber-50"
                 >
                   <span>Contact Bangalore Desk</span>

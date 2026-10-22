@@ -350,7 +350,7 @@ export const CommercialVastuPage: React.FC = () => {
               Home
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
-            <Link to="/vastu-services" className="transition hover:text-amber-700">
+            <Link to="/vastu-services/" className="transition hover:text-amber-700">
               Vastu Services
             </Link>
             <ChevronRight className="h-3 w-3 text-slate-400" />
@@ -492,7 +492,7 @@ export const CommercialVastuPage: React.FC = () => {
             </div>
             <div>
               <Link
-                to="/vastu-services"
+                to="/vastu-services/"
                 className="group inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-800"
               >
                 <span>View All Services</span>
@@ -585,7 +585,7 @@ export const CommercialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/vastu/office-vastu"
+                  to="/vastu/office-vastu/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Office Vastu Hub</span>
@@ -611,7 +611,7 @@ export const CommercialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/blog/office-layout-executive-cabin-vastu"
+                  to="/blog/office-layout-executive-cabin-vastu/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Accounts Placement Guide</span>
@@ -637,7 +637,7 @@ export const CommercialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/vastu/corporate"
+                  to="/vastu/corporate/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Corporate Hub</span>
@@ -663,7 +663,7 @@ export const CommercialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/blog/retail-store-and-showroom-vastu"
+                  to="/blog/retail-store-and-showroom-vastu/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Retail Showroom Guide</span>
@@ -689,7 +689,7 @@ export const CommercialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/blog/restaurant-and-hospitality-vastu"
+                  to="/blog/restaurant-and-hospitality-vastu/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read Hospitality Guide</span>
@@ -715,7 +715,7 @@ export const CommercialVastuPage: React.FC = () => {
               </p>
               <div className="mt-4 border-t border-slate-200/70 pt-3">
                 <Link
-                  to="/vastu/industrial"
+                  to="/vastu/industrial/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Explore Industrial Hub</span>
@@ -932,7 +932,7 @@ export const CommercialVastuPage: React.FC = () => {
 
                 <div className="mt-6 space-y-3">
                   <Link
-                    to="/locations/bangalore/commercial-vastu"
+                    to="/locations/bangalore/commercial-vastu/"
                     className="flex w-full items-center justify-center gap-2 rounded-lg bg-slate-900 px-4 py-3 text-xs font-bold text-amber-300 transition hover:bg-slate-800"
                   >
                     <span>View Bangalore Commercial Landing Page</span>
@@ -1068,7 +1068,7 @@ export const CommercialVastuPage: React.FC = () => {
                   </p>
                 </div>
                 <Link
-                  to="/case-studies"
+                  to="/case-studies/"
                   className="group inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-800"
                 >
                   <span>View All Assessments</span>

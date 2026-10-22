@@ -1,16 +1,16 @@
 # Bangalore Local Hub Aliases
-/vastu-consultant-in-bangalore     /locations/bangalore/ 301
-/vastu-consultant-in-bangalore/    /locations/bangalore/ 301
-/vastu-consultant-bangalore        /locations/bangalore/ 301
-/vastu-consultant-bangalore/       /locations/bangalore/ 301
-/vastu-consultant-in-bengaluru     /locations/bangalore/ 301
-/vastu-consultant-in-bengaluru/    /locations/bangalore/ 301
+/vastu-consultant-in-bangalore      /locations/bangalore/               301
+/vastu-consultant-in-bangalore/     /locations/bangalore/               301
+/vastu-consultant-bangalore         /locations/bangalore/               301
+/vastu-consultant-bangalore/        /locations/bangalore/               301
+/vastu-consultant-in-bengaluru      /locations/bangalore/               301
+/vastu-consultant-in-bengaluru/     /locations/bangalore/               301
 
-/locations/mumbai /locations/mumbai/ 301
-/locations/delhi-ncr /locations/delhi-ncr/ 301
-/locations/hyderabad /locations/hyderabad/ 301
-/locations/pune /locations/pune/ 301
-/locations/kolkata /locations/kolkata/ 301
+/locations/mumbai                   /locations/mumbai/                  301
+/locations/delhi-ncr                /locations/delhi-ncr/               301
+/locations/hyderabad                /locations/hyderabad/               301
+/locations/pune                     /locations/pune/                    301
+/locations/kolkata                  /locations/kolkata/                 301
 # ============================================================
 # 7Rays Astro Vastu — Cloudflare Pages Edge Redirects
 # ============================================================
@@ -18,26 +18,26 @@
 # 0. Canonical Host Normalization (www -> apex)
 
 # 1. Service & National Landing Page Aliases (301 Permanent)
-/online-vastu-consultation-india  /services/online-vastu-consultation  301
-/astro-vastu-consultation          /services/astro-vastu-synthesis      301
-/vastu/online                      /services/online-vastu-consultation  301
-/vastu/astro                       /services/astro-vastu-synthesis      301
-/services                          /vastu-services                      301
-/services/                         /vastu-services                      301
+/online-vastu-consultation-india    /services/online-vastu-consultation/ 301
+/astro-vastu-consultation           /services/astro-vastu-synthesis/    301
+/vastu/online                       /services/online-vastu-consultation/ 301
+/vastu/astro                        /services/astro-vastu-synthesis/    301
+/services                           /vastu-services/                    301
+/services/                          /vastu-services/                    301
 
 # 2. Blog & Insights Hierarchy Normalization (301 Permanent)
-/insights                          /blog/                               301
-/insights/                         /blog/                               301
-/insights/commercial-vastu/:slug   /blog/:slug                          301
-/insights/residential-vastu/:slug  /blog/:slug                          301
-/insights/astrology/:slug          /blog/:slug                          301
-/blog/commercial-vastu/:slug       /blog/:slug                          301
-/blog/residential-vastu/:slug      /blog/:slug                          301
-/blog/astrology/:slug              /blog/:slug                          301
-/insights/*                        /blog/:splat                         301
+/insights                           /blog/                              301
+/insights/                          /blog/                              301
+/insights/commercial-vastu/:slug    /blog/:slug                         301
+/insights/residential-vastu/:slug   /blog/:slug                         301
+/insights/astrology/:slug           /blog/:slug                         301
+/blog/commercial-vastu/:slug        /blog/:slug                         301
+/blog/residential-vastu/:slug       /blog/:slug                         301
+/blog/astrology/:slug               /blog/:slug                         301
+/insights/*                         /blog/:splat                        301
 
-/services/astro-vastu-consultation    /services/astro-vastu-synthesis/    301
-/services/astro-vastu-consultation/   /services/astro-vastu-synthesis/    301
-/astro-vastu-consultation/            /services/astro-vastu-synthesis/    301
-/services/online-vastu-consultation   /services/online-vastu-consultation/ 301
-/services/astro-vastu-synthesis      /services/astro-vastu-synthesis/    301
+/services/astro-vastu-consultation  /services/astro-vastu-synthesis/    301
+/services/astro-vastu-consultation/ /services/astro-vastu-synthesis/    301
+/astro-vastu-consultation/          /services/astro-vastu-synthesis/    301
+/services/online-vastu-consultation /services/online-vastu-consultation/ 301
+/services/astro-vastu-synthesis     /services/astro-vastu-synthesis/    301
