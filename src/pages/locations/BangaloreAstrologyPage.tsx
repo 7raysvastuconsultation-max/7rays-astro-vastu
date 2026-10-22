@@ -11,6 +11,8 @@ import {
   CheckCircle2,
   Plus,
   Minus,
+  PhoneCall,
+  Sparkles,
 } from 'lucide-react'
 import { SEOHead } from '@/components/seo/SEOHead'
 import { BreadcrumbSchema } from '@/components/seo/schemas/BreadcrumbSchema'
@@ -128,52 +130,106 @@ export const BangaloreAstrologyPage: React.FC = () => {
       <FAQSchema items={localAstrologyFaqs} />
 
       {/* Hero Section */}
-      <section className="relative min-h-[520px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
+      <section className="relative min-h-[560px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-24">
         <div className="absolute inset-0 z-0">
           <img
             src="/images/astrology-hero-study.webp"
             width={1376}
             height={768}
             alt="Vedic astrology chart analysis in Bangalore studio"
-            className="h-full w-full object-cover object-center brightness-60"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
+            className="h-full w-full object-cover object-center brightness-[0.38]"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-950/50" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/85 to-slate-950/50" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-slate-950/60" />
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-2xl py-6 sm:py-10">
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-amber-300 uppercase backdrop-blur-md">
-              <span>BENGALURU • IN-PERSON &amp; ONLINE SESSIONS</span>
+          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
+            <div className="py-6 sm:py-10 lg:col-span-7">
+              <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-amber-300 uppercase backdrop-blur-md">
+                <span>BENGALURU • IN-PERSON &amp; ONLINE SESSIONS</span>
+              </div>
+
+              <h1 className="font-serif text-3xl leading-tight font-bold text-white sm:text-5xl lg:text-6xl">
+                Vedic Astrology
+                <br />
+                <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">
+                  Consultant in Bangalore
+                </span>
+              </h1>
+
+              <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base font-light">
+                Personalized Vedic birth chart (Kundli) consultations in Bengaluru. Understand your
+                planetary cycles, professional timing, and personal strengths with ethical,
+                non-fatalistic guidance led by Certified Vastu Consultant Rishwa Sinha.
+              </p>
+
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <button
+                  onClick={() => openBooking('Bangalore Vedic Astrology Consultation')}
+                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-xl shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
+                >
+                  <span>Book Bangalore Consultation</span>
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+                <Link
+                  to="/astrology"
+                  className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/80 px-6 py-3.5 text-sm font-semibold text-slate-200 backdrop-blur-sm transition hover:border-amber-400/50 hover:text-white"
+                >
+                  <span>Astrology Pillar Overview</span>
+                </Link>
+              </div>
             </div>
 
-            <h1 className="font-serif text-3xl leading-tight font-bold text-white sm:text-5xl lg:text-6xl">
-              Vedic Astrology
-              <br />
-              <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">
-                Consultant in Bangalore
-              </span>
-            </h1>
+            {/* Right Column: Architectural / Vedic Preview Card (Desktop) */}
+            <div className="hidden lg:col-span-5 lg:block">
+              <div className="rounded-2xl border border-amber-400/30 bg-slate-900/80 p-7 backdrop-blur-md shadow-2xl space-y-5">
+                <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                  <span className="inline-flex items-center gap-1.5 text-xs font-bold tracking-wider text-amber-400 uppercase">
+                    <Sparkles className="h-3.5 w-3.5" />
+                    Ethical &amp; Non-Fatalistic
+                  </span>
+                  <span className="rounded-full bg-emerald-500/10 px-2.5 py-0.5 text-[11px] font-semibold text-emerald-400">
+                    In-Person &amp; Video
+                  </span>
+                </div>
 
-            <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base">
-              Personalized Vedic birth chart (Kundli) consultations in Bengaluru. Understand your
-              planetary cycles, professional timing, and personal strengths with ethical,
-              non-fatalistic guidance led by Rishwa Sinha.
-            </p>
+                <div className="space-y-3">
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 text-amber-400 shrink-0" />
+                    <span className="text-xs text-slate-300 leading-relaxed">
+                      <strong>Kundli &amp; Dasha Synthesis:</strong> Precise birth chart analysis mapping Mahadasha / Antardasha timelines to career and family decisions.
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 text-amber-400 shrink-0" />
+                    <span className="text-xs text-slate-300 leading-relaxed">
+                      <strong>Zero Superstition:</strong> No fear-mongering, no forced expensive gemstones, and transparent astronomical calculations.
+                    </span>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 text-amber-400 shrink-0" />
+                    <span className="text-xs text-slate-300 leading-relaxed">
+                      <strong>Astro-Vastu Integration:</strong> Align your residential floor plan energy zones with your active planetary cycles.
+                    </span>
+                  </div>
+                </div>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <button
-                onClick={() => openBooking('Bangalore Vedic Astrology Consultation')}
-                className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
-              >
-                <span>Book Bangalore Consultation</span>
-                <ArrowRight className="h-4 w-4" />
-              </button>
-              <Link
-                to="/astrology"
-                className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-5 py-3.5 text-xs font-semibold text-slate-200 backdrop-blur-sm transition hover:border-amber-400/50 hover:text-white"
-              >
-                <span>Astrology Pillar Overview</span>
-              </Link>
+                <div className="rounded-xl border border-amber-500/20 bg-amber-500/10 p-4">
+                  <p className="text-[11px] font-semibold text-amber-200 uppercase tracking-wider">Consultation Desk</p>
+                  <p className="mt-1 text-xs text-slate-300">Dasarahalli registered office (560024) or screen-share session via Zoom / Meet.</p>
+                </div>
+
+                <div className="flex items-center justify-between pt-1 text-xs text-slate-400">
+                  <span>Questions? Direct Desk:</span>
+                  <a href={`tel:${businessConfig.phone || '+91 70910 21616'}`} className="font-semibold text-amber-400 hover:text-amber-300 inline-flex items-center gap-1">
+                    <PhoneCall className="h-3 w-3" /> {businessConfig.displayPhone || '+91 70910 21616'}
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -428,30 +484,81 @@ export const BangaloreAstrologyPage: React.FC = () => {
         </div>
       </section>
 
-      {/* Local Booking CTA */}
-      <section className="bg-slate-950 py-16 text-center text-white sm:py-20">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
-          <h2 className="font-serif text-3xl font-bold text-white sm:text-4xl">
-            Book Your Bangalore Astrology Session
-          </h2>
-          <p className="mx-auto mt-3 max-w-xl text-xs leading-relaxed text-slate-300 sm:text-sm">
-            Experience structured Vedic horoscope analysis with Certified Vastu Consultant Rishwa
-            Sinha. In-person at our Dasarahalli desk or via high-definition video call.
-          </p>
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-            <button
-              onClick={() => openBooking('Bangalore Vedic Astrology Consultation')}
-              className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"
-            >
-              <span>Schedule Bangalore Session</span>
-              <ArrowRight className="h-4 w-4" />
-            </button>
-            <Link
-              to="/locations/bangalore"
-              className="inline-flex items-center gap-2 rounded-lg border border-slate-700 bg-slate-900/60 px-5 py-3.5 text-xs font-semibold text-slate-200 transition hover:border-amber-400/50 hover:text-white"
-            >
-              <span>Bangalore Master Hub</span>
-            </Link>
+      {/* Signature Pre-Footer Sunset Villa CTA Banner */}
+      <section className="relative overflow-hidden py-20 text-center sm:py-24">
+        <img
+          src="/images/cta-sunset-villa.webp"
+          width={1376}
+          height={768}
+          alt="Luxury architectural villa sunset for Bangalore Vedic astrology consultations"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-slate-950/45" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-950/60" />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+            {/* Left: Heading & Buttons */}
+            <div className="space-y-6 text-center lg:col-span-8 lg:text-left">
+              <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-amber-300 uppercase backdrop-blur-md">
+                <span>IN-PERSON &amp; DIGITAL CHART ADVISORY • BENGALURU</span>
+              </div>
+              <h2 className="font-serif text-3xl leading-tight font-bold text-slate-100 sm:text-5xl">
+                Gain Astronomical Clarity on <br />
+                <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">
+                  Your Life &amp; Career Trajectory
+                </span>
+              </h2>
+              <p className="max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base font-light">
+                Schedule a deep-dive birth chart reading with Certified Vastu Consultant Rishwa Sinha. In-person at our registered Dasarahalli consulting office or via high-definition video call with interactive Kundli screen-sharing.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-4 pt-2 lg:justify-start">
+                <button
+                  onClick={() => openBooking('Bangalore Vedic Astrology Consultation')}
+                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-xl shadow-amber-500/30 transition hover:from-amber-300 hover:to-amber-500"
+                >
+                  <span>Schedule Bangalore Session</span>
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+                <a
+                  href={`tel:${businessConfig.phone || '+91 70910 21616'}`}
+                  className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/90 px-6 py-3.5 text-sm font-semibold text-slate-200 transition hover:border-amber-400/50 hover:text-white"
+                >
+                  <PhoneCall className="h-4 w-4 text-amber-400" />
+                  <span>Call {businessConfig.displayPhone || '+91 70910 21616'}</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Right: Translucent Trust Card */}
+            <div className="lg:col-span-4">
+              <div className="rounded-2xl border border-amber-400/30 bg-slate-900/80 p-6 text-left backdrop-blur-md shadow-2xl">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/20 text-amber-400">
+                    <ShieldCheck className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold tracking-wider text-amber-300 uppercase">Registered Bangalore HQ</p>
+                    <p className="text-sm font-semibold text-white">Dasarahalli, Bengaluru</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-xs leading-relaxed text-slate-300">
+                  Private one-on-one sessions held at Balaji Layout, Dasarahalli (560024) by prior reservation. Screen-share digital sessions available across India.
+                </p>
+                <div className="mt-4 border-t border-slate-800 pt-3 flex items-center justify-between text-[11px] text-slate-400">
+                  <span>Pincode: 560024 HQ</span>
+                  <span className="text-amber-400 font-medium">Google Maps Verified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer Quick Links */}
+          <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-slate-800 pt-6 text-xs text-slate-400">
+            <Link to="/locations/bangalore" className="hover:text-amber-300">Bangalore Master Hub</Link>
+            <Link to="/locations/" className="hover:text-amber-300">All Locations</Link>
+            <Link to="/astrology/" className="hover:text-amber-300">Vedic Astrology</Link>
+            <Link to="/consultant/rishwa-sinha/" className="hover:text-amber-300">Consultant Profile</Link>
           </div>
         </div>
       </section>

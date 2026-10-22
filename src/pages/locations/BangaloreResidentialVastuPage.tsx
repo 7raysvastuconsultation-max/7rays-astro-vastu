@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { MapPin, ArrowRight, Plus, Minus } from 'lucide-react'
+import { MapPin, ArrowRight, Plus, Minus, PhoneCall, ShieldCheck } from 'lucide-react'
 import { SEOHead } from '@/components/seo/SEOHead'
 import { BreadcrumbSchema } from '@/components/seo/schemas/BreadcrumbSchema'
 import { LocalBusinessSchema } from '@/components/seo/schemas/LocalBusinessSchema'
@@ -262,14 +262,84 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
             })}
           </div>
 
-          <div className="mt-12 text-center">
-            <button
-              onClick={() => openBooking('Bangalore Residential Vastu Consultation')}
-              className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-md transition hover:from-amber-400 hover:to-amber-500"
-            >
-              <span>Schedule Bangalore Home Inspection</span>
-              <ArrowRight className="h-4 w-4" />
-            </button>
+        </div>
+      </section>
+
+      {/* Signature Pre-Footer Sunset Villa CTA Banner */}
+      <section className="relative overflow-hidden py-20 text-center sm:py-24">
+        <img
+          src="/images/cta-sunset-villa.webp"
+          width={1376}
+          height={768}
+          alt="Luxury architectural villa sunset for Bangalore residential Vastu consultations"
+          className="absolute inset-0 h-full w-full object-cover object-center"
+        />
+        <div className="absolute inset-0 bg-slate-950/45" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-950/60" />
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
+            {/* Left: Heading & Buttons */}
+            <div className="space-y-6 text-center lg:col-span-8 lg:text-left">
+              <div className="inline-flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-amber-300 uppercase backdrop-blur-md">
+                <span>ON-SITE RESIDENTIAL VISITS • BENGALURU</span>
+              </div>
+              <h2 className="font-serif text-3xl leading-tight font-bold text-slate-100 sm:text-5xl">
+                Ready to Balance the Energy <br />
+                <span className="bg-gradient-to-r from-amber-400 via-amber-200 to-amber-500 bg-clip-text text-transparent">
+                  of Your Bangalore Home?
+                </span>
+              </h2>
+              <p className="max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base font-light">
+                Schedule an in-person walkthrough or digital CAD audit with Certified Vastu Consultant Rishwa Sinha. 100% non-demolition remedies tailored to your family's floor plan.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-4 pt-2 lg:justify-start">
+                <button
+                  onClick={() => openBooking('Bangalore Residential Vastu Consultation')}
+                  className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 px-7 py-3.5 text-sm font-bold text-slate-950 shadow-xl shadow-amber-500/30 transition hover:from-amber-300 hover:to-amber-500"
+                >
+                  <span>Schedule Bangalore Home Inspection</span>
+                  <ArrowRight className="h-4 w-4" />
+                </button>
+                <a
+                  href={`tel:${businessConfig.phone || '+91 70910 21616'}`}
+                  className="inline-flex items-center gap-2 rounded-xl border border-slate-700 bg-slate-900/90 px-6 py-3.5 text-sm font-semibold text-slate-200 transition hover:border-amber-400/50 hover:text-white"
+                >
+                  <PhoneCall className="h-4 w-4 text-amber-400" />
+                  <span>Call {businessConfig.displayPhone || '+91 70910 21616'}</span>
+                </a>
+              </div>
+            </div>
+
+            {/* Right: Translucent Trust Card */}
+            <div className="lg:col-span-4">
+              <div className="rounded-2xl border border-amber-400/30 bg-slate-900/80 p-6 text-left backdrop-blur-md shadow-2xl">
+                <div className="flex items-center gap-3">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/20 text-amber-400">
+                    <ShieldCheck className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <p className="text-xs font-bold tracking-wider text-amber-300 uppercase">Single Registered HQ</p>
+                    <p className="text-sm font-semibold text-white">Dasarahalli, Bengaluru</p>
+                  </div>
+                </div>
+                <p className="mt-4 text-xs leading-relaxed text-slate-300">
+                  Physical on-site inspections conducted throughout East, West, North, and South Bangalore apartments, villas, and independent floors.
+                </p>
+                <div className="mt-4 border-t border-slate-800 pt-3 flex items-center justify-between text-[11px] text-slate-400">
+                  <span>Pincode: 560024 HQ</span>
+                  <span className="text-amber-400 font-medium">Google Maps Verified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer Quick Links */}
+          <div className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 border-t border-slate-800 pt-6 text-xs text-slate-400">
+            <Link to="/locations/bangalore" className="hover:text-amber-300">Bangalore Master Hub</Link>
+            <Link to="/locations/" className="hover:text-amber-300">All Locations</Link>
+            <Link to="/vastu/apartment-vastu/" className="hover:text-amber-300">Apartment Vastu</Link>
+            <Link to="/consultant/rishwa-sinha/" className="hover:text-amber-300">Consultant Profile</Link>
           </div>
         </div>
       </section>
