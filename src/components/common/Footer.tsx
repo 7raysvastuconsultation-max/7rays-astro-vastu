@@ -55,6 +55,20 @@ export const Footer: React.FC = () => {
             {/* Social Icons (Verified Only) */}
             <div className="pt-2">
               <div className="flex items-center gap-3 text-slate-400">
+                {siteConfig.social.facebook && (
+                  <a
+                    href={siteConfig.social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-800 bg-slate-900/60 text-slate-300 transition hover:border-amber-500/40 hover:bg-amber-500/10 hover:text-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-slate-950"
+                    aria-label="Follow 7Rays Astro Vastu on Facebook (opens in new tab)"
+                  >
+                    <svg aria-hidden="true" focusable="false" className="h-4 w-4 fill-current" viewBox="0 0 24 24">
+                      <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                    </svg>
+                    <span className="sr-only">Follow 7Rays Astro Vastu on Facebook (opens in new tab)</span>
+                  </a>
+                )}
                 {siteConfig.social.instagram && (
                   <a
                     href={siteConfig.social.instagram}
@@ -225,6 +239,24 @@ export const Footer: React.FC = () => {
                   {siteConfig.contact.email}
                 </a>
               </div>
+              {siteConfig.social.facebook && (
+                <div className="flex items-center gap-2.5">
+                  <span aria-hidden="true" className="flex h-4 w-4 shrink-0 items-center justify-center text-amber-400">
+                    <svg className="h-3.5 w-3.5 fill-current" viewBox="0 0 24 24" focusable="false" aria-hidden="true">
+                      <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                    </svg>
+                  </span>
+                  <a
+                    href={siteConfig.social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-amber-400"
+                    aria-label="Facebook page: 7 Rays (opens in new tab)"
+                  >
+                    Facebook: 7 Rays
+                  </a>
+                </div>
+              )}
               {siteConfig.social.instagram && (
                 <div className="flex items-center gap-2.5">
                   <span

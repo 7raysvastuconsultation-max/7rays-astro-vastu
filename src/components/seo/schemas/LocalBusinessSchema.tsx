@@ -16,7 +16,7 @@ import type { LocalBusinessSchemaProps } from '@/types/seo'
  *
  * Single HQ: Only one address/location. No branch fabrication.
  *
- * sameAs lists the official Instagram business profile supplied by the owner.
+ * sameAs lists the official social business profiles (Instagram, Facebook) supplied by the owner.
  * The Google Maps URL remains in hasMap because it identifies the location.
  */
 export const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
@@ -45,9 +45,13 @@ export const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
     description,
     url,
     priceRange: "₹₹",
-    ...(businessConfig.socialProfiles.instagram && {
-      sameAs: [businessConfig.socialProfiles.instagram],
-    }),
+    ...(() => {
+      const profiles = [
+        businessConfig.socialProfiles.instagram,
+        businessConfig.socialProfiles.facebook,
+      ].filter((url): url is string => Boolean(url));
+      return profiles.length > 0 ? { sameAs: profiles } : {};
+    })(),
     image,
     // Maps URL correctly placed in hasMap (a location reference, not an identity)
     hasMap: businessConfig.googleMapsUrl,

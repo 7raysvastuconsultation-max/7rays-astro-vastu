@@ -91,6 +91,20 @@ export const ConsultantProfilePage: React.FC = () => {
                     <span>Follow @7rays_rs</span>
                   </a>
                 )}
+                {siteConfig.social.facebook && (
+                  <a
+                    href={siteConfig.social.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-amber-500/40 bg-amber-500/10 px-5 py-3.5 text-xs font-semibold text-amber-300 transition hover:bg-amber-500/20"
+                    aria-label="Follow 7Rays Astro Vastu on Facebook (opens in new tab)"
+                  >
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="h-4 w-4 text-amber-400">
+                      <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                    </svg>
+                    <span>Connect on Facebook</span>
+                  </a>
+                )}
                 <Link
                   to="/contact"
                   className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"

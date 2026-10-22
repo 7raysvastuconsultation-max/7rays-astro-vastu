@@ -15,7 +15,7 @@ import type { PersonSchemaProps } from '@/types/seo'
  * hasCredential: name-only. No issuing organization, URL, or credential number
  * is recorded because none has been verified. Simplest valid form only.
  *
- * sameAs: Omitted because the supplied Instagram URL is the business profile,
+ * sameAs: Omitted because the supplied Instagram and Facebook URLs are business profiles,
  * not a verified personal identity profile for this Person entity.
  */
 export const PersonSchema: React.FC<PersonSchemaProps> = ({

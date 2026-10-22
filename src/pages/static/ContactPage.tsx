@@ -546,6 +546,29 @@ export const ContactPage: React.FC = () => {
                     </div>
                   </div>
 
+                  {/* Facebook Page */}
+                  {siteConfig.social.facebook && (
+                    <div className="flex items-start gap-3.5">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-700">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5">
+                          <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="text-xs font-bold text-slate-900 sm:text-sm">Facebook</h3>
+                        <a
+                          href={siteConfig.social.facebook}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-0.5 block text-xs font-semibold text-slate-700 transition hover:text-blue-700"
+                        >
+                          7 Rays
+                        </a>
+                        <p className="text-[11px] text-slate-500">Updates &amp; community discussions</p>
+                      </div>
+                    </div>
+                  )}
+
                   {/* Instagram Channel */}
                   {siteConfig.social.instagram && (
                     <div className="flex items-start gap-3.5">

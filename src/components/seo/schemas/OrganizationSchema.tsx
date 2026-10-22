@@ -26,9 +26,13 @@ export const OrganizationSchema: React.FC = () => {
     name: businessConfig.businessName,
     legalName: businessConfig.legalBusinessName,
     url: siteConfig.url,
-    ...(businessConfig.socialProfiles.instagram && {
-      sameAs: [businessConfig.socialProfiles.instagram],
-    }),
+    ...(() => {
+      const profiles = [
+        businessConfig.socialProfiles.instagram,
+        businessConfig.socialProfiles.facebook,
+      ].filter((url): url is string => Boolean(url));
+      return profiles.length > 0 ? { sameAs: profiles } : {};
+    })(),
     logo: {
       '@type': 'ImageObject',
       url: siteConfig.logoUrl,
