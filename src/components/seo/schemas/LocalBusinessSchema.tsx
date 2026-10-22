@@ -16,9 +16,8 @@ import type { LocalBusinessSchemaProps } from '@/types/seo'
  *
  * Single HQ: Only one address/location. No branch fabrication.
  *
- * sameAs: Omitted. The Maps short-link (googleMapsUrl / gbpUrl) is used in
- * hasMap (correct — it is a map link). It is not appropriate for sameAs, which
- * requires an authoritative identity URL. Will be added when confirmed.
+ * sameAs lists the official Instagram business profile supplied by the owner.
+ * The Google Maps URL remains in hasMap because it identifies the location.
  */
 export const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
   name = businessConfig.businessName,
@@ -46,6 +45,9 @@ export const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
     description,
     url,
     priceRange: "₹₹",
+    ...(businessConfig.socialProfiles.instagram && {
+      sameAs: [businessConfig.socialProfiles.instagram],
+    }),
     image,
     // Maps URL correctly placed in hasMap (a location reference, not an identity)
     hasMap: businessConfig.googleMapsUrl,

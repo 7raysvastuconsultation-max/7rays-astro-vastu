@@ -75,6 +75,22 @@ export const ConsultantProfilePage: React.FC = () => {
               </p>
 
               <div className="mt-8 flex flex-wrap items-center gap-4">
+                {siteConfig.social.instagram && (
+                  <a
+                    href={siteConfig.social.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-lg border border-amber-500/40 bg-amber-500/10 px-5 py-3.5 text-xs font-semibold text-amber-300 transition hover:bg-amber-500/20"
+                    aria-label="Follow Rishwa Sinha on Instagram @7rays_rs"
+                  >
+                    <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-4 w-4 text-amber-400">
+                      <rect x="3" y="3" width="18" height="18" rx="5" />
+                      <circle cx="12" cy="12" r="4" />
+                      <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" />
+                    </svg>
+                    <span>Follow @7rays_rs</span>
+                  </a>
+                )}
                 <Link
                   to="/contact"
                   className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-amber-400 to-amber-600 px-6 py-3.5 text-xs font-bold text-slate-950 shadow-lg shadow-amber-500/25 transition hover:from-amber-300 hover:to-amber-500"

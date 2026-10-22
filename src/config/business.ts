@@ -92,7 +92,7 @@ export const businessConfig: BusinessConfig = {
   logo: 'https://7raysastrovastu.in/images/og-image.svg',
   socialProfiles: {
     facebook: null,
-    instagram: null,
+    instagram: 'https://www.instagram.com/7rays_rs/',
     youtube: null,
     linkedin: null,
     twitter: null,

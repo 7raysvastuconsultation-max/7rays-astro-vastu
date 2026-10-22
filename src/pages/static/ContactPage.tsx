@@ -546,6 +546,32 @@ export const ContactPage: React.FC = () => {
                     </div>
                   </div>
 
+                  {/* Instagram Channel */}
+                  {siteConfig.social.instagram && (
+                    <div className="flex items-start gap-3.5">
+                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-pink-50 text-pink-700">
+                        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" className="h-5 w-5">
+                          <rect x="3" y="3" width="18" height="18" rx="5" />
+                          <circle cx="12" cy="12" r="4" />
+                          <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" />
+                        </svg>
+                      </div>
+                      <div>
+                        <h3 className="text-xs font-bold text-slate-900 sm:text-sm">Instagram</h3>
+                        <a
+                          href={siteConfig.social.instagram}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="mt-0.5 block text-xs font-semibold text-slate-700 transition hover:text-pink-700"
+                        >
+                          @7rays_rs
+                        </a>
+                        <p className="text-[11px] text-slate-500">Case studies &amp; Vastu insights</p>
+                      </div>
+                    </div>
+                  )}
+
+
                   {/* Email Us */}
                   <div className="flex items-start gap-3.5">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-amber-50 text-amber-700">

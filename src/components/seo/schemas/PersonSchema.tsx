@@ -15,10 +15,8 @@ import type { PersonSchemaProps } from '@/types/seo'
  * hasCredential: name-only. No issuing organization, URL, or credential number
  * is recorded because none has been verified. Simplest valid form only.
  *
- * sameAs: Omitted. No verified external identity URL (social profile, Wikidata,
- * GBP profile page) is currently available. The Maps short-link stored in
- * gbpUrl is a location link, not an identity page, and is not appropriate for
- * sameAs. Will be added when a verified identity profile is confirmed.
+ * sameAs: Omitted because the supplied Instagram URL is the business profile,
+ * not a verified personal identity profile for this Person entity.
  */
 export const PersonSchema: React.FC<PersonSchemaProps> = ({
   name = businessConfig.ownerName,
