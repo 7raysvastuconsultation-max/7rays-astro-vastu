@@ -100,10 +100,16 @@ export const MarriageAstrologyPage: React.FC = () => {
             src="/images/services/astro-relationship.webp"
             width={1376}
             height={768}
-            alt="Relationship and Marriage Astrology Harmony"
-            className="h-full w-full object-cover object-center brightness-60"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
+            className="h-full w-full object-cover object-center"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/80 to-slate-950/60" />
+          {/* Left-side directional scrim ensuring crystal-clear text contrast while keeping image bright & visible */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-slate-950/20 lg:via-slate-950/50 lg:to-transparent" />
+          {/* Subtle top & bottom edge blend into adjacent sections */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-slate-950/70 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/80 to-transparent" />
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">

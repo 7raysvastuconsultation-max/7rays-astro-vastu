@@ -138,10 +138,25 @@ export const OnlineVastuPage: React.FC = () => {
 
       <FAQSchema items={faqs} />
 
-      {/* 1. HERO SECTION (Dark Luxury with Golden Glow) */}
+      {/* 1. HERO SECTION (Dark Luxury with Architectural Hero Image) */}
       <section className="relative min-h-[520px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
-        <div className="pointer-events-none absolute inset-0 bg-radial-gradient from-amber-500/10 via-transparent to-transparent opacity-50" />
-        <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/services/residential-apartment.webp"
+            alt="Scientific Online Vastu Consultation with CAD Floor Plan Analysis"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
+            width={1200}
+            height={896}
+            className="h-full w-full object-cover object-center"
+          />
+          {/* Subtle dark gradient overlay allowing image to shine through vividly */}
+          <div className="absolute inset-0 bg-gradient-to-b from-slate-950/85 via-slate-950/65 to-slate-950/90" />
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-slate-950/70 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/80 to-transparent" />
+        </div>
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-amber-300 uppercase backdrop-blur-md">
               <Globe2 className="h-3.5 w-3.5" />

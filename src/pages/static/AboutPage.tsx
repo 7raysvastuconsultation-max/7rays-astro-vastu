@@ -73,9 +73,9 @@ export const AboutPage: React.FC = () => {
           decoding="sync"
           width={1376}
           height={768}
-          className="absolute inset-0 h-full w-full object-cover object-center brightness-60"
+          className="absolute inset-0 h-full w-full object-cover object-center brightness-85"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-950/80" />
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/80 via-slate-950/50 to-slate-950/70" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(245,158,11,0.15),transparent_60%)]" />
 
         <div className="relative z-10 mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">

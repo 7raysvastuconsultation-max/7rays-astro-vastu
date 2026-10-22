@@ -57,8 +57,27 @@ export const VastuAuditPage: React.FC = () => {
       />
       <FAQSchema items={faqs} />
 
-      <section className="border-b border-amber-500/20 bg-slate-950 py-16 text-slate-100 sm:py-24">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      {/* Hero Section */}
+      <section className="relative min-h-[540px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:min-h-[580px] sm:pt-36 sm:pb-20">
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/images/services/vastu-audit.webp"
+            alt="Scientific Vastu Audit CAD Layout and Compass Scanning"
+            fetchPriority="high"
+            loading="eager"
+            decoding="sync"
+            width={1200}
+            height={896}
+            className="h-full w-full object-cover object-center"
+          />
+          {/* Left-side directional scrim ensuring crystal-clear text contrast while keeping image bright & visible */}
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/60 to-slate-950/20 lg:via-slate-950/50 lg:to-transparent" />
+          {/* Subtle top & bottom edge blend into adjacent sections */}
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-28 bg-gradient-to-b from-slate-950/70 to-transparent" />
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/80 to-transparent" />
+        </div>
+
+        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-500/30 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold text-amber-300">
               <FileSearch className="h-3.5 w-3.5 text-amber-400" />
