@@ -941,6 +941,34 @@ export const ResidentialVastuPage: React.FC = () => {
                     <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
                     <span>Koramangala</span>
                   </Link>
+                  <Link
+                    to="/locations/marathahalli/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Marathahalli &amp; ORR</span>
+                  </Link>
+                  <Link
+                    to="/locations/yelahanka/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Yelahanka</span>
+                  </Link>
+                  <Link
+                    to="/locations/banashankari/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Banashankari</span>
+                  </Link>
+                  <Link
+                    to="/locations/malleshwaram/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Malleshwaram</span>
+                  </Link>
                 </div>
 
                 <div className="mt-6 space-y-3">

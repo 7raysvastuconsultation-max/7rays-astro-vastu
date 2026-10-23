@@ -255,7 +255,9 @@ export const ApartmentVastuPage: React.FC = () => {
                     <Link to="/locations/sarjapur-road/" className="text-amber-800 hover:underline">Sarjapur Road</Link>,{" "}
                     <Link to="/locations/electronic-city/" className="text-amber-800 hover:underline">Electronic City</Link>,{" "}
                     <Link to="/locations/whitefield/" className="text-amber-800 hover:underline">Whitefield</Link>,{" "}
-                    <Link to="/locations/hsr-layout/" className="text-amber-800 hover:underline">HSR Layout</Link>
+                    <Link to="/locations/hsr-layout/" className="text-amber-800 hover:underline">HSR Layout</Link>,{" "}
+                    <Link to="/locations/marathahalli/" className="text-amber-800 hover:underline">Marathahalli & ORR</Link>,{" "}
+                    <Link to="/locations/banashankari/" className="text-amber-800 hover:underline">Banashankari</Link>
                   </div>
                 </div>
               </div>

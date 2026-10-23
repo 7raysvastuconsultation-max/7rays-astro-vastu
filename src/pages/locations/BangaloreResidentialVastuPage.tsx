@@ -57,7 +57,7 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
           <Link to="/locations/hebbal/" className="underline hover:text-amber-950">
             Hebbal
           </Link>
-          , Yelahanka, Jakkur, Thanisandra
+          , <Link to="/locations/yelahanka/" className="underline hover:text-amber-950">Yelahanka</Link>, Jakkur, Thanisandra
         </>
       ),
       focus: "Independent houses, luxury villas near airport corridor, gated developments.",
@@ -73,7 +73,7 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
           <Link to="/locations/whitefield/" className="underline hover:text-amber-950">
             Whitefield
           </Link>
-          , Varthur, Marathahalli, KR Puram
+          , Varthur, <Link to="/locations/marathahalli/" className="underline hover:text-amber-950">Marathahalli</Link>, KR Puram
         </>
       ),
       focus: "High-rise luxury tech apartments, premium penthouses, gated villa enclaves.",
@@ -100,6 +100,10 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
           ,{" "}
           <Link to="/locations/jayanagar/" className="underline hover:text-amber-950">
             Jayanagar & JP Nagar
+          </Link>,
+          {" "}
+          <Link to="/locations/banashankari/" className="underline hover:text-amber-950">
+            Banashankari
           </Link>
         </>
       ),
@@ -107,7 +111,14 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
     },
     {
       name: "West & Central",
-      localities: "Malleshwaram, Rajajinagar, Sadashivanagar, CBD",
+      localities: (
+        <>
+          <Link to="/locations/malleshwaram/" className="underline hover:text-amber-950">
+            Malleshwaram & Rajajinagar
+          </Link>
+          , Sadashivanagar, CBD
+        </>
+      ),
       focus: "Heritage ancestral residences, redeveloped family homes, luxury apartments.",
     },
   ]

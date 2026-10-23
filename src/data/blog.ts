@@ -116,7 +116,7 @@ The answers make it easier to compare providers on their actual service rather t
 
 Start with the relevant [Vastu services overview](/vastu-services/), then ask about the proposed consultation format, scope, deliverables, fee and limitations. No particular format or outcome should be assumed before the provider confirms it.
 
-For a property in Bengaluru, you can review the [Bangalore consultation information](/locations/bangalore/) or explore locality-specific service areas across [Hebbal](/locations/hebbal/), [Sarjapur Road](/locations/sarjapur-road/), [Electronic City](/locations/electronic-city/), and [Jayanagar & JP Nagar](/locations/jayanagar/). For other cities, confirm remote suitability and any travel coverage directly before booking.
+For a property in Bengaluru, you can review the [Bangalore consultation information](/locations/bangalore/) or explore locality-specific service areas across [Hebbal](/locations/hebbal/), [Sarjapur Road](/locations/sarjapur-road/), [Electronic City](/locations/electronic-city/), [Jayanagar & JP Nagar](/locations/jayanagar/), [Marathahalli & ORR](/locations/marathahalli/), [Yelahanka](/locations/yelahanka/), [Banashankari](/locations/banashankari/), and [Malleshwaram](/locations/malleshwaram/). For other cities, confirm remote suitability and any travel coverage directly before booking.
 
 ## Frequently asked questions
 
@@ -283,7 +283,7 @@ If you are considering a consultation with 7Rays Astro Vastu, review the relevan
     content: `
 # Vastu for Modern Apartments in Bangalore: High-Rise Constraints & Layout Solutions
 
-Over 75% of homebuyers in Bengaluru—from high-density tech belts like [Whitefield](/locations/whitefield/), [Sarjapur Road](/locations/sarjapur-road/), and [Electronic City](/locations/electronic-city/) to established enclaves like [Indiranagar](/locations/indiranagar/), [Koramangala](/locations/koramangala/), and [Hebbal](/locations/hebbal/)—reside in multi-storey gated apartment complexes.
+Over 75% of homebuyers in Bengaluru—from high-density tech belts like [Whitefield](/locations/whitefield/), [Sarjapur Road](/locations/sarjapur-road/), [Marathahalli & ORR](/locations/marathahalli/), and [Electronic City](/locations/electronic-city/) to established enclaves like [Indiranagar](/locations/indiranagar/), [Koramangala](/locations/koramangala/), and [Hebbal](/locations/hebbal/)—reside in multi-storey gated apartment complexes.
 
 Unlike independent bungalows where an owner controls boundary dimensions, setbacks, and roof slopes, apartment dwellers inherit fixed structural footprints governed by builder economics, structural shear walls, and RERA-approved floor plans. Understanding how to navigate these architectural limitations without superstition is the core of modern urban Vastu.
 
@@ -1004,7 +1004,7 @@ Explore our [Non-Demolition Vastu Services](/vastu/non-demolition) for exact on-
 
 North-facing properties are among the most sought-after in Indian real estate, prized for their association with **Lord Kuber** (treasurer of cosmic wealth) and **Budha (Mercury)**, the planetary archetype of intellect, commerce, and communication.
 
-However, a north facade alone does not guarantee financial success. In Bengaluru housing patterns—from traditional plotted bungalows in [Jayanagar & JP Nagar](/locations/jayanagar/) to newly planned villa enclaves in [Hebbal](/locations/hebbal/)—internal zoning and entrance padas must be calculated with geometric precision against true north.
+However, a north facade alone does not guarantee financial success. In Bengaluru housing patterns—from traditional plotted bungalows in [Jayanagar & JP Nagar](/locations/jayanagar/) to newly planned villa enclaves in [Hebbal](/locations/hebbal/) and [Yelahanka & Sahakara Nagar](/locations/yelahanka/)—internal zoning and entrance padas must be calculated with geometric precision against true north.
 
 ---
 
@@ -1022,7 +1022,7 @@ The northern boundary is divided into 8 distinct energetic gates:
 - **N5 (Soma)**: Fosters spiritual and intellectual growth.
 - **N6 to N8**: Create erratic expenditures and unstable income.
 
-Learn more with our [Residential Vastu Planning](/vastu/residential) or review local housing layout guidance for [Jayanagar & JP Nagar](/locations/jayanagar/) and [Hebbal](/locations/hebbal/).
+Learn more with our [Residential Vastu Planning](/vastu/residential) or review local housing layout guidance for [Jayanagar & JP Nagar](/locations/jayanagar/), [Hebbal](/locations/hebbal/), and [Yelahanka](/locations/yelahanka/).
     `,
   },
   {
@@ -1105,7 +1105,7 @@ The southern boundary is partitioned into 8 energetic padas:
 - **Living Room & Foyer**: Open towards the **North or East**, welcoming pranic illumination.
 - **Pooja Sanctuary**: Maintained in the **North-East (Ishanya)**, kept lightweight and tranquil.
 
-Explore our [Residential Vastu Consultancy](/vastu/residential) or contact our [Bangalore Consulting Office](/locations/bangalore/) for personalized assessments. You can also explore local residential insights across [Jayanagar & JP Nagar](/locations/jayanagar/), [Hebbal](/locations/hebbal/), [Sarjapur Road](/locations/sarjapur-road/), and [Electronic City](/locations/electronic-city/).
+Explore our [Residential Vastu Consultancy](/vastu/residential) or contact our [Bangalore Consulting Office](/locations/bangalore/) for personalized assessments. You can also explore local residential insights across [Jayanagar & JP Nagar](/locations/jayanagar/), [Banashankari & Kanakapura Road](/locations/banashankari/), [Hebbal](/locations/hebbal/), [Sarjapur Road](/locations/sarjapur-road/), and [Electronic City](/locations/electronic-city/).
     `,
   },
   {
@@ -1259,7 +1259,7 @@ Applying Vastu Shastra to retail architecture optimizes customer navigation psyc
 - **North-West Zone**: Fast-moving consumer goods, clearance racks, and seasonal promotional items requiring rapid sales velocity.
 - **North-East Zone**: Kept open, low-height, and brightly lit with cool white illumination.
 
-Learn more with our [Commercial Vastu Services](/vastu/commercial).
+Learn more with our [Commercial Vastu Services](/vastu/commercial), or book an on-site retail audit through our [Malleshwaram & Rajajinagar Vastu Hub](/locations/malleshwaram/) for heritage commercial markets and luxury retail avenues.
     `,
   },
   {

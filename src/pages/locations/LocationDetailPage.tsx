@@ -54,6 +54,22 @@ const bangaloreLocalityImages: Record<string, { image: string; alt: string }> = 
     image: '/images/services/commercial-retail-showroom.webp',
     alt: 'Jayanagar and JP Nagar Bangalore Bungalow and Retail Vastu',
   },
+  marathahalli: {
+    image: '/images/services/residential-apartment.webp',
+    alt: 'Marathahalli and Outer Ring Road Bangalore IT Corridor Apartment Vastu',
+  },
+  yelahanka: {
+    image: '/images/services/residential-villa.webp',
+    alt: 'Yelahanka and Sahakara Nagar Bangalore Luxury Villa and Plotted Vastu',
+  },
+  banashankari: {
+    image: '/images/services/residential-new-home.webp',
+    alt: 'Banashankari and Kanakapura Road Bangalore Residential Vastu',
+  },
+  malleshwaram: {
+    image: '/images/services/commercial-retail-showroom.webp',
+    alt: 'Malleshwaram and Rajajinagar Bangalore Heritage Home and Commercial Vastu',
+  },
 }
 
 
@@ -142,6 +158,86 @@ const localityRelatedArticleConfig: Record<string, RelatedArticleConfig[]> = {
       badge: 'Housing Patterns',
       customExcerpt:
         'Debunking myths around south-facing properties with authentic classical Vastu principles.',
+    },
+  ],
+  marathahalli: [
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'Overcoming fixed utility shafts, shear walls, and builder floor plan flaws along the ORR tech belt.',
+    },
+    {
+      slug: 'best-directions-for-home-office',
+      badge: 'Home Office',
+      customExcerpt:
+        'Optimal sitting orientation, desk alignments, and focus zones for hybrid tech professionals.',
+    },
+    {
+      slug: 'vastu-remedies-without-demolition-modern-apartments',
+      badge: 'Non-Demolition',
+      customExcerpt:
+        'Remedial metal strips and subtle elemental balancing designed specifically for leased flats.',
+    },
+  ],
+  yelahanka: [
+    {
+      slug: 'north-facing-house-vastu-plan',
+      badge: 'Housing Patterns',
+      customExcerpt:
+        'Kuber zone wealth alignment and entrance pada calculations for villa developments.',
+    },
+    {
+      slug: 'vastu-principles-every-homeowner-should-know',
+      badge: 'Housing Patterns',
+      customExcerpt:
+        'Essential architectural Vastu principles for plotted layouts and independent bungalows.',
+    },
+    {
+      slug: 'best-directions-for-home-office',
+      badge: 'Home Office',
+      customExcerpt:
+        'Directional room orientation for productive home working and executive focus.',
+    },
+  ],
+  banashankari: [
+    {
+      slug: 'south-facing-house-vastu-myths',
+      badge: 'Housing Patterns',
+      customExcerpt:
+        'Debunking directional myths and balancing south-facing entrances in traditional family homes.',
+    },
+    {
+      slug: 'vastu-principles-every-homeowner-should-know',
+      badge: 'Housing Patterns',
+      customExcerpt:
+        'Fundamental spatial zoning guidelines for multi-generational homes and layout renovations.',
+    },
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'Practical floor plan balancing for high-rise gated communities along the metro corridor.',
+    },
+  ],
+  malleshwaram: [
+    {
+      slug: 'retail-store-and-showroom-vastu',
+      badge: 'Commercial & Retail',
+      customExcerpt:
+        'Cash counter alignment, customer flow, and entrance energy for retail stores and showrooms.',
+    },
+    {
+      slug: 'vastu-principles-every-homeowner-should-know',
+      badge: 'Housing Patterns',
+      customExcerpt:
+        'Preserving energetic sanctity and central Brahma-sthana in heritage bungalows and redevelopments.',
+    },
+    {
+      slug: 'vastu-remedies-without-demolition-modern-apartments',
+      badge: 'Non-Demolition',
+      customExcerpt:
+        'Non-invasive remedies for luxury apartments and redeveloped properties without structural damage.',
     },
   ],
   whitefield: [

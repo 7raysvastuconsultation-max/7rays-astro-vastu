@@ -434,6 +434,30 @@ export const BangaloreMasterPage: React.FC = () => {
               >
                 Jayanagar &amp; JP Nagar
               </Link>
+              <Link
+                to="/locations/marathahalli/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Marathahalli &amp; ORR (Bellandur &amp; Varthur)
+              </Link>
+              <Link
+                to="/locations/yelahanka/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Yelahanka (Sahakara Nagar &amp; Jakkur)
+              </Link>
+              <Link
+                to="/locations/banashankari/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Banashankari &amp; Kanakapura Road
+              </Link>
+              <Link
+                to="/locations/malleshwaram/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Malleshwaram &amp; Rajajinagar
+              </Link>
             </div>
           </div>
         </div>

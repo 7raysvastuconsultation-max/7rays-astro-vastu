@@ -353,4 +353,196 @@ export const locationsData: LocationItem[] = [
     ],
     geo: { lat: 12.9308, lng: 77.5838 },
   },
+  {
+    id: 'marathahalli',
+    slug: 'marathahalli',
+    name: 'Marathahalli & ORR',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    region: 'East Bangalore',
+    pincodes: ['560037', '560087'],
+    popularAreas: [
+      'Outer Ring Road',
+      'Marathahalli Bridge',
+      'Kadubeesanahalli',
+      'Doddakannelli',
+      'Varthur',
+      'Munnekolala',
+    ],
+    heroHeadline: 'Vastu Shastra & Space Balancing in Marathahalli & Outer Ring Road, Bangalore',
+    metaDescription:
+      'On-site Vastu audits in Marathahalli & Outer Ring Road by Certified Consultant Rishwa Sinha. Non-demolition remedies for high-rise apartments, tech parks, and leased flats.',
+    commonVastuIssues: [
+      'Fixed apartment layouts with kitchen in the North-East or bathrooms in the South-West along the ORR tech belt',
+      'Home workspaces facing unfavorable zones (South-South-West or East-South-East) impacting remote focus and career stability',
+      'Commercial tech offices with server rooms and pantries conflicting with directional energy zones',
+    ],
+    whyChooseUs: [
+      'Specialized non-demolition spatial corrections tailored to leased and owned apartments near major tech parks',
+      'Practical directional balancing for software professionals, startup founders, and high-rise residents',
+      'Direct 1-on-1 consultations with Certified Vastu Consultant Rishwa Sinha (5+ years experience)',
+    ],
+    faqs: [
+      {
+        question: 'Can you audit a rented apartment near Marathahalli without making structural changes?',
+        answer:
+          'Yes. Our methodology is 100% non-demolition. We use directional elemental balancing, metallic threshold strips, colors, and subtle object placement that preserve rental agreements and building rules.',
+      },
+      {
+        question: 'Do you conduct on-site audits for tech offices and residences along the Outer Ring Road?',
+        answer:
+          'Yes. We provide scheduled on-site inspections for apartments, villas, and commercial spaces throughout Marathahalli, Kadubeesanahalli, Bellandur ORR, and Varthur.',
+      },
+      {
+        question: 'Do you have an office branch in Marathahalli?',
+        answer:
+          'No. 7Rays Astro Vastu operates from its central registered office in Dasarahalli, Bengaluru (560024). Marathahalli is a dedicated service area where we visit client properties for on-site audits.',
+      },
+    ],
+    geo: { lat: 12.9591, lng: 77.6974 },
+  },
+  {
+    id: 'yelahanka',
+    slug: 'yelahanka',
+    name: 'Yelahanka & Sahakara Nagar',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    region: 'North Bangalore',
+    pincodes: ['560064', '560092'],
+    popularAreas: [
+      'Yelahanka New Town',
+      'Sahakara Nagar',
+      'Judicial Layout',
+      'Kogilu',
+      'Doddaballapur Road',
+      'Jakkur',
+    ],
+    heroHeadline: 'Vastu Shastra & Plotted Villa Consultation in Yelahanka, Bangalore',
+    metaDescription:
+      'Premier on-site Vastu audits in Yelahanka & Sahakara Nagar by Certified Consultant Rishwa Sinha. Non-demolition guidance for luxury villas, plotted developments, and airport corridor homes.',
+    commonVastuIssues: [
+      'Irregularly shaped plots and angled road junctions across newly expanding North Bangalore villa enclaves',
+      'Underground sumps, borewells, or overhead water tanks positioned in conflicting directional zones',
+      'Multi-level duplex villas with staircases obstructing the central Brahma-sthana',
+    ],
+    whyChooseUs: [
+      'Expertise in plotted layouts, architectural floor plan reviews before construction, and luxury villa estates',
+      'Strictly non-demolition remedial solutions that protect architectural aesthetics and structural investments',
+      'Direct personal guidance from Certified Vastu Consultant Rishwa Sinha combining spatial Vastu and birth-chart alignments',
+    ],
+    faqs: [
+      {
+        question: 'Can you review an architectural floor plan for a new villa in Yelahanka before construction?',
+        answer:
+          'Yes. We frequently review architectural drawings and CAD plans prior to foundation laying, ensuring optimal room allocations, entrance padas, and water feature alignments from day one.',
+      },
+      {
+        question: 'Do you conduct on-site visits in Yelahanka New Town and Sahakara Nagar?',
+        answer:
+          'Yes. Headquartered in Dasarahalli (560024), we conduct scheduled on-site property audits across Yelahanka, Sahakara Nagar, Judicial Layout, and Jakkur.',
+      },
+      {
+        question: 'Where is your consulting office located?',
+        answer:
+          'Our registered headquarters is in Dasarahalli, Bengaluru (560024). Yelahanka is an active service area where we provide scheduled on-site visits.',
+      },
+    ],
+    geo: { lat: 13.1007, lng: 77.5963 },
+  },
+  {
+    id: 'banashankari',
+    slug: 'banashankari',
+    name: 'Banashankari & Kanakapura Road',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    region: 'South Bangalore',
+    pincodes: ['560070', '560085', '560062'],
+    popularAreas: [
+      'Banashankari 2nd Stage',
+      'Banashankari 3rd Stage',
+      'Kanakapura Road Corridor',
+      'Padmanabhanagar',
+      'Uttarahalli',
+      'Kumaraswamy Layout',
+    ],
+    heroHeadline: 'Vastu Shastra & Astro-Vastu Consultation in Banashankari & Kanakapura Road, Bangalore',
+    metaDescription:
+      'On-site Vastu consultancy in Banashankari & Kanakapura Road by Certified Consultant Rishwa Sinha. Non-demolition remedies for independent homes, gated townships, and retail.',
+    commonVastuIssues: [
+      'South-facing and west-facing homes with misunderstood directional energies and entrance placement',
+      'Traditional multi-generational houses undergoing vertical expansions with unbalanced upper-floor layouts',
+      'Gated apartment townships along Kanakapura Road with fixed plumbing stacks and kitchen alignments in the North-East',
+    ],
+    whyChooseUs: [
+      'Deep appreciation of traditional South Bengaluru family homes and modern high-rise gated communities along the metro corridor',
+      'Evidence-based non-demolition methods that resolve directional imbalances without breaking masonry or tiles',
+      'Personalized consultation by Certified Vastu Consultant Rishwa Sinha (5+ years experience)',
+    ],
+    faqs: [
+      {
+        question: 'Can south-facing houses in Banashankari be made Vastu-compliant without structural rebuilding?',
+        answer:
+          'Yes. Classical Vastu does not consider south-facing properties inherently inauspicious. We locate the positive entrance padas along the southern perimeter and apply non-demolition elemental remedies to harmonize the space.',
+      },
+      {
+        question: 'Do you provide on-site consultations along the Kanakapura Road metro corridor?',
+        answer:
+          'Yes. We conduct on-site property visits across Banashankari 2nd & 3rd Stages, Padmanabhanagar, Uttarahalli, and large apartment complexes along Kanakapura Road.',
+      },
+      {
+        question: 'Do you operate a branch office in Banashankari?',
+        answer:
+          'No. 7Rays Astro Vastu operates from a single registered office in Dasarahalli, Bengaluru (560024). Banashankari is an active service area where we visit properties for scheduled audits.',
+      },
+    ],
+    geo: { lat: 12.9255, lng: 77.5468 },
+  },
+  {
+    id: 'malleshwaram',
+    slug: 'malleshwaram',
+    name: 'Malleshwaram & Rajajinagar',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    region: 'West Bangalore',
+    pincodes: ['560003', '560010'],
+    popularAreas: [
+      'Malleshwaram 8th Cross',
+      'Margosa Road',
+      'Sampige Road',
+      'Rajajinagar 1st–6th Block',
+      'Brigade Gateway',
+      'Mahalakshmi Layout',
+    ],
+    heroHeadline: 'Vastu Shastra Consultation in Malleshwaram & Rajajinagar, Bangalore',
+    metaDescription:
+      'Premier on-site Vastu audits in Malleshwaram & Rajajinagar by Certified Consultant Rishwa Sinha. Non-demolition remedies for heritage homes, commercial retail, and luxury apartments.',
+    commonVastuIssues: [
+      'Heritage family bungalows with traditional courtyards or extensions where the center (Brahma-sthana) is congested',
+      'High-street retail showrooms and merchant offices with cash counter or entrance orientation conflicts',
+      'Modern luxury redeveloped high-rises with fixed utility shafts clashing with classical zoning principles',
+    ],
+    whyChooseUs: [
+      'Respectful treatment of heritage architecture and family residences with zero structural destruction',
+      'Commercial retail and showroom Vastu balancing for established mercantile enterprises across West Bangalore',
+      'Direct 1-on-1 consultations with Certified Vastu Consultant Rishwa Sinha (5+ years experience)',
+    ],
+    faqs: [
+      {
+        question: 'Can you advise on retail showrooms and merchant businesses in Malleshwaram and Rajajinagar?',
+        answer:
+          'Yes. We audit cash counter positions, main entrance energy flows, owner seating orientation, and inventory placement to ensure commercial stability without disrupting business operations.',
+      },
+      {
+        question: 'Do you travel to Malleshwaram and Rajajinagar for physical site inspections?',
+        answer:
+          'Yes. Located in Dasarahalli (560024), we regularly travel to Malleshwaram, Rajajinagar, Margosa Road, and surrounding layouts for on-site property audits.',
+      },
+      {
+        question: 'Is 7Rays an on-site branch in Malleshwaram?',
+        answer:
+          'No. 7Rays Astro Vastu operates exclusively from its central registered office in Dasarahalli (560024). Malleshwaram is a prime service area where we provide scheduled on-site audits.',
+      },
+    ],
+    geo: { lat: 13.0031, lng: 77.5643 },
+  },
 ]
