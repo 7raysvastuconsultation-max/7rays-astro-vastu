@@ -463,6 +463,8 @@ Every compass quadrant corresponds to a resonant elemental metal. When an unchan
 - **Economical & Fast**: Avoids months of messy masonry, loud drilling, contractor delays, and high demolition costs.
 - **Peace of Mind**: Enhances spatial harmony while maintaining a clean, luxurious, and undisturbed home environment.
 
+For gated apartment residents in high-density Bengaluru corridors—such as high-rises across [Sarjapur Road](/locations/sarjapur-road/), tech townships in [Electronic City](/locations/electronic-city/), and lake-facing developments in [Hebbal](/locations/hebbal/)—non-demolition methods provide effective spatial balancing within rigid association bylaws and fixed plumbing shafts.
+
 Learn more about our practical [Non-Demolition Vastu Services](/vastu/non-demolition) or book an on-site property evaluation with our [Scientific Vastu Audit Team](/vastu-services/vastu-audit).
     `,
   },
@@ -813,7 +815,7 @@ In high-rise apartments across Bengaluru and modern cities, master suites are fr
 - **South-East Bedroom (Fire Zone)**: Excess fire induces short tempers, irritability, and elevated blood pressure. Introduce pale cream pastels to subdue excess fire; install brass earth boundary strips along the threshold.
 - **North-West Bedroom (Air Zone)**: Air induces constant mobility, insomnia, and financial instability. The bed weight must be stabilized using solid wooden headboards and heavy earthy drapery.
 
-For comprehensive layout evaluations, explore our [Residential Vastu Consultancy](/vastu/residential) or schedule a Bangalore on-site inspection at [Bangalore Residential Vastu](/locations/bangalore/residential-vastu).
+For comprehensive layout evaluations, explore our [Residential Vastu Consultancy](/vastu/residential) or schedule a Bangalore on-site inspection at [Bangalore Residential Vastu](/locations/bangalore/residential-vastu/), with dedicated local guidance for residential layouts in [Hebbal](/locations/hebbal/), [Sarjapur Road](/locations/sarjapur-road/), and [Electronic City](/locations/electronic-city/).
     `,
   },
   {
@@ -1002,7 +1004,7 @@ Explore our [Non-Demolition Vastu Services](/vastu/non-demolition) for exact on-
 
 North-facing properties are among the most sought-after in Indian real estate, prized for their association with **Lord Kuber** (treasurer of cosmic wealth) and **Budha (Mercury)**, the planetary archetype of intellect, commerce, and communication.
 
-However, a north facade alone does not guarantee financial success. The internal zoning and entrance pada must be calculated with geometric precision.
+However, a north facade alone does not guarantee financial success. In Bengaluru housing patterns—from traditional plotted bungalows in [Jayanagar & JP Nagar](/locations/jayanagar/) to newly planned villa enclaves in [Hebbal](/locations/hebbal/)—internal zoning and entrance padas must be calculated with geometric precision against true north.
 
 ---
 
@@ -1020,7 +1022,7 @@ The northern boundary is divided into 8 distinct energetic gates:
 - **N5 (Soma)**: Fosters spiritual and intellectual growth.
 - **N6 to N8**: Create erratic expenditures and unstable income.
 
-Learn more with our [Residential Vastu Planning](/vastu/residential).
+Learn more with our [Residential Vastu Planning](/vastu/residential) or review local housing layout guidance for [Jayanagar & JP Nagar](/locations/jayanagar/) and [Hebbal](/locations/hebbal/).
     `,
   },
   {
@@ -1103,7 +1105,7 @@ The southern boundary is partitioned into 8 energetic padas:
 - **Living Room & Foyer**: Open towards the **North or East**, welcoming pranic illumination.
 - **Pooja Sanctuary**: Maintained in the **North-East (Ishanya)**, kept lightweight and tranquil.
 
-Explore our [Residential Vastu Consultancy](/vastu/residential) or contact our [Bangalore Consulting Office](/locations/bangalore) for personalized assessments.
+Explore our [Residential Vastu Consultancy](/vastu/residential) or contact our [Bangalore Consulting Office](/locations/bangalore/) for personalized assessments. You can also explore local residential insights across [Jayanagar & JP Nagar](/locations/jayanagar/), [Hebbal](/locations/hebbal/), [Sarjapur Road](/locations/sarjapur-road/), and [Electronic City](/locations/electronic-city/).
     `,
   },
   {
@@ -1185,6 +1187,8 @@ The North is governed by Mercury and Lord Kuber:
 ## 4. Conference Rooms & Client Reception
 - **Reception / Waiting Lounge**: Sited in the **East or North-East**, extending a warm, light, and transparent welcome to visitors.
 - **Boardroom / Conference Suite**: Positioned in the **North-West (Vayu Zone)**, encouraging dynamic discussion, client consensus, and decisive agreement closure.
+
+Whether setting up tech company headquarters in [Electronic City](/locations/electronic-city/), scaling high-growth ventures along the Outer Ring Road and [Sarjapur Road](/locations/sarjapur-road/), executive workspaces in [Hebbal](/locations/hebbal/), or professional practices in [Jayanagar & JP Nagar](/locations/jayanagar/), aligning your commercial layout early prevents operational friction.
 
 Consult our [Commercial & Office Vastu Consultancy](/vastu/office-vastu) or [Commercial Vastu Services](/vastu/commercial) to optimize your workplace layout.
     `,
