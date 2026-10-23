@@ -485,26 +485,62 @@ export const OfficeVastuPage: React.FC = () => {
               </p>
 
               <div className="mt-6 grid grid-cols-2 gap-3 text-xs text-slate-300 sm:grid-cols-3">
-                <div className="flex items-center gap-1.5 font-medium">
+                <Link
+                  to="/locations/electronic-city/"
+                  className="flex items-center gap-1.5 font-medium transition hover:text-amber-300 hover:underline"
+                >
                   <CheckCircle2 className="h-4 w-4 text-amber-400" />
-                  <span>Koramangala</span>
-                </div>
-                <div className="flex items-center gap-1.5 font-medium">
+                  <span>Electronic City</span>
+                </Link>
+                <Link
+                  to="/locations/sarjapur-road/"
+                  className="flex items-center gap-1.5 font-medium transition hover:text-amber-300 hover:underline"
+                >
+                  <CheckCircle2 className="h-4 w-4 text-amber-400" />
+                  <span>Sarjapur Road / ORR</span>
+                </Link>
+                <Link
+                  to="/locations/hebbal/"
+                  className="flex items-center gap-1.5 font-medium transition hover:text-amber-300 hover:underline"
+                >
+                  <CheckCircle2 className="h-4 w-4 text-amber-400" />
+                  <span>Hebbal &amp; North Tech</span>
+                </Link>
+                <Link
+                  to="/locations/hsr-layout/"
+                  className="flex items-center gap-1.5 font-medium transition hover:text-amber-300 hover:underline"
+                >
                   <CheckCircle2 className="h-4 w-4 text-amber-400" />
                   <span>HSR Layout</span>
-                </div>
-                <div className="flex items-center gap-1.5 font-medium">
+                </Link>
+                <Link
+                  to="/locations/koramangala/"
+                  className="flex items-center gap-1.5 font-medium transition hover:text-amber-300 hover:underline"
+                >
                   <CheckCircle2 className="h-4 w-4 text-amber-400" />
-                  <span>Indiranagar</span>
-                </div>
-                <div className="flex items-center gap-1.5 font-medium">
-                  <CheckCircle2 className="h-4 w-4 text-amber-400" />
-                  <span>Outer Ring Road</span>
-                </div>
-                <div className="flex items-center gap-1.5 font-medium">
+                  <span>Koramangala</span>
+                </Link>
+                <Link
+                  to="/locations/whitefield/"
+                  className="flex items-center gap-1.5 font-medium transition hover:text-amber-300 hover:underline"
+                >
                   <CheckCircle2 className="h-4 w-4 text-amber-400" />
                   <span>Whitefield</span>
-                </div>
+                </Link>
+                <Link
+                  to="/locations/indiranagar/"
+                  className="flex items-center gap-1.5 font-medium transition hover:text-amber-300 hover:underline"
+                >
+                  <CheckCircle2 className="h-4 w-4 text-amber-400" />
+                  <span>Indiranagar</span>
+                </Link>
+                <Link
+                  to="/locations/jayanagar/"
+                  className="flex items-center gap-1.5 font-medium transition hover:text-amber-300 hover:underline"
+                >
+                  <CheckCircle2 className="h-4 w-4 text-amber-400" />
+                  <span>Jayanagar</span>
+                </Link>
                 <div className="flex items-center gap-1.5 font-medium">
                   <CheckCircle2 className="h-4 w-4 text-amber-400" />
                   <span>MG Road / CBD</span>

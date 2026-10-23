@@ -885,30 +885,62 @@ export const ResidentialVastuPage: React.FC = () => {
                 </p>
 
                 <div className="mt-4 grid grid-cols-2 gap-2 text-xs text-slate-700">
-                  <div className="flex items-center gap-1.5 font-medium">
+                  <Link
+                    to="/locations/hebbal/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
                     <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
-                    <span>Hebbal &amp; Yelahanka</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
-                    <span>Indiranagar</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
-                    <span>HSR Layout</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
-                    <span>Whitefield</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
-                    <span>Koramangala</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 font-medium">
+                    <span>Hebbal</span>
+                  </Link>
+                  <Link
+                    to="/locations/sarjapur-road/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
                     <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
                     <span>Sarjapur Road</span>
-                  </div>
+                  </Link>
+                  <Link
+                    to="/locations/electronic-city/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Electronic City</span>
+                  </Link>
+                  <Link
+                    to="/locations/jayanagar/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Jayanagar &amp; JP Nagar</span>
+                  </Link>
+                  <Link
+                    to="/locations/indiranagar/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Indiranagar</span>
+                  </Link>
+                  <Link
+                    to="/locations/hsr-layout/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                    <span>HSR Layout</span>
+                  </Link>
+                  <Link
+                    to="/locations/whitefield/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Whitefield</span>
+                  </Link>
+                  <Link
+                    to="/locations/koramangala/"
+                    className="flex items-center gap-1.5 font-medium transition hover:text-amber-800 hover:underline"
+                  >
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                    <span>Koramangala</span>
+                  </Link>
                 </div>
 
                 <div className="mt-6 space-y-3">

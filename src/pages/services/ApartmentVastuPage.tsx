@@ -241,7 +241,7 @@ export const ApartmentVastuPage: React.FC = () => {
                   </li>
                 </ul>
 
-                <div className="mt-6 border-t border-slate-200 pt-4">
+                <div className="mt-6 border-t border-slate-200 pt-4 space-y-3">
                   <Link
                     to="/locations/bangalore/residential-vastu/"
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"
@@ -249,6 +249,14 @@ export const ApartmentVastuPage: React.FC = () => {
                     <span>View Bangalore Residential Vastu Services</span>
                     <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
+                  <div className="text-[11px] text-slate-500">
+                    <span className="font-semibold text-slate-700">Dedicated apartment hubs: </span>
+                    <Link to="/locations/hebbal/" className="text-amber-800 hover:underline">Hebbal</Link>,{" "}
+                    <Link to="/locations/sarjapur-road/" className="text-amber-800 hover:underline">Sarjapur Road</Link>,{" "}
+                    <Link to="/locations/electronic-city/" className="text-amber-800 hover:underline">Electronic City</Link>,{" "}
+                    <Link to="/locations/whitefield/" className="text-amber-800 hover:underline">Whitefield</Link>,{" "}
+                    <Link to="/locations/hsr-layout/" className="text-amber-800 hover:underline">HSR Layout</Link>
+                  </div>
                 </div>
               </div>
             </div>

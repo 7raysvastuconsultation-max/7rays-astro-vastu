@@ -48,26 +48,67 @@ export const BangaloreResidentialVastuPage: React.FC = () => {
     },
   ]
 
-  const bangaloreZones = [
+  const bangaloreZones: Array<{ name: string; localities: React.ReactNode; focus: string }> = [
     {
-      name: 'North Bangalore',
-      localities: 'Dasarahalli (Headquarters), Hebbal, Yelahanka, Jakkur, Thanisandra',
-      focus: 'Independent houses, luxury villas near airport corridor, gated developments.',
+      name: "North Bangalore",
+      localities: (
+        <>
+          Dasarahalli (Headquarters),{" "}
+          <Link to="/locations/hebbal/" className="underline hover:text-amber-950">
+            Hebbal
+          </Link>
+          , Yelahanka, Jakkur, Thanisandra
+        </>
+      ),
+      focus: "Independent houses, luxury villas near airport corridor, gated developments.",
     },
     {
-      name: 'East Bangalore',
-      localities: 'Indiranagar, Whitefield, Varthur, Marathahalli, KR Puram',
-      focus: 'High-rise luxury tech apartments, premium penthouses, gated villa enclaves.',
+      name: "East Bangalore",
+      localities: (
+        <>
+          <Link to="/locations/indiranagar/" className="underline hover:text-amber-950">
+            Indiranagar
+          </Link>
+          ,{" "}
+          <Link to="/locations/whitefield/" className="underline hover:text-amber-950">
+            Whitefield
+          </Link>
+          , Varthur, Marathahalli, KR Puram
+        </>
+      ),
+      focus: "High-rise luxury tech apartments, premium penthouses, gated villa enclaves.",
     },
     {
-      name: 'South Bangalore',
-      localities: 'HSR Layout, Koramangala, Sarjapur Road, Electronic City, JP Nagar, Jayanagar',
-      focus: 'Startup founder residences, duplex townhouses, modern community flats.',
+      name: "South Bangalore",
+      localities: (
+        <>
+          <Link to="/locations/hsr-layout/" className="underline hover:text-amber-950">
+            HSR Layout
+          </Link>
+          ,{" "}
+          <Link to="/locations/koramangala/" className="underline hover:text-amber-950">
+            Koramangala
+          </Link>
+          ,{" "}
+          <Link to="/locations/sarjapur-road/" className="underline hover:text-amber-950">
+            Sarjapur Road
+          </Link>
+          ,{" "}
+          <Link to="/locations/electronic-city/" className="underline hover:text-amber-950">
+            Electronic City
+          </Link>
+          ,{" "}
+          <Link to="/locations/jayanagar/" className="underline hover:text-amber-950">
+            Jayanagar & JP Nagar
+          </Link>
+        </>
+      ),
+      focus: "Startup founder residences, duplex townhouses, modern community flats.",
     },
     {
-      name: 'West & Central',
-      localities: 'Malleshwaram, Rajajinagar, Sadashivanagar, CBD',
-      focus: 'Heritage ancestral residences, redeveloped family homes, luxury apartments.',
+      name: "West & Central",
+      localities: "Malleshwaram, Rajajinagar, Sadashivanagar, CBD",
+      focus: "Heritage ancestral residences, redeveloped family homes, luxury apartments.",
     },
   ]
 
