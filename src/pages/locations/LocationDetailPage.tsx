@@ -16,6 +16,7 @@ import { BreadcrumbSchema } from '@/components/seo/schemas/BreadcrumbSchema'
 import { LocalBusinessSchema } from '@/components/seo/schemas/LocalBusinessSchema'
 import { FAQSchema } from '@/components/seo/schemas/FAQSchema'
 import { locationsData } from '@/data/locations'
+import { blogPostsData } from '@/data/blog'
 import { siteConfig } from '@/config/site'
 import { businessConfig } from '@/config/business'
 
@@ -54,6 +55,176 @@ const bangaloreLocalityImages: Record<string, { image: string; alt: string }> = 
   },
 }
 
+
+interface RelatedArticleConfig {
+  slug: string
+  badge: string
+  customExcerpt?: string
+}
+
+const localityRelatedArticleConfig: Record<string, RelatedArticleConfig[]> = {
+  hebbal: [
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'Navigating high-rise constraints, shear walls, and builder floor plans without demolition.',
+    },
+    {
+      slug: 'best-directions-for-home-office',
+      badge: 'Home Office',
+      customExcerpt:
+        'Directional desk positioning and environmental ergonomics for remote software engineers.',
+    },
+    {
+      slug: 'north-facing-house-vastu-plan',
+      badge: 'Housing Patterns',
+      customExcerpt:
+        'Kuber zone wealth alignment and entrance pada calculations for villa developments.',
+    },
+  ],
+  'sarjapur-road': [
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'Practical layout solutions for high-density gated apartment communities in tech belts.',
+    },
+    {
+      slug: 'best-directions-for-home-office',
+      badge: 'Home Office',
+      customExcerpt:
+        'Optimizing focus, cognitive endurance, and workstation orientation for tech teams.',
+    },
+    {
+      slug: 'vastu-remedies-without-demolition-modern-apartments',
+      badge: 'Non-Demolition',
+      customExcerpt:
+        'Correcting unchangeable bathroom drainage and modular kitchen clashes non-invasively.',
+    },
+  ],
+  'electronic-city': [
+    {
+      slug: 'best-directions-for-home-office',
+      badge: 'Home Office',
+      customExcerpt:
+        'Desk direction, lighting, and spatial alignment for hybrid and remote tech professionals.',
+    },
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'High-rise apartment floor-plan assessments across Bengaluru tech corridors.',
+    },
+    {
+      slug: 'office-layout-executive-cabin-vastu',
+      badge: 'Workplace Layout',
+      customExcerpt:
+        'Spatial zoning for executive cabins, workstation bays, and commercial facilities.',
+    },
+  ],
+  jayanagar: [
+    {
+      slug: 'vastu-principles-every-homeowner-should-know',
+      badge: 'Housing Patterns',
+      customExcerpt:
+        'Core architectural principles for plotted bungalows, ancestral homes, and full renovations.',
+    },
+    {
+      slug: 'north-facing-house-vastu-plan',
+      badge: 'Housing Patterns',
+      customExcerpt:
+        'Entrance pada coordinates and directional wealth flow for established south Bengaluru homes.',
+    },
+    {
+      slug: 'south-facing-house-vastu-myths',
+      badge: 'Housing Patterns',
+      customExcerpt:
+        'Debunking myths around south-facing properties with authentic classical Vastu principles.',
+    },
+  ],
+  whitefield: [
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'Managing high-rise architectural constraints in gated tech communities.',
+    },
+    {
+      slug: 'best-directions-for-home-office',
+      badge: 'Home Office',
+      customExcerpt:
+        'Directional room orientation for productive home working and executive focus.',
+    },
+    {
+      slug: 'vastu-remedies-without-demolition-modern-apartments',
+      badge: 'Non-Demolition',
+      customExcerpt:
+        'Non-invasive metallic and mineral cures for fixed apartment structures.',
+    },
+  ],
+  'hsr-layout': [
+    {
+      slug: 'best-directions-for-home-office',
+      badge: 'Home Office',
+      customExcerpt:
+        'Workstation orientation and productivity setups for startup founders and tech teams.',
+    },
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'Addressing common apartment floor plan flaws with practical Vastu solutions.',
+    },
+    {
+      slug: 'office-layout-executive-cabin-vastu',
+      badge: 'Workplace Layout',
+      customExcerpt:
+        'Zoning executive leadership cabins and agile workspaces for business stability.',
+    },
+  ],
+  koramangala: [
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'High-rise luxury penthouse and apartment spatial balance without civil demolition.',
+    },
+    {
+      slug: 'best-directions-for-home-office',
+      badge: 'Home Office',
+      customExcerpt:
+        'Executive work desk placement and energetic clarity for home offices.',
+    },
+    {
+      slug: 'vastu-principles-every-homeowner-should-know',
+      badge: 'Housing Patterns',
+      customExcerpt:
+        'Foundational homeowner guidelines for luxury residential spaces and townhouses.',
+    },
+  ],
+  indiranagar: [
+    {
+      slug: 'office-layout-executive-cabin-vastu',
+      badge: 'Workplace Layout',
+      customExcerpt:
+        'Spatial orientation for commercial studios, executive cabins, and creative hubs.',
+    },
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'Practical spatial balancing for residential apartments and redeveloped duplexes.',
+    },
+    {
+      slug: 'best-directions-for-home-office',
+      badge: 'Home Office',
+      customExcerpt:
+        'Aligning ergonomics and directional forces for creative and consulting studios.',
+    },
+  ],
+}
+
 export const LocationDetailPage: React.FC = () => {
   const { slug } = useParams<{ slug: string }>()
   const location = locationsData.find((l) => l.slug === slug || l.id === slug)
@@ -73,6 +244,21 @@ export const LocationDetailPage: React.FC = () => {
     image: '/images/services/residential-vastu.webp',
     alt: `${location.name} Bangalore Vastu Shastra Consultation`,
   }
+
+  const relatedConfig = localityRelatedArticleConfig[location.slug]
+  const relatedArticles = relatedConfig
+    ? relatedConfig
+        .map((item) => {
+          const post = blogPostsData.find((p) => p.slug === item.slug)
+          if (!post) return null
+          return {
+            ...post,
+            badge: item.badge,
+            customExcerpt: item.customExcerpt,
+          }
+        })
+        .filter((p): p is NonNullable<typeof p> => Boolean(p))
+    : []
 
   const canonicalUrl = `${siteConfig.url}/locations/${location.slug}/`
   const whatsAppUrl = `https://wa.me/${(siteConfig.contact.whatsApp || '').replace(/[^0-9]/g, '')}?text=${encodeURIComponent(`Hello 7Rays Astro Vastu, I would like to schedule an on-site Vastu audit for my property in ${location.name}, Bangalore.`)}`
@@ -362,7 +548,81 @@ export const LocationDetailPage: React.FC = () => {
         </div>
       </section>
 
-      {/* 5. SIGNATURE PRE-FOOTER SUNSET VILLA BANNER (With Hero/Footer Image & Glassmorphism Quote) */}
+      {/* 5. COMPACT RELATED ARTICLES SECTION */}
+      {relatedArticles.length > 0 && (
+        <section className="border-t border-slate-200 bg-white py-14 text-slate-900 sm:py-16">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col justify-between sm:flex-row sm:items-end">
+              <div>
+                <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+                  PRACTICAL ARCHITECTURAL INSIGHTS
+                </span>
+                <h2 className="mt-1.5 font-serif text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                  Related Guides for {location.name} Property Owners
+                </h2>
+                <p className="mt-1 text-xs text-slate-600 sm:text-sm">
+                  Practical reading on modern apartments, home office positioning, and Bangalore housing layouts.
+                </p>
+              </div>
+
+              <Link
+                to="/blog/"
+                className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 transition hover:text-amber-950 sm:mt-0"
+              >
+                <span>View all guides</span>
+                <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+
+            <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+              {relatedArticles.map((article) => (
+                <article
+                  key={article.slug}
+                  className="group flex flex-col justify-between overflow-hidden rounded-xl border border-amber-200/70 bg-[#FAF8F5] transition duration-200 hover:border-amber-300 hover:bg-white hover:shadow-md"
+                >
+                  <div>
+                    <div className="relative h-44 w-full overflow-hidden bg-slate-100">
+                      <img
+                        src={article.coverImage}
+                        alt={article.title}
+                        loading="lazy"
+                        decoding="async"
+                        width={400}
+                        height={225}
+                        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <span className="absolute top-3 left-3 rounded-full bg-slate-900/85 px-2.5 py-0.5 text-[10px] font-semibold tracking-wider text-amber-300 uppercase backdrop-blur-xs">
+                        {article.badge}
+                      </span>
+                    </div>
+
+                    <div className="p-4 sm:p-5">
+                      <h3 className="line-clamp-2 font-serif text-base font-bold text-slate-900 transition group-hover:text-amber-800">
+                        <Link to={`/blog/${article.slug}/`}>{article.title}</Link>
+                      </h3>
+                      <p className="mt-2 line-clamp-2 text-xs leading-relaxed text-slate-600">
+                        {article.customExcerpt || article.excerpt}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="p-4 pt-0 sm:px-5 sm:pb-5">
+                    <Link
+                      to={`/blog/${article.slug}/`}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 transition hover:text-amber-950"
+                    >
+                      <span>Read guide</span>
+                      <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* 6. SIGNATURE PRE-FOOTER SUNSET VILLA BANNER (With Hero/Footer Image & Glassmorphism Quote) */}
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         <img
           src="/images/cta-sunset-villa.webp"
