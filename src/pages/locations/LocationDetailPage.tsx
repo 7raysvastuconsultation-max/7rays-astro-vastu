@@ -36,6 +36,22 @@ const bangaloreLocalityImages: Record<string, { image: string; alt: string }> = 
     image: '/images/services/residential-apartment.webp',
     alt: 'Whitefield Bangalore Luxury Gated Community and High-Rise Apartment Architecture',
   },
+  hebbal: {
+    image: '/images/services/residential-apartment.webp',
+    alt: 'Hebbal Bangalore Luxury High-Rise Living and Architectural Vastu',
+  },
+  'sarjapur-road': {
+    image: '/images/hero-penthouse.webp',
+    alt: 'Sarjapur Road and Bellandur Bangalore Gated Community Apartment Vastu',
+  },
+  'electronic-city': {
+    image: '/images/projects/corporate-office-bangalore.webp',
+    alt: 'Electronic City Bangalore IT Workplace and Residential Vastu',
+  },
+  jayanagar: {
+    image: '/images/services/commercial-retail-showroom.webp',
+    alt: 'Jayanagar and JP Nagar Bangalore Bungalow and Retail Vastu',
+  },
 }
 
 export const LocationDetailPage: React.FC = () => {

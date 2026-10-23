@@ -161,4 +161,196 @@ export const locationsData: LocationItem[] = [
     ],
     geo: { lat: 12.9698, lng: 77.75 },
   },
+  {
+    id: 'hebbal',
+    slug: 'hebbal',
+    name: 'Hebbal',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    region: 'North Bangalore',
+    pincodes: ['560024', '560092'],
+    popularAreas: [
+      'Bellary Road',
+      'Sahakara Nagar',
+      'Manyata Tech Park corridor',
+      'Nagavara',
+      'Kempapura',
+      'Hebbal Flyover',
+    ],
+    heroHeadline: 'Vastu Shastra & High-Rise Living in Hebbal & North Bangalore',
+    metaDescription:
+      'On-site Vastu audits in Hebbal, Sahakara Nagar & North Bangalore by Certified Vastu Consultant Rishwa Sinha. High-rise apartment & villa energy harmonization.',
+    commonVastuIssues: [
+      'Balcony orientations and structural cantilevers along high-rise Bellary Road corridors',
+      'Irregular floor plates and skewed directional entries in modern North Bangalore township developments',
+      'Work-from-home desk alignments clashing with family rejuvenation zones in IT professional residences',
+    ],
+    whyChooseUs: [
+      'Immediate proximity to our Dasarahalli (560024) registered headquarters ensures convenient on-site scheduling',
+      'Extensive experience with North Bangalore luxury high-rise floor plans and Manyata executive homes',
+      'Direct 1-on-1 consultations led by Certified Vastu Consultant Rishwa Sinha (5+ years verified experience)',
+    ],
+    faqs: [
+      {
+        question: 'Do you offer on-site Vastu audits in Hebbal and Sahakara Nagar?',
+        answer:
+          'Yes. With our registered headquarters in Balaji Layout, Dasarahalli (560024) right next to Hebbal, we conduct frequent on-site inspections across Hebbal, Sahakara Nagar, Nagavara, and Bellary Road.',
+      },
+      {
+        question: 'How do you address Vastu for high-rise apartments near Hebbal flyover?',
+        answer:
+          'For multi-storey apartments with fixed structural walls and plumbing shafts, we apply non-demolition remedies using elemental balancing, brass/copper metallic tape inlays, and directional realignment without physical damage.',
+      },
+      {
+        question: 'Is 7Rays located near Hebbal?',
+        answer:
+          'Yes. Our registered consulting office is at Balaji Layout, Dasarahalli, Bengaluru (560024), conveniently serving the entire Hebbal, Sahakara Nagar, and North Bangalore residential corridor.',
+      },
+    ],
+    geo: { lat: 13.0358, lng: 77.597 },
+  },
+  {
+    id: 'sarjapur-road',
+    slug: 'sarjapur-road',
+    name: 'Sarjapur Road & Bellandur',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    region: 'South-East Bangalore',
+    pincodes: ['560035', '560103'],
+    popularAreas: [
+      'Sarjapur Main Road',
+      'Bellandur ORR',
+      'Carmelaram',
+      'Kaikondrahalli',
+      'Doddakannelli',
+      'Hadosiddapura',
+    ],
+    heroHeadline: 'Vastu Shastra for Gated Communities on Sarjapur Road & Bellandur',
+    metaDescription:
+      'Expert on-site Vastu audits along Sarjapur Road and Bellandur, Bangalore by Rishwa Sinha. Non-demolition energy alignment for apartments, villas, and tech corridors.',
+    commonVastuIssues: [
+      'Open-plan apartment layouts with kitchens in the North-East or water fixtures in Agni (South-East)',
+      'High-density apartment complexes with shared service shafts and irregular corner cuts',
+      'Villa communities along Sarjapur Road with misaligned underground sumps or septic tanks',
+    ],
+    whyChooseUs: [
+      'Extensive experience auditing major gated developments by Prestige, Sobha, Godrej, and SJR on Sarjapur Road',
+      'Zero-demolition remedies customized for leased flats and newly purchased pre-handover homes',
+      'Comprehensive room-by-room directional checklist mapping 16 Vastu zones for modern living',
+    ],
+    faqs: [
+      {
+        question: 'Can you audit an under-construction apartment on Sarjapur Road before possession?',
+        answer:
+          'Yes. We frequently review architectural builder plans before registration, helping buyers identify directional strengths and make non-structural interior layout corrections early.',
+      },
+      {
+        question: 'Do you provide on-site consultations in Bellandur and Outer Ring Road complexes?',
+        answer:
+          'Yes. We conduct scheduled on-site audits for residences and corporate office suites along Bellandur ORR, Sarjapur Road, and Carmelaram.',
+      },
+      {
+        question: 'Do you have a physical branch on Sarjapur Road?',
+        answer:
+          'No. 7Rays operates from its single registered headquarters in Dasarahalli, Bengaluru (560024). We travel to Sarjapur Road and Bellandur for scheduled on-site audits.',
+      },
+    ],
+    geo: { lat: 12.9237, lng: 77.6836 },
+  },
+  {
+    id: 'electronic-city',
+    slug: 'electronic-city',
+    name: 'Electronic City',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    region: 'South Bangalore',
+    pincodes: ['560100'],
+    popularAreas: [
+      'Phase 1',
+      'Phase 2',
+      'Neeladri Nagar',
+      'Electronic City Flyover',
+      'Doddanagamangala',
+      'Hulimangala',
+    ],
+    heroHeadline: 'Vastu Shastra & Workplace Energy Alignment in Electronic City, Bangalore',
+    metaDescription:
+      'On-site Vastu consultancy in Electronic City Phase 1 & 2 by Certified Consultant Rishwa Sinha. Non-demolition remedies for IT professionals, apartments, and tech offices.',
+    commonVastuIssues: [
+      'Work-from-home desk positions oriented toward debilitating directional zones (South-South-West or East-South-East)',
+      'Compact 2BHK and 3BHK flat layouts with master bedrooms in the North-East or bathrooms in South-West',
+      'Tech commercial floorplates with server rooms and electrical infrastructure misaligned from Agni (South-East)',
+    ],
+    whyChooseUs: [
+      'Focused spatial planning tailored to IT professionals, engineers, and tech founders in Electronic City',
+      'Strict non-demolition protocols using subtle directional balancing, color zoning, and energy enhancers',
+      'Direct personal consultation with Rishwa Sinha combining Vedic astrology insights with spatial Vastu',
+    ],
+    faqs: [
+      {
+        question: 'How do you optimize work-from-home setups for IT professionals in Electronic City?',
+        answer:
+          'We evaluate sitting directions, screen facing angles, and EMF hotspots to ensure productivity, mental clarity, and career stability without needing structural remodeling.',
+      },
+      {
+        question: 'Are on-site visits available in Electronic City Phase 1 and Phase 2?',
+        answer:
+          'Yes. We travel to Electronic City Phase 1, Phase 2, and Neeladri Nagar for comprehensive on-site inspections of apartments, villas, and commercial facilities.',
+      },
+      {
+        question: 'Is 7Rays a local office in Electronic City?',
+        answer:
+          'No. Our registered central office is located in Dasarahalli (560024). Electronic City is a designated service area where we provide scheduled on-site property visits.',
+      },
+    ],
+    geo: { lat: 12.8452, lng: 77.6602 },
+  },
+  {
+    id: 'jayanagar',
+    slug: 'jayanagar',
+    name: 'Jayanagar & JP Nagar',
+    city: 'Bengaluru',
+    state: 'Karnataka',
+    region: 'South Bangalore',
+    pincodes: ['560011', '560078', '560041'],
+    popularAreas: [
+      '3rd Block Jayanagar',
+      '4th Block Jayanagar',
+      '9th Block',
+      'JP Nagar Phase 1-6',
+      'Sarakki',
+      'Dollar Layout',
+    ],
+    heroHeadline: 'Vastu Shastra & Astro-Vastu Consultation in Jayanagar & JP Nagar, Bangalore',
+    metaDescription:
+      'Premier on-site Vastu audits in Jayanagar & JP Nagar, Bangalore by Rishwa Sinha. Non-demolition remedies for independent bungalows, plot redevelopments, and retail.',
+    commonVastuIssues: [
+      'Multi-generational independent bungalows undergoing vertical floor redevelopments with irregular staircases',
+      'Puja room and temple alignments misplaced during modern renovation projects',
+      'Brahma-sthana obstructions caused by central structural pillars or heavy interior staircases',
+    ],
+    whyChooseUs: [
+      'Deep understanding of traditional South Bangalore residential architecture, courtyard homes, and modern rebuilds',
+      'Harmonious synthesis of traditional Vedic Astro-Vastu with modern structural interior design',
+      'Preservation of structural integrity through strictly non-demolition remedy applications',
+    ],
+    faqs: [
+      {
+        question: 'Do you consult on independent home renovations and redeveloped plots in Jayanagar?',
+        answer:
+          'Yes. We specialize in evaluating independent homes, duplex bungalows, and multi-floor redevelopments in Jayanagar and JP Nagar to ensure correct directional balance before and after construction.',
+      },
+      {
+        question: 'Can you correct puja room and kitchen placements without breaking existing marble or masonry?',
+        answer:
+          'Yes. Our core approach is non-demolition: we use elemental stabilizers, directional corrections, metallic thresholds, and subtle spatial realignments to harmonize energy without breaking stone or masonry.',
+      },
+      {
+        question: 'Where is your consultation office based?',
+        answer:
+          'Our central registered office is in Dasarahalli, Bengaluru (560024). We visit clients across Jayanagar, JP Nagar, and South Bangalore for scheduled on-site audits.',
+      },
+    ],
+    geo: { lat: 12.9308, lng: 77.5838 },
+  },
 ]

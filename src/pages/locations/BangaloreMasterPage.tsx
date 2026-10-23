@@ -410,6 +410,30 @@ export const BangaloreMasterPage: React.FC = () => {
               >
                 Whitefield (ITPB &amp; Gated Villas)
               </Link>
+              <Link
+                to="/locations/hebbal/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Hebbal (Sahakara Nagar &amp; Manyata)
+              </Link>
+              <Link
+                to="/locations/sarjapur-road/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Sarjapur Road &amp; Bellandur
+              </Link>
+              <Link
+                to="/locations/electronic-city/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Electronic City (Phase 1 &amp; 2)
+              </Link>
+              <Link
+                to="/locations/jayanagar/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Jayanagar &amp; JP Nagar
+              </Link>
             </div>
           </div>
         </div>
