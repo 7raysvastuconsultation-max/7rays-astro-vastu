@@ -15,6 +15,7 @@ import { SEOHead } from '@/components/seo/SEOHead'
 import { BreadcrumbSchema } from '@/components/seo/schemas/BreadcrumbSchema'
 import { LocalBusinessSchema } from '@/components/seo/schemas/LocalBusinessSchema'
 import { FAQSchema } from '@/components/seo/schemas/FAQSchema'
+import { RelatedArticlesSchema } from '@/components/seo/schemas/RelatedArticlesSchema'
 import { locationsData } from '@/data/locations'
 import { blogPostsData } from '@/data/blog'
 import { siteConfig } from '@/config/site'
@@ -261,6 +262,20 @@ export const LocationDetailPage: React.FC = () => {
     : []
 
   const canonicalUrl = `${siteConfig.url}/locations/${location.slug}/`
+  const localityPagesWithRelatedArticleSchema = new Set([
+    'hebbal',
+    'sarjapur-road',
+    'electronic-city',
+    'jayanagar',
+  ])
+  const relatedSchemaArticles = localityPagesWithRelatedArticleSchema.has(location.slug)
+    ? relatedArticles.map((article) => ({
+        slug: article.slug,
+        title: article.title,
+        description: article.customExcerpt || article.excerpt,
+        image: article.coverImage,
+      }))
+    : []
   const whatsAppUrl = `https://wa.me/${(siteConfig.contact.whatsApp || '').replace(/[^0-9]/g, '')}?text=${encodeURIComponent(`Hello 7Rays Astro Vastu, I would like to schedule an on-site Vastu audit for my property in ${location.name}, Bangalore.`)}`
 
   return (
@@ -291,6 +306,9 @@ export const LocationDetailPage: React.FC = () => {
         areaServed={[location.name, ...location.popularAreas, 'Bengaluru']}
       />
       {location.faqs && location.faqs.length > 0 && <FAQSchema items={location.faqs} />}
+      {relatedSchemaArticles.length > 0 && (
+        <RelatedArticlesSchema pageUrl={canonicalUrl} articles={relatedSchemaArticles} />
+      )}
 
       {/* 1. HERO SECTION (Dark Luxury with Architectural Hero Image & Gradient Overlays) */}
       <section className="relative min-h-[540px] w-full overflow-hidden bg-slate-950 pt-28 pb-16 text-white sm:pt-36 sm:pb-20">
