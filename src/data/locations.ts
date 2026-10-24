@@ -25,17 +25,53 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'Do you offer on-site visits in Indiranagar?',
-        answer:
-          'Yes. Headquartered in Dasarahalli (560024), we conduct physical on-site inspections throughout Indiranagar, Defence Colony, and surrounding layouts across East Bangalore.',
+        question: "What Vastu guidelines apply to commercial creative agencies and boutique studios in Indiranagar?",
+        answer: "Creative businesses benefit from activating the North-East for mental clarity and East for networking and brand visibility. We position founder cabins in the South-West for operational stability and arrange collaborative team seating facing North or East to support daily focus.",
       },
       {
-        question: 'Do you have a physical branch office in Indiranagar?',
-        answer:
-          'No. 7Rays Astro Vastu operates from its single registered headquarters in Dasarahalli, Bengaluru (560024). Indiranagar is an active service area where we provide on-site property audits.',
+        question: "How do you address open-plan penthouse duplexes with rooftop terraces in Defence Colony?",
+        answer: "Rooftop amenities or structural imbalances in light sectors can suppress spatial energy. We apply localized counter-weighting remedies in the South-West and use non-invasive elemental conduits to restore vertical equilibrium without changing the architecture.",
+      },
+      {
+        question: "Can you inspect high-end redeveloped apartments along 100 Feet Road without structural alterations?",
+        answer: "Yes. All residential consultations in Indiranagar utilize non-demolition methods. We work within the architect\u2019s luxury finishes, applying subtle elemental remedies that preserve high-value interior aesthetics.",
+      },
+      {
+        question: "What is the procedure for scheduling an on-site consultation in Indiranagar?",
+        answer: "Headquartered in Dasarahalli (560024), we conduct scheduled on-site property audits throughout Indiranagar, Defence Colony, and surrounding East Bangalore areas. Following the physical inspection, we provide a detailed 16-zone blueprint report.",
       },
     ],
     geo: { lat: 12.9784, lng: 77.6408 },
+    contextualLinks: [
+      {
+        title: "Commercial Retail & Boutique Vastu",
+        url: "/vastu/commercial/",
+        description: "Tailored energetic balancing for retail flagships, cafes, and creative studios on 100ft and 12th Main.",
+        anchorText: "Explore Commercial & Retail Vastu in Indiranagar",
+        badge: "Core Service",
+      },
+      {
+        title: "Executive Workplace Vastu",
+        url: "/vastu/office-vastu/",
+        description: "Directional seating layouts for founder cabins, management boards, and agile tech teams.",
+        anchorText: "Schedule Indiranagar Office Vastu Audit",
+        badge: "Core Service",
+      },
+      {
+        title: "Non-Demolition Vastu Remedies",
+        url: "/vastu/non-demolition/",
+        description: "Remedies for leased duplexes and upscale properties that avoid structural civil damage.",
+        anchorText: "Discover Non-Demolition Solutions",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "Retail Showroom Layout Guide",
+        url: "/blog/retail-store-and-showroom-vastu/",
+        description: "Key principles on cash counter orientations, customer circulation, and entrance vibrancy.",
+        anchorText: "Read Retail Showroom Vastu Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'hsr-layout',
@@ -69,17 +105,53 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'Can you advise on co-working desk allocation for founders in HSR Layout?',
-        answer:
-          'Yes, we map executive seating to ideal compass headings (such as South-West for stability or North for opportunity flow) without structural alterations.',
+        question: "How do you configure startup office floor plans in HSR Layout to foster stability and growth?",
+        answer: "We position executive founders in the South-West for leadership stability, place finance desks in the North (Kuber zone), situate server rooms in the South-East (Agni), and ensure the reception welcomes balanced energetic flow.",
       },
       {
-        question: 'Is HSR Layout a branch office or a service area?',
-        answer:
-          'HSR Layout is an on-site service area. Our physical headquarters and registered consulting desk is located in Dasarahalli, Bengaluru (560024).',
+        question: "What Vastu solutions resolve staircase cuts in HSR Layout multi-storey builder floors?",
+        answer: "Common in 30x40 and 40x60 plots, external stairs often cut into cardinal zones. We neutralize structural imbalances using copper and brass floor barriers, virtual threshold corrections, and directional lighting without civil demolition.",
+      },
+      {
+        question: "Can you assist tech professionals with home office orientation in HSR Layout gated complexes?",
+        answer: "Yes. We assess workstation placement, screen glare, power strip concentrations, and background walls to ensure remote tech leads enjoy sustained mental clarity, focus, and energy.",
+      },
+      {
+        question: "How are on-site visits organized across HSR Layout sectors 1 through 7?",
+        answer: "From our central Bengaluru office, we schedule regular on-site visits across all HSR sectors, delivering an actionable 16-zone audit report with practical zero-demolition guidance.",
       },
     ],
     geo: { lat: 12.9121, lng: 77.6446 },
+    contextualLinks: [
+      {
+        title: "Office & Startup Workspace Vastu",
+        url: "/vastu/office-vastu/",
+        description: "Spatial zoning for executive cabins, developer bullpens, and conference rooms across HSR sectors.",
+        anchorText: "Book HSR Layout Office Vastu Consultation",
+        badge: "Core Service",
+      },
+      {
+        title: "Residential Builder Floor Vastu",
+        url: "/vastu/residential/",
+        description: "Comprehensive directional audits for independent builder floors and plotted homes.",
+        anchorText: "Explore Residential Vastu in HSR Layout",
+        badge: "Core Service",
+      },
+      {
+        title: "16-Zone On-Site Vastu Audit",
+        url: "/vastu-services/vastu-audit/",
+        description: "CAD-based physical and energetic scan of magnetic axes, soil frequency, and room padas.",
+        anchorText: "Request Comprehensive On-Site Vastu Audit",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "Executive Cabin Layout Guide",
+        url: "/blog/office-layout-executive-cabin-vastu/",
+        description: "Strategic desk orientation and spatial power positions for startup founders and business heads.",
+        anchorText: "Read Executive Cabin Vastu Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'koramangala',
@@ -113,17 +185,53 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'Are online or remote consultations available for Koramangala properties?',
-        answer:
-          'Yes. If you have an architectural floor plan and compass orientations, we provide virtual video consultations with the exact same precision as our on-site visits.',
+        question: "How do you audit luxury penthouses and duplex apartments in Koramangala blocks 3 through 6?",
+        answer: "Penthouses feature expansive glass facades, terrace gardens, and wrap-around balconies. We balance external light ingress, secure the South-West perimeter, and rebalance terrace water features to ensure luxury living coincides with energetic stability.",
       },
       {
-        question: 'Where is your physical office located?',
-        answer:
-          'Our registered office is located at 3J64+827, Balaji Layout, Dasarahalli, Bengaluru (560024). We travel to Koramangala for scheduled on-site audits.',
+        question: "What Vastu adjustments help restaurants, cafes, and hospitality venues in Koramangala?",
+        answer: "Hospitality venues benefit from active kitchen fire energy in the South-East, proper cash counter placement in the North or West, and welcoming, well-lit entrances that invite steady customer footfall.",
+      },
+      {
+        question: "How do you handle master bedrooms situated in the North-East in modern Koramangala residences?",
+        answer: "A master bedroom in the Ishanya zone can cause sleep restlessness. Without structural rebuilding, we shift bed orientation, apply grounding earth-tone frequencies, and install brass directional stabilizers to restore calm sleep.",
+      },
+      {
+        question: "Are remote CAD floor plan audits available for Koramangala property owners?",
+        answer: "Yes. We offer comprehensive CAD floor plan audits for property owners prior to on-site visits, reviewing architectural blueprints, furniture plans, and cardinal coordinates.",
       },
     ],
     geo: { lat: 12.9352, lng: 77.6245 },
+    contextualLinks: [
+      {
+        title: "Luxury Penthouse & Villa Vastu",
+        url: "/vastu/residential/",
+        description: "Balancing terrace volumes, floor-to-ceiling glass, and master suites in premium Koramangala blocks.",
+        anchorText: "Schedule Koramangala Luxury Residential Consultation",
+        badge: "Core Service",
+      },
+      {
+        title: "High-Growth Tech Office Vastu",
+        url: "/vastu/corporate/",
+        description: "Multi-floor commercial planning, server placements, and boardroom alignments for enterprise teams.",
+        anchorText: "Explore Corporate Office Vastu Services",
+        badge: "Core Service",
+      },
+      {
+        title: "Astro-Vastu Synthesis Audit",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Harmonizing personal natal planetary strengths with home and commercial spatial zones.",
+        anchorText: "Book Astro-Vastu Synthesis Consultation",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "Master Bedroom Vastu Guidelines",
+        url: "/blog/master-bedroom-vastu-guidelines/",
+        description: "Directional bed placements, headboard alignments, and sleep environment science.",
+        anchorText: "Read Master Bedroom Vastu Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'whitefield',
@@ -149,17 +257,53 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'How do you check Vastu for an under-construction apartment in Whitefield?',
-        answer:
-          'We review builder architectural blueprints before booking, ensuring the floor plan complies with 16 Vastu directional requirements.',
+        question: "What are the most common Vastu defects in large gated high-rise townships in Whitefield?",
+        answer: "Large townships along ITPL and Hope Farm often feature identical floor plates with kitchens placed in the North-East or master bedrooms in the North-West. We apply non-demolition metallic tape and mineral cures to balance elements without impacting neighbors.",
       },
       {
-        question: 'Do you have an office in Whitefield?',
-        answer:
-          'No. 7Rays Astro Vastu does not maintain a branch office in Whitefield. We are based in Dasarahalli (560024) and provide on-site property audits across Whitefield and Kadugodi.',
+        question: "How do you optimize study and work areas for children and tech executives in Whitefield homes?",
+        answer: "We locate study tables in the West of South-West (Vidya zone) or North-East for retention, ensure users face North or East while working, and remove electronic clutter from immediate sleeping zones.",
+      },
+      {
+        question: "Can you inspect an under-construction villa in Whitefield before interior fit-outs commence?",
+        answer: "Yes. Engaging our consultation during the interior fit-out phase allows optimal placement of false ceiling lighting, modular kitchen hobs, electrical equipment, and puja units without costly subsequent rework.",
+      },
+      {
+        question: "How do you schedule on-site inspections across Whitefield and Kadugodi?",
+        answer: "We conduct scheduled on-site audits across all major Whitefield gated communities and tech parks. The audit includes a live spatial inspection followed by a detailed 16-zone blueprint report.",
       },
     ],
     geo: { lat: 12.9698, lng: 77.75 },
+    contextualLinks: [
+      {
+        title: "Gated High-Rise Apartment Vastu",
+        url: "/vastu/apartment-vastu/",
+        description: "Non-invasive balancing for high-density township units along ITPL and Hope Farm.",
+        anchorText: "Book Whitefield Apartment Vastu Consultation",
+        badge: "Core Service",
+      },
+      {
+        title: "Zero-Demolition Remedial Solutions",
+        url: "/vastu/non-demolition/",
+        description: "Elemental boundary tapes and subtle mineral cures for fixed builder floor plates.",
+        anchorText: "Explore Non-Demolition Apartment Solutions",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "Modern Bangalore Apartment Guide",
+        url: "/blog/vastu-for-modern-apartments-in-bangalore/",
+        description: "Overcoming shear walls, fixed utility ducts, and builder floor plan limitations.",
+        anchorText: "Read Bangalore Apartment Vastu Guide",
+        badge: "Practical Guide",
+      },
+      {
+        title: "Home Office Ergonomics & Direction",
+        url: "/blog/best-directions-for-home-office/",
+        description: "Desk positioning and focus zones for tech leads and remote IT architects.",
+        anchorText: "Explore Home Office Direction Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'hebbal',
@@ -192,22 +336,53 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'Do you offer on-site Vastu audits in Hebbal and Sahakara Nagar?',
-        answer:
-          'Yes. With our registered headquarters in Balaji Layout, Dasarahalli (560024) right next to Hebbal, we conduct frequent on-site inspections across Hebbal, Sahakara Nagar, Nagavara, and Bellary Road.',
+        question: "How do you correct Northwest (Vayavya) or North-East cuts common in Hebbal high-rise towers?",
+        answer: "High-rise developments near Hebbal often feature irregular floor plans due to building geometry. Rather than structural changes, we install specific brass and copper boundary-stabilizing rods along skirting lines and adjust functional element usage to rebalance missing directional zones.",
       },
       {
-        question: 'How do you address Vastu for high-rise apartments near Hebbal flyover?',
-        answer:
-          'For multi-storey apartments with fixed structural walls and plumbing shafts, we apply non-demolition remedies using elemental balancing, brass/copper metallic tape inlays, and directional realignment without physical damage.',
+        question: "Can you conduct an on-site Vastu audit before we finalize a luxury flat purchase along Bellary Road?",
+        answer: "Yes. We conduct pre-purchase architectural audits using property floor plans and on-site visits to check cardinal alignment, entrance padas, and geopathic stress, giving buyers clear clarity before signing sale agreements.",
       },
       {
-        question: 'Is 7Rays located near Hebbal?',
-        answer:
-          'Yes. Our registered consulting office is at Balaji Layout, Dasarahalli, Bengaluru (560024), conveniently serving the entire Hebbal, Sahakara Nagar, and North Bangalore residential corridor.',
+        question: "What non-demolition remedies are used for fixed kitchen and toilet locations in North Bangalore apartments?",
+        answer: "For unchangeable plumbing shafts, we neutralize anti-element conflicts using color vibration bands, elemental metallic thresholds, and organic mineral absorbers that balance the directional energy without breaking walls or tiles.",
+      },
+      {
+        question: "How are on-site visits scheduled from your Dasarahalli headquarters?",
+        answer: "Headquartered in Dasarahalli (560024) right next to Hebbal, we schedule on-site visits throughout Hebbal, Sahakara Nagar, and Nagavara with prior appointment, followed by an annotated 16-zone blueprint report.",
       },
     ],
     geo: { lat: 13.0358, lng: 77.597 },
+    contextualLinks: [
+      {
+        title: "High-Rise Apartment Vastu",
+        url: "/vastu/apartment-vastu/",
+        description: "Aerodynamic tower floor plan remedies for luxury gated communities near Hebbal flyover.",
+        anchorText: "Explore Hebbal Apartment Vastu Services",
+        badge: "Core Service",
+      },
+      {
+        title: "Bangalore Authority Vastu Hub",
+        url: "/locations/bangalore/",
+        description: "Our central Bengaluru consulting portal detailing on-site audits from our Dasarahalli desk.",
+        anchorText: "Visit Bangalore Master Vastu Hub",
+        badge: "Core Service",
+      },
+      {
+        title: "16-Zone On-Site Energy Audit",
+        url: "/vastu-services/vastu-audit/",
+        description: "Comprehensive property evaluation covering magnetic orientation, compass bearings, and energy lines.",
+        anchorText: "Schedule On-Site Property Energy Audit",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "North-Facing House Blueprint",
+        url: "/blog/north-facing-house-vastu-plan/",
+        description: "Maximizing Kuber zone wealth flow and entrance pada alignments for residential properties.",
+        anchorText: "Read North-Facing House Vastu Plan",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'sarjapur-road',
@@ -240,22 +415,53 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'Can you audit an under-construction apartment on Sarjapur Road before possession?',
-        answer:
-          'Yes. We frequently review architectural builder plans before registration, helping buyers identify directional strengths and make non-structural interior layout corrections early.',
+        question: "How do you manage Vastu for high-density tech corridor apartments with identical builder floor plans?",
+        answer: "Even in identical multi-storey stacks along Sarjapur Road, energy dynamics differ based on floor level, exterior road junctions, and magnetic bearings. We customize remedial solutions using localized elemental zoning and metal partition lines tailored to your specific unit orientation.",
       },
       {
-        question: 'Do you provide on-site consultations in Bellandur and Outer Ring Road complexes?',
-        answer:
-          'Yes. We conduct scheduled on-site audits for residences and corporate office suites along Bellandur ORR, Sarjapur Road, and Carmelaram.',
+        question: "What is the best Vastu alignment for dual-desk work-from-home setups in 3BHK flats?",
+        answer: "In tech households, we prioritize North, East, or North-East desk orientations for mental focus and clarity, while shielding workstations from high-electromagnetic fire zones or direct sightlines to washrooms.",
       },
       {
-        question: 'Do you have a physical branch on Sarjapur Road?',
-        answer:
-          'No. 7Rays operates from its single registered headquarters in Dasarahalli, Bengaluru (560024). We travel to Sarjapur Road and Bellandur for scheduled on-site audits.',
+        question: "Can an under-construction apartment on Sarjapur Road be audited from CAD drawings?",
+        answer: "Yes. We review CAD layout plans, master floor plans, and compass bearings during the pre-possession stage to identify room allocations, furniture layouts, and remedial corrections before interior work begins.",
+      },
+      {
+        question: "Do you provide physical on-site audits across Bellandur and Outer Ring Road gated societies?",
+        answer: "Yes. We conduct scheduled on-site audits for residential societies and tech offices across Sarjapur Road, Bellandur, Kaikondrahalli, and Carmelaram from our central Bengaluru office.",
       },
     ],
     geo: { lat: 12.9237, lng: 77.6836 },
+    contextualLinks: [
+      {
+        title: "Tech Corridor Apartment Vastu",
+        url: "/vastu/apartment-vastu/",
+        description: "Customized spatial remedies for high-density gated communities along Sarjapur Road and Bellandur.",
+        anchorText: "Book Sarjapur Road Apartment Consultation",
+        badge: "Core Service",
+      },
+      {
+        title: "Non-Demolition Vastu Corrections",
+        url: "/vastu/non-demolition/",
+        description: "Resolving bathroom conflicts and modular kitchen clashes without breaking ceramic tiles.",
+        anchorText: "Explore Non-Demolition Vastu Solutions",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "Non-Invasive Cures for Modern Flats",
+        url: "/blog/vastu-remedies-without-demolition-modern-apartments/",
+        description: "In-depth analysis of elemental metallic strips, color therapy, and energetic boundary lines.",
+        anchorText: "Read Non-Demolition Remedies Guide",
+        badge: "Practical Guide",
+      },
+      {
+        title: "WFH Direction & Productivity Guide",
+        url: "/blog/best-directions-for-home-office/",
+        description: "Desk orientation, electromagnetic shielding, and focus optimization for tech professionals.",
+        anchorText: "Read Home Office Direction Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'electronic-city',
@@ -288,22 +494,53 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'How do you optimize work-from-home setups for IT professionals in Electronic City?',
-        answer:
-          'We evaluate sitting directions, screen facing angles, and EMF hotspots to ensure productivity, mental clarity, and career stability without needing structural remodeling.',
+        question: "What Vastu considerations apply to hybrid IT professionals living in Electronic City apartments?",
+        answer: "Remote tech work requires energetic stability. We align home office workstations facing North or East, position executive seating away from South-West edge cuts, and remediate inverter/server heat loads situated in sensitive water or earth zones.",
       },
       {
-        question: 'Are on-site visits available in Electronic City Phase 1 and Phase 2?',
-        answer:
-          'Yes. We travel to Electronic City Phase 1, Phase 2, and Neeladri Nagar for comprehensive on-site inspections of apartments, villas, and commercial facilities.',
+        question: "Can you evaluate commercial IT offices and coworking floors in Electronic City Phases 1 & 2?",
+        answer: "Yes. We provide commercial office audits covering executive cabins, server room placements in the South-East (Agni), accounts departments in the North, and meeting room layouts to foster operational stability.",
       },
       {
-        question: 'Is 7Rays a local office in Electronic City?',
-        answer:
-          'No. Our registered central office is located in Dasarahalli (560024). Electronic City is a designated service area where we provide scheduled on-site property visits.',
+        question: "How do you balance high-rise apartments in Phase 2 with irregular or non-cardinal orientations?",
+        answer: "Buildings with tilted cardinal axes (Vidisha plots) require precise angular degree mapping using a 360-degree Shaktychakra compass overlay. Non-invasive remedial strips correct directional skewness across all 16 zones.",
+      },
+      {
+        question: "What deliverables are included with an Electronic City on-site property consultation?",
+        answer: "Clients receive an annotated 16-zone architectural floor plan report, an element-by-element remedy list, and a follow-up verification session once the non-demolition cures are installed.",
       },
     ],
     geo: { lat: 12.8452, lng: 77.6602 },
+    contextualLinks: [
+      {
+        title: "IT Commercial Office Vastu",
+        url: "/vastu/office-vastu/",
+        description: "Optimizing tech floor layouts, server rooms, and executive cabins across Phase 1 and Phase 2.",
+        anchorText: "Explore Electronic City Office Vastu Services",
+        badge: "Core Service",
+      },
+      {
+        title: "Residential Flat & Villa Vastu",
+        url: "/vastu/apartment-vastu/",
+        description: "Spatial harmony and focus-zone alignments for IT professionals and engineering families.",
+        anchorText: "Book Residential Vastu in Electronic City",
+        badge: "Core Service",
+      },
+      {
+        title: "Executive Cabin Layout Blueprint",
+        url: "/blog/office-layout-executive-cabin-vastu/",
+        description: "Zoning leadership desks, conference rooms, and financial accounts for commercial growth.",
+        anchorText: "Read Executive Cabin Vastu Guide",
+        badge: "Practical Guide",
+      },
+      {
+        title: "Remote Work Desk Orientation",
+        url: "/blog/best-directions-for-home-office/",
+        description: "Strategic compass alignments for coding, cognitive endurance, and remote productivity.",
+        anchorText: "Read Work-From-Home Vastu Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'jayanagar',
@@ -336,22 +573,53 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'Do you consult on independent home renovations and redeveloped plots in Jayanagar?',
-        answer:
-          'Yes. We specialize in evaluating independent homes, duplex bungalows, and multi-floor redevelopments in Jayanagar and JP Nagar to ensure correct directional balance before and after construction.',
+        question: "How do you approach Vastu for traditional plotted bungalows and ancestral homes in Jayanagar?",
+        answer: "Established residential layouts in Jayanagar feature distinctive plot geometries. We audit property slope, compound wall gates, borewell locations in Ishanya (North-East), and overhead water tanks in the South-West before recommending non-invasive adjustments.",
       },
       {
-        question: 'Can you correct puja room and kitchen placements without breaking existing marble or masonry?',
-        answer:
-          'Yes. Our core approach is non-demolition: we use elemental stabilizers, directional corrections, metallic thresholds, and subtle spatial realignments to harmonize energy without breaking stone or masonry.',
+        question: "Can a home renovation in JP Nagar be executed without demolishing legacy marble or structural columns?",
+        answer: "Yes. Our practice centers on non-demolition. We use directional crystal inlays, metallic threshold tape, lighting corrections, and intentional room-function reassignments that preserve historic finishes and structural integrity.",
       },
       {
-        question: 'Where is your consultation office based?',
-        answer:
-          'Our central registered office is in Dasarahalli, Bengaluru (560024). We visit clients across Jayanagar, JP Nagar, and South Bangalore for scheduled on-site audits.',
+        question: "What are the essential Vastu rules for ground-floor retail shops and clinics in Jayanagar commercial blocks?",
+        answer: "We ensure the business owner or doctor sits in the South-West facing North or East, the cash desk or billing counter opens toward the North (Kuber zone), and customer entry remains unobstructed by heavy display fixtures.",
+      },
+      {
+        question: "How do you schedule on-site consultations for South Bangalore properties?",
+        answer: "From our central Dasarahalli office, we schedule regular on-site visits across Jayanagar 1st to 9th Blocks, JP Nagar, and Banashankari, providing comprehensive on-premise spatial assessments.",
       },
     ],
     geo: { lat: 12.9308, lng: 77.5838 },
+    contextualLinks: [
+      {
+        title: "Residential Plotted Home Vastu",
+        url: "/vastu/residential/",
+        description: "Directional audits for heritage bungalows, independent plots, and ancestral redevelopments.",
+        anchorText: "Book Jayanagar Residential Vastu Consultation",
+        badge: "Core Service",
+      },
+      {
+        title: "16-Zone On-Site Vastu Audit",
+        url: "/vastu-services/vastu-audit/",
+        description: "Detailed CAD-mapped spatial inspection of water features, entrance gates, and room zones.",
+        anchorText: "Schedule Comprehensive Jayanagar Vastu Audit",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "Foundational Homeowner Vastu Principles",
+        url: "/blog/vastu-principles-every-homeowner-should-know/",
+        description: "Architectural principles for ground slope, compound walls, and interior zoning.",
+        anchorText: "Read Foundational Homeowner Vastu Guide",
+        badge: "Practical Guide",
+      },
+      {
+        title: "South-Facing House Vastu Facts",
+        url: "/blog/south-facing-house-vastu-myths/",
+        description: "Classical principles for balancing south-facing entrances and optimizing southern energy flow.",
+        anchorText: "Read South-Facing House Vastu Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'marathahalli',
@@ -384,19 +652,20 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'Can you audit a rented apartment near Marathahalli without making structural changes?',
-        answer:
-          'Yes. Our methodology is non-demolition. We use directional elemental balancing, metallic threshold strips, colors, and subtle object placement that preserve rental agreements and building rules.',
+        question: "How do non-demolition remedies work for leased flats with strict landlord agreements along the ORR?",
+        answer: "We use zero-damage remedial methods such as surface-laid metallic threshold tape, freestanding brass pyramids, energetic rock salt bowls, and strategic interior color accents that can be removed seamlessly at the end of a lease without violating rental terms.",
       },
       {
-        question: 'Do you conduct on-site audits for tech offices and residences along the Outer Ring Road?',
-        answer:
-          'Yes. We provide scheduled on-site inspections for apartments, villas, and commercial spaces throughout Marathahalli, Kadubeesanahalli, Bellandur ORR, and Varthur.',
+        question: "What solutions address kitchens placed in the North-East (Ishanya) in Marathahalli builder towers?",
+        answer: "An Ishanya kitchen clashes with the water element. We balance this zone by installing green marble slabs under the stove, using zinc energy bars to neutralize fire-water disharmony, and adjusting lighting without shifting gas pipes or masonry.",
       },
       {
-        question: 'Do you have an office branch in Marathahalli?',
-        answer:
-          'No. 7Rays Astro Vastu operates from its central registered office in Dasarahalli, Bengaluru (560024). Marathahalli is a dedicated service area where we visit client properties for on-site audits.',
+        question: "Do you audit startup offices and tech workspaces along the Marathahalli-Bellandur belt?",
+        answer: "Yes. We audit commercial workspaces, executive cabins, developer bullpen seating, and server rooms to create focused, low-stress work environments that enhance team productivity.",
+      },
+      {
+        question: "What information is needed to schedule an on-site audit in Marathahalli?",
+        answer: "Simply share your property floor plan or CAD drawing, your society name and location, and preferred appointment dates. We schedule the in-person inspection and deliver a tailored 16-zone correction blueprint.",
       },
     ],
     propertyFocusSection: {
@@ -431,6 +700,36 @@ export const locationsData: LocationItem[] = [
         'For high-rise apartments, on-site energy assessments account for both unit-level layout orientation and the tower’s overall magnetic alignment.',
     },
     geo: { lat: 12.9591, lng: 77.6974 },
+    contextualLinks: [
+      {
+        title: "Apartment Vastu for ORR Flats",
+        url: "/vastu/apartment-vastu/",
+        description: "Tailored remedies for multi-tower societies and high-occupancy apartments along the Outer Ring Road.",
+        anchorText: "Explore Marathahalli Apartment Vastu Services",
+        badge: "Core Service",
+      },
+      {
+        title: "Lease-Friendly Non-Demolition Cures",
+        url: "/vastu/non-demolition/",
+        description: "Surface-applied metallic strips and elemental remedies that protect rental agreements.",
+        anchorText: "Discover Zero-Demolition Solutions",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "Bangalore Apartment Layout Solutions",
+        url: "/blog/vastu-for-modern-apartments-in-bangalore/",
+        description: "Practical strategies for resolving shear wall limitations and builder layout conflicts.",
+        anchorText: "Read Modern Apartment Vastu Guide",
+        badge: "Practical Guide",
+      },
+      {
+        title: "Home Office & Desk Alignment Guide",
+        url: "/blog/best-directions-for-home-office/",
+        description: "Workstation placement and focus alignments for hybrid software developers and managers.",
+        anchorText: "Read Home Office Direction Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'yelahanka',
@@ -463,19 +762,20 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'Can you review an architectural floor plan for a new villa in Yelahanka before construction?',
-        answer:
-          'Yes. We review architectural drawings and CAD plans prior to foundation laying, ensuring optimal room allocations, entrance padas, and water feature alignments from day one.',
+        question: "What are the critical Vastu steps before building a luxury villa or bungalow in Yelahanka?",
+        answer: "Pre-construction is the most effective time for Vastu. We analyze plot slope, soil energy, underground sump and borewell positioning in the North-East, boundary wall heights, and main entrance pada coordinates before civil blueprints are finalized.",
       },
       {
-        question: 'Do you conduct on-site visits in Yelahanka New Town and Sahakara Nagar?',
-        answer:
-          'Yes. Headquartered in Dasarahalli (560024), we conduct scheduled on-site property audits across Yelahanka, Sahakara Nagar, Judicial Layout, and Jakkur.',
+        question: "How do you harmonize double-height living rooms and skylights over the central Brahmasthan?",
+        answer: "While the Brahmasthan should ideally remain light and unburdened, excessive vertical voids or heavy chandeliers can disrupt energy equilibrium. We apply subtle grounding elements and directional lighting to maintain energetic balance in modern villa designs.",
       },
       {
-        question: 'Where is your consulting office located?',
-        answer:
-          'Our registered headquarters is in Dasarahalli, Bengaluru (560024). Yelahanka is an active service area where we provide scheduled on-site visits.',
+        question: "Do you provide physical site visits across Judicial Layout, Jakkur, and Sahakara Nagar?",
+        answer: "Yes. Headquartered in Dasarahalli (560024) right adjacent to Sahakara Nagar and Yelahanka, we conduct prompt on-site assessments for villas, gated plots, and residential apartments across North Bengaluru.",
+      },
+      {
+        question: "Can you inspect agricultural farmhouses or retreat properties in rural Yelahanka and Doddaballapur Road?",
+        answer: "Yes. We conduct expansive layout audits for gated villa communities, farmhouses, and wellness retreats, reviewing perimeter fencing, water bodies, entry gates, and master bedroom placements.",
       },
     ],
     propertyFocusSection: {
@@ -510,6 +810,36 @@ export const locationsData: LocationItem[] = [
         'Engaging during the architectural drafting stage allows room zoning, entrance padas, and utility lines to be optimized before pouring foundations.',
     },
     geo: { lat: 13.1007, lng: 77.5963 },
+    contextualLinks: [
+      {
+        title: "Luxury Villa & Plotted Layout Vastu",
+        url: "/vastu/residential/",
+        description: "Pre-construction blueprint assessments and on-site alignment for villas in Yelahanka New Town.",
+        anchorText: "Schedule Yelahanka Villa Vastu Consultation",
+        badge: "Core Service",
+      },
+      {
+        title: "Complete On-Site 16-Zone Audit",
+        url: "/vastu-services/vastu-audit/",
+        description: "In-person inspection of groundwater sumps, perimeter slopes, and cardinal orientations.",
+        anchorText: "Request On-Site Property Energy Audit",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "North-Facing Villa Blueprint",
+        url: "/blog/north-facing-house-vastu-plan/",
+        description: "Optimizing wealth flow, entrance padas, and room zoning for plotted layouts.",
+        anchorText: "Read North-Facing House Vastu Blueprint",
+        badge: "Practical Guide",
+      },
+      {
+        title: "Foundational Architectural Vastu",
+        url: "/blog/vastu-principles-every-homeowner-should-know/",
+        description: "Essential principles for new constructions, plot geometry, and boundary placement.",
+        anchorText: "Read Foundational Homeowner Vastu Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'banashankari',
@@ -542,19 +872,20 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'Can south-facing houses in Banashankari be made Vastu-compliant without structural rebuilding?',
-        answer:
-          'Yes. Classical Vastu does not consider south-facing properties inherently inauspicious. We locate the positive entrance padas along the southern perimeter and apply non-demolition elemental remedies to harmonize the space.',
+        question: "Are south-facing apartments along Kanakapura Road inherently challenging according to Vastu?",
+        answer: "Not at all. Classical Vastu texts identify multiple highly auspicious entrance padas along the southern perimeter (such as Grihakshat and Vitatha). We verify the exact degree coordinates and apply copper threshold inlays to maximize prosperity.",
       },
       {
-        question: 'Do you provide on-site consultations along the Kanakapura Road metro corridor?',
-        answer:
-          'Yes. We conduct on-site property visits across Banashankari 2nd & 3rd Stages, Padmanabhanagar, Uttarahalli, and large apartment complexes along Kanakapura Road.',
+        question: "How do you balance multi-generational living arrangements in Banashankari duplexes?",
+        answer: "We zone elder suites on the ground floor or West/South-West sectors for health and stability, place young children study rooms in the North-East or West of South-West for focus, and reserve the master bedroom for the primary earner in the South-West.",
       },
       {
-        question: 'Do you operate a branch office in Banashankari?',
-        answer:
-          'No. 7Rays Astro Vastu operates from a single registered office in Dasarahalli, Bengaluru (560024). Banashankari is an active service area where we visit properties for scheduled audits.',
+        question: "What remedies exist for staircases positioned in the North or East in Banashankari independent homes?",
+        answer: "Heavy stairs in light zones create energy depression. We balance the staircase using subterranean brass rods, specific lead-based neutralizing plates, and upward-projecting directional warm lighting to counterbalance spatial weight.",
+      },
+      {
+        question: "How do we arrange an on-site consultation for properties along the Kanakapura Road metro belt?",
+        answer: "Contact our desk with your floor plan and address. We schedule an in-person site visit across Banashankari, Padmanabhanagar, and Kanakapura Road, followed by a complete remedial blueprint.",
       },
     ],
     propertyFocusSection: {
@@ -589,6 +920,36 @@ export const locationsData: LocationItem[] = [
         'For traditional homes undergoing vertical renovation, auditing both the ground-floor foundation and upper-level room allocations ensures unified energetic balance.',
     },
     geo: { lat: 12.9255, lng: 77.5468 },
+    contextualLinks: [
+      {
+        title: "Multi-Generational Residential Vastu",
+        url: "/vastu/residential/",
+        description: "Harmonizing independent homes, duplexes, and family floors in South Bangalore layouts.",
+        anchorText: "Book Banashankari Residential Vastu Consultation",
+        badge: "Core Service",
+      },
+      {
+        title: "Astro-Vastu Synthesis Consultation",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Integrating family birth-chart planetary cycles with property spatial directions.",
+        anchorText: "Explore Astro-Vastu Synthesis Services",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "South-Facing House Vastu Myths",
+        url: "/blog/south-facing-house-vastu-myths/",
+        description: "Unlocking prosperous entrance padas and balancing energy without structural demolition.",
+        anchorText: "Read South-Facing House Vastu Guide",
+        badge: "Practical Guide",
+      },
+      {
+        title: "Toilet & Bathroom Remedy Guide",
+        url: "/blog/bathroom-toilet-vastu-remedies/",
+        description: "Correcting negative drainage and elemental clashes using non-invasive metallic tapes.",
+        anchorText: "Read Bathroom Vastu Remedy Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
   {
     id: 'malleshwaram',
@@ -621,19 +982,20 @@ export const locationsData: LocationItem[] = [
     ],
     faqs: [
       {
-        question: 'Can you advise on retail showrooms and merchant businesses in Malleshwaram and Rajajinagar?',
-        answer:
-          'Yes. We audit cash counter positions, main entrance energy flows, owner seating orientation, and inventory placement to ensure commercial stability without disrupting business operations.',
+        question: "How do you optimize Vastu for retail showrooms and commercial shops on Margosa and Sampige Roads?",
+        answer: "We align the cashier desk facing North, position high-value inventory in the South and West zones, keep the central shop floor open for smooth customer circulation, and remediate low cash flow caused by entrance misalignments.",
       },
       {
-        question: 'Do you travel to Malleshwaram and Rajajinagar for physical site inspections?',
-        answer:
-          'Yes. Located in Dasarahalli (560024), we regularly travel to Malleshwaram, Rajajinagar, Margosa Road, and surrounding layouts for on-site property audits.',
+        question: "Can heritage homes with traditional courtyards (Thotti Mane) be preserved during a Vastu correction?",
+        answer: "Yes. Traditional courtyards naturally respect the open Brahmasthan principle. We maintain the architectural beauty of heritage homes, addressing only modern additions like rear attached washrooms or kitchen modifications using non-invasive elemental cures.",
       },
       {
-        question: 'Is 7Rays an on-site branch in Malleshwaram?',
-        answer:
-          'No. 7Rays Astro Vastu operates exclusively from its central registered office in Dasarahalli (560024). Malleshwaram is a prime service area where we provide scheduled on-site audits.',
+        question: "How do you treat apartments built over redeveloped heritage plots in Malleshwaram?",
+        answer: "Redeveloped plots frequently combine composite boundary shapes. We isolate the apartment unit interior boundary using metallic grid lines to establish an independent 16-zone energetic envelope regardless of external plot irregularities.",
+      },
+      {
+        question: "Where is your consulting office and how do you serve Malleshwaram and Rajajinagar clients?",
+        answer: "7Rays Astro Vastu operates from its central registered office in Dasarahalli (560024). We provide scheduled on-site audits and consultations throughout Malleshwaram, Rajajinagar, and surrounding Central-North Bengaluru localities.",
       },
     ],
     propertyFocusSection: {
@@ -668,5 +1030,35 @@ export const locationsData: LocationItem[] = [
         'Commercial audits include pedestrian flow analysis, cash chest placement, and staff seating alignment to support sustainable business operations.',
     },
     geo: { lat: 13.0031, lng: 77.5643 },
+    contextualLinks: [
+      {
+        title: "Commercial & Retail Showroom Vastu",
+        url: "/vastu/commercial/",
+        description: "Cash counter alignment and entrance energy optimization for Margosa and Sampige Road shops.",
+        anchorText: "Schedule Malleshwaram Retail Vastu Audit",
+        badge: "Core Service",
+      },
+      {
+        title: "Heritage Property Non-Demolition Cures",
+        url: "/vastu/non-demolition/",
+        description: "Preserving vintage woodwork, stone masonry, and traditional courtyards without structural impact.",
+        anchorText: "Explore Heritage Non-Demolition Solutions",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "Retail Store & Showroom Vastu Guide",
+        url: "/blog/retail-store-and-showroom-vastu/",
+        description: "Circulation flow, display zoning, and financial stability for commercial merchant spaces.",
+        anchorText: "Read Retail Showroom Vastu Guide",
+        badge: "Practical Guide",
+      },
+      {
+        title: "Preserving Sacred Brahmasthan",
+        url: "/blog/vastu-principles-every-homeowner-should-know/",
+        description: "Maintaining open energetic courtyards in heritage bungalows and modern redevelopments.",
+        anchorText: "Read Core Vastu Principles Guide",
+        badge: "Practical Guide",
+      },
+    ],
   },
 ]

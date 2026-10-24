@@ -705,6 +705,56 @@ export const LocationDetailPage: React.FC = () => {
         </section>
       )}
 
+      {/* 3.8. CONTEXTUAL SERVICES & PRACTICAL GUIDES (Locality Cross-Linking) */}
+      {location.contextualLinks && location.contextualLinks.length > 0 && (
+        <section className="border-t border-slate-200 bg-white py-16 text-slate-900 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+                TAILORED CONSULTATION PATHS
+              </span>
+              <h2 className="mt-2 font-serif text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
+                Recommended Vastu Services &amp; Guides for {location.name}
+              </h2>
+              <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base font-light">
+                Explore specialized consultation formats and architectural guidance aligned with {location.name}&apos;s micro-market properties.
+              </p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {location.contextualLinks.map((link, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col justify-between rounded-2xl border border-amber-200/80 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-300 hover:bg-white hover:shadow-md"
+                >
+                  <div>
+                    <span className="inline-block rounded-full bg-amber-100 px-2.5 py-0.5 text-[11px] font-semibold text-amber-900">
+                      {link.badge}
+                    </span>
+                    <h3 className="mt-3 font-serif text-base font-bold text-slate-900">
+                      {link.title}
+                    </h3>
+                    <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                      {link.description}
+                    </p>
+                  </div>
+
+                  <div className="mt-5 pt-3 border-t border-amber-100">
+                    <Link
+                      to={link.url}
+                      className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 transition hover:text-amber-950"
+                    >
+                      <span>{link.anchorText}</span>
+                      <ArrowRight className="h-3.5 w-3.5" />
+                    </Link>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* 4. LOCAL FREQUENTLY ASKED QUESTIONS (Warm Off-White Background) */}
       <section className="border-t border-slate-200 bg-[#FBF9F5] py-16 text-slate-900 sm:py-20">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">

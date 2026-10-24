@@ -32,6 +32,14 @@ export interface PropertyFocusSection {
   practicalTip?: string
 }
 
+export interface LocalityContextualLink {
+  title: string
+  url: string
+  description: string
+  anchorText: string
+  badge: 'Core Service' | 'Specialized Audit' | 'Practical Guide'
+}
+
 export interface LocationItem {
   id: string
   slug: string
@@ -51,6 +59,7 @@ export interface LocationItem {
     lng: number
   }
   propertyFocusSection?: PropertyFocusSection
+  contextualLinks?: LocalityContextualLink[]
 }
 
 export interface BlogPostItem {
