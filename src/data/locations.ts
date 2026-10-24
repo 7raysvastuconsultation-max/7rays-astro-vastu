@@ -386,7 +386,7 @@ export const locationsData: LocationItem[] = [
       {
         question: 'Can you audit a rented apartment near Marathahalli without making structural changes?',
         answer:
-          'Yes. Our methodology is 100% non-demolition. We use directional elemental balancing, metallic threshold strips, colors, and subtle object placement that preserve rental agreements and building rules.',
+          'Yes. Our methodology is non-demolition. We use directional elemental balancing, metallic threshold strips, colors, and subtle object placement that preserve rental agreements and building rules.',
       },
       {
         question: 'Do you conduct on-site audits for tech offices and residences along the Outer Ring Road?',
@@ -399,6 +399,37 @@ export const locationsData: LocationItem[] = [
           'No. 7Rays Astro Vastu operates from its central registered office in Dasarahalli, Bengaluru (560024). Marathahalli is a dedicated service area where we visit client properties for on-site audits.',
       },
     ],
+    propertyFocusSection: {
+      tagline: 'ORR Tech Corridor & Leased Flats',
+      title: 'Vastu Architecture for High-Rise Apartments & Leased Flats along the Outer Ring Road',
+      subtitle:
+        'Properties along the Marathahalli and Outer Ring Road tech corridor feature multi-tower gated societies and high rental occupancies. Our non-demolition methodology addresses the specific architectural layouts and lease constraints typical of this belt.',
+      aspects: [
+        {
+          title: 'Fixed Builder Plumbing & Wet Shafts',
+          challenge:
+            'High-rise apartments have non-negotiable plumbing stacks, often locking kitchens into the North-East or bathrooms into the South-West across entire vertical towers.',
+          solution:
+            'We apply elemental energy boundary corrections using metallic threshold dividers (brass, copper, or aluminium) and color-spectrum balancing without breaking tiles or altering developer plumbing lines.',
+        },
+        {
+          title: 'Remote IT Workstations & Productivity Zones',
+          challenge:
+            'Working from home frequently places tech professionals in improvised corners, often facing stress-prone directional zones such as South-South-West or East-South-East.',
+          solution:
+            'We align desk orientation toward North, East, or North-East and place computing power supplies in the South-East fire sector to enhance mental stamina, focus, and sustained career energy.',
+        },
+        {
+          title: 'Tenancy-Safe & Landlord-Compliant Corrections',
+          challenge:
+            'Tenants in gated societies cannot alter masonry, drill structural columns, or modify entryways without risking lease violations or security deposit deductions.',
+          solution:
+            'All remedial treatments are non-invasive and portable, using directional metallic strips, mineral energy absorbers, and subtle object positioning that can be packed and moved upon lease completion.',
+        },
+      ],
+      practicalTip:
+        'For high-rise apartments, on-site energy assessments account for both unit-level layout orientation and the tower’s overall magnetic alignment.',
+    },
     geo: { lat: 12.9591, lng: 77.6974 },
   },
   {
@@ -419,7 +450,7 @@ export const locationsData: LocationItem[] = [
     ],
     heroHeadline: 'Vastu Shastra & Plotted Villa Consultation in Yelahanka, Bangalore',
     metaDescription:
-      'Premier on-site Vastu audits in Yelahanka & Sahakara Nagar by Certified Consultant Rishwa Sinha. Non-demolition guidance for luxury villas, plotted developments, and airport corridor homes.',
+      'Comprehensive on-site Vastu audits in Yelahanka & Sahakara Nagar by Certified Consultant Rishwa Sinha. Non-demolition guidance for luxury villas, plotted developments, and airport corridor homes.',
     commonVastuIssues: [
       'Irregularly shaped plots and angled road junctions across newly expanding North Bangalore villa enclaves',
       'Underground sumps, borewells, or overhead water tanks positioned in conflicting directional zones',
@@ -434,7 +465,7 @@ export const locationsData: LocationItem[] = [
       {
         question: 'Can you review an architectural floor plan for a new villa in Yelahanka before construction?',
         answer:
-          'Yes. We frequently review architectural drawings and CAD plans prior to foundation laying, ensuring optimal room allocations, entrance padas, and water feature alignments from day one.',
+          'Yes. We review architectural drawings and CAD plans prior to foundation laying, ensuring optimal room allocations, entrance padas, and water feature alignments from day one.',
       },
       {
         question: 'Do you conduct on-site visits in Yelahanka New Town and Sahakara Nagar?',
@@ -447,6 +478,37 @@ export const locationsData: LocationItem[] = [
           'Our registered headquarters is in Dasarahalli, Bengaluru (560024). Yelahanka is an active service area where we provide scheduled on-site visits.',
       },
     ],
+    propertyFocusSection: {
+      tagline: 'Luxury Villas & Plotted Layouts',
+      title: 'Architectural Vastu Planning for Luxury Villas & Plotted Estates in North Bengaluru',
+      subtitle:
+        'North Bengaluru’s airport corridor features independent villas, duplex residences, and newly partitioned plotted layouts. Unlike high-rises, plotted developments offer architectural flexibility before construction while requiring precise boundary, drainage, and water planning.',
+      aspects: [
+        {
+          title: 'Plot Geometry & Road Approach (Veedhi Shoola)',
+          challenge:
+            'Expanding layouts across Yelahanka and Sahakara Nagar often feature angled boundaries, corner cuts, or incoming road junctions that create uneven energy distribution across the plot.',
+          solution:
+            'We audit plot proportions, correct diagonal tilts with perimeter landscaping and energy demarcation stones, and ensure compound boundary walls follow graduated heights (higher in South and West).',
+        },
+        {
+          title: 'Water Infrastructure: Borewells, Sumps & Tanks',
+          challenge:
+            'Independent villas require autonomous water management—underground sumps, borewells, and overhead storage tanks—whose directional placement is critical in classical Vastu.',
+          solution:
+            'We position underground water sources strictly in the North-East, North, or East zones (Jal Tatva), while locating heavy overhead concrete or polymer tanks in the South-West to West zones to provide stabilizing load.',
+        },
+        {
+          title: 'Duplex Staircases & Central Brahma-Sthana',
+          challenge:
+            'Contemporary villa designs frequently place dramatic spiral staircases, double-height voids, or skylights directly over the central energy core (Brahma-sthana).',
+          solution:
+            'Through pre-construction CAD drawing audits, we keep the central core open, light, and level, while routing internal stairwells along South, South-West, or West perimeter walls with clockwise ascent.',
+        },
+      ],
+      practicalTip:
+        'Engaging during the architectural drafting stage allows room zoning, entrance padas, and utility lines to be optimized before pouring foundations.',
+    },
     geo: { lat: 13.1007, lng: 77.5963 },
   },
   {
@@ -495,6 +557,37 @@ export const locationsData: LocationItem[] = [
           'No. 7Rays Astro Vastu operates from a single registered office in Dasarahalli, Bengaluru (560024). Banashankari is an active service area where we visit properties for scheduled audits.',
       },
     ],
+    propertyFocusSection: {
+      tagline: 'Multi-Generational Living & Kanakapura High-Rises',
+      title: 'Space Balancing for Extended Family Homes & Kanakapura Road Residences',
+      subtitle:
+        'South Bengaluru combines established multi-generational residences with rapid high-rise residential expansions along the Kanakapura Road metro corridor. Balancing communal living and modern vertical spaces requires thoughtful directional zoning.',
+      aspects: [
+        {
+          title: 'Zonal Bedroom Allocation for Extended Families',
+          challenge:
+            'Balancing the needs of senior parents, working couples, and students in one household requires harmonious room assignment that honors differing generational energy requirements.',
+          solution:
+            'We allocate the master suite in the South-West (Nairutya) for the household head to foster grounding, place senior family members in peaceful South or West zones, and locate student bedrooms in the East or North-East for cognitive clarity.',
+        },
+        {
+          title: 'Demystifying South-Facing & West-Facing Entrances',
+          challenge:
+            'Many home buyers in South Bengaluru carry misconceptions about South-facing homes, fearing they are inherently disadvantageous.',
+          solution:
+            'In classical Vastu, entrance viability depends on specific energetic padas rather than entire directions. Favorable southern padas (like Vithatha and Gruhakshat) offer excellent prosperity; suboptimal entries are balanced with non-demolition copper boundary strips.',
+        },
+        {
+          title: 'Vertical Floor Additions & Metro Corridor High-Rises',
+          challenge:
+            'Traditional homes adding upper-floor extensions risk unbalanced structural load, while Kanakapura Road high-rise buyers navigate standardized developer floorplans.',
+          solution:
+            'We ensure vertical extensions maintain balanced weight distribution (heavier south/west, lighter north/east terraces) and apply non-invasive elemental remedies to align high-rise apartment units.',
+        },
+      ],
+      practicalTip:
+        'For traditional homes undergoing vertical renovation, auditing both the ground-floor foundation and upper-level room allocations ensures unified energetic balance.',
+    },
     geo: { lat: 12.9255, lng: 77.5468 },
   },
   {
@@ -515,7 +608,7 @@ export const locationsData: LocationItem[] = [
     ],
     heroHeadline: 'Vastu Shastra Consultation in Malleshwaram & Rajajinagar, Bangalore',
     metaDescription:
-      'Premier on-site Vastu audits in Malleshwaram & Rajajinagar by Certified Consultant Rishwa Sinha. Non-demolition remedies for heritage homes, commercial retail, and luxury apartments.',
+      'Comprehensive on-site Vastu audits in Malleshwaram & Rajajinagar by Certified Consultant Rishwa Sinha. Non-demolition remedies for heritage homes, commercial retail, and luxury apartments.',
     commonVastuIssues: [
       'Heritage family bungalows with traditional courtyards or extensions where the center (Brahma-sthana) is congested',
       'High-street retail showrooms and merchant offices with cash counter or entrance orientation conflicts',
@@ -543,6 +636,37 @@ export const locationsData: LocationItem[] = [
           'No. 7Rays Astro Vastu operates exclusively from its central registered office in Dasarahalli (560024). Malleshwaram is a prime service area where we provide scheduled on-site audits.',
       },
     ],
+    propertyFocusSection: {
+      tagline: 'Heritage Residences & Commercial Retail',
+      title: 'Vastu Architecture for Heritage Homes & High-Street Retail in West Bengaluru',
+      subtitle:
+        'Malleshwaram and Rajajinagar are home to heritage family bungalows, boutique mercantile showrooms, and modern redeveloped apartments. Spatial planning here must respect cultural architecture while supporting commercial enterprise.',
+      aspects: [
+        {
+          title: 'Heritage Bungalow Conservation & Central Courtyards',
+          challenge:
+            'Traditional family homes often feature central courtyards (thotti mane) or historic verandas that have been retrofitted, sometimes crowding or enclosing the delicate central Brahma-sthana.',
+          solution:
+            'We map the 81-pada Vastu Purusha Mandala to relieve structural congestion at the center without dismantling heritage woodwork or antique masonry, restoring natural light and air flow.',
+        },
+        {
+          title: 'High-Street Retail Showrooms & Commercial Flow',
+          challenge:
+            'Mercantile showrooms and boutique businesses along Sampige Road, Margosa Road, and Rajajinagar require optimal footfall movement and secure cash flow management.',
+          solution:
+            'We align cash counters and billing desks to open toward the North or East, position owner seating with solid back support, guide customer entrances along favorable padas, and store heavy inventory in the South and West zones.',
+        },
+        {
+          title: 'Redeveloped Builder Floors & Ancestral Plot Splits',
+          challenge:
+            'Ancestral plots partitioned into modern luxury builder floors often carry irregular cutouts, shared stairwells, or displaced utility cores across split units.',
+          solution:
+            'We establish independent center points for each apartment unit and use non-demolition boundary rectifications (metallic strips and directional crystals) to restore complete energetic enclosures.',
+        },
+      ],
+      practicalTip:
+        'Commercial audits include pedestrian flow analysis, cash chest placement, and staff seating alignment to support sustainable business operations.',
+    },
     geo: { lat: 13.0031, lng: 77.5643 },
   },
 ]

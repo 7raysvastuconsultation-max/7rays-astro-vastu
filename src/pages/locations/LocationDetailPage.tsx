@@ -10,6 +10,7 @@ import {
   PhoneCall,
   Sparkles,
   MessageSquare,
+  Compass,
 } from 'lucide-react'
 import { SEOHead } from '@/components/seo/SEOHead'
 import { BreadcrumbSchema } from '@/components/seo/schemas/BreadcrumbSchema'
@@ -631,6 +632,78 @@ export const LocationDetailPage: React.FC = () => {
           </div>
         </div>
       </section>
+
+      {/* 3.5. DISTINCT PROPERTY FOCUS & ARCHITECTURAL GUIDANCE SECTION */}
+      {location.propertyFocusSection && (
+        <section className="border-t border-slate-200 bg-[#FAF8F5] py-16 text-slate-900 sm:py-20">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl">
+              <div className="inline-flex items-center gap-2 rounded-full border border-amber-300/80 bg-amber-50 px-3.5 py-1 text-xs font-bold tracking-widest text-amber-800 uppercase shadow-2xs">
+                <Compass className="h-3.5 w-3.5 text-amber-700" />
+                <span>{location.propertyFocusSection.tagline}</span>
+              </div>
+              <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl leading-tight">
+                {location.propertyFocusSection.title}
+              </h2>
+              <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base font-light">
+                {location.propertyFocusSection.subtitle}
+              </p>
+            </div>
+
+            <div className="mt-10 grid grid-cols-1 gap-6 md:grid-cols-3">
+              {location.propertyFocusSection.aspects.map((aspect, idx) => (
+                <div
+                  key={idx}
+                  className="flex flex-col justify-between rounded-2xl border border-amber-200/80 bg-white p-6 shadow-2xs transition hover:border-amber-300 hover:shadow-md"
+                >
+                  <div>
+                    <div className="flex items-center gap-2.5">
+                      <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-amber-100 text-xs font-bold text-amber-900">
+                        0{idx + 1}
+                      </span>
+                      <h3 className="font-serif text-base font-bold text-slate-900">
+                        {aspect.title}
+                      </h3>
+                    </div>
+
+                    <div className="mt-4 rounded-xl border border-amber-100 bg-[#FAF8F5] p-3.5">
+                      <div className="flex items-center gap-1.5 text-xs font-semibold text-amber-900">
+                        <AlertTriangle className="h-3.5 w-3.5 text-amber-700 shrink-0" />
+                        <span>Property Architectural Context</span>
+                      </div>
+                      <p className="mt-1.5 text-xs leading-relaxed text-slate-600">
+                        {aspect.challenge}
+                      </p>
+                    </div>
+
+                    <div className="mt-4">
+                      <div className="flex items-center gap-1.5 text-xs font-semibold text-slate-800">
+                        <CheckCircle2 className="h-3.5 w-3.5 text-amber-700 shrink-0" />
+                        <span>Non-Demolition Vastu Approach</span>
+                      </div>
+                      <p className="mt-1.5 text-xs leading-relaxed text-slate-700 sm:text-sm">
+                        {aspect.solution}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {location.propertyFocusSection.practicalTip && (
+              <div className="mt-8 flex flex-col items-start gap-3 rounded-2xl border border-amber-200/80 bg-gradient-to-r from-amber-50/70 via-white to-amber-50/70 p-5 sm:flex-row sm:items-center sm:gap-4 shadow-2xs">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-amber-100 text-amber-800">
+                  <Sparkles className="h-5 w-5 text-amber-700" />
+                </div>
+                <div className="text-xs sm:text-sm leading-relaxed text-slate-700">
+                  <strong className="font-semibold text-slate-900">On-Site Consultation Practice: </strong>
+                  {location.propertyFocusSection.practicalTip}
+                </div>
+              </div>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* 4. LOCAL FREQUENTLY ASKED QUESTIONS (Warm Off-White Background) */}
       <section className="border-t border-slate-200 bg-[#FBF9F5] py-16 text-slate-900 sm:py-20">

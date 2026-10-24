@@ -18,6 +18,20 @@ export interface ServiceItem {
   deliverables: string[]
 }
 
+export interface PropertyFocusAspect {
+  title: string
+  challenge: string
+  solution: string
+}
+
+export interface PropertyFocusSection {
+  tagline: string
+  title: string
+  subtitle: string
+  aspects: PropertyFocusAspect[]
+  practicalTip?: string
+}
+
 export interface LocationItem {
   id: string
   slug: string
@@ -36,6 +50,7 @@ export interface LocationItem {
     lat: number
     lng: number
   }
+  propertyFocusSection?: PropertyFocusSection
 }
 
 export interface BlogPostItem {
