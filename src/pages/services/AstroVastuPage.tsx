@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   Compass,
+  MapPin,
   ArrowRight,
   Sparkles,
   CheckCircle2,
@@ -67,6 +68,11 @@ export const AstroVastuPage: React.FC = () => {
       question: 'Is this consultation available online for clients outside Bangalore?',
       answer:
         'Yes. We conduct complete digital Astro-Vastu consultations for clients across India—including Mumbai, Delhi NCR, Hyderabad, Pune, Kolkata, and Chennai—as well as international NRI clients. Blueprints and birth charts are analyzed digitally prior to an interactive live video session.',
+    },
+    {
+      question: 'Do you conduct in-person on-site Astro-Vastu audits in Bangalore?',
+      answer:
+        'Yes. Physically headquartered in Dasarahalli, Bengaluru (560024), Certified Vastu Consultant Rishwa Sinha conducts comprehensive on-site inspections across Bangalore (including Whitefield, HSR Layout, Indiranagar, Hebbal, and Koramangala). You can explore our dedicated Bangalore Vastu Consultation Hub or schedule a Vedic Astrology Consultation at our consulting desk.',
     },
   ]
 
@@ -380,6 +386,94 @@ export const AstroVastuPage: React.FC = () => {
                 <p className="mt-2 text-xs leading-relaxed text-slate-300">{item.energy}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 5B. ON-SITE BANGALORE CONSULTATIONS & REGIONAL HOROSCOPE SYNTHESIS */}
+      <section className="border-t border-slate-200 bg-white py-16 text-slate-900 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+              CONSULTATION REGIONS &amp; PRACTICAL AUDITS
+            </span>
+            <h2 className="mt-2 font-serif text-3xl font-bold text-slate-900 sm:text-4xl">
+              On-Site Consultations in Bangalore &amp; Pan-India Virtual Synthesis
+            </h2>
+            <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base font-light">
+              From our single registered headquarters in Dasarahalli (560024), we provide on-site property audits across Bengaluru alongside one-on-one Vedic astrology chart evaluations. For clients across Mumbai, Delhi-NCR, Hyderabad, and overseas, we deliver identical precision through high-definition virtual CAD audits.
+            </p>
+          </div>
+
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div className="flex flex-col justify-between rounded-2xl border border-amber-200/80 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md">
+              <div>
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-800">
+                  <MapPin className="h-5 w-5" />
+                </div>
+                <h3 className="font-serif text-lg font-bold text-slate-900">
+                  Bangalore Master Vastu Hub
+                </h3>
+                <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                  Comprehensive on-site property audits across HSR Layout, Whitefield, Indiranagar, Hebbal, Koramangala, and Greater Bengaluru.
+                </p>
+              </div>
+              <div className="mt-6 border-t border-amber-200/60 pt-4">
+                <Link
+                  to="/locations/bangalore/"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950"
+                >
+                  <span>Explore Bangalore Vastu Hub</span>
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-between rounded-2xl border border-amber-200/80 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md">
+              <div>
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-800">
+                  <Sparkles className="h-5 w-5" />
+                </div>
+                <h3 className="font-serif text-lg font-bold text-slate-900">
+                  Bangalore Vedic Astrology
+                </h3>
+                <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                  Ethical Janam Kundli analysis, career transitions, tech startup muhurtas, and personal planetary Dasha mapping at our Dasarahalli desk.
+                </p>
+              </div>
+              <div className="mt-6 border-t border-amber-200/60 pt-4">
+                <Link
+                  to="/locations/bangalore/astrology/"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950"
+                >
+                  <span>Book Bangalore Astrology Session</span>
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-between rounded-2xl border border-amber-200/80 bg-[#FAF8F5] p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md">
+              <div>
+                <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-100 text-amber-800">
+                  <Compass className="h-5 w-5" />
+                </div>
+                <h3 className="font-serif text-lg font-bold text-slate-900">
+                  Pan-India Remote CAD Audits
+                </h3>
+                <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                  Distance is no barrier. High-precision 16-zone Shaktychakra blueprint overlays and video consultations for clients across India and globally.
+                </p>
+              </div>
+              <div className="mt-6 border-t border-amber-200/60 pt-4">
+                <Link
+                  to="/services/online-vastu-consultation/"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950"
+                >
+                  <span>Explore Online Consultations</span>
+                  <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

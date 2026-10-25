@@ -314,7 +314,7 @@ export const BangaloreMasterPage: React.FC = () => {
             })}
 
             {/* Astro-Vastu Synthesis Card */}
-            <div className="flex flex-col justify-between rounded-2xl border border-amber-300 bg-gradient-to-br from-amber-500/10 via-slate-50 to-white p-6 shadow-2xs">
+            <div className="flex flex-col justify-between rounded-2xl border border-amber-300 bg-gradient-to-br from-amber-500/10 via-slate-50 to-white p-6 shadow-2xs transition hover:border-amber-400 hover:shadow-md">
               <div>
                 <div className="mb-4 flex h-10 w-10 items-center justify-center rounded-xl bg-amber-200 text-amber-900">
                   <Layers className="h-5 w-5" />
@@ -327,14 +327,92 @@ export const BangaloreMasterPage: React.FC = () => {
                   zoning. Ground temporal planetary transitions in balanced physical spaces.
                 </p>
               </div>
-              <div className="mt-6 border-t border-amber-200 pt-4">
+              <div className="mt-6 flex flex-col gap-2.5 border-t border-amber-200 pt-4">
                 <Link
-                  to="/blog/astrology-vs-vastu-difference-and-synthesis/"
+                  to="/services/astro-vastu-synthesis/"
                   className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 hover:text-amber-950"
                 >
-                  <span>Read Astro-Vastu Synthesis</span>
+                  <span>Explore Astro-Vastu Synthesis Service</span>
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
+                <Link
+                  to="/locations/bangalore/astrology/"
+                  className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-slate-600 hover:text-amber-900"
+                >
+                  <span>Bangalore Vedic Astrology Guidance</span>
+                  <ArrowRight className="h-3 w-3" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3B. ASTRO-VASTU SYNTHESIS IN BANGALORE (Dual-Discipline Authority) */}
+      <section className="border-b border-amber-200/80 bg-gradient-to-b from-[#FAF8F5] to-white py-16 text-slate-900 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-3xl border border-amber-200/90 bg-white p-8 shadow-sm sm:p-12">
+            <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
+              <div className="lg:col-span-7">
+                <div className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-900">
+                  <Sparkles className="h-3.5 w-3.5 text-amber-700" />
+                  <span>INTEGRATED HOROSCOPIC &amp; SPATIAL CONSULTATION</span>
+                </div>
+                <h2 className="mt-4 font-serif text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                  Synthesizing Vedic Astrology with Vastu in Bangalore
+                </h2>
+                <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base font-light">
+                  A floor plan does not exist in isolation—it interacts with the specific planetary energies of its occupants. While classical Vastu balances the 16 cardinal and inter-cardinal zones of your Bangalore apartment, villa, or commercial office, Vedic Astrology (Jyotish) reveals your individual planetary Dasha periods and natal strengths.
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base font-light">
+                  When a family member or startup founder undergoes a challenging transit (such as Saturn or Rahu periods), activating corresponding directional zones provides tangible environmental grounding. Headquartered in Dasarahalli, we conduct personal horoscopic evaluations alongside on-site structural energy mapping.
+                </p>
+
+                <div className="mt-8 flex flex-wrap items-center gap-4">
+                  <Link
+                    to="/services/astro-vastu-synthesis/"
+                    className="inline-flex items-center gap-2 rounded-xl bg-amber-700 px-5 py-3 text-xs font-bold text-white shadow-xs transition hover:bg-amber-800"
+                  >
+                    <span>Explore Astro-Vastu Synthesis Methodology</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                  <Link
+                    to="/locations/bangalore/astrology/"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-slate-50 px-5 py-3 text-xs font-bold text-slate-800 transition hover:bg-slate-100"
+                  >
+                    <span>Bangalore Vedic Astrology Consultation</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5">
+                <div className="space-y-4 rounded-2xl border border-amber-200/70 bg-[#FAF8F5] p-6 text-xs text-slate-700">
+                  <h3 className="font-serif text-sm font-bold text-slate-900 uppercase tracking-wider text-amber-800">
+                    Dual-Pillar Consultation Benefits
+                  </h3>
+                  <div className="flex items-start gap-3">
+                    <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-amber-700" />
+                    <div>
+                      <strong className="font-semibold text-slate-900">Personalized Room Allocation: </strong>
+                      Match master bedrooms, executive cabins, and children study desks to individual planetary charts rather than generic assumptions.
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-amber-700" />
+                    <div>
+                      <strong className="font-semibold text-slate-900">Strategic Career &amp; Business Timing: </strong>
+                      Synchronize commercial office expansions, property registrations, and lease signings with favorable planetary muhurtas.
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <ShieldCheck className="mt-0.5 h-4 w-4 shrink-0 text-amber-700" />
+                    <div>
+                      <strong className="font-semibold text-slate-900">Non-Demolition Planetary Balancing: </strong>
+                      Address directional doshas using elemental metal strips, planetary colors, and crystals without civil destruction.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

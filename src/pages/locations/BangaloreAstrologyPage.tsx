@@ -13,6 +13,7 @@ import {
   Minus,
   PhoneCall,
   Sparkles,
+  Layers,
 } from 'lucide-react'
 import { SEOHead } from '@/components/seo/SEOHead'
 import { BreadcrumbSchema } from '@/components/seo/schemas/BreadcrumbSchema'
@@ -275,7 +276,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             <div className="rounded-xl border border-slate-200 bg-slate-50/70 p-6 shadow-2xs">
               <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-amber-50 text-amber-700">
                 <Briefcase className="h-5 w-5" />
@@ -348,6 +349,25 @@ export const BangaloreAstrologyPage: React.FC = () => {
                 className="mt-4 inline-flex items-center gap-1 text-xs font-bold text-amber-700 hover:underline"
               >
                 <span>Birth Chart Details</span>
+                <ArrowRight className="h-3 w-3" />
+              </Link>
+            </div>
+
+            <div className="rounded-xl border border-amber-300 bg-gradient-to-br from-amber-500/10 via-slate-50 to-white p-6 shadow-2xs sm:col-span-2 lg:col-span-1">
+              <div className="mb-3 flex h-9 w-9 items-center justify-center rounded-lg bg-amber-200 text-amber-900">
+                <Layers className="h-5 w-5" />
+              </div>
+              <h3 className="font-serif text-base font-bold text-slate-900">
+                Astro-Vastu Synergy
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600">
+                Ground personal planetary Dashas in your physical space. Harmonize birth chart planets with your Bangalore property's 16 directional zones.
+              </p>
+              <Link
+                to="/services/astro-vastu-synthesis/"
+                className="mt-4 inline-flex items-center gap-1 text-xs font-bold text-amber-800 hover:underline"
+              >
+                <span>Explore Astro-Vastu Synthesis</span>
                 <ArrowRight className="h-3 w-3" />
               </Link>
             </div>
@@ -441,6 +461,77 @@ export const BangaloreAstrologyPage: React.FC = () => {
                   <strong>Strict Privacy:</strong> Your date, time, and birthplace information is
                   kept completely private and never shared.
                 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Astro-Vastu Synergy: Grounding Vedic Horoscopes in Bangalore Spaces */}
+      <section className="border-b border-amber-200/80 bg-gradient-to-b from-white to-[#FAF8F5] py-16 text-slate-900 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-3xl border border-amber-200/90 bg-[#FAF8F5] p-8 shadow-sm sm:p-12">
+            <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-12">
+              <div className="lg:col-span-7">
+                <div className="inline-flex items-center gap-2 rounded-full border border-amber-300 bg-amber-100/70 px-3 py-1 text-xs font-semibold text-amber-900">
+                  <Sparkles className="h-3.5 w-3.5 text-amber-700" />
+                  <span>DUAL-DISCIPLINE INTEGRATION</span>
+                </div>
+                <h2 className="mt-4 font-serif text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                  Grounding Your Horoscopic Energy in Bangalore Spaces
+                </h2>
+                <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-base font-light">
+                  A Janam Kundli analysis reveals <em>when</em> planetary forces influence your career, health, and finances. Vastu Shastra governs <em>where</em> you live and work. When personal transits (such as Saturn Sade Sati or Jupiter transits) activate specific life themes, balancing the corresponding directional zones of your Bengaluru home or tech office provides tangible environmental support.
+                </p>
+                <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-base font-light">
+                  Rather than viewing astrology and architectural space as separate, 7Rays synthesizes both disciplines from our registered Dasarahalli headquarters, helping Bangalore families and entrepreneurs create supportive living and working environments.
+                </p>
+
+                <div className="mt-8 flex flex-wrap items-center gap-4">
+                  <Link
+                    to="/services/astro-vastu-synthesis/"
+                    className="inline-flex items-center gap-2 rounded-xl bg-amber-700 px-5 py-3 text-xs font-bold text-white shadow-xs transition hover:bg-amber-800"
+                  >
+                    <span>Explore Astro-Vastu Synthesis Methodology</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                  <Link
+                    to="/locations/bangalore/"
+                    className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-xs font-bold text-slate-800 transition hover:bg-slate-50"
+                  >
+                    <span>Visit Bangalore Vastu Master Hub</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-5">
+                <div className="space-y-4 rounded-2xl border border-amber-200/80 bg-white p-6 text-xs text-slate-700 shadow-2xs">
+                  <h3 className="font-serif text-sm font-bold text-slate-900 uppercase tracking-wider text-amber-800">
+                    How Astrological Insights Guide Vastu
+                  </h3>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-amber-700" />
+                    <div>
+                      <strong className="font-semibold text-slate-900">Personal Directional Resonance: </strong>
+                      Identifying which cardinal directions in your home directly strengthen your Lagna lord and functional benefic planets.
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-amber-700" />
+                    <div>
+                      <strong className="font-semibold text-slate-900">Workstation &amp; Executive Cabin Power: </strong>
+                      Positioning tech founder and management desks to activate favorable 10th-house planetary influences.
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-amber-700" />
+                    <div>
+                      <strong className="font-semibold text-slate-900">On-Site &amp; Virtual Consultations: </strong>
+                      Combine in-person property audits across Bengaluru with detailed horoscopic birth-chart assessments.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
