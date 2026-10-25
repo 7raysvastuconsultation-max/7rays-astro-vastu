@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   MapPin,
+  ChevronRight,
   ArrowRight,
   BookOpen,
   Briefcase,
@@ -107,7 +108,7 @@ export const BangaloreAstrologyPage: React.FC = () => {
           { name: 'Home', url: '/' },
           { name: 'Locations', url: '/locations/' },
           { name: 'Bangalore', url: '/locations/bangalore/' },
-          { name: 'Astrology', url: '/locations/bangalore/astrology/' },
+          { name: 'Vedic Astrology', url: '/locations/bangalore/astrology/' },
         ]}
       />
       <LocalBusinessSchema
@@ -151,6 +152,25 @@ export const BangaloreAstrologyPage: React.FC = () => {
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb Navigation */}
+          <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-xs text-slate-400">
+            <Link to="/" className="transition hover:text-amber-300">
+              Home
+            </Link>
+            <ChevronRight className="h-3 w-3 text-slate-500" aria-hidden="true" />
+            <Link to="/locations/" className="transition hover:text-amber-300">
+              Locations
+            </Link>
+            <ChevronRight className="h-3 w-3 text-slate-500" aria-hidden="true" />
+            <Link to="/locations/bangalore/" className="transition hover:text-amber-300">
+              Bangalore
+            </Link>
+            <ChevronRight className="h-3 w-3 text-slate-500" aria-hidden="true" />
+            <span aria-current="page" className="font-medium text-amber-300">
+              Vedic Astrology
+            </span>
+          </nav>
+
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-12">
             <div className="py-6 sm:py-10 lg:col-span-7">
               <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-amber-300 uppercase backdrop-blur-md">

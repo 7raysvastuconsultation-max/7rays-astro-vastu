@@ -125,7 +125,7 @@ export const AstroVastuPage: React.FC = () => {
       <BreadcrumbSchema
         items={[
           { name: 'Home', url: '/' },
-          { name: 'Services', url: '/vastu-services/' },
+          { name: 'Vastu Services', url: '/vastu-services/' },
           { name: 'Astro-Vastu Synthesis', url: '/services/astro-vastu-synthesis/' },
         ]}
       />
@@ -157,6 +157,21 @@ export const AstroVastuPage: React.FC = () => {
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-slate-950/80 to-transparent" />
         </div>
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb Navigation */}
+          <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center justify-center gap-2 text-xs text-slate-400">
+            <Link to="/" className="transition hover:text-amber-300">
+              Home
+            </Link>
+            <ChevronRight className="h-3 w-3 text-slate-500" aria-hidden="true" />
+            <Link to="/vastu-services/" className="transition hover:text-amber-300">
+              Vastu Services
+            </Link>
+            <ChevronRight className="h-3 w-3 text-slate-500" aria-hidden="true" />
+            <span aria-current="page" className="font-medium text-amber-300">
+              Astro-Vastu Synthesis
+            </span>
+          </nav>
+
           <div className="mx-auto max-w-3xl text-center">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-amber-300 uppercase backdrop-blur-md">
               <Sparkles className="h-3.5 w-3.5" />
@@ -221,24 +236,38 @@ export const AstroVastuPage: React.FC = () => {
         </div>
       </section>
 
-      {/* 2. BREADCRUMBS & TRUST STRIP (Warm Cream / Off-White) */}
+      {/* 2. REGIONAL HUB & TRUST STRIP (Warm Cream / Off-White) */}
       <section className="border-b border-amber-200/80 bg-[#FAF8F5] py-4 text-slate-900">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-          <nav className="flex items-center gap-2 text-xs text-slate-500">
+          <div className="flex flex-wrap items-center gap-2 text-xs text-slate-600">
+            <span className="font-semibold text-slate-700">Hierarchy:</span>
             <Link to="/" className="transition hover:text-amber-800">
               Home
             </Link>
-            <ChevronRight className="h-3 w-3 text-slate-400" />
+            <ChevronRight className="h-3 w-3 text-slate-400" aria-hidden="true" />
             <Link to="/vastu-services/" className="transition hover:text-amber-800">
-              Services
+              Vastu Services
             </Link>
-            <ChevronRight className="h-3 w-3 text-slate-400" />
-            <span className="font-medium text-slate-800">Astro-Vastu Synthesis</span>
-          </nav>
+            <ChevronRight className="h-3 w-3 text-slate-400" aria-hidden="true" />
+            <span className="font-semibold text-slate-900">Astro-Vastu Synthesis</span>
+          </div>
 
-          <div className="flex items-center gap-2 text-xs font-medium text-amber-900">
-            <Star className="h-4 w-4 text-amber-700" />
-            <span>Personalized Horoscope Synastry • Non-Demolition Elemental Remedies</span>
+          <div className="flex flex-wrap items-center gap-4 text-xs font-medium text-slate-700">
+            <div className="flex items-center gap-1.5">
+              <span className="text-slate-500">In-Person Consultation Hub:</span>
+              <Link
+                to="/locations/bangalore/"
+                className="inline-flex items-center gap-1 font-semibold text-amber-800 hover:text-amber-950 hover:underline"
+              >
+                <span>Bangalore Master Hub</span>
+                <ChevronRight className="h-3 w-3" aria-hidden="true" />
+              </Link>
+            </div>
+            <div className="hidden h-3 w-px bg-slate-300 sm:block" />
+            <div className="flex items-center gap-2 text-amber-900">
+              <Star className="h-4 w-4 text-amber-700" />
+              <span>Personalized Horoscope Synastry • Non-Demolition Elemental Remedies</span>
+            </div>
           </div>
         </div>
       </section>

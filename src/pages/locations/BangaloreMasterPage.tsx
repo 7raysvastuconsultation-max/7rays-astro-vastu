@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
   MapPin,
+  ChevronRight,
   ArrowRight,
   Navigation,
   Building,
@@ -196,7 +197,22 @@ export const BangaloreMasterPage: React.FC = () => {
         </div>
 
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl py-6 sm:py-10">
+          {/* Breadcrumb Navigation */}
+          <nav aria-label="Breadcrumb" className="mb-6 flex flex-wrap items-center gap-2 text-xs text-slate-400">
+            <Link to="/" className="transition hover:text-amber-300">
+              Home
+            </Link>
+            <ChevronRight className="h-3 w-3 text-slate-500" aria-hidden="true" />
+            <Link to="/locations/" className="transition hover:text-amber-300">
+              Locations
+            </Link>
+            <ChevronRight className="h-3 w-3 text-slate-500" aria-hidden="true" />
+            <span aria-current="page" className="font-medium text-amber-300">
+              Bangalore
+            </span>
+          </nav>
+
+          <div className="max-w-3xl py-4 sm:py-8">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-amber-300 uppercase backdrop-blur-md">
               <MapPin className="h-3.5 w-3.5" />
               <span>BENGALURU LOCAL AUTHORITY HUB</span>
