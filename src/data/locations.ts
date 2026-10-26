@@ -44,6 +44,13 @@ export const locationsData: LocationItem[] = [
     geo: { lat: 12.9784, lng: 77.6408 },
     contextualLinks: [
       {
+        title: "Astro-Vastu Synthesis Consultation",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Dual-layer diagnostic aligning birth chart planetary cycles with directional energy in East Bangalore residences and studios.",
+        anchorText: "Schedule Indiranagar Astro-Vastu Diagnostic",
+        badge: "Specialized Audit",
+      },
+      {
         title: "Commercial Retail & Boutique Vastu",
         url: "/vastu/commercial/",
         description: "Tailored energetic balancing for retail flagships, cafes, and creative studios on 100ft and 12th Main.",
@@ -123,6 +130,13 @@ export const locationsData: LocationItem[] = [
     ],
     geo: { lat: 12.9121, lng: 77.6446 },
     contextualLinks: [
+      {
+        title: "Personalized Astro-Vastu Synthesis",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Correlating founders and homeowners planetary Dashas with physical spatial zoning across HSR Layout sectors.",
+        anchorText: "Explore HSR Layout Astro-Vastu Consultation",
+        badge: "Specialized Audit",
+      },
       {
         title: "Office & Startup Workspace Vastu",
         url: "/vastu/office-vastu/",
@@ -276,6 +290,13 @@ export const locationsData: LocationItem[] = [
     geo: { lat: 12.9698, lng: 77.75 },
     contextualLinks: [
       {
+        title: "Astro-Vastu Blueprint Synthesis",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Synthesizing personal horoscopes with 16-zone spatial grids for gated villa and apartment owners in Whitefield.",
+        anchorText: "Book Whitefield Astro-Vastu Synthesis Audit",
+        badge: "Specialized Audit",
+      },
+      {
         title: "Gated High-Rise Apartment Vastu",
         url: "/vastu/apartment-vastu/",
         description: "Non-invasive balancing for high-density township units along ITPL and Hope Farm.",
@@ -354,6 +375,13 @@ export const locationsData: LocationItem[] = [
     ],
     geo: { lat: 13.0358, lng: 77.597 },
     contextualLinks: [
+      {
+        title: "Astro-Vastu Dual-Layer Consultation",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Synchronizing individual planetary transits with directional energy flows in North Bangalore high-rises and villas.",
+        anchorText: "Consult Hebbal Astro-Vastu Synthesis Specialist",
+        badge: "Specialized Audit",
+      },
       {
         title: "High-Rise Apartment Vastu",
         url: "/vastu/apartment-vastu/",
@@ -434,6 +462,13 @@ export const locationsData: LocationItem[] = [
     geo: { lat: 12.9237, lng: 77.6836 },
     contextualLinks: [
       {
+        title: "Astro-Vastu Integrative Analysis",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Evaluating occupant birth charts alongside apartment directional zones to resolve persistent timing friction.",
+        anchorText: "Schedule Sarjapur Road Astro-Vastu Consultation",
+        badge: "Specialized Audit",
+      },
+      {
         title: "Tech Corridor Apartment Vastu",
         url: "/vastu/apartment-vastu/",
         description: "Customized spatial remedies for high-density gated communities along Sarjapur Road and Bellandur.",
@@ -513,6 +548,13 @@ export const locationsData: LocationItem[] = [
     geo: { lat: 12.8452, lng: 77.6602 },
     contextualLinks: [
       {
+        title: "Astro-Vastu Directional Diagnostics",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Mapping tech leadership and resident planetary cycles onto workspace and apartment directional sectors.",
+        anchorText: "Book Electronic City Astro-Vastu Analysis",
+        badge: "Specialized Audit",
+      },
+      {
         title: "IT Commercial Office Vastu",
         url: "/vastu/office-vastu/",
         description: "Optimizing tech floor layouts, server rooms, and executive cabins across Phase 1 and Phase 2.",
@@ -591,6 +633,13 @@ export const locationsData: LocationItem[] = [
     ],
     geo: { lat: 12.9308, lng: 77.5838 },
     contextualLinks: [
+      {
+        title: "Classical Astro-Vastu Synthesis",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Synthesizing family Janma Kundli charts with ancestral and redeveloped residential directional layouts in Jayanagar.",
+        anchorText: "Explore Jayanagar Astro-Vastu Consultation",
+        badge: "Specialized Audit",
+      },
       {
         title: "Residential Plotted Home Vastu",
         url: "/vastu/residential/",
@@ -702,6 +751,13 @@ export const locationsData: LocationItem[] = [
     geo: { lat: 12.9591, lng: 77.6974 },
     contextualLinks: [
       {
+        title: "Astro-Vastu Floor Plan Calibration",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Connecting individual planetary Dasha influences with apartment directional zones along the Outer Ring Road.",
+        anchorText: "Schedule Marathahalli Astro-Vastu Consultation",
+        badge: "Specialized Audit",
+      },
+      {
         title: "Apartment Vastu for ORR Flats",
         url: "/vastu/apartment-vastu/",
         description: "Tailored remedies for multi-tower societies and high-occupancy apartments along the Outer Ring Road.",
@@ -811,6 +867,13 @@ export const locationsData: LocationItem[] = [
     },
     geo: { lat: 13.1007, lng: 77.5963 },
     contextualLinks: [
+      {
+        title: "Astro-Vastu Residential Synthesis",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Harmonizing personal astrological charts with plotted layout and luxury villa alignments in Yelahanka.",
+        anchorText: "Book Yelahanka Astro-Vastu Synthesis Audit",
+        badge: "Specialized Audit",
+      },
       {
         title: "Luxury Villa & Plotted Layout Vastu",
         url: "/vastu/residential/",
@@ -1031,6 +1094,13 @@ export const locationsData: LocationItem[] = [
     },
     geo: { lat: 13.0031, lng: 77.5643 },
     contextualLinks: [
+      {
+        title: "Astro-Vastu Spatial Alignment",
+        url: "/services/astro-vastu-synthesis/",
+        description: "Integrating classical Vedic astrology with retail showroom and heritage home 16-zone directional grids.",
+        anchorText: "Schedule Malleshwaram Astro-Vastu Diagnostic",
+        badge: "Specialized Audit",
+      },
       {
         title: "Commercial & Retail Showroom Vastu",
         url: "/vastu/commercial/",

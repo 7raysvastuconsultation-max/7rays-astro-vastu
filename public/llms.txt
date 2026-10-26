@@ -63,6 +63,12 @@
 - [Pune Vastu Consultation](https://7raysastrovastu.in/locations/pune/): Remote Vastu guidance for IT-corridor apartments, duplexes, and sloping terrain plots in Hinjewadi and Kothrud.
 - [Kolkata Vastu Consultation](https://7raysastrovastu.in/locations/kolkata/): Remote Vastu audits for heritage residences, family properties, and modern New Town high-rises.
 
+## Practical Editorial Guides & Checklists
+- [Bangalore Apartment Vastu Checklist](https://7raysastrovastu.in/blog/bangalore-apartment-vastu-checklist-before-buying/): 10-point pre-purchase evaluation guide for evaluating builder floor plans before booking or handover.
+- [Vastu for Modern Apartments in Bangalore](https://7raysastrovastu.in/blog/vastu-for-modern-apartments-in-bangalore/): Practical solutions for lived-in high-rise constraints, RERA builder layouts, and cantilevered balconies.
+- [How to Choose Vastu Consultation Services](https://7raysastrovastu.in/blog/how-to-choose-vastu-consultation-services/): Transparent comparison guide for property scopes, formats, and responsible claims.
+- [Non-Demolition Vastu Remedies](https://7raysastrovastu.in/blog/vastu-remedies-without-demolition-modern-apartments/): Actionable elemental corrections for modern high-rises and leased spaces.
+
 ## Technical & Crawl Resources
 - Canonical XML Sitemap: https://7raysastrovastu.in/sitemap.xml
 - Consultant Credentials & Profile: https://7raysastrovastu.in/consultant/rishwa-sinha/

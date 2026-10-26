@@ -904,30 +904,38 @@ export const CommercialVastuPage: React.FC = () => {
                 </p>
 
                 <div className="mt-4 grid grid-cols-2 gap-2 text-xs text-slate-700">
-                  <div className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                  <Link to="/locations/marathahalli/" className="flex items-center gap-1.5 font-medium text-slate-800 transition hover:text-amber-800 hover:underline">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700 shrink-0" />
                     <span>Outer Ring Road &amp; Marathahalli</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
-                    <span>Whitefield IT Corridors</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
-                    <span>Koramangala &amp; HSR Layout</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
-                    <span>Indiranagar 100ft Road</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
-                    <span>MG Road &amp; Central Business District</span>
-                  </div>
-                  <div className="flex items-center gap-1.5 font-medium">
-                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700" />
+                  </Link>
+                  <Link to="/locations/whitefield/" className="flex items-center gap-1.5 font-medium text-slate-800 transition hover:text-amber-800 hover:underline">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700 shrink-0" />
+                    <span>Whitefield Tech Corridors</span>
+                  </Link>
+                  <Link to="/locations/koramangala/" className="flex items-center gap-1.5 font-medium text-slate-800 transition hover:text-amber-800 hover:underline">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700 shrink-0" />
+                    <span>Koramangala Commercial Hub</span>
+                  </Link>
+                  <Link to="/locations/hsr-layout/" className="flex items-center gap-1.5 font-medium text-slate-800 transition hover:text-amber-800 hover:underline">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700 shrink-0" />
+                    <span>HSR Layout Startup Offices</span>
+                  </Link>
+                  <Link to="/locations/indiranagar/" className="flex items-center gap-1.5 font-medium text-slate-800 transition hover:text-amber-800 hover:underline">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700 shrink-0" />
+                    <span>Indiranagar Retail &amp; Offices</span>
+                  </Link>
+                  <Link to="/locations/malleshwaram/" className="flex items-center gap-1.5 font-medium text-slate-800 transition hover:text-amber-800 hover:underline">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700 shrink-0" />
+                    <span>Malleshwaram Retail &amp; Showrooms</span>
+                  </Link>
+                  <Link to="/locations/electronic-city/" className="flex items-center gap-1.5 font-medium text-slate-800 transition hover:text-amber-800 hover:underline">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700 shrink-0" />
+                    <span>Electronic City IT Parks</span>
+                  </Link>
+                  <Link to="/locations/bangalore/industrial-vastu/" className="flex items-center gap-1.5 font-medium text-slate-800 transition hover:text-amber-800 hover:underline">
+                    <CheckCircle2 className="h-3.5 w-3.5 text-amber-700 shrink-0" />
                     <span>Peenya &amp; Industrial Belts</span>
-                  </div>
+                  </Link>
                 </div>
 
                 <div className="mt-6 space-y-3">

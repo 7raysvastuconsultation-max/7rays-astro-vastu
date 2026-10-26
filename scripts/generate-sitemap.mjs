@@ -77,6 +77,7 @@ const blogSlugs = [
   'career-astrology-professional-path-guidelines',
   'astrology-vs-vastu-difference-and-synthesis',
   'understanding-dasha-cycles-and-transitions',
+  'bangalore-apartment-vastu-checklist-before-buying',
 ]
 
 const caseStudySlugs = [

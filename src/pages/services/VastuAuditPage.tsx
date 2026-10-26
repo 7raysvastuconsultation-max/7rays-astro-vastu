@@ -347,6 +347,64 @@ export const VastuAuditPage: React.FC = () => {
         </div>
       </section>
 
+      {/* On-Site Bangalore Audits Section */}
+      <section className="border-t border-slate-200 bg-white py-16 text-slate-900">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+              LOCALITY AUDIT HUBS
+            </span>
+            <h2 className="mt-2 font-serif text-2xl font-bold text-slate-900 sm:text-3xl">
+              On-Site Scientific Audits Across Greater Bengaluru
+            </h2>
+            <p className="mt-3 text-xs leading-relaxed text-slate-600 sm:text-sm">
+              We conduct calibrated 16-zone angular audits, geopathic stress scans, and entrance pada verifications across major Bengaluru residential and commercial hubs:
+            </p>
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <Link
+              to="/locations/hebbal/"
+              className="rounded-xl border border-slate-200 bg-[#FAF8F5] p-5 transition hover:border-amber-400 hover:shadow-md"
+            >
+              <h3 className="font-serif text-sm font-bold text-slate-900">Hebbal & Manyata Corridor</h3>
+              <p className="mt-1 text-xs text-slate-600">On-site audits for luxury high-rises and tech residences in North Bangalore.</p>
+            </Link>
+            <Link
+              to="/locations/whitefield/"
+              className="rounded-xl border border-slate-200 bg-[#FAF8F5] p-5 transition hover:border-amber-400 hover:shadow-md"
+            >
+              <h3 className="font-serif text-sm font-bold text-slate-900">Whitefield & ITPL Zone</h3>
+              <p className="mt-1 text-xs text-slate-600">Precision energy diagnostics for gated communities and enterprise campuses.</p>
+            </Link>
+            <Link
+              to="/locations/hsr-layout/"
+              className="rounded-xl border border-slate-200 bg-[#FAF8F5] p-5 transition hover:border-amber-400 hover:shadow-md"
+            >
+              <h3 className="font-serif text-sm font-bold text-slate-900">HSR Layout Sectors</h3>
+              <p className="mt-1 text-xs text-slate-600">Spatial zoning audits for startup offices, studios, and independent homes.</p>
+            </Link>
+            <Link
+              to="/locations/yelahanka/"
+              className="rounded-xl border border-slate-200 bg-[#FAF8F5] p-5 transition hover:border-amber-400 hover:shadow-md"
+            >
+              <h3 className="font-serif text-sm font-bold text-slate-900">Yelahanka Plotted Villas</h3>
+              <p className="mt-1 text-xs text-slate-600">Pre-construction blueprint assessments and plotted home energy scans.</p>
+            </Link>
+          </div>
+
+          <div className="mt-8 text-center">
+            <Link
+              to="/locations/bangalore/vastu-audit/"
+              className="inline-flex items-center gap-2 rounded-lg bg-slate-900 px-6 py-3 text-xs font-bold text-amber-300 transition hover:bg-slate-800"
+            >
+              <span>Explore Bangalore On-Site Vastu Audit Authority Desk</span>
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQs */}
       <section className="bg-[#FAF8F5] py-20 text-slate-900">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
