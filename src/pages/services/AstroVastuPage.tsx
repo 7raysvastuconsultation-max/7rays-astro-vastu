@@ -324,14 +324,25 @@ export const AstroVastuPage: React.FC = () => {
                 <div className="rounded-xl border border-slate-200/80 bg-white p-5 shadow-xs">
                   <strong className="text-amber-800 text-sm">Career Growth &amp; Authority:</strong>
                   <p className="mt-1 text-slate-600">
-                    Synchronizing the 10th astrological house with the South and Southwest zones, stabilizing executive decision-making and business reputation.
+                    Synchronizing the 10th astrological house with the South and Southwest zones, stabilizing executive decision-making and business reputation. Frequently consulted by corporate leaders in{' '}
+                    <Link to="/locations/hsr-layout/" className="font-medium text-amber-900 hover:underline">
+                      HSR Layout
+                    </Link>{' '}
+                    and{' '}
+                    <Link to="/locations/indiranagar/" className="font-medium text-amber-900 hover:underline">
+                      Indiranagar
+                    </Link>{' '}
+                    navigating professional milestones.
                   </p>
                 </div>
 
                 <div className="rounded-xl border border-slate-200/80 bg-white p-5 shadow-xs">
                   <strong className="text-amber-800 text-sm">Financial Liquidity &amp; Opportunity:</strong>
                   <p className="mt-1 text-slate-600">
-                    Aligning Mercury and Venus planetary strengths with the North (Kuber zone) and Southeast (Agni fire zone), removing financial bottlenecks.
+                    Aligning Mercury and Venus planetary strengths with the North (Kuber zone) and Southeast (Agni fire zone), removing financial bottlenecks for commercial ventures and entrepreneurs across hubs like{' '}
+                    <Link to="/locations/koramangala/" className="font-medium text-amber-900 hover:underline">
+                      Koramangala
+                    </Link>.
                   </p>
                 </div>
 
@@ -444,7 +455,23 @@ export const AstroVastuPage: React.FC = () => {
                   Bangalore Master Vastu Hub
                 </h3>
                 <p className="mt-2 text-xs leading-relaxed text-slate-600">
-                  Comprehensive on-site property audits across HSR Layout, Whitefield, Indiranagar, Hebbal, Koramangala, and Greater Bengaluru.
+                  Comprehensive on-site property audits and chart synastry across{' '}
+                  <Link to="/locations/whitefield/" className="font-medium text-amber-900 hover:underline">
+                    Whitefield
+                  </Link>
+                  ,{' '}
+                  <Link to="/locations/hsr-layout/" className="font-medium text-amber-900 hover:underline">
+                    HSR Layout
+                  </Link>
+                  ,{' '}
+                  <Link to="/locations/indiranagar/" className="font-medium text-amber-900 hover:underline">
+                    Indiranagar
+                  </Link>
+                  ,{' '}
+                  <Link to="/locations/hebbal/" className="font-medium text-amber-900 hover:underline">
+                    Hebbal
+                  </Link>
+                  , and Greater Bengaluru.
                 </p>
               </div>
               <div className="mt-6 border-t border-amber-200/60 pt-4">
@@ -501,6 +528,85 @@ export const AstroVastuPage: React.FC = () => {
                   <span>Explore Online Consultations</span>
                   <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Neighborhood-Specific Astro-Vastu Applications */}
+          <div className="mt-14 rounded-2xl border border-amber-200/80 bg-[#FAF8F5] p-6 sm:p-8">
+            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 border-b border-amber-200/60 pb-4">
+              <div>
+                <span className="text-xs font-bold tracking-wider text-amber-700 uppercase">
+                  LOCALIZED BANGALORE FOCUS
+                </span>
+                <h3 className="font-serif text-xl font-bold text-slate-900">
+                  Astro-Vastu Solutions by Neighborhood Architecture
+                </h3>
+              </div>
+              <Link
+                to="/locations/bangalore/"
+                className="inline-flex items-center gap-1 text-xs font-semibold text-amber-800 hover:text-amber-950"
+              >
+                <span>Bangalore Master Hub</span>
+                <ChevronRight className="h-3 w-3" />
+              </Link>
+            </div>
+
+            <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-2xs">
+                <span className="text-xs font-bold text-amber-800">Tech Corridors &amp; High-Rises</span>
+                <p className="mt-1.5 text-xs text-slate-600 leading-relaxed">
+                  Harmonizing fixed builder layouts and study zones for IT professionals in{' '}
+                  <Link to="/locations/whitefield/" className="font-semibold text-amber-900 hover:underline">
+                    Whitefield apartments
+                  </Link>{' '}
+                  and{' '}
+                  <Link to="/locations/sarjapur-road/" className="font-semibold text-amber-900 hover:underline">
+                    Sarjapur Road flats
+                  </Link>.
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-2xs">
+                <span className="text-xs font-bold text-amber-800">Executive &amp; Hybrid Living</span>
+                <p className="mt-1.5 text-xs text-slate-600 leading-relaxed">
+                  Aligning career Dasha periods with home-office desks in{' '}
+                  <Link to="/locations/hsr-layout/" className="font-semibold text-amber-900 hover:underline">
+                    HSR Layout residences
+                  </Link>{' '}
+                  and{' '}
+                  <Link to="/locations/electronic-city/" className="font-semibold text-amber-900 hover:underline">
+                    Electronic City tech hubs
+                  </Link>.
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-2xs">
+                <span className="text-xs font-bold text-amber-800">Startups &amp; Commercial Villas</span>
+                <p className="mt-1.5 text-xs text-slate-600 leading-relaxed">
+                  Energizing cash flow and founder stability across{' '}
+                  <Link to="/locations/indiranagar/" className="font-semibold text-amber-900 hover:underline">
+                    Indiranagar commercial villas
+                  </Link>{' '}
+                  and{' '}
+                  <Link to="/locations/koramangala/" className="font-semibold text-amber-900 hover:underline">
+                    Koramangala workspaces
+                  </Link>.
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-slate-200/80 bg-white p-4 shadow-2xs">
+                <span className="text-xs font-bold text-amber-800">Traditional &amp; Family Homes</span>
+                <p className="mt-1.5 text-xs text-slate-600 leading-relaxed">
+                  Synchronizing multi-generational family charts in{' '}
+                  <Link to="/locations/jayanagar/" className="font-semibold text-amber-900 hover:underline">
+                    Jayanagar family homes
+                  </Link>{' '}
+                  and{' '}
+                  <Link to="/locations/malleshwaram/" className="font-semibold text-amber-900 hover:underline">
+                    Malleshwaram properties
+                  </Link>.
+                </p>
               </div>
             </div>
           </div>
