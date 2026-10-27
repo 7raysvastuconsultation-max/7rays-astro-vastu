@@ -44,42 +44,32 @@ export const BangaloreMasterPage: React.FC = () => {
     {
       question: 'Where is 7Rays Astro Vastu located in Bangalore?',
       answer:
-        '7Rays Astro Vastu is physically headquartered at 3J64+827, Balaji Layout, H A Farm Post, Bhuvaneswari Nagar, Dasarahalli, Bengaluru, Karnataka 560024. Consultations at the office are conducted by prior appointment.',
+        '7Rays Astro Vastu is physically headquartered at 3J64+827, Balaji Layout, H A Farm Post, Bhuvaneswari Nagar, Dasarahalli, Bengaluru, Karnataka 560024. Desk consultations are conducted by prior appointment, while on-site property audits are provided across Greater Bengaluru.',
     },
     {
-      question: 'Does 7Rays provide on-site Vastu visits across Bangalore?',
+      question: 'Who conducts the Vastu consultation in Bangalore?',
       answer:
-        'Yes. Certified Vastu Consultant Rishwa Sinha conducts physical on-site audits across all zones of Greater Bengaluru, including North Bangalore (Dasarahalli, Hebbal, Yelahanka), East Bangalore (Indiranagar, Whitefield), South Bangalore (Koramangala, HSR Layout, JP Nagar), and West Bangalore (Malleshwaram, Rajajinagar).',
+        'All residential, commercial, and industrial consultations are personally directed by Certified Vastu Consultant Rishwa Sinha, combining 16-zone classical Vastu Shastra with Vedic astrological chart alignment and 5+ years of dedicated practice.',
     },
     {
       question: 'Do you require demolition of walls or renovation for Bangalore homes?',
       answer:
-        'No. We emphasize non-demolition Vastu remedies wherever applicable. We harmonize directional imbalances using calibrated metallic floor inlays (copper, brass, zinc, lead), directional remedies, and spatial realignment without breaking structural walls or tiles.',
+        'No. We specialize in non-demolition remedies suitable for high-rise apartments, villas, and leased corporate offices. We harmonize directional imbalances using calibrated metallic floor inlays (copper, brass, zinc, lead), elemental balancing, and spatial realignment without breaking structural walls or tiles.',
     },
     {
       question: 'What is the difference between your business location and your service areas?',
       answer:
-        '7Rays Astro Vastu operates from a single registered consulting headquarters in Dasarahalli (560024). Locality mentions such as Whitefield, HSR Layout, or Koramangala represent our active service areas for on-site property visits, not separate branch offices.',
+        '7Rays Astro Vastu operates from a single registered consulting headquarters in Dasarahalli (560024). Locality mentions such as Whitefield, HSR Layout, Koramangala, Indiranagar, and Sarjapur Road represent our active on-site property inspection territories, not separate branch offices.',
     },
     {
-      question: 'What types of properties do you inspect in Bengaluru?',
+      question: 'What instruments and tools are used during an on-site property audit?',
       answer:
-        'We consult on high-rise residential apartments, duplex townhouses, luxury villas, tech startup offices, corporate headquarters, retail showrooms, commercial restaurants, and manufacturing plants in industrial corridors like Peenya and Bommasandra.',
-    },
-    {
-      question: 'How do you check Vastu for Bangalore apartments where you cannot alter entrances?',
-      answer:
-        'We measure exact compass degrees from the center of the apartment (Brahmasthan) using calibrated digital sensors. If an entrance opens into an inauspicious pada, we energetically neutralize the boundary using metallic threshold strips and elemental color adjustments without modifying common society corridors.',
+        'On-site assessments utilize calibrated diagnostic instruments, including a Suunto 0° digital compass for degree orientation, a Tenmars TM-191 EMF meter for electromagnetic environment assessments, and solid brass dowsing rods for natural energy scans.',
     },
     {
       question: 'Can I combine Vastu with a Vedic astrology consultation in Bangalore?',
       answer:
-        'Yes. We offer an integrated Astro-Vastu consultation that synthesizes your personal planetary Dasha cycles with the 16 directional zones of your property, ensuring your physical space directly supports your life phase.',
-    },
-    {
-      question: 'How do I book an on-site property audit in Bangalore?',
-      answer:
-        'You can book through our online consultation form, select your property type (Residential, Commercial, Industrial, or Astrology), and schedule an inspection slot. On-site visits are scheduled following initial blueprint review.',
+        'Yes. Our dual-discipline Astro-Vastu synthesis pairs individual planetary Dasha cycles with the 16 directional zones of your property, ensuring your physical space directly supports your life phase.',
     },
   ]
 
@@ -279,6 +269,60 @@ export const BangaloreMasterPage: React.FC = () => {
               <span>Get Directions on Google Maps</span>
               <ArrowRight className="h-3 w-3" />
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Facts / AI Overview Anchor Block */}
+      <section className="border-b border-amber-200/60 bg-amber-50/40 py-8 text-slate-900 sm:py-10">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border border-amber-200/80 bg-white p-6 shadow-sm sm:p-8">
+            <div className="mb-6 flex items-center gap-2 text-xs font-bold tracking-wider text-amber-800 uppercase sm:text-sm">
+              <Sparkles className="h-4 w-4 text-amber-700" />
+              <span>Bangalore Vastu Consultation at a Glance</span>
+            </div>
+
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 text-sm">
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-2 font-semibold text-slate-900">
+                  <ShieldCheck className="h-4 w-4 shrink-0 text-amber-700" />
+                  <span>Lead Consultant</span>
+                </div>
+                <p className="pl-6 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                  Led by Certified Vastu Consultant Rishwa Sinha with 5+ years of dedicated practice in Vastu Shastra, Vedic Astrology, and modern spatial planning.
+                </p>
+              </div>
+
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-2 font-semibold text-slate-900">
+                  <Compass className="h-4 w-4 shrink-0 text-amber-700" />
+                  <span>Inspection &amp; Audit Formats</span>
+                </div>
+                <p className="pl-6 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                  On-site physical inspections across Greater Bengaluru, supplemented by remote architectural blueprint reviews via calibrated 16-zone grid analysis.
+                </p>
+              </div>
+
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-2 font-semibold text-slate-900">
+                  <Layers className="h-4 w-4 shrink-0 text-amber-700" />
+                  <span>Remedy Methodology</span>
+                </div>
+                <p className="pl-6 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                  Strictly non-demolition remedies using precision metal inlays (brass, copper, zinc, lead), elemental balance, and directional realignment—zero civil demolition required.
+                </p>
+              </div>
+
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-2 font-semibold text-slate-900">
+                  <MapPin className="h-4 w-4 shrink-0 text-amber-700" />
+                  <span>Verified Consulting Office</span>
+                </div>
+                <p className="pl-6 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                  Headquartered at 3J64+827, Balaji Layout, H A Farm Post, Bhuvaneswari Nagar, Dasarahalli, Bengaluru 560024. All other named Bengaluru areas are on-site service territories.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
