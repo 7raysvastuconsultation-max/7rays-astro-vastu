@@ -276,51 +276,59 @@ export const BangaloreMasterPage: React.FC = () => {
       {/* Quick Facts / AI Overview Anchor Block */}
       <section className="border-b border-amber-200/60 bg-amber-50/40 py-8 text-slate-900 sm:py-10">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="rounded-2xl border border-amber-200/80 bg-white p-6 shadow-sm sm:p-8">
-            <div className="mb-6 flex items-center gap-2 text-xs font-bold tracking-wider text-amber-800 uppercase sm:text-sm">
-              <Sparkles className="h-4 w-4 text-amber-700" />
+          <div className="rounded-2xl border border-amber-200/80 bg-white p-4 shadow-sm sm:p-6 lg:p-7">
+            <div className="mb-4 flex items-center gap-2 text-xs font-bold tracking-wider text-amber-800 uppercase sm:mb-5 sm:text-sm">
+              <Sparkles className="h-4 w-4 shrink-0 text-amber-700" />
               <span>Bangalore Vastu Consultation at a Glance</span>
             </div>
 
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 text-sm">
-              <div className="space-y-1.5">
-                <div className="flex items-center gap-2 font-semibold text-slate-900">
-                  <ShieldCheck className="h-4 w-4 shrink-0 text-amber-700" />
-                  <span>Lead Consultant</span>
+            <div className="grid grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2">
+              <div className="flex items-start gap-3 rounded-xl border border-amber-100/80 bg-amber-50/30 p-3.5 sm:p-4">
+                <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-800">
+                  <ShieldCheck className="h-4 w-4" />
                 </div>
-                <p className="pl-6 text-xs leading-relaxed text-slate-600 sm:text-sm">
-                  Led by Certified Vastu Consultant Rishwa Sinha with 5+ years of dedicated practice in Vastu Shastra, Vedic Astrology, and modern spatial planning.
-                </p>
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-xs font-bold text-slate-900 sm:text-sm">Lead Consultant</h3>
+                  <p className="mt-1 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                    Led by Certified Vastu Consultant Rishwa Sinha with 5+ years of dedicated practice in Vastu Shastra, Vedic Astrology, and modern spatial planning.
+                  </p>
+                </div>
               </div>
 
-              <div className="space-y-1.5">
-                <div className="flex items-center gap-2 font-semibold text-slate-900">
-                  <Compass className="h-4 w-4 shrink-0 text-amber-700" />
-                  <span>Inspection &amp; Audit Formats</span>
+              <div className="flex items-start gap-3 rounded-xl border border-amber-100/80 bg-amber-50/30 p-3.5 sm:p-4">
+                <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-800">
+                  <Compass className="h-4 w-4" />
                 </div>
-                <p className="pl-6 text-xs leading-relaxed text-slate-600 sm:text-sm">
-                  On-site physical inspections across Greater Bengaluru, supplemented by remote architectural blueprint reviews via calibrated 16-zone grid analysis.
-                </p>
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-xs font-bold text-slate-900 sm:text-sm">Inspection &amp; Audit Formats</h3>
+                  <p className="mt-1 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                    On-site physical inspections across Greater Bengaluru, supplemented by remote architectural blueprint reviews via calibrated 16-zone grid analysis.
+                  </p>
+                </div>
               </div>
 
-              <div className="space-y-1.5">
-                <div className="flex items-center gap-2 font-semibold text-slate-900">
-                  <Layers className="h-4 w-4 shrink-0 text-amber-700" />
-                  <span>Remedy Methodology</span>
+              <div className="flex items-start gap-3 rounded-xl border border-amber-100/80 bg-amber-50/30 p-3.5 sm:p-4">
+                <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-800">
+                  <Layers className="h-4 w-4" />
                 </div>
-                <p className="pl-6 text-xs leading-relaxed text-slate-600 sm:text-sm">
-                  Strictly non-demolition remedies using precision metal inlays (brass, copper, zinc, lead), elemental balance, and directional realignment—zero civil demolition required.
-                </p>
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-xs font-bold text-slate-900 sm:text-sm">Remedy Methodology</h3>
+                  <p className="mt-1 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                    Strictly non-demolition remedies using precision metal inlays (brass, copper, zinc, lead), elemental balance, and directional realignment—zero civil demolition required.
+                  </p>
+                </div>
               </div>
 
-              <div className="space-y-1.5">
-                <div className="flex items-center gap-2 font-semibold text-slate-900">
-                  <MapPin className="h-4 w-4 shrink-0 text-amber-700" />
-                  <span>Verified Consulting Office</span>
+              <div className="flex items-start gap-3 rounded-xl border border-amber-100/80 bg-amber-50/30 p-3.5 sm:p-4">
+                <div className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-lg bg-amber-100 text-amber-800">
+                  <MapPin className="h-4 w-4" />
                 </div>
-                <p className="pl-6 text-xs leading-relaxed text-slate-600 sm:text-sm">
-                  Headquartered at 3J64+827, Balaji Layout, H A Farm Post, Bhuvaneswari Nagar, Dasarahalli, Bengaluru 560024. All other named Bengaluru areas are on-site service territories.
-                </p>
+                <div className="min-w-0 flex-1">
+                  <h3 className="text-xs font-bold text-slate-900 sm:text-sm">Verified Consulting Office</h3>
+                  <p className="mt-1 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                    Headquartered at 3J64+827, Balaji Layout, H A Farm Post, Bhuvaneswari Nagar, Dasarahalli, Bengaluru 560024. All other named Bengaluru areas are on-site service territories.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
