@@ -23,6 +23,7 @@ import { ProcessSection } from '@/components/home/ProcessSection'
 import { FeaturedProjectsSection } from '@/components/home/FeaturedProjectsSection'
 import { TestimonialsSection } from '@/components/home/TestimonialsSection'
 import { InsightsSection } from '@/components/home/InsightsSection'
+import { FeaturedVideoSection } from '@/components/home/FeaturedVideoSection'
 import { ConsultationModal } from '@/components/common/ConsultationModal'
 import { siteConfig } from '@/config/site'
 import { env } from '@/config/env'
@@ -548,7 +549,10 @@ export const HomePage: React.FC = () => {
       {/* 9. INSIGHTS SECTION */}
       <InsightsSection />
 
-      {/* 10. PRE-FOOTER SUNSET CTA BANNER (Matching Mockup with Sunset Pool Villa Image) */}
+      {/* 10. FEATURED YOUTUBE VIDEO SECTION */}
+      <FeaturedVideoSection />
+
+      {/* 11. PRE-FOOTER SUNSET CTA BANNER (Matching Mockup with Sunset Pool Villa Image) */}
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         {/* Full-width Luxury Sunset Penthouse Villa Background */}
         <img
