@@ -89,7 +89,7 @@ export const businessConfig: BusinessConfig = {
   latitude: 13.0645,
   longitude: 77.5875,
   websiteUrl: 'https://7raysastrovastu.in',
-  logo: 'https://7raysastrovastu.in/images/og-image.svg',
+  logo: 'https://7raysastrovastu.in/images/7rays-logo.png',
   socialProfiles: {
     facebook: 'https://www.facebook.com/people/7-Rays/100076854095160/',
     instagram: 'https://www.instagram.com/7rays_rs/',

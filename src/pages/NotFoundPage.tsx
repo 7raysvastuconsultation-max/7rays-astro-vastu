@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Compass, Home, Phone, ArrowRight } from 'lucide-react'
+import { Home, Phone, ArrowRight } from 'lucide-react'
 import { SEOHead } from '@/components/seo/SEOHead'
 
 export const NotFoundPage: React.FC = () => {
@@ -14,8 +14,16 @@ export const NotFoundPage: React.FC = () => {
       />
 
       <div className="mx-auto max-w-3xl px-4 py-24 text-center sm:px-6">
-        <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-amber-500/10 text-amber-400">
-          <Compass className="h-8 w-8 animate-spin" style={{ animationDuration: '12s' }} />
+        <div className="mx-auto mb-6 relative flex h-20 w-20 items-center justify-center rounded-3xl border border-amber-400/40 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 shadow-xl shadow-amber-500/20">
+          <div className="absolute -inset-1 rounded-3xl bg-amber-500/20 blur-md animate-gold-breathe" />
+          <img
+            src="/images/7rays-symbol.webp"
+            alt="7Rays Celestial Star"
+            width={64}
+            height={64}
+            className="relative z-10 h-14 w-14 object-contain animate-spin"
+            style={{ animationDuration: "20s" }}
+          />
         </div>
 
         <span className="text-xs font-bold tracking-wider text-amber-400 uppercase">Error 404</span>

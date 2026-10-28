@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X, ArrowRight, Phone, MessageSquare, Compass, ShoppingBag } from 'lucide-react'
+import { Menu, X, ArrowRight, Phone, MessageSquare, ShoppingBag } from 'lucide-react'
+import { BrandLogo } from '@/components/common/BrandLogo'
 import { siteConfig } from '@/config/site'
 import { env } from '@/config/env'
 import { trackConversion } from '@/utils/analytics'
@@ -135,19 +136,12 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand Logo */}
-        <Link to="/" className="group flex items-center gap-3">
-          <div className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 via-amber-500 to-amber-700 text-slate-950 shadow-lg shadow-amber-500/20">
-            <Compass className="h-6 w-6 transition-transform duration-500 group-hover:rotate-90" />
-            <div className="absolute inset-0 rounded-xl border border-amber-300/40" />
-          </div>
-          <div className="flex flex-col">
-            <span className="font-serif text-lg font-bold tracking-widest text-slate-100 transition group-hover:text-amber-400">
-              7RAYS
-            </span>
-            <span className="-mt-1 text-[9px] font-semibold tracking-[0.25em] text-amber-400/90 uppercase">
-              Astro Vastu
-            </span>
-          </div>
+        <Link
+          to="/"
+          className="group flex items-center rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+          aria-label="7Rays Astro Vastu Home"
+        >
+          <BrandLogo size="md" />
         </Link>
 
         {/* Desktop Navigation Links */}

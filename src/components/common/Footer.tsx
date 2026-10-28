@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Compass, MapPin, Phone, Mail, Clock, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock, ArrowRight, CheckCircle2 } from 'lucide-react'
+import { BrandLogo } from '@/components/common/BrandLogo'
 import { siteConfig } from '@/config/site'
 import { trackConversion } from '@/utils/analytics'
 
@@ -34,18 +35,12 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 items-start gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
           {/* Col 1: Brand & Philosophy (lg:col-span-3) */}
           <div className="space-y-4 lg:col-span-3">
-            <Link to="/" className="group flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-amber-400 to-amber-700 text-slate-950 shadow-lg shadow-amber-500/20">
-                <Compass className="h-6 w-6" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-serif text-lg font-bold tracking-widest text-slate-100">
-                  7RAYS
-                </span>
-                <span className="-mt-1 text-[9px] font-semibold tracking-[0.25em] text-amber-400 uppercase">
-                  Astro Vastu
-                </span>
-              </div>
+            <Link
+              to="/"
+              className="group inline-flex items-center rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
+              aria-label="7Rays Astro Vastu Home"
+            >
+              <BrandLogo size="md" />
             </Link>
 
             <p className="max-w-xs text-xs leading-relaxed text-slate-400">

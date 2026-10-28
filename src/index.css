@@ -108,3 +108,32 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #d4af37;
 }
+
+/* Luxury Brand Logo Animations */
+@keyframes gold-halo-breathe {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.06);
+  }
+}
+
+@keyframes logo-gleam-sweep {
+  0% {
+    transform: translateX(-160%) skewX(-25deg);
+  }
+  25%, 100% {
+    transform: translateX(220%) skewX(-25deg);
+  }
+}
+
+.animate-gold-breathe {
+  animation: gold-halo-breathe 4s ease-in-out infinite;
+}
+
+.animate-logo-gleam {
+  animation: logo-gleam-sweep 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
