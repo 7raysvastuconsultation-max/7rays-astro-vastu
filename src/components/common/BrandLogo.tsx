@@ -7,6 +7,10 @@ export interface BrandLogoProps {
   showText?: boolean
   /** Whether to enable luxury animations (ambient glow, gleam sweep, hover rotation) */
   animated?: boolean
+  /** Image loading priority; use eager for the above-the-fold header logo */
+  loading?: 'eager' | 'lazy'
+  /** Fetch priority for the logo image */
+  fetchPriority?: 'high' | 'low' | 'auto'
   /** Additional wrapper class names */
   className?: string
   /** Custom text styling overrides */
@@ -17,6 +21,8 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
   size = 'md',
   showText = true,
   animated = true,
+  loading = 'lazy',
+  fetchPriority = 'auto',
   className = '',
   textClassName = '',
 }) => {
@@ -73,13 +79,20 @@ export const BrandLogo: React.FC<BrandLogoProps> = ({
 
           {/* 8-Pointed 3D Faceted Gold Star Symbol */}
           <picture className="relative z-10 flex h-full w-full items-center justify-center p-1">
-            <source srcSet="/images/7rays-symbol.webp" type="image/webp" />
+            <source
+              type="image/webp"
+              srcSet="/images/7rays-symbol-48.webp 48w, /images/7rays-symbol-96.webp 96w"
+              sizes={`${currentSize.imgSize}px`}
+            />
             <img
-              src="/images/7rays-symbol.png"
+              src="/images/7rays-symbol-48.png"
+              srcSet="/images/7rays-symbol-48.png 48w, /images/7rays-symbol-96.png 96w"
+              sizes={`${currentSize.imgSize}px`}
               alt="7Rays Astro Vastu Emblem"
               width={currentSize.imgSize}
               height={currentSize.imgSize}
-              loading="eager"
+              loading={loading}
+              fetchPriority={fetchPriority}
               decoding="async"
               className={`h-full w-full object-contain drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)] ${
                 animated

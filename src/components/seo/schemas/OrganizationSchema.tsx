@@ -30,6 +30,7 @@ export const OrganizationSchema: React.FC = () => {
       const profiles = [
         businessConfig.socialProfiles.instagram,
         businessConfig.socialProfiles.facebook,
+        businessConfig.socialProfiles.youtube,
       ].filter((url): url is string => Boolean(url));
       return profiles.length > 0 ? { sameAs: profiles } : {};
     })(),

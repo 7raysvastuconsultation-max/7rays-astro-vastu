@@ -93,7 +93,7 @@ export const businessConfig: BusinessConfig = {
   socialProfiles: {
     facebook: 'https://www.facebook.com/people/7-Rays/100076854095160/',
     instagram: 'https://www.instagram.com/7rays_rs/',
-    youtube: null,
+    youtube: 'https://youtube.com/@7rays_rs?si=_jhoJM4e0Pno8U1J',
     linkedin: null,
     twitter: null,
   },

@@ -141,7 +141,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
           className="group flex items-center rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
           aria-label="7Rays Astro Vastu Home"
         >
-          <BrandLogo size="md" />
+          <BrandLogo size="md" loading="eager" fetchPriority="high" />
         </Link>
 
         {/* Desktop Navigation Links */}

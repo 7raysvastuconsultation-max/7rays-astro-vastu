@@ -40,7 +40,7 @@ export const Footer: React.FC = () => {
               className="group inline-flex items-center rounded-xl focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-slate-950"
               aria-label="7Rays Astro Vastu Home"
             >
-              <BrandLogo size="md" />
+              <BrandLogo size="md" loading="lazy" />
             </Link>
 
             <p className="max-w-xs text-xs leading-relaxed text-slate-400">
@@ -265,6 +265,32 @@ export const Footer: React.FC = () => {
                     aria-label="Instagram profile: @7rays_rs (opens in new tab)"
                   >
                     Instagram: @7rays_rs
+                  </a>
+                </div>
+              )}
+              {siteConfig.social.youtube && (
+                <div className="flex items-center gap-2.5">
+                  <span
+                    aria-hidden="true"
+                    className="flex h-4 w-4 shrink-0 items-center justify-center text-amber-400"
+                  >
+                    <svg
+                      className="h-3.5 w-3.5 fill-current"
+                      viewBox="0 0 24 24"
+                      focusable="false"
+                      aria-hidden="true"
+                    >
+                      <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                  </span>
+                  <a
+                    href={siteConfig.social.youtube}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-amber-400"
+                    aria-label="YouTube channel: @7rays_rs (opens in new tab)"
+                  >
+                    YouTube: @7rays_rs
                   </a>
                 </div>
               )}

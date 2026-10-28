@@ -17,10 +17,14 @@ export const NotFoundPage: React.FC = () => {
         <div className="mx-auto mb-6 relative flex h-20 w-20 items-center justify-center rounded-3xl border border-amber-400/40 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 shadow-xl shadow-amber-500/20">
           <div className="absolute -inset-1 rounded-3xl bg-amber-500/20 blur-md animate-gold-breathe" />
           <img
-            src="/images/7rays-symbol.webp"
+            src="/images/7rays-symbol-96.webp"
+            srcSet="/images/7rays-symbol-48.webp 48w, /images/7rays-symbol-96.webp 96w"
+            sizes="56px"
             alt="7Rays Celestial Star"
-            width={64}
-            height={64}
+            width={56}
+            height={56}
+            loading="lazy"
+            decoding="async"
             className="relative z-10 h-14 w-14 object-contain animate-spin"
             style={{ animationDuration: "20s" }}
           />
