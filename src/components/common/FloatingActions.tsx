@@ -26,17 +26,17 @@ export const FloatingActions: React.FC<FloatingActionsProps> = () => {
       const currentScrollY = window.scrollY
       const delta = currentScrollY - lastScrollY.current
 
-      // Always show near top or bottom
+      // Always show near top or near bottom of page
       if (
         currentScrollY < 80 ||
         window.innerHeight + currentScrollY >= document.body.offsetHeight - 150
       ) {
         setIsVisible(true)
-      } else if (delta > 15) {
-        // Fast scroll down -> minimize
+      } else if (delta > 12) {
+        // Fast scroll down -> minimize smoothly in sync with bottom nav
         setIsVisible(false)
-      } else if (delta < -10) {
-        // Scroll up -> reveal
+      } else if (delta < -8) {
+        // Scroll up -> reveal smoothly
         setIsVisible(true)
       }
 
@@ -58,56 +58,59 @@ export const FloatingActions: React.FC<FloatingActionsProps> = () => {
   return (
     <>
       {/* ========================================================================= */}
-      {/* 1. MOBILE VIEW: Tiny Floating Round Buttons (WhatsApp & Call)             */}
-      {/* Stacked neatly on the bottom right above the bottom navigation bar        */}
-      {/* Does NOT overlap bottom nav (bottom-18 provides clear separation)         */}
+      {/* 1. MOBILE VIEW: Floating WhatsApp & Animated Call Buttons                 */}
+      {/* Stacked neatly on the bottom right above the mobile bottom nav bar        */}
+      {/* Slides down in tandem when scrolling down for distraction-free reading     */}
       {/* ========================================================================= */}
       <aside
         aria-label="Quick Mobile Contact"
-        className={`fixed right-3 bottom-18 z-40 flex flex-col items-center gap-2 transition-all duration-300 md:hidden ${
-          isVisible
-            ? 'translate-y-0 scale-100 opacity-100'
-            : 'pointer-events-none translate-y-8 scale-90 opacity-0'
-        }`}
-      >
-        {/* Tiny Round WhatsApp Button */}
-        <a
-          href={whatsAppHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={handleWhatsAppClick}
-          className="group relative flex h-10 w-10 items-center justify-center rounded-full border border-emerald-300/40 bg-emerald-500 text-white shadow-lg shadow-emerald-950/50 transition-transform active:scale-90"
-          aria-label="Chat on WhatsApp"
-        >
-          <MessageCircle className="h-5 w-5" />
-          <span className="absolute -top-0.5 -right-0.5 flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-200 opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-100" />
-          </span>
-        </a>
-
-        {/* Tiny Round Call Button */}
-        <a
-          href={telHref}
-          onClick={handleCallClick}
-          className="group flex h-9 w-9 items-center justify-center rounded-full border border-amber-500/50 bg-slate-950/95 text-amber-400 shadow-md shadow-black/60 transition-transform active:scale-90"
-          aria-label="Call 7Rays Astro Vastu Consultant"
-        >
-          <PhoneCall className="h-4 w-4" />
-        </a>
-      </aside>
-
-      {/* ========================================================================= */}
-      {/* 2. DESKTOP VIEW: Floating WhatsApp & Call Buttons (>=768px)                */}
-      {/* ========================================================================= */}
-      <aside
-        aria-label="Desktop Quick Contact"
-        className={`fixed right-6 bottom-6 z-40 hidden flex-col items-end gap-2.5 transition-all duration-300 md:flex ${
+        className={`fixed right-3 bottom-18 z-40 flex flex-col items-center gap-2.5 transition-all duration-300 md:hidden ${
           isVisible
             ? 'translate-y-0 scale-100 opacity-100'
             : 'pointer-events-none translate-y-12 scale-90 opacity-0'
         }`}
       >
+        {/* Round WhatsApp Action Button */}
+        <a
+          href={whatsAppHref}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={handleWhatsAppClick}
+          className="group relative flex h-10 w-10 items-center justify-center rounded-full border border-emerald-300/40 bg-gradient-to-tr from-emerald-600 to-emerald-500 text-white shadow-lg shadow-emerald-950/60 transition-transform active:scale-90"
+          aria-label="Chat on WhatsApp"
+        >
+          <MessageCircle className="h-5 w-5 transition-transform group-active:rotate-6" />
+          <span className="absolute -top-0.5 -right-0.5 flex h-2.5 w-2.5">
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-200 opacity-75" />
+            <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-100 border border-slate-950" />
+          </span>
+        </a>
+
+        {/* Round Call Button with Acoustic Radar Pulse & Ringing Vibration */}
+        <a
+          href={telHref}
+          onClick={handleCallClick}
+          className="group relative flex h-10 w-10 items-center justify-center rounded-full border border-amber-400/60 bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900 text-amber-400 shadow-lg shadow-black/80 transition-all duration-300 active:scale-90 animate-call-pulse hover:border-amber-300 hover:text-amber-300"
+          aria-label="Call 7Rays Astro Vastu Consultant"
+        >
+          {/* Acoustic Radar Ping Pulse Wave */}
+          <span className="absolute -inset-1 rounded-full border border-amber-400/50 bg-amber-400/20 animate-ping opacity-60 pointer-events-none" />
+          <PhoneCall className="relative z-10 h-4.5 w-4.5 transition-transform duration-300 group-hover:scale-110 animate-phone-ring" />
+        </a>
+      </aside>
+
+      {/* ========================================================================= */}
+      {/* 2. DESKTOP VIEW: Floating WhatsApp & Animated Call Buttons (>=768px)       */}
+      {/* ========================================================================= */}
+      <aside
+        aria-label="Desktop Quick Contact"
+        className={`fixed right-6 bottom-6 z-40 hidden flex-col items-end gap-3 transition-all duration-300 md:flex ${
+          isVisible
+            ? 'translate-y-0 scale-100 opacity-100'
+            : 'pointer-events-none translate-y-12 scale-90 opacity-0'
+        }`}
+      >
+        {/* Desktop WhatsApp Action */}
         <a
           href={whatsAppHref}
           target="_blank"
@@ -117,19 +120,22 @@ export const FloatingActions: React.FC<FloatingActionsProps> = () => {
           aria-label="Chat with 7Rays Astro Vastu Consultant on WhatsApp"
         >
           <MessageCircle className="h-6 w-6 transition-transform group-hover:rotate-6" />
-          <span className="absolute -top-1 -right-1 flex h-3 w-3">
+          <span className="absolute -top-1 -right-1 flex h-3.5 w-3.5">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-            <span className="relative inline-flex h-3 w-3 rounded-full border-2 border-slate-950 bg-emerald-400" />
+            <span className="relative inline-flex h-3.5 w-3.5 rounded-full border-2 border-slate-950 bg-emerald-400" />
           </span>
         </a>
 
+        {/* Desktop Call Action with Acoustic Radar Pulse & Ringing Vibration */}
         <a
           href={telHref}
           onClick={handleCallClick}
-          className="group flex h-10 w-10 items-center justify-center rounded-full border border-amber-500/40 bg-slate-950/90 text-amber-400 shadow-lg shadow-black/60 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-amber-400 hover:text-amber-300"
+          className="group relative flex h-11 w-11 items-center justify-center rounded-full border border-amber-500/60 bg-slate-950/95 text-amber-400 shadow-xl shadow-black/70 backdrop-blur-md transition-all duration-300 hover:scale-110 hover:border-amber-300 hover:text-amber-300 hover:shadow-amber-500/30 animate-call-pulse"
           aria-label="Call 7Rays Astro Vastu Consultant"
         >
-          <PhoneCall className="h-4 w-4" />
+          {/* Acoustic Radar Ping Pulse Wave */}
+          <span className="absolute -inset-1 rounded-full border border-amber-400/50 bg-amber-400/20 animate-ping opacity-60 pointer-events-none" />
+          <PhoneCall className="relative z-10 h-5 w-5 transition-transform duration-300 group-hover:scale-110 animate-phone-ring" />
         </a>
       </aside>
     </>

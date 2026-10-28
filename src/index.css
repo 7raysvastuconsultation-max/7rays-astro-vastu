@@ -137,3 +137,47 @@ body {
 .animate-logo-gleam {
   animation: logo-gleam-sweep 6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
 }
+
+/* Call Button & Action Radar Animations */
+@keyframes phone-ring {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  5%, 15% {
+    transform: rotate(-14deg) scale(1.08);
+  }
+  10%, 20% {
+    transform: rotate(14deg) scale(1.08);
+  }
+  25% {
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+@keyframes call-pulse-wave {
+  0% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0.55);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(245, 158, 11, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+}
+
+.animate-phone-ring {
+  animation: phone-ring 3.5s ease-in-out infinite;
+  transform-origin: center;
+}
+
+.animate-call-pulse {
+  animation: call-pulse-wave 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-phone-ring,
+  .animate-call-pulse {
+    animation: none !important;
+  }
+}

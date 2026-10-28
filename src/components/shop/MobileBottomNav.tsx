@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { Home, ShoppingBag, Compass, User } from 'lucide-react'
 import { useShop } from '@/context/ShopContext'
@@ -10,12 +10,47 @@ interface MobileBottomNavProps {
 export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ onOpenConsultation }) => {
   const location = useLocation()
   const { openAccount, cartCount } = useShop()
+  const [isVisible, setIsVisible] = useState(true)
+  const lastScrollY = useRef(0)
 
   const isShopActive = location.pathname.startsWith('/shop')
   const isHomeActive = location.pathname === '/'
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY
+      const delta = currentScrollY - lastScrollY.current
+
+      // Always show near top or when scrolled to the very bottom
+      if (
+        currentScrollY < 80 ||
+        window.innerHeight + currentScrollY >= document.body.offsetHeight - 150
+      ) {
+        setIsVisible(true)
+      } else if (delta > 12) {
+        // Scrolling down -> hide smoothly down off screen (just like WhatsApp / floating actions)
+        setIsVisible(false)
+      } else if (delta < -8) {
+        // Scrolling up -> reveal smoothly
+        setIsVisible(true)
+      }
+
+      lastScrollY.current = currentScrollY
+    }
+
+    window.addEventListener('scroll', handleScroll, { passive: true })
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
   return (
-    <div className="fixed right-0 bottom-0 left-0 z-40 block border-t border-amber-500/20 bg-slate-950/95 px-3 py-2 backdrop-blur-xl md:hidden">
+    <nav
+      aria-label="Mobile Navigation"
+      className={`fixed right-0 bottom-0 left-0 z-40 block border-t border-amber-500/20 bg-slate-950/95 px-3 py-2 pb-safe backdrop-blur-xl transition-all duration-300 ease-in-out md:hidden ${
+        isVisible
+          ? 'translate-y-0 opacity-100'
+          : 'pointer-events-none translate-y-full opacity-0'
+      }`}
+    >
       <div className="mx-auto flex max-w-md items-center justify-around">
         {/* Home */}
         <Link
@@ -51,11 +86,12 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ onOpenConsulta
 
         {/* Consultation */}
         <button
+          type="button"
           onClick={() => {
             if (onOpenConsultation) {
               onOpenConsultation()
             } else {
-              window.location.href = '/contact'
+              window.location.href = '/contact/'
             }
           }}
           className="flex flex-col items-center gap-1 px-3 py-1 text-slate-400 transition hover:text-amber-400"
@@ -66,6 +102,7 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ onOpenConsulta
 
         {/* Account */}
         <button
+          type="button"
           onClick={openAccount}
           className="flex flex-col items-center gap-1 px-3 py-1 text-slate-400 transition hover:text-amber-400"
         >
@@ -73,6 +110,6 @@ export const MobileBottomNav: React.FC<MobileBottomNavProps> = ({ onOpenConsulta
           <span className="text-[10px] tracking-tight">Account</span>
         </button>
       </div>
-    </div>
+    </nav>
   )
 }
