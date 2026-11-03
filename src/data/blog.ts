@@ -822,9 +822,9 @@ For comprehensive layout evaluations, explore our [Residential Vastu Consultancy
     id: 'kitchen-vastu-direction-guide',
     slug: 'kitchen-vastu-direction-guide',
     title: 'Kitchen Vastu & Agni Element: Optimal Stove, Sink & Appliance Orientations',
-    seoTitle: 'Kitchen Direction & Agni Placement Vastu Guide | 7Rays',
+    seoTitle: 'Kitchen Vastu Guide: Best Directions, Stove & Sink Rules | 7Rays',
     excerpt:
-      'Master the placement of the fire element in your kitchen. Avoid fire-water conflicts and balance digestive health using non-structural Vastu adjustments.',
+      'Plan your kitchen layout with Vastu: optimal directions for the gas stove, sink, and appliances to prevent fire-water clashes without structural civil work.',
     coverImage: '/images/services/residential-vastu.webp',
     category: 'Residential Vastu',
     tags: ['Kitchen Vastu', 'Agni Element', 'Modular Kitchen', 'Fire Water Conflict'],
@@ -902,9 +902,9 @@ To learn more about elemental balancing, read our [Toilet & Bathroom Non-Demolit
     id: 'bathroom-toilet-vastu-remedies',
     slug: 'bathroom-toilet-vastu-remedies',
     title: 'Toilet & Bathroom Vastu: Non-Demolition Remedies for Negative Drainage',
-    seoTitle: 'Toilet & Bathroom Direction Vastu Remedies | 7Rays',
+    seoTitle: 'Toilet & Bathroom Vastu: Non-Demolition Remedies & Cures | 7Rays',
     excerpt:
-      'Neutralize the negative drainage field of wrongly placed toilets in modern flats. How brass, zinc, and copper metal wire bounding remediates bathroom imbalances.',
+      'Fix wrongly placed toilets in flats without demolition. Learn how brass, zinc, and copper threshold bounding neutralizes negative drainage and energy drains.',
     coverImage: '/images/insights/insight-five-elements.webp',
     category: 'Vastu Remedies',
     tags: ['Toilet Vastu', 'Non-Demolition', 'Metal Strips', 'Vastu Corrections'],
@@ -1029,9 +1029,9 @@ Learn more with our [Residential Vastu Planning](/vastu/residential) or review l
     id: 'south-facing-house-vastu-myths',
     slug: 'south-facing-house-vastu-myths',
     title: 'South Facing House Vastu: Key Principles & Layout Guide',
-    seoTitle: 'South Facing House Vastu: Layout Principles | 7Rays',
+    seoTitle: 'South Facing House Vastu: Myths, Entrance Padas & Cures | 7Rays',
     excerpt:
-      'Explore the essential Vastu principles for south facing houses, common myths, layout guidance and practical remedies to create a balanced and prosperous home.',
+      'Is a south-facing house bad? Learn the 16-zone pada rules, auspicious entrance locations, and practical non-demolition remedies for modern apartments and villas.',
     coverImage: '/images/insights/south-facing-house-villa.webp',
     category: 'Residential Vastu',
     tags: [
@@ -1117,9 +1117,9 @@ For prospective homeowners evaluating high-rise apartments across Bengaluru, fol
     id: 'office-layout-executive-cabin-vastu',
     slug: 'office-layout-executive-cabin-vastu',
     title: 'Office Vastu Guidelines for Executive Cabins, Workstations, and Accounts',
-    seoTitle: 'Office Vastu: Executive Cabin & Layout Guide | 7Rays',
+    seoTitle: 'Office Vastu: Executive Cabin, Desks & Accounts Layout | 7Rays',
     excerpt:
-      'Strategic placement of leadership cabins, accounts desks, and conference rooms to enhance organizational focus and administrative harmony.',
+      'Optimize your office layout with Vastu: ideal directions for the CEO cabin, accounts team, and staff workstations to support focus and steady business flow.',
     coverImage: '/images/insights/insight-commercial.webp',
     category: 'Commercial Vastu',
     tags: ['Office Vastu', 'Executive Cabin', 'Workstation Design', 'Commercial Planning'],
@@ -1478,9 +1478,9 @@ Schedule a scientific property inspection through our [Scientific Vastu Audit Se
     slug: 'what-is-vedic-astrology-birth-chart-guide',
     title:
       'What Is Vedic Astrology? The Comprehensive Guide to Birth Charts, Houses & Planetary Cycles',
-    seoTitle: 'Vedic Astrology Guide: Birth Chart & Kundli | 7Rays',
+    seoTitle: 'Vedic Astrology Guide: Birth Charts, Houses & Kundli | 7Rays',
     excerpt:
-      'Demystify Vedic Astrology (Jyotish). Learn how Janam Kundli charts are calculated, the role of 12 Bhavas, 9 planets, and how birth charts provide self-awareness without fatalism.',
+      'A complete guide to Vedic Astrology (Jyotish): how Janam Kundli charts work, the role of 12 houses & 9 planets, and how to read your personal birth chart.',
     coverImage: '/images/insights/insight-five-elements.webp',
     category: 'Vedic Astrology',
     tags: ['Vedic Astrology', 'Birth Chart', 'Janam Kundli', 'Jyotish Basics', '12 Houses'],
@@ -1662,9 +1662,9 @@ Explore personalized vocational guidance through our [Career Astrology Services]
     id: 'astrology-vs-vastu-synthesis',
     slug: 'astrology-vs-vastu-difference-and-synthesis',
     title: 'Astrology vs Vastu Shastra: Key Differences and the Powerful Astro-Vastu Synthesis',
-    seoTitle: 'Astrology vs Vastu Shastra: Differences & Cures | 7Rays',
+    seoTitle: 'Astrology vs Vastu: Key Differences & Synthesis Guide | 7Rays',
     excerpt:
-      'Understand the fundamental distinctions between time-oriented Vedic astrology and space-oriented Vastu Shastra, and discover how an Astro-Vastu consultation bridges them.',
+      'What is the difference between astrology and Vastu Shastra? Learn how planetary timelines and spatial directional energies synthesize for home and career growth.',
     coverImage: '/images/insights/insight-five-elements.webp',
     category: 'Astro-Vastu',
     tags: [

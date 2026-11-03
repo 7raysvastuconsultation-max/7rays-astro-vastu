@@ -142,8 +142,8 @@ export const BangaloreMasterPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Best Vastu Consultant in Bangalore: Homes & Offices | 7Rays"
-        description="Looking for a Vastu consultant in Bangalore? Explore 7Rays residential, apartment and commercial consultations, on-site Bengaluru coverage, the assessment process and non-demolition options."
+        title="Vastu Consultant in Bangalore: On-Site Audits & Cures | 7Rays"
+        description="Looking for a Vastu consultant in Bangalore? 7Rays offers on-site 16-zone audits & non-demolition remedies for homes, flats & offices across Bengaluru."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema
