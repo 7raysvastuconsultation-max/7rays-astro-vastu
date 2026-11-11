@@ -41,6 +41,9 @@ import { MarriageAstrologyPage } from '@/pages/services/MarriageAstrologyPage'
 
 import { LocationsPage } from '@/pages/locations/LocationsPage'
 import { BangaloreMasterPage } from '@/pages/locations/BangaloreMasterPage'
+import { BangaloreApartmentVastuPage } from '@/pages/locations/BangaloreApartmentVastuPage'
+import { BangaloreOfficeVastuPage } from '@/pages/locations/BangaloreOfficeVastuPage'
+import { BangaloreNonDemolitionVastuPage } from '@/pages/locations/BangaloreNonDemolitionVastuPage'
 import { BangaloreResidentialVastuPage } from '@/pages/locations/BangaloreResidentialVastuPage'
 import { BangaloreCommercialVastuPage } from '@/pages/locations/BangaloreCommercialVastuPage'
 import { BangaloreIndustrialVastuPage } from '@/pages/locations/BangaloreIndustrialVastuPage'
@@ -123,6 +126,18 @@ export function ServerApp() {
         {/* Local SEO Architecture */}
         <Route path="/locations" element={<LocationsPage />} />
         <Route path="/locations/bangalore" element={<BangaloreMasterPage />} />
+        <Route
+          path="/locations/bangalore/apartment-vastu"
+          element={<BangaloreApartmentVastuPage />}
+        />
+        <Route
+          path="/locations/bangalore/office-vastu"
+          element={<BangaloreOfficeVastuPage />}
+        />
+        <Route
+          path="/locations/bangalore/non-demolition-vastu"
+          element={<BangaloreNonDemolitionVastuPage />}
+        />
         <Route
           path="/locations/bangalore/residential-vastu"
           element={<BangaloreResidentialVastuPage />}
