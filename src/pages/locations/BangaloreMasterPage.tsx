@@ -15,6 +15,9 @@ import {
   Plus,
   Minus,
   PhoneCall,
+  Briefcase,
+  Ban,
+  Store,
 } from 'lucide-react'
 import { SEOHead } from '@/components/seo/SEOHead'
 import { BreadcrumbSchema } from '@/components/seo/schemas/BreadcrumbSchema'
@@ -79,14 +82,35 @@ export const BangaloreMasterPage: React.FC = () => {
       title: 'Residential Vastu',
       url: '/locations/bangalore/residential-vastu/',
       description:
-        'On-site audits for high-rise flats, villas, and independent houses across Bengaluru. Master bedroom, kitchen Agni alignment, and non-demolition remedies.',
+        'On-site audits for independent homes, duplexes, and villas across Bengaluru. Master bedroom, kitchen Agni alignment, and non-demolition remedies.',
     },
     {
       icon: Building,
-      title: 'Commercial & Office Vastu',
+      title: 'Apartment & Flat Vastu',
+      url: '/locations/bangalore/apartment-vastu/',
+      description:
+        'Specialized high-rise audits for modern flats and penthouses across Whitefield, Sarjapur, and ORR. RWA-compliant zero-demolition solutions.',
+    },
+    {
+      icon: Briefcase,
+      title: 'Startup & Office Vastu',
+      url: '/locations/bangalore/office-vastu/',
+      description:
+        'Workplace energy optimization for tech startups, corporate headquarters, and IT park offices in HSR Layout, Koramangala, and CBD.',
+    },
+    {
+      icon: Store,
+      title: 'Commercial & Retail Vastu',
       url: '/locations/bangalore/commercial-vastu/',
       description:
-        'Layout optimization for tech startup headquarters, corporate workstations, executive cabins, and retail spaces in HSR, Koramangala, and CBD.',
+        'Customer flow, cash counter orientation, and entrance padas for showrooms, clinics, restaurants, and retail spaces in Bengaluru.',
+    },
+    {
+      icon: Ban,
+      title: 'Remedies Without Demolition',
+      url: '/locations/bangalore/non-demolition-vastu/',
+      description:
+        'Correcting directional defects in occupied flats and leased offices using calibrated metal inlays (copper, brass, zinc) without breaking walls.',
     },
     {
       icon: Factory,
@@ -351,7 +375,7 @@ export const BangaloreMasterPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
             {servicePillars.map((service, idx) => {
               const Icon = service.icon
               return (
@@ -980,6 +1004,8 @@ export const BangaloreMasterPage: React.FC = () => {
           src="/images/cta-sunset-villa.webp"
           width={1376}
           height={768}
+          loading="lazy"
+          decoding="async"
           alt="Luxury architectural villa sunset for Bangalore Vastu inspections"
           className="absolute inset-0 h-full w-full object-cover object-center"
         />

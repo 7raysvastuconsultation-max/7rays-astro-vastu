@@ -684,6 +684,8 @@ export const BlogPostPage: React.FC = () => {
         <div className="absolute inset-0">
           <img
             src="/images/cta-sunset-villa.webp"
+          loading="lazy"
+          decoding="async"
             width={1376}
             height={768}
             alt="7Rays Astro Vastu Consultations"

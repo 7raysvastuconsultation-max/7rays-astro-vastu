@@ -107,6 +107,21 @@ const LocationsPage = lazy(() =>
 const BangaloreMasterPage = lazy(() =>
   import('@/pages/locations/BangaloreMasterPage').then((m) => ({ default: m.BangaloreMasterPage }))
 )
+const BangaloreApartmentVastuPage = lazy(() =>
+  import('@/pages/locations/BangaloreApartmentVastuPage').then((m) => ({
+    default: m.BangaloreApartmentVastuPage,
+  }))
+)
+const BangaloreOfficeVastuPage = lazy(() =>
+  import('@/pages/locations/BangaloreOfficeVastuPage').then((m) => ({
+    default: m.BangaloreOfficeVastuPage,
+  }))
+)
+const BangaloreNonDemolitionVastuPage = lazy(() =>
+  import('@/pages/locations/BangaloreNonDemolitionVastuPage').then((m) => ({
+    default: m.BangaloreNonDemolitionVastuPage,
+  }))
+)
 const BangaloreResidentialVastuPage = lazy(() =>
   import('@/pages/locations/BangaloreResidentialVastuPage').then((m) => ({
     default: m.BangaloreResidentialVastuPage,
@@ -246,6 +261,18 @@ export const AppRoutes: React.FC = () => {
           <Route path="/vastu-consultant-in-bangalore" element={<Navigate to="/locations/bangalore/" replace />} />
           <Route path="/vastu-consultant-bangalore" element={<Navigate to="/locations/bangalore/" replace />} />
           <Route path="/vastu-consultant-in-bengaluru" element={<Navigate to="/locations/bangalore/" replace />} />
+          <Route
+            path="/locations/bangalore/apartment-vastu"
+            element={<BangaloreApartmentVastuPage />}
+          />
+          <Route
+            path="/locations/bangalore/office-vastu"
+            element={<BangaloreOfficeVastuPage />}
+          />
+          <Route
+            path="/locations/bangalore/non-demolition-vastu"
+            element={<BangaloreNonDemolitionVastuPage />}
+          />
           <Route
             path="/locations/bangalore/residential-vastu"
             element={<BangaloreResidentialVastuPage />}

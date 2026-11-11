@@ -505,6 +505,8 @@ export const BlogPage: React.FC = () => {
         <div className="absolute inset-0 z-0">
           <img
             src="/images/cta-sunset-villa.webp"
+          loading="lazy"
+          decoding="async"
             width={1376}
             height={768}
             alt="Align Your Space Energy Sunset"

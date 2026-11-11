@@ -353,6 +353,7 @@ export const FeaturedVideoSection: React.FC = () => {
                           width={96}
                           height={64}
                           loading="lazy"
+                          decoding="async"
                           className="h-full w-full object-cover"
                         />
                         <div

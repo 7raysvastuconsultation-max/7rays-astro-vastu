@@ -222,6 +222,30 @@ export const HtmlSitemapPage: React.FC = () => {
                 </li>
                 <li>
                   <Link
+                    to="/locations/bangalore/apartment-vastu/"
+                    className="hover:text-amber-800"
+                  >
+                    Bangalore Apartment &amp; High-Rise Vastu
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/locations/bangalore/office-vastu/"
+                    className="hover:text-amber-800"
+                  >
+                    Bangalore Startup &amp; Office Vastu
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/locations/bangalore/non-demolition-vastu/"
+                    className="hover:text-amber-800"
+                  >
+                    Bangalore Non-Demolition Vastu Remedies
+                  </Link>
+                </li>
+                <li>
+                  <Link
                     to="/locations/bangalore/residential-vastu/"
                     className="hover:text-amber-800"
                   >
@@ -253,7 +277,7 @@ export const HtmlSitemapPage: React.FC = () => {
                 </li>
                 {locationsData.map((loc) => (
                   <li key={loc.slug}>
-                    <Link to={`/locations/${loc.slug}`} className="hover:text-amber-800">
+                    <Link to={`/locations/${loc.slug}/`} className="hover:text-amber-800">
                       {loc.name}
                     </Link>
                   </li>

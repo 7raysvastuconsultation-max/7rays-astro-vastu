@@ -25,7 +25,7 @@ export const FeaturedProjectsSection: React.FC = () => {
     {
       title: 'Industrial Facility Planning',
       location: 'Bengaluru Hubs',
-      to: '/vastu/industrial',
+      to: '/vastu/industrial/',
       type: 'Service Protocol',
       image: '/images/services/industrial-vastu.webp',
       description:
@@ -79,6 +79,7 @@ export const FeaturedProjectsSection: React.FC = () => {
                 src={scenario.image}
                 alt={`${scenario.title} - ${scenario.location}`}
                 loading="lazy"
+                decoding="async"
                 width={1376}
                 height={768}
                 className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"

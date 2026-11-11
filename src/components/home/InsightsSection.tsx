@@ -79,14 +79,14 @@ export const InsightsSection: React.FC = () => {
                     {article.category}
                   </span>
                   <h3 className="mt-1 line-clamp-2 font-serif text-sm font-bold text-slate-900 transition group-hover:text-amber-800">
-                    <Link to={`/blog/${article.slug}`}>{article.title}</Link>
+                    <Link to={`/blog/${article.slug}/`}>{article.title}</Link>
                   </h3>
                 </div>
               </div>
 
               <div className="p-4 pt-0 sm:px-5 sm:pb-5">
                 <Link
-                  to={`/blog/${article.slug}`}
+                  to={`/blog/${article.slug}/`}
                   className="inline-flex items-center gap-1 text-xs font-bold text-amber-700 transition hover:text-amber-900"
                 >
                   <span>Read More</span>

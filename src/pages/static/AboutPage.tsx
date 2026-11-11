@@ -631,6 +631,8 @@ export const AboutPage: React.FC = () => {
         {/* Ambient Evening Architecture Backdrop */}
         <img
           src="/images/cta-sunset-villa.webp"
+          loading="lazy"
+          decoding="async"
             width={1376}
             height={768}
           alt=""
@@ -802,6 +804,8 @@ export const AboutPage: React.FC = () => {
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         <img
           src="/images/cta-sunset-villa.webp"
+          loading="lazy"
+          decoding="async"
             width={1376}
             height={768}
           alt="Luxury architectural terrace overlooking golden sunset horizon"

@@ -382,6 +382,8 @@ export const RegionalLocationPage: React.FC = () => {
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         <img
           src="/images/cta-sunset-villa.webp"
+          loading="lazy"
+          decoding="async"
           width={1376}
           height={768}
           alt={`Luxury architectural villa sunset for ${location.name} Vastu consultations`}
