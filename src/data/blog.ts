@@ -345,7 +345,7 @@ Before signing an agreement of sale or paying an advance booking amount:
 3. Confirm that the master bedroom is located in the South, West, or South-West quadrant rather than the North-East.
 4. Ensure the primary cooking burner can be positioned so the cook faces East during preparation.
 
-Explore our dedicated [Apartment Vastu Consultation Services](/vastu/apartment-vastu) or book an on-site property evaluation through our [Bangalore Vastu Office](/locations/bangalore).
+Explore our dedicated [Apartment Vastu Consultation Services](/vastu/apartment-vastu/) or book an on-site property evaluation through our [Bangalore Vastu Office](/locations/bangalore/).
     `,
   },
   {
@@ -465,7 +465,7 @@ Every compass quadrant corresponds to a resonant elemental metal. When an unchan
 
 For gated apartment residents in high-density Bengaluru corridors—such as high-rises across [Sarjapur Road](/locations/sarjapur-road/), tech townships in [Electronic City](/locations/electronic-city/), and lake-facing developments in [Hebbal](/locations/hebbal/)—non-demolition methods provide effective spatial balancing within rigid association bylaws and fixed plumbing shafts.
 
-Learn more about our practical [Non-Demolition Vastu Services](/vastu/non-demolition) or book an on-site property evaluation with our [Scientific Vastu Audit Team](/vastu-services/vastu-audit).
+Learn more about our practical [Non-Demolition Vastu Services](/vastu/non-demolition/) or book an on-site property evaluation with our [Scientific Vastu Audit Team](/vastu-services/vastu-audit/).
     `,
   },
   {
@@ -597,7 +597,7 @@ Before purchasing a plot, buying a villa, or approving an architectural floor pl
 5. **Inspect Water Inflow vs. Outflow**: Clean drinking water and borewells belong in the North-East; waste disposal and septic tanks belong in the North-West or West.
 6. **Evaluate Entrance Pada**: Ensure the main gate and primary entry door fall in mathematically verified auspicious padas (such as N3/N4, E3/E4, S3/S4, or W3/W4).
 
-Plan your home with scientific precision through our [Residential Vastu Consultancy](/vastu/residential), or explore our comprehensive [Vastu Audit Services](/vastu-services/vastu-audit) for CAD floor plan analysis.
+Plan your home with scientific precision through our [Residential Vastu Consultancy](/vastu/residential/), or explore our comprehensive [Vastu Audit Services](/vastu-services/vastu-audit/) for CAD floor plan analysis.
     `,
   },
   {
@@ -719,7 +719,7 @@ In virtual workspaces, your video conference background is your corporate office
 - [ ] A healthy natural plant (such as a Jade plant) in the North or East corner of the desk.
 - [ ] Clean, professional background framed on video calls.
 
-Optimize your broader commercial space with our [Office Vastu Consultancy](/vastu/office-vastu), or learn how to align your entire residence with our [Residential Vastu Services](/vastu/residential).
+Optimize your broader commercial space with our [Office Vastu Consultancy](/vastu/office-vastu/), or learn how to align your entire residence with our [Residential Vastu Services](/vastu/residential/).
     `,
   },
   {
@@ -815,7 +815,7 @@ In high-rise apartments across Bengaluru and modern cities, master suites are fr
 - **South-East Bedroom (Fire Zone)**: Excess fire induces short tempers, irritability, and elevated blood pressure. Introduce pale cream pastels to subdue excess fire; install brass earth boundary strips along the threshold.
 - **North-West Bedroom (Air Zone)**: Air induces constant mobility, insomnia, and financial instability. The bed weight must be stabilized using solid wooden headboards and heavy earthy drapery.
 
-For comprehensive layout evaluations, explore our [Residential Vastu Consultancy](/vastu/residential) or schedule a Bangalore on-site inspection at [Bangalore Residential Vastu](/locations/bangalore/residential-vastu/), with dedicated local guidance for residential layouts in [Hebbal](/locations/hebbal/), [Sarjapur Road](/locations/sarjapur-road/), and [Electronic City](/locations/electronic-city/).
+For comprehensive layout evaluations, explore our [Residential Vastu Consultancy](/vastu/residential/) or schedule a Bangalore on-site inspection at [Bangalore Residential Vastu](/locations/bangalore/residential-vastu/), with dedicated local guidance for residential layouts in [Hebbal](/locations/hebbal/), [Sarjapur Road](/locations/sarjapur-road/), and [Electronic City](/locations/electronic-city/).
     `,
   },
   {
@@ -895,7 +895,7 @@ In contemporary modular apartment kitchens, the cooking hob (Fire) and the wash 
 | **Microwave & OTG** | South-East or South perimeter | Electrical heat aligns with the fire element |
 | **Drinking Water Filter / RO** | North-East or North quadrant | Pure water consumption channels clarity |
 
-To learn more about elemental balancing, read our [Toilet & Bathroom Non-Demolition Remedies](/blog/bathroom-toilet-vastu-remedies) or consult our [Residential Vastu Hub](/vastu/residential).
+To learn more about elemental balancing, read our [Toilet & Bathroom Non-Demolition Remedies](/blog/bathroom-toilet-vastu-remedies/) or consult our [Residential Vastu Hub](/vastu/residential/).
     `,
   },
   {
@@ -961,7 +961,7 @@ In modern multi-storey buildings, plumbing risers cannot be relocated. Therefore
 | **South-East (Agneya)** | Financial drain, female health challenges, legal friction | Bound commode with Copper strip, install warm red night bulb |
 | **South-West (Nairutya)** | Destabilization of family head, relationship strain | Bound commode with heavy Brass strip, introduce yellow terracotta tiles |
 
-Explore our [Non-Demolition Vastu Services](/vastu/non-demolition) for exact on-site metal inlay specifications.
+Explore our [Non-Demolition Vastu Services](/vastu/non-demolition/) for exact on-site metal inlay specifications.
     `,
   },
   {
@@ -1022,7 +1022,7 @@ The northern boundary is divided into 8 distinct energetic gates:
 - **N5 (Soma)**: Fosters spiritual and intellectual growth.
 - **N6 to N8**: Create erratic expenditures and unstable income.
 
-Learn more with our [Residential Vastu Planning](/vastu/residential) or review local housing layout guidance for [Jayanagar & JP Nagar](/locations/jayanagar/), [Hebbal](/locations/hebbal/), and [Yelahanka](/locations/yelahanka/).
+Learn more with our [Residential Vastu Planning](/vastu/residential/) or review local housing layout guidance for [Jayanagar & JP Nagar](/locations/jayanagar/), [Hebbal](/locations/hebbal/), and [Yelahanka](/locations/yelahanka/).
     `,
   },
   {
@@ -1110,7 +1110,7 @@ The southern boundary is partitioned into 8 energetic padas:
 - **Living Room & Foyer**: Open towards the **North or East**, welcoming pranic illumination.
 - **Pooja Sanctuary**: Maintained in the **North-East (Ishanya)**, kept lightweight and tranquil.
 
-For prospective homeowners evaluating high-rise apartments across Bengaluru, follow our practical [Bangalore apartment Vastu checklist](/blog/bangalore-apartment-vastu-checklist-before-buying/) before signing a booking agreement. Explore our [Residential Vastu Consultancy](/vastu/residential) or contact our [Bangalore Vastu Consulting Office](/locations/bangalore/) for personalized assessments. You can also explore local residential insights across [Jayanagar & JP Nagar](/locations/jayanagar/), [Banashankari & Kanakapura Road](/locations/banashankari/), [Hebbal](/locations/hebbal/), [Sarjapur Road](/locations/sarjapur-road/), and [Electronic City](/locations/electronic-city/).
+For prospective homeowners evaluating high-rise apartments across Bengaluru, follow our practical [Bangalore apartment Vastu checklist](/blog/bangalore-apartment-vastu-checklist-before-buying/) before signing a booking agreement. Explore our dedicated [Apartment Vastu Consultation Services](/vastu/apartment-vastu/), review our [Residential Vastu Consultancy](/vastu/residential/), or contact our [Bangalore Vastu Consulting Office](/locations/bangalore/) for personalized assessments. You can also explore local residential insights across [Jayanagar & JP Nagar](/locations/jayanagar/), [Banashankari & Kanakapura Road](/locations/banashankari/), [Hebbal](/locations/hebbal/), [Sarjapur Road](/locations/sarjapur-road/), and [Electronic City](/locations/electronic-city/).
     `,
   },
   {
@@ -1195,7 +1195,7 @@ The North is governed by Mercury and Lord Kuber:
 
 Whether setting up tech company headquarters in [Electronic City](/locations/electronic-city/), scaling high-growth ventures along the Outer Ring Road and [Sarjapur Road](/locations/sarjapur-road/), executive workspaces in [Hebbal](/locations/hebbal/), or professional practices in [Jayanagar & JP Nagar](/locations/jayanagar/), aligning your commercial layout early prevents operational friction.
 
-Consult our [Commercial & Office Vastu Consultancy](/vastu/office-vastu) or [Commercial Vastu Services](/vastu/commercial) to optimize your workplace layout.
+Consult our [Commercial & Office Vastu Consultancy](/vastu/office-vastu/) or [Commercial Vastu Services](/vastu/commercial/) to optimize your workplace layout.
     `,
   },
   {
@@ -1264,7 +1264,7 @@ Applying Vastu Shastra to retail architecture optimizes customer navigation psyc
 - **North-West Zone**: Fast-moving consumer goods, clearance racks, and seasonal promotional items requiring rapid sales velocity.
 - **North-East Zone**: Kept open, low-height, and brightly lit with cool white illumination.
 
-Learn more with our [Commercial Vastu Services](/vastu/commercial), or book an on-site retail audit through our [Malleshwaram & Rajajinagar Vastu Hub](/locations/malleshwaram/) for heritage commercial markets and luxury retail avenues.
+Learn more with our [Commercial Vastu Services](/vastu/commercial/), or book an on-site retail audit through our [Malleshwaram & Rajajinagar Vastu Hub](/locations/malleshwaram/) for heritage commercial markets and luxury retail avenues.
     `,
   },
   {
@@ -1326,7 +1326,7 @@ Hospitality spaces combine intense culinary fire, constant customer turnover, an
 - Family dining booths in the **South and West** ground guests, promoting longer dining sessions and higher beverage orders.
 - Keep the central floor area open and uncluttered to allow staff and trolley movement without energetic bottlenecks.
 
-Explore our full range of [Commercial Vastu Consultations](/vastu/commercial).
+Explore our full range of [Commercial Vastu Consultations](/vastu/commercial/).
     `,
   },
   {
@@ -1393,7 +1393,7 @@ In manufacturing plants, engineering workshops, and logistics hubs, spatial alig
 - High-tension transformers, HT panels, diesel generators, and boilers must be sited in the **South-East (Agneya)**.
 - Effluent treatment plants (ETP) belong in the **West or North-West**.
 
-Schedule an industrial consultation with our [Industrial Vastu Services](/vastu/industrial) or visit our [Bangalore Industrial Vastu Hub](/locations/bangalore/industrial-vastu).
+Schedule an industrial consultation with our [Industrial Vastu Services](/vastu/industrial/) or visit our [Bangalore Industrial Vastu Hub](/locations/bangalore/industrial-vastu/).
     `,
   },
   {
@@ -1470,7 +1470,7 @@ At 7Rays Astro Vastu, our diagnostic methodology utilizes resonant scanning ante
 - **Bed Realignment**: In many rooms, shifting the bed position by just 18 to 24 inches moves the sleeping body outside the concentrated stress beam.
 - **Earth Resonance Stabilizers**: Where bed relocation is physically constrained by room geometry, non-invasive metallic stabilizers and brass deflection arrays are installed to divert radiation away from the resting zone.
 
-Schedule a scientific property inspection through our [Scientific Vastu Audit Service](/vastu-services/vastu-audit) or contact our [Bengaluru Consulting Team](/contact).
+Schedule a scientific property inspection through our [Scientific Vastu Audit Service](/vastu-services/vastu-audit/) or contact our [Bengaluru Consulting Team](/contact/).
     `,
   },
   {
@@ -1578,7 +1578,7 @@ At 7Rays Astro Vastu, led by Certified Vastu Consultant Rishwa Sinha, we practic
 - A horoscope reveals the weather; your conscious choices decide whether you pack an umbrella or embark on a journey.
 - By understanding your planetary cycles and dasha phases, you can align major life decisions—such as career transitions or residential investments—with natural temporal rhythms.
 
-Explore your personal cosmic blueprint through our [Birth Chart Consultations](/astrology/birth-chart), or learn more about career timing in our [Career Astrology Guide](/blog/career-astrology-professional-path-guidelines).
+Explore your personal cosmic blueprint through our [Birth Chart Consultations](/astrology/birth-chart/), or learn more about career timing in our [Career Astrology Guide](/blog/career-astrology-professional-path-guidelines/).
     `,
   },
   {
@@ -1655,7 +1655,7 @@ During career stagnation, professionals often wonder if they made the wrong choi
 - Frequently, apparent plateaus coincide with introspective planetary periods (such as Saturn or Ketu sub-periods) that demand skill refinement and structural discipline.
 - When an expansive period begins (such as a supportive Jupiter or Mercury transit), the diligence invested during the quiet phase translates into rapid promotion.
 
-Explore personalized vocational guidance through our [Career Astrology Services](/astrology/career) or learn how physical workspace alignment enhances focus in our [Office Vastu Guide](/blog/office-layout-executive-cabin-vastu).
+Explore personalized vocational guidance through our [Career Astrology Services](/astrology/career/) or learn how physical workspace alignment enhances focus in our [Office Vastu Guide](/blog/office-layout-executive-cabin-vastu/).
     `,
   },
   {
@@ -1832,7 +1832,7 @@ The word *Vimshottari* signifies "one hundred and twenty" in Sanskrit:
 ## 3. Navigating Dasha Transitions (Dasha Sandhi)
 The junction between two major planetary periods—known as **Dasha Sandhi**—is often experienced as a phase of psychological and circumstantial reorientation. Recognizing these transitional phases helps individuals cultivate patience, rather than experiencing undue anxiety when longstanding routines naturally shift.
 
-Learn more about your planetary timeline with our [Birth Chart Analysis](/astrology/birth-chart), consult our [Career Astrology Guide](/blog/career-astrology-professional-path-guidelines), or visit our [Astrology Hub](/astrology).
+Learn more about your planetary timeline with our [Birth Chart Analysis](/astrology/birth-chart/), consult our [Career Astrology Guide](/blog/career-astrology-professional-path-guidelines/), or visit our [Astrology Hub](/astrology/).
     `,
   },
   {

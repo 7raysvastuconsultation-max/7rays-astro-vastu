@@ -189,7 +189,7 @@ export const BlogPostPage: React.FC = () => {
         title: 'Apartment Vastu Consultation',
         description:
           'Comprehensive non-demolition spatial assessment for high-rise flats in Bangalore.',
-        link: '/vastu/apartment-vastu',
+        link: '/vastu/apartment-vastu/',
       }
     }
     if (
@@ -202,14 +202,14 @@ export const BlogPostPage: React.FC = () => {
         title: 'Commercial & Office Vastu Consultancy',
         description:
           'Optimize executive leadership seating, cash counter flow, and business growth.',
-        link: '/vastu/office-vastu',
+        link: '/vastu/office-vastu/',
       }
     }
     if (post.category.toLowerCase().includes('industrial') || post.slug.includes('factory')) {
       return {
         title: 'Industrial & Factory Vastu Planning',
         description: 'Heavy machinery orientation, raw material logistics, and plant energy flow.',
-        link: '/vastu/industrial',
+        link: '/vastu/industrial/',
       }
     }
     if (
@@ -221,7 +221,7 @@ export const BlogPostPage: React.FC = () => {
         title: 'Vedic Astrology Consultation',
         description:
           'In-depth Janam Kundli analysis, career timing, and personalized Dasha insights.',
-        link: '/astrology',
+        link: '/astrology/',
       }
     }
     if (post.slug.includes('geopathic') || post.slug.includes('audit')) {
@@ -229,13 +229,13 @@ export const BlogPostPage: React.FC = () => {
         title: 'Scientific Vastu & Energy Audit',
         description:
           '16-zone digital CAD mapping, bio-resonance scanning, and non-demolition solutions.',
-        link: '/vastu-services/vastu-audit',
+        link: '/vastu-services/vastu-audit/',
       }
     }
     return {
       title: 'Residential Vastu Consultation',
       description: 'Room-by-room directional alignment and non-demolition harmony for your home.',
-      link: '/vastu/residential',
+      link: '/vastu/residential/',
     }
   }
 

@@ -39,7 +39,7 @@ const clientExperiences: ClientExperienceItem[] = [
     location: 'Whitefield, Bengaluru',
     propertyType: '4BHK High-Rise Apartment',
     serviceType: 'Apartment Vastu Audit',
-    serviceUrl: '/vastu/apartment-vastu',
+    serviceUrl: '/vastu/apartment-vastu/',
     consultationType: 'On-Site Property Audit',
     period: 'March 2026',
     quote:

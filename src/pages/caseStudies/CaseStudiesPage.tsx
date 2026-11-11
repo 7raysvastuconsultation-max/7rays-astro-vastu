@@ -167,7 +167,7 @@ export const CaseStudiesPage: React.FC = () => {
                 <div className="mt-8 flex items-center justify-between border-t border-slate-200 pt-4">
                   <span className="text-xs font-medium text-slate-500">{cs.remedyType}</span>
                   <Link
-                    to={`/case-studies/${cs.slug}`}
+                    to={`/case-studies/${cs.slug}/`}
                     className="inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 transition hover:text-amber-950"
                   >
                     <span>View Full Case Study</span>

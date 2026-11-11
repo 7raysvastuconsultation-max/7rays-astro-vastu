@@ -7,7 +7,7 @@ export const FeaturedProjectsSection: React.FC = () => {
     {
       title: 'Commercial Office Assessment',
       location: 'Bengaluru',
-      to: '/case-studies/corporate-office-bangalore',
+      to: '/case-studies/corporate-office-bangalore/',
       type: 'Illustrative Scenario',
       image: '/images/projects/corporate-office-bangalore.webp',
       description:
@@ -16,7 +16,7 @@ export const FeaturedProjectsSection: React.FC = () => {
     {
       title: 'Residential & Geopathic Assessment',
       location: 'Bengaluru',
-      to: '/case-studies/whitefield-apartment-health-harmony',
+      to: '/case-studies/whitefield-apartment-health-harmony/',
       type: 'Illustrative Scenario',
       image: '/images/projects/luxury-residence-mumbai.webp',
       description:
@@ -34,7 +34,7 @@ export const FeaturedProjectsSection: React.FC = () => {
     {
       title: 'Apartment Spatial Alignment',
       location: 'Bengaluru',
-      to: '/vastu/apartment-vastu',
+      to: '/vastu/apartment-vastu/',
       type: 'Service Protocol',
       image: '/images/projects/villa-goa.webp',
       description:

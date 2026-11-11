@@ -922,6 +922,51 @@ export const LocationDetailPage: React.FC = () => {
         </section>
       )}
 
+      {/* 5.5 BENGALURU LOCALITY NETWORK */}
+      <section className="border-t border-slate-200 bg-[#FAF8F5] py-14 text-slate-900 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col justify-between sm:flex-row sm:items-end">
+            <div>
+              <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+                BENGALURU ON-SITE COVERAGE NETWORK
+              </span>
+              <h2 className="mt-1.5 font-serif text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                Serving {location.name} &amp; Across Bangalore
+              </h2>
+              <p className="mt-1 text-xs text-slate-600 sm:text-sm">
+                Explore dedicated on-site Vastu inspection profiles for neighboring residential and commercial layouts.
+              </p>
+            </div>
+            <Link
+              to="/locations/bangalore/"
+              className="mt-3 inline-flex items-center gap-1.5 text-xs font-bold text-amber-800 transition hover:text-amber-950 sm:mt-0"
+            >
+              <span>Bangalore Master Hub</span>
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          </div>
+
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
+            {locationsData
+              .filter((loc) => loc.slug !== location.slug)
+              .map((loc) => (
+                <Link
+                  key={loc.slug}
+                  to={`/locations/${loc.slug}/`}
+                  className="group flex flex-col justify-between rounded-xl border border-amber-200/70 bg-white p-3.5 shadow-2xs transition hover:border-amber-400 hover:shadow-sm"
+                >
+                  <span className="text-xs font-bold text-slate-900 group-hover:text-amber-800">
+                    {loc.name}
+                  </span>
+                  <span className="mt-1 text-[10px] text-slate-500 line-clamp-1">
+                    {loc.region}
+                  </span>
+                </Link>
+              ))}
+          </div>
+        </div>
+      </section>
+
       {/* 6. SIGNATURE PRE-FOOTER SUNSET VILLA BANNER (With Hero/Footer Image & Glassmorphism Quote) */}
       <section className="relative overflow-hidden py-20 text-center sm:py-24">
         <img

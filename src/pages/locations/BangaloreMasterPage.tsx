@@ -842,9 +842,17 @@ export const BangaloreMasterPage: React.FC = () => {
               </div>
 
               <div className="mt-6 flex flex-wrap items-center justify-between gap-4 border-t border-slate-100 pt-5">
-                <span className="rounded-md border border-amber-200 bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-800">
-                  Non-demolition Vastu
-                </span>
+                <div className="flex items-center gap-2">
+                  <span className="rounded-md border border-amber-200 bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-800">
+                    Non-demolition Vastu
+                  </span>
+                  <Link
+                    to="/locations/hsr-layout/"
+                    className="rounded-md border border-slate-200 bg-slate-50 px-2.5 py-1 text-[11px] font-semibold text-slate-700 hover:border-amber-400 hover:text-amber-900"
+                  >
+                    HSR Locality Profile
+                  </Link>
+                </div>
                 <Link
                   to="/case-studies/fintech-startup-growth-hsr-layout/"
                   className="group inline-flex items-center gap-1.5 text-xs font-bold text-amber-700 transition hover:text-amber-900"

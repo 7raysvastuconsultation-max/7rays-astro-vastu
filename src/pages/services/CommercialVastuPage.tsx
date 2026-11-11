@@ -74,7 +74,7 @@ export const CommercialVastuPage: React.FC = () => {
       icon: Building2,
       description:
         'Create productive, focused and harmonious workspaces for executive and team pods.',
-      link: '/vastu/office-vastu',
+      link: '/vastu/office-vastu/',
       cta: 'Explore Office Hub',
     },
     {
@@ -84,7 +84,7 @@ export const CommercialVastuPage: React.FC = () => {
       icon: Users2,
       description:
         'Enterprise workplace spatial architecture for IT parks, tech campuses, and headquarters.',
-      link: '/vastu/corporate',
+      link: '/vastu/corporate/',
       cta: 'Explore Corporate Hub',
     },
     {
@@ -94,7 +94,7 @@ export const CommercialVastuPage: React.FC = () => {
       icon: Store,
       description:
         'Optimize customer footfall circulation, cash counter positioning, and product display staging.',
-      link: '/blog/retail-store-and-showroom-vastu',
+      link: '/blog/retail-store-and-showroom-vastu/',
       cta: 'Read Retail Guide',
     },
     {
@@ -104,7 +104,7 @@ export const CommercialVastuPage: React.FC = () => {
       icon: UtensilsCrossed,
       description:
         'Balance commercial kitchen burners, water elements, bar counters, and dining comfort.',
-      link: '/blog/restaurant-and-hospitality-vastu',
+      link: '/blog/restaurant-and-hospitality-vastu/',
       cta: 'Read Dining Guide',
     },
     {
@@ -114,7 +114,7 @@ export const CommercialVastuPage: React.FC = () => {
       icon: Factory,
       description:
         'Optimize manufacturing plants, heavy machinery orientation, and warehouse dispatch logistics.',
-      link: '/vastu/industrial',
+      link: '/vastu/industrial/',
       cta: 'Explore Industrial Hub',
     },
   ]
@@ -1114,7 +1114,7 @@ export const CommercialVastuPage: React.FC = () => {
                     </div>
                     <div className="border-t border-slate-100 p-3 pt-2">
                       <Link
-                        to={`/case-studies/${study.slug}`}
+                        to={`/case-studies/${study.slug}/`}
                         className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 hover:text-amber-900"
                       >
                         <span>View Scenario Walkthrough</span>

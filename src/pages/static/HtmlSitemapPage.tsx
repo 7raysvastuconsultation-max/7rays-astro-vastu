@@ -291,7 +291,7 @@ export const HtmlSitemapPage: React.FC = () => {
                 {caseStudiesData.map((cs) => (
                   <li key={cs.slug}>
                     <Link
-                      to={`/case-studies/${cs.slug}`}
+                      to={`/case-studies/${cs.slug}/`}
                       className="line-clamp-1 hover:text-amber-800"
                     >
                       {cs.title}

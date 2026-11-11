@@ -97,9 +97,9 @@ export const locationsData: LocationItem[] = [
       'Sector 7',
       '27th Main',
     ],
-    heroHeadline: 'Scientific Vastu & Workplace Alignment in HSR Layout, Bangalore',
+    heroHeadline: 'Scientific Astro-Vastu & Workplace Alignment in HSR Layout, Bangalore',
     metaDescription:
-      'Expert on-site Vastu audits in HSR Layout for tech startups, independent villas, and apartment complexes by Rishwa Sinha. Non-demolition elemental balancing.',
+      'Certified Vastu consultant and Astro-Vastu specialist in HSR Layout for tech startups, villas, and apartments by Rishwa Sinha. 16-zone CAD blueprint audit and non-demolition cures.',
     commonVastuIssues: [
       'Multi-story startup offices with conflicting executive seating zones',
       'Corner plots (Shermukhi or Gomukhi) with irregular directional skews',
@@ -111,6 +111,10 @@ export const locationsData: LocationItem[] = [
       '5+ years of verified professional experience led by Rishwa Sinha',
     ],
     faqs: [
+      {
+        question: "Do you provide combined Astrology and Vastu consultation in HSR Layout?",
+        answer: "Yes. Rishwa Sinha provides integrated Astro-Vastu synthesis in HSR Layout, correlating startup founders and homeowners individual planetary Dashas with physical 16-zone spatial alignments to ensure sustained growth, clarity, and harmony.",
+      },
       {
         question: "How do you configure startup office floor plans in HSR Layout to foster stability and growth?",
         answer: "We position executive founders in the South-West for leadership stability, place finance desks in the North (Kuber zone), situate server rooms in the South-East (Agni), and ensure the reception welcomes balanced energetic flow.",
@@ -130,6 +134,20 @@ export const locationsData: LocationItem[] = [
     ],
     geo: { lat: 12.9121, lng: 77.6446 },
     contextualLinks: [
+      {
+        title: "Koramangala Vastu Consultation",
+        url: "/locations/koramangala/",
+        description: "Adjacent startup corridor and luxury residential block consultations in South-East Bengaluru.",
+        anchorText: "Explore Nearby Koramangala Vastu Services",
+        badge: "Specialized Audit",
+      },
+      {
+        title: "Sarjapur Road & Bellandur Vastu",
+        url: "/locations/sarjapur-road/",
+        description: "Gated community and high-density tech corridor audits connecting to HSR Outer Ring Road.",
+        anchorText: "Explore Nearby Sarjapur Road Vastu Services",
+        badge: "Specialized Audit",
+      },
       {
         title: "Personalized Astro-Vastu Synthesis",
         url: "/services/astro-vastu-synthesis/",

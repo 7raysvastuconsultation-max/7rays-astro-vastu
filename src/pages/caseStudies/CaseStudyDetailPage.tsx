@@ -31,7 +31,7 @@ export const CaseStudyDetailPage: React.FC = () => {
     )
   }
 
-  const canonicalUrl = `${siteConfig.url}/case-studies/${cs.slug}`
+  const canonicalUrl = `${siteConfig.url}/case-studies/${cs.slug}/`
 
   return (
     <>

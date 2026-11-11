@@ -18,7 +18,7 @@ import { siteConfig } from '@/config/site'
 import { ConsultationModal } from '@/components/common/ConsultationModal'
 
 export const ApartmentVastuPage: React.FC = () => {
-  const canonicalUrl = `${siteConfig.url}/vastu/apartment-vastu`
+  const canonicalUrl = `${siteConfig.url}/vastu/apartment-vastu/`
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [selectedService, setSelectedService] = useState('Apartment Vastu Consultation')
   const [openFaq, setOpenFaq] = useState<number | null>(null)
@@ -87,8 +87,8 @@ export const ApartmentVastuPage: React.FC = () => {
   return (
     <>
       <SEOHead
-        title="Apartment Vastu Consultant India | High-Rise Living | 7Rays"
-        description="Specialized Apartment Vastu consultancy across India for modern flats, penthouses, and high-rise living. Non-demolition elemental remedies and 16-zone CAD audits."
+        title="Apartment Vastu Consultant Bangalore & India | Flat Audit | 7Rays"
+        description="Specialized Apartment Vastu consultancy in Bangalore and pan-India for modern flats, penthouses, and high-rise towers. 16-zone CAD audit and non-demolition remedies."
         canonicalUrl={canonicalUrl}
       />
       <BreadcrumbSchema

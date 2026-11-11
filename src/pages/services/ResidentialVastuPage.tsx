@@ -67,7 +67,7 @@ export const ResidentialVastuPage: React.FC = () => {
       description:
         'Practical non-demolition Vastu solutions for high-rise apartments, shared walls, and leased flats.',
       cta: 'Explore Apartment Vastu',
-      link: '/vastu/apartment-vastu',
+      link: '/vastu/apartment-vastu/',
     },
     {
       id: 'villa-vastu',
@@ -77,7 +77,7 @@ export const ResidentialVastuPage: React.FC = () => {
       description:
         'Harmonious space planning for independent villas, gated community duplexes, and private estates.',
       cta: 'Bangalore Villa Services',
-      link: '/locations/bangalore/residential-vastu',
+      link: '/locations/bangalore/residential-vastu/',
     },
     {
       id: 'new-home-vastu',
@@ -87,7 +87,7 @@ export const ResidentialVastuPage: React.FC = () => {
       description:
         'Ensure your architectural CAD blueprints and foundation are aligned with cardinal energies before building.',
       cta: 'Construction Planning',
-      link: '/vastu-services',
+      link: '/vastu-services/',
     },
     {
       id: 'existing-home-corrections',
@@ -97,7 +97,7 @@ export const ResidentialVastuPage: React.FC = () => {
       description:
         'Practical, non-demolition remedies using elemental metallic strips and spatial alignment for existing homes.',
       cta: 'Non-Demolition Remedies',
-      link: '/vastu/non-demolition',
+      link: '/vastu/non-demolition/',
     },
   ]
 
@@ -1157,7 +1157,7 @@ export const ResidentialVastuPage: React.FC = () => {
                     </div>
                     <div className="border-t border-slate-100 p-3 pt-2">
                       <Link
-                        to={`/case-studies/${study.slug}`}
+                        to={`/case-studies/${study.slug}/`}
                         className="inline-flex items-center gap-1 text-[11px] font-bold text-amber-700 hover:text-amber-900"
                       >
                         <span>View Scenario Walkthrough</span>
