@@ -45,12 +45,12 @@ export const BangaloreApartmentVastuPage: React.FC = () => {
     {
       question: 'Do you offer pre-purchase or pre-registration Vastu audits for Bangalore flats?',
       answer:
-        'Yes. Pre-purchase flat evaluation is one of our most requested services. Before signing builder agreements or registering properties in Sobha, Prestige, Brigade, Godrej, or Puravankara projects, we inspect builder floor plates and site orientation to verify entrance padas, master bedroom stability, and kitchen fire zones.',
+        'Yes. Pre-purchase flat evaluation is one of our most requested services. Before signing builder agreements or taking handover across prominent high-rise developments in Bangalore (such as in Whitefield, Sarjapur Road, Bellandur, and Hebbal), we inspect floor plates and site orientation to verify entrance padas, master bedroom stability, and kitchen fire zones.',
     },
     {
       question: 'Are your Vastu remedies compliant with Bangalore apartment society (RWA) bylaws?',
       answer:
-        'Yes, 100%. RWA bylaws strictly prohibit structural demolition, floor chiseling, or altering external facade symmetry. We implement zero-demolition remedies using calibrated metallic boundary strips (copper, brass, zinc), elemental balancing tapes, and subtle mineral cures placed beneath or flush with flooring that leave all structural walls and common plumbing untouched.',
+        'Yes. Non-demolition remedies are designed to align with standard apartment society (RWA) bylaws because they avoid structural drilling, wall demolition, and facade alterations. We implement calibrated metallic boundary strips (copper, brass, zinc, lead) and elemental balancing methods placed flush with door frames or floor joints, leaving RCC beams and common plumbing lines untouched.',
     },
     {
       question: 'Do you conduct on-site visits across all apartment corridors in Bengaluru?',
@@ -84,7 +84,7 @@ export const BangaloreApartmentVastuPage: React.FC = () => {
       challenge:
         'Many Bengaluru residential high-rises are angled 15° to 35° away from cardinal North to maximize road frontage or daylight.',
       solution:
-        'Precision 16-zone CAD grid overlay calculated with Suunto optical compass to map true magnetic axes for your specific floor.',
+        'Precision 16-zone CAD grid overlay calculated with calibrated digital compass measurements to map true magnetic axes for your specific floor.',
     },
   ]
 
@@ -219,7 +219,7 @@ export const BangaloreApartmentVastuPage: React.FC = () => {
             <div className="mt-6 flex flex-wrap items-center gap-4 text-xs text-slate-400">
               <span className="flex items-center gap-1.5">
                 <ShieldCheck className="h-4 w-4 text-amber-400" />
-                Zero Demolition Guarantee
+                Zero-Demolition Methods
               </span>
               <span className="flex items-center gap-1.5">
                 <Compass className="h-4 w-4 text-amber-400" />
@@ -229,6 +229,84 @@ export const BangaloreApartmentVastuPage: React.FC = () => {
                 <MapPin className="h-4 w-4 text-amber-400" />
                 Bengaluru On-Site Visits
               </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AEO / GEO Definition & Comparison Section */}
+      <section className="border-b border-slate-200 bg-white py-12 text-slate-900 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Direct Answer Definition Callout */}
+          <div className="rounded-2xl border-l-4 border-amber-600 bg-amber-50/70 p-6 sm:p-8">
+            <span className="text-xs font-bold tracking-widest text-amber-800 uppercase">
+              QUICK DEFINITION • ANSWER ENGINE SUMMARY
+            </span>
+            <h2 className="mt-2 font-serif text-xl font-bold text-slate-900 sm:text-2xl">
+              What is High-Rise Apartment Vastu?
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">
+              High-rise apartment Vastu is the specialized application of classical 16-zone directional principles to multi-storey residential units where structural elements (such as shear walls, plumbing ducts, and tower orientation) are fixed. Rather than relocating walls or doors, energy balancing is achieved through true magnetic North CAD alignment, functional room zoning, and non-invasive elemental remedies that comply with apartment association bylaws.
+            </p>
+          </div>
+
+          {/* Comparative Analysis Table */}
+          <div className="mt-12">
+            <div className="max-w-3xl">
+              <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+                COMPARATIVE AUDIT FRAMEWORK
+              </span>
+              <h3 className="mt-2 font-serif text-2xl font-bold text-slate-900 sm:text-3xl">
+                Independent House vs. High-Rise Apartment Vastu in Bengaluru
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                How spatial constraints shape remedial approaches for flats compared to plotted residences:
+              </p>
+            </div>
+
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-slate-200 shadow-2xs">
+              <table className="w-full min-w-[640px] text-left text-xs sm:text-sm">
+                <thead className="border-b border-slate-200 bg-slate-100 text-slate-900">
+                  <tr>
+                    <th className="p-4 font-serif font-bold">Vastu Factor</th>
+                    <th className="p-4 font-medium text-slate-700">Independent Villa / House</th>
+                    <th className="p-4 font-medium text-slate-700">High-Rise Apartment Flat</th>
+                    <th className="p-4 font-bold text-amber-900">7Rays Apartment Solution</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 bg-white text-slate-700">
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Structural Walls</td>
+                    <td className="p-4">Walls and room partitions can be modified</td>
+                    <td className="p-4">RCC shear walls cannot be altered or broken</td>
+                    <td className="p-4 font-medium text-amber-950">Non-demolition elemental boundary balancing</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Tower Orientation</td>
+                    <td className="p-4">Aligned directly with plot boundaries</td>
+                    <td className="p-4">Towers often angled 15°–35° off cardinal North</td>
+                    <td className="p-4 font-medium text-amber-950">16-zone CAD grid mapped to true magnetic North</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Plumbing &amp; Ducts</td>
+                    <td className="p-4">Septic tanks and drains can be relocated</td>
+                    <td className="p-4">Fixed vertical shafts shared with entire tower</td>
+                    <td className="p-4 font-medium text-amber-950">Elemental boundary balancing and threshold strips</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Main Entrance</td>
+                    <td className="p-4">Compound gate and door can be shifted</td>
+                    <td className="p-4">Fixed door location along shared corridor</td>
+                    <td className="p-4 font-medium text-amber-950">Threshold pada balancing using metal divider inlays</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Society Bylaws (RWA)</td>
+                    <td className="p-4">Owner has full civil modification freedom</td>
+                    <td className="p-4">Strict rules against exterior or structural changes</td>
+                    <td className="p-4 font-medium text-amber-950">Surface-aligned, non-invasive cures</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

@@ -45,17 +45,17 @@ export const BangaloreNonDemolitionVastuPage: React.FC = () => {
     {
       question: 'Are non-demolition remedies permitted in rented apartments and leased offices?',
       answer:
-        'Yes. Standard Bangalore tenancy agreements and commercial fit-out rules strictly forbid structural alterations. Our non-demolition techniques are surface-applied, removable, and 100% compliant with landlord lease covenants and apartment society (RWA) bylaws.',
+        'Yes. Standard Bangalore tenancy agreements and commercial fit-out rules strictly forbid structural alterations. Our non-demolition techniques are surface-applied, removable, and compliant with standard landlord lease covenants and apartment society (RWA) bylaws.',
     },
     {
       question: 'Can you remedy an incorrectly placed toilet or kitchen without civil reconstruction?',
       answer:
-        'Yes. Toilets situated in the North-East (Ishanya) or modular kitchens with stove-sink clashes are among the most common defects in Bengaluru high-rises. We install calibrated elemental boundary inlays and micro-frequency insulators around the affected fixtures to sever the negative energetic spillover without plumbing changes.',
+        'Yes. Toilets situated in the North-East (Ishanya) or modular kitchens with stove-sink clashes are among the most common defects in Bengaluru high-rises. We install calibrated elemental boundary inlays and calibrated boundary separation strips around the affected fixtures to sever the negative energetic spillover without plumbing changes.',
     },
     {
       question: 'How do you conduct an on-site non-demolition inspection in Bangalore?',
       answer:
-        'Our consultant visits your property with calibrated diagnostic instruments, including a digital compass and electromagnetic scanning tools. We map the 16 spatial zones, inspect subtle energy lines, and provide an exact blueprint detailing where to install metallic strips, elemental colors, or mineral balances.',
+        'Our consultant visits your property with calibrated diagnostic tools, including a calibrated digital compass, digital Gauss meter, and dowsing rods. We map the 16 spatial zones, inspect subtle energy lines, and provide an exact blueprint detailing where to install metallic strips, elemental colors, or directional balances.',
     },
   ]
 
@@ -69,7 +69,7 @@ export const BangaloreNonDemolitionVastuPage: React.FC = () => {
     },
     {
       title: 'Elemental Color & Light Therapy',
-      material: 'Pancha Tattva Chromatic Tuning',
+      material: 'Pancha Tattva Elemental Balancing',
       description:
         'Calibrated color frequencies and targeted spectrum illumination that neutralize clashing elements (e.g. fire-water conflicts in kitchens).',
       icon: Sparkles,
@@ -162,7 +162,7 @@ export const BangaloreNonDemolitionVastuPage: React.FC = () => {
           <div className="max-w-3xl py-4 sm:py-6">
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-amber-400/40 bg-amber-500/10 px-3.5 py-1 text-xs font-semibold tracking-widest text-amber-300 uppercase backdrop-blur-md">
               <Ban className="h-3.5 w-3.5 text-amber-400" />
-              <span>100% NON-INVASIVE SCIENTIFIC CURES</span>
+              <span>NON-INVASIVE SCIENTIFIC CURES</span>
             </div>
 
             <h1 className="font-serif text-3xl leading-tight font-bold text-white sm:text-5xl lg:text-6xl">
@@ -208,6 +208,78 @@ export const BangaloreNonDemolitionVastuPage: React.FC = () => {
                 <MapPin className="h-4 w-4 text-amber-400" />
                 Bengaluru On-Site Visits
               </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AEO / GEO Definition & Comparison Section */}
+      <section className="border-b border-slate-200 bg-white py-12 text-slate-900 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Direct Answer Definition Callout */}
+          <div className="rounded-2xl border-l-4 border-amber-600 bg-amber-50/70 p-6 sm:p-8">
+            <span className="text-xs font-bold tracking-widest text-amber-800 uppercase">
+              QUICK DEFINITION • ANSWER ENGINE SUMMARY
+            </span>
+            <h2 className="mt-2 font-serif text-xl font-bold text-slate-900 sm:text-2xl">
+              What is Non-Demolition Vastu?
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">
+              Non-Demolition Vastu is an elemental and spatial alignment methodology that corrects directional imbalances without civil reconstruction, wall demolition, or structural damage. By utilizing calibrated metallic boundary strips (copper, brass, zinc, lead), directional elemental color adjustments, and spatial zoning, energy flow is harmonized while keeping occupied residences and leased commercial properties completely intact.
+            </p>
+          </div>
+
+          {/* Comparative Analysis Table */}
+          <div className="mt-12">
+            <div className="max-w-3xl">
+              <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+                REMEDIAL COMPARISON FRAMEWORK
+              </span>
+              <h3 className="mt-2 font-serif text-2xl font-bold text-slate-900 sm:text-3xl">
+                Structural Demolition vs. Non-Demolition Vastu Alignment
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                Key differences in cost, disruption, and feasibility for Bangalore properties:
+              </p>
+            </div>
+
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-slate-200 shadow-2xs">
+              <table className="w-full min-w-[640px] text-left text-xs sm:text-sm">
+                <thead className="border-b border-slate-200 bg-slate-100 text-slate-900">
+                  <tr>
+                    <th className="p-4 font-serif font-bold">Parameter</th>
+                    <th className="p-4 font-medium text-slate-700">Structural Demolition Approach</th>
+                    <th className="p-4 font-bold text-amber-900">7Rays Non-Demolition Remedies</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 bg-white text-slate-700">
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Civil Disruption</td>
+                    <td className="p-4">Weeks of dust, debris, wall cutting, and noise</td>
+                    <td className="p-4 font-medium text-amber-950">Zero civil demolition; installed cleanly flush with joints</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Financial Expenditure</td>
+                    <td className="p-4">High reconstruction costs, masonry, repainting</td>
+                    <td className="p-4 font-medium text-amber-950">Targeted, cost-effective metallic and elemental remedies</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Tenancy &amp; Leases</td>
+                    <td className="p-4">Prohibited in rented flats and commercial leases</td>
+                    <td className="p-4 font-medium text-amber-950">Fully compliant with rental agreements and RWA bylaws</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Occupancy &amp; Downtime</td>
+                    <td className="p-4">Requires temporary evacuation or office closure</td>
+                    <td className="p-4 font-medium text-amber-950">Zero downtime; spaces remain fully occupied and operational</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Remedial Tools</td>
+                    <td className="p-4">Physical relocation of doors, walls, and plumbing</td>
+                    <td className="p-4 font-medium text-amber-950">Calibrated brass, copper, zinc, lead inlays and elemental balancing</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

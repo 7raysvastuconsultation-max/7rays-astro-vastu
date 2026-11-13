@@ -46,12 +46,12 @@ export const BangaloreOfficeVastuPage: React.FC = () => {
     {
       question: 'How do you optimize rented commercial tech park spaces without violating landlord lease terms?',
       answer:
-        'Most tech offices in Bangalore operate on commercial leases in tech parks like Manyata, Ecospace, RMZ, or Bagmane where structural alterations are strictly prohibited. We calibrate energy grids using flush metallic divider strips (brass, copper, zinc) laid beneath modular carpet tiles, strategic elemental desk zoning, and acoustic plant balancing with zero wall or structural demolition.',
+        'Most tech offices in Bangalore operate on commercial leases in business parks across Outer Ring Road, Whitefield, and Electronic City where structural alterations are prohibited. We calibrate energy grids using flush metallic divider strips (brass, copper, zinc) laid beneath modular carpet tiles or thresholds, strategic elemental desk zoning, and workplace harmonization with zero structural demolition.',
     },
     {
       question: 'What is the ideal Vastu orientation for server rooms and IT infrastructure in Bangalore offices?',
       answer:
-        'Server racks, UPS battery banks, and high-voltage IT networking equipment represent high thermal and electrical energy and belong in the Agni (South-East) zone. Locating heavy server racks in the North-East (Ishanya) water zone causes recurring technical outages and organizational friction.',
+        'Server racks, UPS battery banks, and high-voltage IT networking equipment represent high thermal and electrical energy and belong in the Agni (South-East) zone. Locating heavy server racks in the North-East (Ishanya) water zone can introduce directional conflict and thermal disharmony within the water quadrant.',
     },
     {
       question: 'Do you conduct on-site office inspections across all Bangalore tech corridors?',
@@ -65,7 +65,7 @@ export const BangaloreOfficeVastuPage: React.FC = () => {
       title: 'Founder & Executive Cabins',
       direction: 'South-West (Nairutya Zone)',
       description:
-        'Positioning leadership seating in the earth quadrant anchors long-term financial stability, command authority, and reduces investor fatigue.',
+        'Positioning leadership seating in the earth quadrant anchors executive decision-making stability, command authority, and sustained leadership focus.',
       icon: Briefcase,
     },
     {
@@ -232,6 +232,84 @@ export const BangaloreOfficeVastuPage: React.FC = () => {
                 <MapPin className="h-4 w-4 text-amber-400" />
                 All Tech Corridors Covered
               </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AEO / GEO Definition & Comparison Section */}
+      <section className="border-b border-slate-200 bg-white py-12 text-slate-900 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Direct Answer Definition Callout */}
+          <div className="rounded-2xl border-l-4 border-amber-600 bg-amber-50/70 p-6 sm:p-8">
+            <span className="text-xs font-bold tracking-widest text-amber-800 uppercase">
+              QUICK DEFINITION • ANSWER ENGINE SUMMARY
+            </span>
+            <h2 className="mt-2 font-serif text-xl font-bold text-slate-900 sm:text-2xl">
+              What is Commercial Office Vastu?
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">
+              Commercial Office Vastu is the strategic spatial calibration of workplace layouts to support executive leadership, team productivity, and operational stability. It maps functional workplace zones—such as leadership cabins in the South-West, developer workstations facing North or East, and IT infrastructure in the South-East—using non-demolition methods that respect commercial lease covenants.
+            </p>
+          </div>
+
+          {/* Comparative Analysis Table */}
+          <div className="mt-12">
+            <div className="max-w-3xl">
+              <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+                WORKPLACE COMPARATIVE FRAMEWORK
+              </span>
+              <h3 className="mt-2 font-serif text-2xl font-bold text-slate-900 sm:text-3xl">
+                Traditional Commercial Vastu vs. Modern Tech Workplace Vastu
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                How modern tech campuses and startup incubators in Bengaluru apply directional zoning:
+              </p>
+            </div>
+
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-slate-200 shadow-2xs">
+              <table className="w-full min-w-[640px] text-left text-xs sm:text-sm">
+                <thead className="border-b border-slate-200 bg-slate-100 text-slate-900">
+                  <tr>
+                    <th className="p-4 font-serif font-bold">Workplace Element</th>
+                    <th className="p-4 font-medium text-slate-700">Traditional Commercial Vastu</th>
+                    <th className="p-4 font-medium text-slate-700">Modern Tech Office Reality</th>
+                    <th className="p-4 font-bold text-amber-900">7Rays Workplace Alignment</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 bg-white text-slate-700">
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Leadership Seating</td>
+                    <td className="p-4">Fixed enclosed cabin in South-West</td>
+                    <td className="p-4">Open founder desks or agile huddle pods</td>
+                    <td className="p-4 font-medium text-amber-950">Nairutya leadership anchor zone with solid backing</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Engineering Bullpen</td>
+                    <td className="p-4">Isolated private cubicles</td>
+                    <td className="p-4">Open bench seating and hot-desking rows</td>
+                    <td className="p-4 font-medium text-amber-950">North &amp; East facing orientations for focus and flow</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Server &amp; Network Racks</td>
+                    <td className="p-4">Small utility meter box in South-East</td>
+                    <td className="p-4">High-voltage server rooms and UPS battery banks</td>
+                    <td className="p-4 font-medium text-amber-950">Agni fire quadrant placement with thermal balancing</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Commercial Leases</td>
+                    <td className="p-4">Owner-operated standalone property</td>
+                    <td className="p-4">Strict IT park or builder lease agreements</td>
+                    <td className="p-4 font-medium text-amber-950">Flush metallic divider strips under carpet tiles</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Deal &amp; Sales Rooms</td>
+                    <td className="p-4">Formal reception room</td>
+                    <td className="p-4">Glass conference pods and demo lounges</td>
+                    <td className="p-4 font-medium text-amber-950">North-West (Vayu) positioning for dynamic pipeline velocity</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -424,7 +502,7 @@ export const BangaloreOfficeVastuPage: React.FC = () => {
                 </span>
               </h2>
               <p className="max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base font-light">
-                Connect directly with Certified Vastu Consultant Rishwa Sinha for on-site workplace audits, cabin alignments, and zero-downtime balancing across Bengaluru.
+                Connect directly with Certified Vastu Consultant Rishwa Sinha for on-site workplace audits, cabin alignments, and non-disruptive balancing across Bengaluru.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-4 pt-2 lg:justify-start">
                 <button
