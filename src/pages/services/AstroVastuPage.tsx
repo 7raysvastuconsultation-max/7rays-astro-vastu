@@ -186,11 +186,9 @@ export const AstroVastuPage: React.FC = () => {
               Synthesis Consultation
             </h1>
 
-            <p className="mt-6 text-base leading-relaxed text-slate-300 sm:text-lg">
-              Why do two families living in identical floor plans experience completely different lives?
-              Because a space resonates uniquely with each occupant’s Vedic planetary chart.
-              Led by <strong>Rishwa Sinha</strong>, Certified Vastu Consultant with 5+ years of verified practice,
-              we align your personal Kundli with your living and working environment.
+            {/* Answer-First Pattern for AEO / AI Overviews */}
+            <p className="mt-6 max-w-2xl text-base leading-relaxed text-slate-200 sm:text-lg">
+              Astro-Vastu synthesis is an advanced methodology that integrates classical 16-zone Vastu Shastra with an occupant&apos;s individual Vedic birth chart (Janma Kundli). By mapping personal planetary Dasha cycles onto architectural directions, it identifies customized spatial adjustments and non-demolition metallic inlays, ensuring that physical spaces actively support the occupant&apos;s unique astrological timeline and life goals.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
@@ -267,6 +265,84 @@ export const AstroVastuPage: React.FC = () => {
             <div className="flex items-center gap-2 text-amber-900">
               <Star className="h-4 w-4 text-amber-700" />
               <span>Personalized Horoscope Synastry • Non-Demolition Elemental Remedies</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AEO / GEO Definition & Comparative Framework Section */}
+      <section className="border-b border-slate-200 bg-white py-12 text-slate-900 sm:py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          {/* Direct Answer Definition Callout */}
+          <div className="rounded-2xl border-l-4 border-amber-600 bg-amber-50/70 p-6 sm:p-8">
+            <span className="text-xs font-bold tracking-widest text-amber-800 uppercase">
+              QUICK DEFINITION • ANSWER ENGINE SUMMARY
+            </span>
+            <h2 className="mt-2 font-serif text-xl font-bold text-slate-900 sm:text-2xl">
+              What is Astro-Vastu Synthesis and How Does It Work?
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-700 sm:text-base">
+              Astro-Vastu synthesis bridges external architectural alignment with an occupant&apos;s individual Vedic horoscope. Led by Certified Vastu Consultant Rishwa Sinha (5+ years experience), this approach superimposes 12 astrological houses and active planetary Dasha periods over 16 architectural Vastu zones. Customized non-demolition spatial corrections and authentic metallic inlays (brass, copper, zinc) harmonize spaces without commercial gemstones.
+            </p>
+          </div>
+
+          {/* Comparative Analysis Table */}
+          <div className="mt-12">
+            <div className="max-w-3xl">
+              <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+                COMPARATIVE METHODOLOGY MATRIX
+              </span>
+              <h3 className="mt-2 font-serif text-2xl font-bold text-slate-900 sm:text-3xl">
+                Generic Vastu Shastra vs. Astro-Vastu Synthesis
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                How personalized horoscope synastry resolves discrepancies that generic spatial advice cannot address:
+              </p>
+            </div>
+
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-slate-200 shadow-2xs">
+              <table className="w-full min-w-[640px] text-left text-xs sm:text-sm">
+                <thead className="border-b border-slate-200 bg-slate-100 text-slate-900">
+                  <tr>
+                    <th className="p-4 font-serif font-bold">Diagnostic Dimension</th>
+                    <th className="p-4 font-medium text-slate-700">Generic Vastu Shastra</th>
+                    <th className="p-4 font-medium text-slate-700">Potential Limitation</th>
+                    <th className="p-4 font-bold text-amber-900">7Rays Astro-Vastu Synthesis</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 bg-white text-slate-700">
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Occupant Personalization</td>
+                    <td className="p-4">Universal rules applied equally to any inhabitant</td>
+                    <td className="p-4">Fails to explain why identical flats bring differing fortune</td>
+                    <td className="p-4 font-medium text-amber-950">Synchronized with primary earner&apos;s Janma Kundli and Dasha</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Planetary Alignment</td>
+                    <td className="p-4">Considers only fixed directional planetary lords</td>
+                    <td className="p-4">May inadvertently strengthen an unfavorable functional malefic</td>
+                    <td className="p-4 font-medium text-amber-950">Customized to protect functional benefic planetary directions</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Timing of Remedies</td>
+                    <td className="p-4">Static remedies implemented at any arbitrary date</td>
+                    <td className="p-4">Does not account for active transit (Gochara) timing</td>
+                    <td className="p-4 font-medium text-amber-950">Aligned with favorable planetary cycles and Mahadasha transitions</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Remedial Philosophy</td>
+                    <td className="p-4">Often insists on structural demolition or costly gemstones</td>
+                    <td className="p-4">High civil expense, tenant disruption, and commercial markups</td>
+                    <td className="p-4 font-medium text-amber-950">Strict zero-demolition metallic inlays; zero gemstone selling</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Urban Apartment Utility</td>
+                    <td className="p-4">Demands structural changes impractical in multi-storey flats</td>
+                    <td className="p-4">Violates apartment association bylaws and RCC wall limits</td>
+                    <td className="p-4 font-medium text-amber-950">Non-invasive elemental balancing tailored for apartment living</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

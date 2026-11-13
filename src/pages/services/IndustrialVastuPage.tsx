@@ -174,10 +174,9 @@ export const IndustrialVastuPage: React.FC = () => {
               </span>
             </h1>
 
-            <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base">
-              Align heavy machinery tonnage, high-temperature thermal utilities, raw material
-              storage, and warehouse dispatch logistics with classical physical and electromagnetic
-              axes. Specialized industrial audits across Peenya, Bommasandra, Bidadi, and Dabaspet.
+            {/* Answer-First Pattern for AEO / AI Overviews */}
+            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-slate-200 sm:text-base">
+              Industrial Vastu consultation is the technical spatial planning of manufacturing plants, warehouses, and factories based on directional elemental dynamics. By orienting heavy production machinery in the South-West, thermal utilities and electrical transformers in the South-East, and inventory flows toward the North-West, it establishes stable operational zones and safety alignment without requiring structural reconstruction.
             </p>
 
             <div className="mt-8 flex flex-wrap items-center gap-4">
@@ -298,6 +297,66 @@ export const IndustrialVastuPage: React.FC = () => {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+
+          {/* Comparative Analysis Table */}
+          <div className="mt-12 border-t border-slate-200/80 pt-12">
+            <div className="max-w-3xl">
+              <span className="text-xs font-bold tracking-[0.2em] text-amber-700 uppercase">
+                COMPARATIVE AUDIT FRAMEWORK
+              </span>
+              <h3 className="mt-2 font-serif text-2xl font-bold text-slate-900 sm:text-3xl">
+                Conventional Industrial Planning vs. 16-Zone Directional Vastu
+              </h3>
+              <p className="mt-2 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                How directional mass distribution and thermal zoning enhance manufacturing plant stability:
+              </p>
+            </div>
+
+            <div className="mt-6 overflow-x-auto rounded-2xl border border-slate-200 shadow-2xs">
+              <table className="w-full min-w-[640px] text-left text-xs sm:text-sm">
+                <thead className="border-b border-slate-200 bg-slate-100 text-slate-900">
+                  <tr>
+                    <th className="p-4 font-serif font-bold">Plant Operational Dimension</th>
+                    <th className="p-4 font-medium text-slate-700">Conventional Industrial Layout</th>
+                    <th className="p-4 font-medium text-slate-700">Directional Vastu Risk Factor</th>
+                    <th className="p-4 font-bold text-amber-900">7Rays Industrial Solution</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-slate-200 bg-white text-slate-700">
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Heavy Machine Anchoring</td>
+                    <td className="p-4">Placed purely for pipe or utility convenience</td>
+                    <td className="p-4">North or East placement increases vibration stress</td>
+                    <td className="p-4 font-medium text-amber-950">Anchored in South-West/South for gravitational grounding</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">High-Heat Utilities &amp; Boilers</td>
+                    <td className="p-4">Installed near random perimeter walls</td>
+                    <td className="p-4">North-East fire placement conflicts with water element</td>
+                    <td className="p-4 font-medium text-amber-950">Positioned in South-East (Agni Kona) fire sector</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Raw Material Storage</td>
+                    <td className="p-4">Staged at nearest entry doorway</td>
+                    <td className="p-4">Light North-East sector overburdened with heavy tonnage</td>
+                    <td className="p-4 font-medium text-amber-950">Structured heavy storage in South and West zones</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Finished Goods Dispatch</td>
+                    <td className="p-4">Consolidated with incoming raw dock</td>
+                    <td className="p-4">Logistics bottleneck and inventory holding stagnation</td>
+                    <td className="p-4 font-medium text-amber-950">Dispatched from North-West (Vayu / movement zone)</td>
+                  </tr>
+                  <tr className="hover:bg-slate-50">
+                    <td className="p-4 font-semibold text-slate-900">Remedial Civil Impact</td>
+                    <td className="p-4">Requires halting assembly lines for civil changes</td>
+                    <td className="p-4">Prohibitive downtime and foundation disruption</td>
+                    <td className="p-4 font-medium text-amber-950">Non-demolition elemental boundary inlays flush with flooring</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>

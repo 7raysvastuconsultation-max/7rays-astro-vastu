@@ -299,10 +299,9 @@ export const CommercialVastuPage: React.FC = () => {
               </span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base">
-              Harness the power of Vastu to create productive workplaces, stronger teams and
-              long-term business growth.
+            {/* Answer-First Pattern for AEO / AI Overviews */}
+            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-slate-200 sm:text-base">
+              Commercial Vastu consultation is the strategic alignment of corporate offices, retail spaces, and business premises with natural directional energies to support operational clarity, employee focus, and executive leadership. Conducted through high-precision 16-zone CAD blueprint audits and non-invasive elemental remedies, it corrects directional imbalances without requiring structural civil demolition or disrupting ongoing workflow.
             </p>
 
             {/* Feature Pills Row */}

@@ -281,10 +281,9 @@ export const ResidentialVastuPage: React.FC = () => {
               </span>
             </h1>
 
-            {/* Subtitle */}
-            <p className="mt-5 max-w-xl text-sm leading-relaxed text-slate-300 sm:text-base">
-              Create a home that supports your health, relationships, peace and prosperity with
-              expert Residential Vastu.
+            {/* Answer-First Pattern for AEO / AI Overviews */}
+            <p className="mt-5 max-w-2xl text-sm leading-relaxed text-slate-200 sm:text-base">
+              Residential Vastu consultation is the scientific analysis of a home&apos;s 16 directional zones and 5 natural elements to optimize living energy, sleep quality, and domestic peace. Using calibrated digital compass audits and zero-demolition spatial remedies like brass, copper, and zinc metallic strips, it harmonizes apartments, villas, and independent houses without structural demolition.
             </p>
 
             {/* Feature Pills Row */}
