@@ -103,7 +103,7 @@ To prevent search intent fragmentation, Google query-splitting, and internal ran
 
 ---
 
-### 2.5 Bengaluru 12 Neighborhood Locality Pages
+### 2.5 Bengaluru 20 Neighborhood Locality Pages
 
 | Canonical URL | Primary Target Query | Secondary / LSI Queries | Search Intent | Schema Types | Cannibalization Defense Directive |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -119,6 +119,14 @@ To prevent search intent fragmentation, Google query-splitting, and internal ran
 | `https://7raysastrovastu.in/locations/yelahanka/` | vastu consultant yelahanka | vastu expert yelahanka, plotted layout vastu yelahanka new town | Local / Transactional | `LocalBusiness`, `FAQPage` | Focuses on plotted layouts, independent villas, and emerging North Bengaluru apartments. |
 | `https://7raysastrovastu.in/locations/banashankari/` | vastu consultant banashankari | vastu in banashankari, bsk 2nd stage vastu, south bangalore home vastu | Local / Transactional | `LocalBusiness`, `FAQPage` | Focuses on multi-stage residential developments, independent homes, and family retail. |
 | `https://7raysastrovastu.in/locations/malleshwaram/` | vastu consultant malleshwaram | vastu in malleshwaram bangalore, traditional residential vastu malleshwaram | Local / Transactional | `LocalBusiness`, `FAQPage` | Focuses on traditional residential estates, heritage houses, and local commercial shops. |
+| `https://7raysastrovastu.in/locations/bellandur/` | vastu consultant bellandur | vastu in bellandur bangalore, outer ring road office vastu, ecospace flat vastu | Local / Transactional | `LocalBusiness`, `FAQPage` | Owns Bellandur and Outer Ring Road tech enterprise corridors and high-rise gated society queries. |
+| `https://7raysastrovastu.in/locations/btm-layout/` | vastu consultant btm layout | vastu in btm layout, btm 1st stage vastu, btm 2nd stage office vastu | Local / Transactional | `LocalBusiness`, `FAQPage` | Owns BTM 1st & 2nd Stage compact multi-storey builder floors and boutique startup office queries. |
+| `https://7raysastrovastu.in/locations/bannerghatta-road/` | vastu consultant bannerghatta road | vastu in bannerghatta road bangalore, arekere flat vastu, hulimavu villa vastu | Local / Transactional | `LocalBusiness`, `FAQPage` | Owns Bannerghatta Road, Arekere, Hulimavu, and JP Nagar Extension gated communities and villa queries. |
+| `https://7raysastrovastu.in/locations/kalyan-nagar/` | vastu consultant kalyan nagar | vastu in kalyan nagar bangalore, hrbr layout vastu, kammanahalli commercial vastu | Local / Transactional | `LocalBusiness`, `FAQPage` | Owns Kalyan Nagar, HRBR Layout, and Kammanahalli high-street retail and residential duplex queries. |
+| `https://7raysastrovastu.in/locations/thanisandra/` | vastu consultant thanisandra | vastu in thanisandra main road, manyata tech park office vastu, bhartiya city flat vastu | Local / Transactional | `LocalBusiness`, `FAQPage` | Owns Thanisandra township megatowers, Bhartiya City apartments, and Manyata tech enterprise queries. |
+| `https://7raysastrovastu.in/locations/rr-nagar/` | vastu consultant rr nagar | vastu consultant rajarajeshwari nagar, beml layout vastu, ideal homes bungalow vastu | Local / Transactional | `LocalBusiness`, `FAQPage` | Owns Rajarajeshwari Nagar (RR Nagar) independent plotted bungalows, villas, and multi-level residence queries. |
+| `https://7raysastrovastu.in/locations/basavanagudi/` | vastu consultant basavanagudi | vastu in basavanagudi bangalore, gandhi bazaar shop vastu, dvg road commercial vastu | Local / Transactional | `LocalBusiness`, `FAQPage` | Owns Basavanagudi heritage ancestral bungalows, traditional family courtyards, and DVG Road retail queries. |
+| `https://7raysastrovastu.in/locations/kanakapura-road/` | vastu consultant kanakapura road | vastu in kanakapura road bangalore, konanakunte flat vastu, thalaghattapura villa vastu | Local / Transactional | `LocalBusiness`, `FAQPage` | Owns Kanakapura Road metro corridor gated communities, pre-handover apartment audits, and green township queries. |
 
 ---
 

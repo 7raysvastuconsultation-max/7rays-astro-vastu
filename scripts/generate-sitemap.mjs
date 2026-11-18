@@ -58,7 +58,7 @@ const staticRoutes = [
   { path: 'disclaimer', changefreq: 'yearly', priority: 0.3 },
 ]
 
-const locationSlugs = ['indiranagar', 'hsr-layout', 'koramangala', 'whitefield', 'hebbal', 'sarjapur-road', 'electronic-city', 'jayanagar', 'marathahalli', 'yelahanka', 'banashankari', 'malleshwaram', 'mumbai', 'delhi-ncr', 'hyderabad', 'pune', 'kolkata']
+const locationSlugs = ['indiranagar', 'hsr-layout', 'koramangala', 'whitefield', 'hebbal', 'sarjapur-road', 'electronic-city', 'jayanagar', 'marathahalli', 'yelahanka', 'banashankari', 'malleshwaram', 'bellandur', 'btm-layout', 'bannerghatta-road', 'kalyan-nagar', 'thanisandra', 'rr-nagar', 'basavanagudi', 'kanakapura-road', 'mumbai', 'delhi-ncr', 'hyderabad', 'pune', 'kolkata']
 
 const blogSlugs = [
   'how-to-choose-vastu-consultation-services',

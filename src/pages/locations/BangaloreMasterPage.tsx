@@ -628,6 +628,54 @@ export const BangaloreMasterPage: React.FC = () => {
               >
                 Malleshwaram &amp; Rajajinagar
               </Link>
+              <Link
+                to="/locations/bellandur/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Bellandur (EcoWorld &amp; Green Glen)
+              </Link>
+              <Link
+                to="/locations/btm-layout/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                BTM Layout (1st &amp; 2nd Stage)
+              </Link>
+              <Link
+                to="/locations/bannerghatta-road/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Bannerghatta Road (Arekere &amp; Hulimavu)
+              </Link>
+              <Link
+                to="/locations/kalyan-nagar/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Kalyan Nagar &amp; Kammanahalli (HRBR)
+              </Link>
+              <Link
+                to="/locations/thanisandra/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Thanisandra (Manyata &amp; Bhartiya City)
+              </Link>
+              <Link
+                to="/locations/rr-nagar/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                RR Nagar (BEML &amp; Ideal Homes)
+              </Link>
+              <Link
+                to="/locations/basavanagudi/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Basavanagudi (Gandhi Bazaar &amp; DVG Road)
+              </Link>
+              <Link
+                to="/locations/kanakapura-road/"
+                className="rounded-lg border border-amber-200/70 bg-[#FAF8F5] px-3 py-1.5 font-medium text-slate-700 hover:border-amber-400 hover:text-amber-800"
+              >
+                Kanakapura Road (Konanakunte &amp; Metro Belt)
+              </Link>
             </div>
           </div>
         </div>

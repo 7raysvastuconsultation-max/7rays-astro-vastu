@@ -72,6 +72,38 @@ const bangaloreLocalityImages: Record<string, { image: string; alt: string }> = 
     image: '/images/services/commercial-retail-showroom.webp',
     alt: 'Malleshwaram and Rajajinagar Bangalore Heritage Home and Commercial Vastu',
   },
+  bellandur: {
+    image: '/images/projects/corporate-office-bangalore.webp',
+    alt: 'Bellandur and Outer Ring Road Bangalore Tech Enterprise and High-Rise Architecture',
+  },
+  'btm-layout': {
+    image: '/images/services/residential-apartment.webp',
+    alt: 'BTM Layout Bangalore Multi-Storey Residential and Startup Architecture',
+  },
+  'bannerghatta-road': {
+    image: '/images/services/residential-villa.webp',
+    alt: 'Bannerghatta Road Bangalore Gated Community Villa and High-Rise Architecture',
+  },
+  'kalyan-nagar': {
+    image: '/images/services/commercial-retail-showroom.webp',
+    alt: 'Kalyan Nagar and HRBR Layout Bangalore Duplex and Retail Architecture',
+  },
+  thanisandra: {
+    image: '/images/hero-penthouse.webp',
+    alt: 'Thanisandra and Manyata Tech Park Bangalore Luxury High-Rise Township Architecture',
+  },
+  'rr-nagar': {
+    image: '/images/services/residential-new-home.webp',
+    alt: 'Rajarajeshwari Nagar RR Nagar Bangalore Bungalow and Plotted Architecture',
+  },
+  basavanagudi: {
+    image: '/images/services/commercial-retail-showroom.webp',
+    alt: 'Basavanagudi Bangalore Heritage Bungalow and Retail Market Architecture',
+  },
+  'kanakapura-road': {
+    image: '/images/services/residential-apartment.webp',
+    alt: 'Kanakapura Road Metro Corridor Bangalore Gated Community Architecture',
+  },
 }
 
 
@@ -320,6 +352,166 @@ const localityRelatedArticleConfig: Record<string, RelatedArticleConfig[]> = {
       badge: 'Home Office',
       customExcerpt:
         'Aligning ergonomics and directional forces for creative and consulting studios.',
+    },
+  ],
+  bellandur: [
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'Navigating fixed utility shafts and RWA guidelines across ORR high-rise towers.',
+    },
+    {
+      slug: 'office-layout-executive-cabin-vastu',
+      badge: 'Workplace',
+      customExcerpt:
+        'Zoning leadership cabins and engineering desks for technology teams near EcoWorld.',
+    },
+    {
+      slug: 'vastu-remedies-without-demolition-modern-apartments',
+      badge: 'Non-Demolition',
+      customExcerpt:
+        'Elemental boundary strips that balance high-rise layouts without breaking tiles.',
+    },
+  ],
+  'btm-layout': [
+    {
+      slug: 'vastu-principles-every-homeowner-should-know',
+      badge: 'Home Planning',
+      customExcerpt:
+        'Balancing compact multi-storey layouts and central Brahma-sthana zones.',
+    },
+    {
+      slug: 'best-directions-for-home-office',
+      badge: 'Home Office',
+      customExcerpt:
+        'Ergonomic workstation and screen alignment for remote professionals and founders.',
+    },
+    {
+      slug: 'vastu-remedies-without-demolition-modern-apartments',
+      badge: 'Non-Demolition',
+      customExcerpt:
+        'Practical metallic corrections preserving rented apartment finishes and lease terms.',
+    },
+  ],
+  'bannerghatta-road': [
+    {
+      slug: 'bangalore-apartment-vastu-checklist-before-buying',
+      badge: 'Pre-Purchase',
+      customExcerpt:
+        'Crucial directional parameters to verify before booking flats along Bannerghatta Road.',
+    },
+    {
+      slug: 'vastu-principles-every-homeowner-should-know',
+      badge: 'Villa Vastu',
+      customExcerpt:
+        'Managing natural slope gradients and terrace weight distribution in gated enclaves.',
+    },
+    {
+      slug: 'kitchen-vastu-direction-guide',
+      badge: 'Kitchen Vastu',
+      customExcerpt:
+        'Balancing fire and water elements in modern modular kitchen configurations.',
+    },
+  ],
+  'kalyan-nagar': [
+    {
+      slug: 'retail-store-and-showroom-vastu',
+      badge: 'Commercial',
+      customExcerpt:
+        'Optimizing cash counter alignment, billing desks, and entrance vitality on CMR Road.',
+    },
+    {
+      slug: 'north-facing-house-vastu-plan',
+      badge: 'Floor Plans',
+      customExcerpt:
+        'Entrance pada calculations and directional wealth flow for HRBR Layout duplexes.',
+    },
+    {
+      slug: 'vastu-remedies-without-demolition-modern-apartments',
+      badge: 'Non-Demolition',
+      customExcerpt:
+        'Virtual energetic extensions for irregular corner plots and road-facing buildings.',
+    },
+  ],
+  thanisandra: [
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'Balancing high-density mega-townships and angled tower floor plans in North Bengaluru.',
+    },
+    {
+      slug: 'office-layout-executive-cabin-vastu',
+      badge: 'Corporate',
+      customExcerpt:
+        'Leadership cabin orientation and collaborative team pods in Manyata Tech Park.',
+    },
+    {
+      slug: 'bangalore-apartment-vastu-checklist-before-buying',
+      badge: 'Checklist',
+      customExcerpt:
+        'Pre-handover directional criteria to audit before commencing interior woodwork.',
+    },
+  ],
+  'rr-nagar': [
+    {
+      slug: 'north-facing-house-vastu-plan',
+      badge: 'Floor Plans',
+      customExcerpt:
+        'Comprehensive room zoning and staircase orientation for independent bungalows.',
+    },
+    {
+      slug: 'master-bedroom-vastu-guidelines',
+      badge: 'Bedrooms',
+      customExcerpt:
+        'Grounding bed placement and headboard alignment in the South-West sector.',
+    },
+    {
+      slug: 'vastu-principles-every-homeowner-should-know',
+      badge: 'Core Principles',
+      customExcerpt:
+        'Balancing underground rainwater harvesting sumps and multi-level terrace weights.',
+    },
+  ],
+  basavanagudi: [
+    {
+      slug: 'retail-store-and-showroom-vastu',
+      badge: 'Retail',
+      customExcerpt:
+        'Cash register placement and circulation harmony for Gandhi Bazaar & DVG Road shops.',
+    },
+    {
+      slug: 'vastu-principles-every-homeowner-should-know',
+      badge: 'Heritage',
+      customExcerpt:
+        'Preserving central open Brahma-sthana courtyards in heritage family residences.',
+    },
+    {
+      slug: 'vastu-remedies-without-demolition-modern-apartments',
+      badge: 'Non-Demolition',
+      customExcerpt:
+        'Surface-safe elemental remedies that protect antique woodwork and vintage masonry.',
+    },
+  ],
+  'kanakapura-road': [
+    {
+      slug: 'bangalore-apartment-vastu-checklist-before-buying',
+      badge: 'Pre-Purchase',
+      customExcerpt:
+        'Verifying entrance pada degrees and kitchen placements before booking new apartments.',
+    },
+    {
+      slug: 'vastu-for-modern-apartments-in-bangalore',
+      badge: 'Apartments',
+      customExcerpt:
+        'Harmonizing asymmetrical gated township layouts and missing corner quadrants.',
+    },
+    {
+      slug: 'vastu-remedies-without-demolition-modern-apartments',
+      badge: 'Non-Demolition',
+      customExcerpt:
+        'Non-invasive perimeter corrections for modern interiors along the Green Line corridor.',
     },
   ],
 }
